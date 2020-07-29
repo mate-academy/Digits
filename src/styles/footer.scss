@@ -1,0 +1,137 @@
+.section__footer {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__up {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 124px;
+  padding-bottom: 77px;
+  margin-bottom: 53px;
+  border-bottom: 1px solid rgba(135, 146, 161, 0.1);
+}
+
+.text {
+  font-family: "Halyard Text", sans-serif;
+  font-size: 18px;
+  line-height: 145%;
+  color: #455880;
+  margin-top: 15px;
+}
+
+.text__footer {
+  margin-top: 30px;
+}
+
+.footer__pages,
+.footer__demos,
+.footer__resources {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+
+  h3 {
+    font-family: "Halyard Display", sans-serif;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 125%;
+    color: #1e266d;
+    margin-bottom: 20px;
+  }
+}
+
+.footer__network {
+  display: flex;
+  justify-content: space-between;
+  width: 180px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-right: 10px;
+
+  .link__fbk {
+    content: url(../images/Vectorfacebook.svg);
+  }
+
+  .link__inst {
+    content: url(../images/Vectorinstagram.svg);
+  }
+
+  .link__twit {
+    content: url(../images/Vectortwitter.svg);
+  }
+
+  .link__drb {
+    content: url(../images/icon-dribbble.svg);
+  }
+
+  .link__env {
+    content: url(../images/Envato.svg);
+  }
+}
+
+.footer__down {
+  display: flex;
+  justify-content: space-between;
+  font-family: "Halyard Text", sans-serif;
+  font-size: 14px;
+  line-height: 27px;
+  margin-bottom: 107px;
+
+  &--left {
+    color: rgba(69, 88, 128, 0.5);
+  }
+
+  &--rigth {
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+  }
+}
+
+.link {
+  text-decoration: none;
+  color: #455880;
+}
+
+.icon {
+  transition: all 0.3s;
+
+  &:hover {
+    transform: scale(2);
+    box-shadow: 5px 5px 20  px rgba(85, 84, 84, 0.64);
+  }
+}
+
+@media screen and (max-width: 800px) {
+  
+  .footer__up {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+    padding-bottom: 20px;
+  }
+
+  .text__footer {
+    text-align: center;
+  }
+
+  .footer__logo-text {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .footer__pages,
+  .footer__demos,
+  .footer__resources {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .footer__down {
+    flex-direction: column-reverse;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+}

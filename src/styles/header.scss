@@ -1,0 +1,141 @@
+.header {
+  width: 100%;
+
+  &__background {
+    height: 878px;
+    width: 100%;
+    background: linear-gradient(180deg, 
+    rgba(242, 249, 255, 0.12) 0%,
+    #f2f9ff 100%);
+    position: absolute;
+    top: 0;
+    z-index: -1;
+  }
+
+  &__info {
+    width: 100%;
+    height: 878px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__title {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    font-family: "Halyard Display", sans-serif;
+    font-weight: 500;
+    font-size: 56px;
+    line-height: 105%;
+    color: #1e266d;
+    text-align: center;
+    margin-bottom: 83px;
+    margin-top: 90px;
+
+    &::after {
+      content: "For everyone, from beginners to experts";
+      position: absolute;
+      font-family: "Halyard Text", sans-serif;
+      font-size: 18px;
+      line-height: 150%;
+      color: #455880;
+      bottom: -50px;
+    }
+  }
+
+  &__buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 350px;
+
+    .button__info {
+      padding: 5px 30px;
+    
+      &--second {
+        padding: 3px 30px;
+        background-color: white;
+        color: #455880;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+    }
+  }
+}
+
+.section {
+  box-sizing: border-box;
+  max-width: 1250px;
+  padding: 0 20px;
+  height: 100%;
+  margin: auto;
+}
+
+.info__img {
+  background-image: url(../images/Graphic.svg);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 976px;
+  height: 585px;
+  position: absolute;
+  top: 440px;
+
+  &::after {
+    content: "Trusted by forward-thinking software teams around the world";
+    position: absolute;
+    bottom: -52px;
+    left: calc(50% - 240px);
+    font-family: "Halyard Text", sans-serif;
+    font-size: 16px;
+    line-height: 27px;
+    color: rgba(69, 88, 128, 0.5);
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .info__img {
+    transform: scale(0.6);
+
+    &::after {
+      transform: scale(1.4);
+    }
+  }
+}
+
+@media screen and (max-width: 585px) {
+
+  .header {
+    &__title {
+      font-size: 36px;
+  
+      &::after {
+        content: "For everyone, from beginners to experts";
+        position: absolute;
+        font-family: "Halyard Text", sans-serif;
+        font-size: 15px;
+      }
+    }
+
+    &__buttons {
+      transform: translateY(50px);
+      flex-direction: column;
+      width: 70%;
+
+      .button__info {
+        margin-bottom: 20px;
+      }
+    }
+
+    .header__background {
+      height: 728px;
+    }
+  }
+
+  .info__img {
+    transform: scale(0.3);
+
+    &::after {
+      transform: scale(2.3);
+    }
+  }
+}

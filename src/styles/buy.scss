@@ -1,0 +1,104 @@
+.buy__background {
+  background-color: #fff9ea;
+}
+
+.buy {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  
+  &__title {
+    padding-top: 139px;
+
+    &__down {
+      font-family: "Halyard Text", sans-serif;
+      text-align: center;
+      font-size: 21px;
+      line-height: 150%;
+      color: #455880;
+      margin-top: 40px;
+      margin-bottom: 40px;
+    }
+  }
+
+  &__button {
+    margin: auto;
+    margin-top: 100px;
+    padding: 3px 30px;
+  }
+
+  &__maket {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+
+    .maket__collum {
+      width: 321px;
+      margin: 0 10px;
+
+      .maket__img {
+        border-radius: 18px;
+        margin-top: -30px;
+        transition: transform 0.2s;
+
+        &:hover {
+          transform: scale(1.1);
+          transform-origin: bottom;
+        }
+      }
+
+      &--first {
+        margin-right: -20px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  
+  .maket__collum--second,
+  .maket__collum--fives {
+    display: none;
+  }
+
+  .maket__collum {
+    margin-left: -20px;
+  }
+}
+
+@media screen and (max-width: 1060px) {
+  .buy {
+    &__maket {
+      transform: scale(0.5);
+      transform-origin: bottom;
+    }
+
+    &__button {
+      margin-bottom: -200px;
+      width: 50%;
+    }
+
+  }
+}
+
+@media screen and (max-width: 550px) {
+
+  .buy {
+    &__maket {
+      transform: scale(0.25);
+      transform-origin: bottom center;
+    }
+
+    &__button {
+      margin-bottom: -350px;
+      width: 70%;
+    }
+    &__title {
+      padding-top: 20px;
+
+      &__down {
+        font-size: 15px;
+      }
+    }
+  }
+}
