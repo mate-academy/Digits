@@ -1,0 +1,10 @@
+@import "hero";
+@import "partners";
+@import "about";
+@import "portfolio";
+@import "testimonials";
+@import "cta";
+
+.digits {
+  @extend %pseudobutton-buy-digits;
+}

@@ -4,3 +4,27 @@
     #{$_property}: $_toValue;
   }
 }
+
+@mixin heading {
+  width: fit-content;
+  font-family: "Halyard Display", sans-serif;
+  text-align: center;
+  color: $heading-color;
+}
+
+@mixin pseudobutton {
+  border-radius: $pseudobtn-border-rds;
+  font-size: 16px;
+}
+
+@mixin pseudobutton-blue {
+  @include pseudobutton;
+  color: #fff;
+  background-color: #3751ff;
+}
+
+@mixin pseudobutton-white {
+  @include pseudobutton;
+  color: #455880;
+  background-color: #fff;
+}

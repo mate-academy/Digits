@@ -1,0 +1,48 @@
+.hero {
+  height: 878px;
+  margin-top: 80px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(180deg, rgba(242,249,255,0.12) 0%, #f2f9ff);
+
+  &__heading {
+    @extend %h1;
+    margin-top: 144px;
+  }
+
+  &__text {
+    @extend %text;
+    margin-top: 27px;
+    line-height: 150%;
+    letter-spacing: normal;
+  }
+
+  &__actions {
+    margin-top: 29px;
+    display: flex;
+  }
+
+  &__features {
+    @include pseudobutton-white;
+    margin-left: 22px;
+    padding: 17px 40px;
+  }
+  
+  &__illustration {
+    width: 977px;
+    height: 585px;
+    display: block;
+    margin-top: 32px;
+  }
+}
+
+@media screen and (max-width: 1599px) {
+  .hero {
+    &__features {
+      padding: 11px 26px;
+      font-size: 14px;
+    }
+  }
+}

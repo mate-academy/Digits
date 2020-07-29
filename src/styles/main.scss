@@ -1,7 +1,34 @@
-@import "utils";
+@import "reset";
 @import "fonts";
-@import "typography";
+@import "utils";
+
+@import "header/header";
+@import "main/main";
+@import "footer/footer.scss";
+
+html {
+  font-family: "Halyard Text", sans-serif;
+}
 
 body {
-  background: $c-gray;
+  background: #fff;
 }
+
+* {
+  box-sizing: border-box;
+}
+
+.logo {
+  background-image: url("/images/logo.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+// @media for mobile devices
+
+// replace element sizes with percents
+
+// <img> --> background
+
+// NEW vars, mixins, extends !

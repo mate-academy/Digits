@@ -1,0 +1,12 @@
+@import "upperline";
+@import "underline";
+
+.footer {
+  padding: 0 calc( (100% - 1184px) / 2);
+}
+
+@media screen and (max-width: 1599px) {
+  .footer {
+    padding: 0 13%;
+  }
+}

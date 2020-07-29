@@ -1,0 +1,107 @@
+.people {
+  width: 611px;
+  height: 932px;
+  position: relative;
+  margin-top: -129px;
+
+  &__image {
+    display: block;
+    position: absolute;
+    background-size: cover;
+
+    @for $i from 1 through 3 {
+      &_#{$i} {
+        background-image: url("/images/people/image-#{$i}.svg");
+      }
+
+      &_1 {
+        width: 409px;
+        height: 612px;
+        top: 0;
+        left: 202px;
+      }
+
+      &_2 {
+        width: 470px;
+        height: 313px;
+        left: 28px;
+        top: 509px;
+      }
+
+      &_3 {
+        width: 182px;
+        height: 256px;
+        left: 258px;
+        top: 643px;
+      }
+    }
+  }
+
+  &__rectangle {
+    display: block;
+    border-radius: 4px;
+    position: absolute;
+    background-size: cover;
+
+    @for $i from 1 through 3 {
+      &_#{$i} {
+        background-image: url("/images/rectangles/rectangle-#{$i}.svg");
+      }
+    }
+
+    &_1 {
+      width: 331px;
+      height: 357px;
+      top: 255px;
+      left: 221px;
+    }
+
+    &_2 {
+      width: 266px;
+      height: 308px;
+      left: 38px;
+      top: 514px;
+    }
+
+    &_3 {
+      width: 201px;
+      height: 200px;
+      left: 239px;
+      top: 699px;
+    }
+  }
+
+  &__figure {
+    display: block;
+    border-radius: 4px;
+    position: absolute;
+    background-size: cover;
+
+    @for $i from 1 through 3 {
+      &_#{$i} {
+        background-image: url("/images/figures/figure-#{$i}.svg");
+      }
+    }
+
+    &_1 {
+      width: 64px;
+      height: 64px;
+      top: 475px;
+      left: 510px;
+    }
+
+    &_2 {
+      width: 102px;
+      height: 102px;
+      left: 0;
+      top: 653px;
+    }
+
+    &_3 {
+      width: 69px;
+      height: 71px;
+      left: 406px;
+      top: 861px;
+    }
+  }
+}

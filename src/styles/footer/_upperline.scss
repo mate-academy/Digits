@@ -1,0 +1,54 @@
+.upperline {
+  padding-top: 124px;
+  padding-bottom: 77px;
+  display: flex;
+  justify-content: space-between;
+
+  &__general {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__logo {
+    width: 70px;
+    height: 26px;
+    margin-bottom: 34px;
+  }
+
+  &__conclusion {
+    width: 310px;
+    @extend %text;
+    line-height: 145%;
+  }
+
+  &__subheading {
+    @extend %h3;
+    margin-bottom: 22px;
+  }
+
+  &__link {
+    @extend %text;
+    line-height: 225%;
+  }
+
+  &__icons {
+    margin-bottom: 24px;
+    display: grid;
+    grid-template-columns: repeat(5, 16px);
+    grid-template-rows: 16px;
+    grid-column-gap: 24px;
+    align-items: center;
+  }
+
+  &__icon {
+    display: flex;
+    align-self: center;
+    justify-self: center;
+  }
+}
+
+@media screen and (min-width: 1px) {
+  .upperline__general {
+    color: #000;
+  }
+}

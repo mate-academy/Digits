@@ -1,0 +1,24 @@
+@import "examples";
+
+.portfolio {
+  padding-top: 139px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #fff9ea;
+
+  &__heading {
+    @extend %h2;
+  }
+
+  &__text {
+    @extend %text;
+    margin-top: 40px;
+    font-size: 21px;
+    text-align: center;
+  }
+
+  &__digits {
+    margin-top: 40px;
+  }
+}

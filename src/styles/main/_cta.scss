@@ -1,0 +1,77 @@
+.cta {
+  height: 323px;
+  padding: 88px calc((100% - 1184px) / 2) 115px;
+  background: #3751ff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &__heading {
+    @extend %h2;
+    text-align: start;
+    color: #fff;
+  }
+
+  &__right {
+    position: relative;
+  }
+
+  &__action {
+    padding: 18px 44px 18px 29px;
+    @include pseudobutton-white;
+    font-family: "Halyard Display", sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 110%;
+    text-align: center;
+    color: #455880;
+    display: flex;
+    align-items: center;
+
+    &::before {
+      content: url("/images/mail.svg");
+      margin-right: 17px;
+      display: block;
+      width: 27px;
+      height: 16px;
+    }
+  }
+
+  &__text {
+    position: absolute;
+    white-space: nowrap;
+    right: 0;
+    bottom: -39px;
+    font-family: "Halyard Text", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 125%;
+    text-align: right;
+    color: #dfe0eb;
+
+    &_link {
+      color: #fed385;
+    }
+  }
+}
+
+@media screen and (max-width: 1599px) {
+  .cta {
+    padding: 88px 13% 115px;
+
+    &__action {
+      padding: 12px 28px 12px 18px;
+      font-size: 14px;
+
+      &::before {
+        margin-right: 8px;
+        transform: scale(0.64);
+      }
+    }
+
+    &__text {
+      font-size: 14px;
+    }
+  }
+}
