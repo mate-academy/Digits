@@ -3,9 +3,13 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Title</title>
+    <title>Digits</title>
     <link rel="stylesheet" href="./styles/main.scss">
     <link rel="stylesheet" href="./fonts/stylesheet.css">
+    <link rel="icon"
+      href="./images/favicon.ico"
+      type="image/x-icon"
+    >
   </head>
   <body>
     <header class="header">
@@ -29,22 +33,23 @@
               <a href="#" class="link nav__link">Homepages</a>
             </li>
             <li class="nav__item">
-              <a href="#" class="link nav__link">Products</a>
+              <a href="#buy" class="link nav__link">Products</a>
             </li>
             <li class="nav__item nav__item--list">
-              <a href="#" class="link nav__link">Company</a>
+              <a href="#help" class="link nav__link">Company</a>
             </li>
             <li class="nav__item">
-              <a href="#" class="link nav__link">Pricing</a>
+              <a href="#launch" class="link nav__link">Pricing</a>
             </li>
             <li class="nav__item">
-              <a href="#" class="link nav__link">Blog</a>
+              <a href="#talk" class="link nav__link">Blog</a>
             </li>
           </ul>
           <div class="header__contact">
-            <label for="contact" class="contact__lable">+00 123 456 789 </label>
+            <label for="contact" class="contact__lable"><a href="tel:00-123-456-789" class="link">123 456 789 </a></label>
             <button id="contact"
-              class="button button__contact">Contact Us
+              class="button button__contact">
+              <a href="tel:00-123-456-789">Contact Us</a>
             </button>
           </div>
         </nav>
@@ -62,7 +67,7 @@
     </header>
     <main>
       <section class="section section__help">
-        <div class="help__brand-line">
+        <div id="help" class="help__brand-line">
           <img src="/images/logo-1.svg" alt="">
           <img src="/images/logo-2.svg" alt="">
           <img src="/images/logo-3.svg" alt="">
@@ -109,7 +114,7 @@
         </div>
       </section>
       <div class="buy__background">
-        <section class="section section__buy">
+        <section id="buy" class="section section__buy">
           <div class="buy">
             <h2 class="title buy__title">
               Simplicity meets innovative design
@@ -178,7 +183,7 @@
           </div>
         </section>
       </div>
-      <section class="section section__talk">
+      <section id="talk" class="section section__talk">
         <h2 class="title talk__title">What others are saying</h2>
         <div class="talk__cards">
           <div class="talk__card">
@@ -217,7 +222,7 @@
           </div>
         </div>
       </section>
-      <div class="launch">
+      <div id="launch" class="launch">
         <section class="section section__launch">
           <h2 class="title launch__title">Ready to launch<br>your next website?</h2>
           <div class="launch__right">
