@@ -6,8 +6,9 @@
   grid-column-gap: 72px;
 
   &__logo {
+    background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
+    background-size: contain;
 
     &_1,
     &_3,
@@ -26,6 +27,16 @@
       &_#{$i} {
         background-image: url("/images/logos/logo-#{$i}.svg");
       }
+    }
+  }
+}
+
+//---PARTNERS-LOGOS-size
+@each $screen-width, $transformation-scale in $partners-logo-breakpoints {
+  @media screen and (max-width: $screen-width) {
+    .partners__logos {
+      transform: scale($transformation-scale);
+      transform-origin: top;
     }
   }
 }

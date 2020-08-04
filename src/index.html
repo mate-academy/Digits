@@ -11,38 +11,67 @@
     <script type="text/javascript" src="scripts/main.js"></script>
 
     <header class="header">
-      <div class="header__logo logo"></div>
+      <div class="header__left">
+        <a class="logo header__logo" href="#"></a>
 
-      <nav class="header__nav nav">
-        <div class="nav__item">
-          Homepages
-        </div>
-        <div class="nav__item">
-          Products
-        </div>
-        <div class="nav__item nav__item_arrow">
-          Company
-        </div>
-        <div class="nav__item">
-          Pricing
-        </div>
-        <div class="nav__item">
-          Blog
-        </div>
-      </nav>
+        <input id="header__burger" type="checkbox">
+        <label for="header__burger" class="header__burger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
 
-      <div class="header__phone">
-        +00 123 456 789
-      </div>
+        <nav class="header__nav nav" href="#">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a class="nav__link" href="#">
+                Homepages
+              </a>
+            </li>
 
-      <a class="header__action" href="#">
-        <div class="header__button">
+            <li class="nav__item">
+              <a class="nav__link" href="#">
+                Products
+              </a>
+            </li>
+
+            <li class="nav__item nav__item_arrow">
+              <a class="nav__link nav__link_arrow" href="#">
+                Company
+              </a>
+            </li>
+
+            <li class="nav__item">
+              <a class="nav__link" href="#">
+                Pricing
+              </a>
+            </li>
+
+            <li class="nav__item">
+              <a class="nav__link" href="#">
+                Blog
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div> 
+
+      <div class="header__right">
+        <a class="header__phone" href="tel: +00 123 456 789">
+          +00 123 456 789
+        </a>
+
+        <a class="header__text-button" href="tel: +00 123 456 789">
           Contact Us
-        </div>
-      </a>
+        </a>
+
+        <a class="header__phone-button" href="tel: +00 123 456 789">
+          <img src="/images/phone.png" alt="Contact us" class="header__phone-button">
+        </a>
+      </div>
     </header>
 
-    <main>
+    <main class="main">
       <section class="hero">
         <h2 class="hero__heading">
           Good design meets<br>great user experience
@@ -67,9 +96,8 @@
           </a>
         </div>
 
-        <div>
+        <div class="hero__illustration">
           <img
-            class="hero__illustration"
             src="/images/graphic.svg"
             alt=""
           >
@@ -165,9 +193,7 @@
         </h2>
 
         <p class="portfolio__text">
-          It's really easy to start using Digits.
-          <br>Install the theme, choose a demo and
-          <br>start designing the future of your business!
+          It's really easy to start using Digits. Install the theme, choose a demo and start designing the future of your business!
         </p>
 
         <a href="#">
@@ -176,32 +202,8 @@
           </div>
         </a>
 
-        <div class="portfolio__examples examples">
-          <div class="examples__block examples__block_1">
-            <div class="examples__image examples__image_1"></div>
-            <div class="examples__image examples__image_2"></div>
-            <div class="examples__image examples__image_3"></div>
-          </div>
-
-          <div class="examples__block examples__block_2">
-            <div class="examples__image examples__image_4"></div>
-            <div class="examples__image examples__image_5"></div>
-          </div>
-
-          <div class="examples__block examples__block_3">
-            <div class="examples__image examples__image_6"></div>
-            <div class="examples__image examples__image_7"></div>
-          </div>
-
-          <div class="examples__block examples__block_4">
-            <div class="examples__image examples__image_8"></div>
-            <div class="examples__image examples__image_9"></div>
-          </div>
-
-          <div class="examples__block examples__block_5">
-            <div class="examples__image examples__image_10"></div>
-            <div class="examples__image examples__image_11"></div>
-          </div>
+        <div>
+          <img class="portfolio__examples" src="/images/examples/examples.svg" alt="Examples">
         </div>
       </section>
 
@@ -433,7 +435,7 @@
           Copyright © 2020 tempy.club
         </p>
 
-        <ul class="underline__addition">
+        <ul>
           <li>
             <a href="" class="underline__link">
               Privacy Policy

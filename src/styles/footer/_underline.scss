@@ -17,11 +17,30 @@
 
   &__addition {
     display: grid;
-    grid-template-columns: auto auto auto;
-    grid-column-gap: 24px;
+    grid-template-columns: repeat(3, auto);
+    grid-gap: 24px;
+  }
+
+  & li {
+    text-align: center;
   }
 
   &__link {
     color: $regular_color;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .underline {
+    flex-direction: column;
+    height: 220px;
+    padding-bottom: 46px;
+    align-items: center;
+
+    &__addition {
+      grid-template-columns: auto;
+      grid-template-rows: repeat(3, min-content);
+      align-items: inherit;
+    }
   }
 }

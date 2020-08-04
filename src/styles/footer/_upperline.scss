@@ -16,9 +16,16 @@
   }
 
   &__conclusion {
-    width: 310px;
-    @extend %text;
+    width: 276px;
+    @extend %regular-font;
     line-height: 145%;
+  }
+
+  &__pages,
+  &__demos,
+  &__resources {
+    display: flex;
+    flex-direction: column;
   }
 
   &__subheading {
@@ -26,8 +33,12 @@
     margin-bottom: 22px;
   }
 
+  & li {
+    text-align: center;
+  }
+
   &__link {
-    @extend %text;
+    @extend %regular-font%regular-font;
     line-height: 225%;
   }
 
@@ -47,8 +58,31 @@
   }
 }
 
-@media screen and (min-width: 1px) {
-  .upperline__general {
-    color: #000;
+@media screen and (max-width: 768px) {
+  .upperline {
+    height: 1102px;
+    padding-top: 62px;
+    padding-bottom: 48px;
+
+    flex-direction: column;
+    align-items: center;
+
+    &__general {
+      align-items: inherit;
+    }
+
+    &__conclusion {
+      text-align: center;
+    }
+
+    &__pages,
+    &__demos,
+    &__resources {
+      align-items: inherit;
+    }
+
+    &__conclusion {
+      text-align: center;
+    }
   }
 }

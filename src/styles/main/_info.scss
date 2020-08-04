@@ -6,7 +6,7 @@
   align-items: flex-start;
 
   &__block {
-    width: 405px;
+    width: 400px;
     box-sizing: border-box;
     padding-left: 105px;
     border-bottom: 1px solid rgba(69, 88, 128, 0.2);
@@ -24,6 +24,10 @@
     top: 4px;
     left: 0;
 
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
     @for $i from 1 through 3 {
       &_#{$i} {
         background-image: url("/images/icons/icon-#{$i}.svg");
@@ -38,9 +42,36 @@
   }
 
   &__text {
-    @extend %text;
-    width: 300px;
+    @extend %regular-font;
+    width: 100%;
     height: 134px;
     margin-bottom: -10px;
+  }
+}
+
+@each $screen-width, $block-width in $info-breakpoints {
+  @media screen and (max-width: $screen-width) {
+    .info__block {
+      width: $block-width;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .info {
+    padding-top: 61px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .info {
+    &__block {
+      padding-left: 68px;
+    }
+
+    &__icon {
+      width: 40px;
+      height: 40px;
+    }
   }
 }

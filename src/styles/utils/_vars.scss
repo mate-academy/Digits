@@ -1,4 +1,62 @@
 $heading_color: #1e266d;
 $regular_color: #455880;
+$special_color: #3751ff;
 $pseudobtn-border-rds: 100px;
-$header-height: 80px;
+$header-border: 3px;
+
+$padding-breakpoints: (
+  2560px: 27%,
+  1920px: 13%,
+  1280px: 10%,
+  1024px: 7%
+);
+
+$header-breakpoints: (
+  2560px: 80px,
+  1280px: 70px,
+  1024px: 60px
+);
+
+$header-left-breakpoints: (
+  2560px: 82px,
+  1280px: 70px,
+  1024px: 58px
+);
+
+$header-right-breakpoints: (
+  2560px: 34px,
+  1280px: 30px,
+  1024px: 26px
+);
+
+$nav-breakpoints: (
+  2560px: 46px,
+  1280px: 34px,
+  1024px: 22px
+);
+
+$partners-logo-breakpoints: (
+  2560px: 1,
+  1280px: 0.8,
+  480px: 0.7,
+  420px: 0.5
+);
+
+$illustration-breakpoints: (
+  2560px: 1,
+  1280px: 0.8,
+  1024px: 0.6,
+  768px: 0.4,
+  420px: 0.3
+);
+
+$pseudobtn-font-size: (
+  2560px: 18px,
+  1920px: 16px,
+);
+
+$info-breakpoints: (
+  2560px: 405px,
+  480px: 302px,
+  320px: 282px
+);

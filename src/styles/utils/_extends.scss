@@ -1,3 +1,10 @@
+%header-font {
+  font-family: "Halyard Text", sans-serif;
+  font-size: 16px;
+  color: $heading-color;
+  white-space: nowrap;
+}
+
 %h1 {
   @include heading;
   font-size: 56px;
@@ -16,18 +23,22 @@
   line-height: 125%;
 }
 
-%text {
+%regular-font {
   font-size: 18px;
   line-height: 150%;
   color: $regular-color;
 }
 
-%pseudobutton-buy-digits {
+%buy-digits {
   @include pseudobutton-blue;
   padding: 17px 38px;
 }
 
-@media screen and (max-width: 1599px) {
+@media screen and (max-width: 768px) {
+  %header-font {
+    font-size: 14px;
+  }
+
   %h1 {
     font-size: 42px;
   }
@@ -40,12 +51,26 @@
     font-size: 20px;
   }
 
-  %text {
+  %regular-font {
     font-size: 17.5px;
   }
 
   %pseudobutton-buy-digits {
     padding: 11px 24px;
     font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  %h1 {
+    font-size: 36px;
+  }
+
+  %h2 {
+    font-size: 28px;
+  }
+
+  %h3 {
+    font-size: 18px;
   }
 }

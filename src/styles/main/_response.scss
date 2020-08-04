@@ -1,12 +1,12 @@
 .response {
-  height: 467px;
+  height: fit-content;
   padding: 38px 43px 32px;
   border: 1px solid rgba(69, 88, 128, 0.2);
   border-radius: 4px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  @extend %text;
+  @extend %regular-font;
   line-height: 180%;
   
 
@@ -39,5 +39,24 @@
 
   &__name {
     @extend %h3;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .response {
+    line-height: 180%;
+    padding: 16px 22px 16px;
+
+    &__text {
+      width: 256px;
+    }
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .response {
+    &__text {
+      width: 236px;
+    }
   }
 }

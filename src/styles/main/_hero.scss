@@ -1,6 +1,5 @@
 .hero {
   height: 878px;
-  margin-top: 80px;
 
   display: flex;
   flex-direction: column;
@@ -13,10 +12,10 @@
   }
 
   &__text {
-    @extend %text;
+    @extend %regular-font;
     margin-top: 27px;
     line-height: 150%;
-    letter-spacing: normal;
+    text-align: center;
   }
 
   &__actions {
@@ -38,11 +37,44 @@
   }
 }
 
-@media screen and (max-width: 1599px) {
+//---ILLUSTRATION-size
+@each $screen-width, $transformation-scale in $illustration-breakpoints {
+  @media screen and (max-width: $screen-width) {
+    .hero {
+      height: 434px + (444px * $transformation-scale);
+      
+      &__illustration {
+        transform: scale($transformation-scale);
+        transform-origin: top;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
   .hero {
+    &__heading {
+      margin-top: 72px;
+    }
+
+    &__actions {
+      flex-direction: column;
+    }
+
     &__features {
-      padding: 11px 26px;
-      font-size: 14px;
+      margin: 22px 0 0;
+    }
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .hero {
+    height: 586px;
+    padding: 0 7%;
+
+
+    &__heading {
+      margin-top: 36px;
     }
   }
 }

@@ -19,16 +19,71 @@ body {
 }
 
 .logo {
+  display: block;
   background-image: url("/images/logo.svg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
 }
 
-// @media for mobile devices
+.digits {
+  @extend %buy-digits;
+}
 
-// replace element sizes with percents
+/* @media for mobile devices
 
-// <img> --> background
+replace element sizes with percents
 
-// NEW vars, mixins, extends !
+<img> --> background
+
+NEW vars, mixins, extends ! */
+
+// ADD ADDITIONAL WHITE BLOCK + «display: none» for nav
+
+//---HEADER-size
+@each $screen-width, $header-height in $header-breakpoints {
+  @media screen and (max-width: $screen-width) {
+    .header {
+      height: $header-height + $header-border;
+
+      &__background {
+        height: $header-height;
+      }
+    }
+
+    .nav {
+      top: $header-height + $header-border;
+
+      &__item {
+        line-height: $header-height;
+      }
+    }
+
+    .main {
+      margin-top: $header-height + $header-border;
+    }
+  }
+}
+
+@each $screen-width, $padding in $padding-breakpoints {
+  @media screen and (max-width: $screen-width) {
+    .header,
+    .footer,
+    .cta {
+      padding-left: $padding;
+      padding-right: $padding;
+    }
+  }
+}
+
+//---PSEUDOBUTTONS-font-size
+@each $screen-width, $font-size in $pseudobtn-font-size {
+  @media screen and (max-width: $screen-width) {
+    .header__action,
+    .hero__features,
+    .digits,
+    .cta__action {
+      font-size: $font-size;
+    }
+  }
+}

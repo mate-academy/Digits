@@ -14,17 +14,26 @@
 
 @mixin pseudobutton {
   border-radius: $pseudobtn-border-rds;
-  font-size: 16px;
+  text-align: center;
+  border: 2px solid transparent;
+  transition: border-color 350ms, background-color 350ms, color 350ms;
+
+
+  &:hover {
+    border-color: $special_color;
+    background-color: #fff;
+    color: $special_color;
+  }
 }
 
 @mixin pseudobutton-blue {
   @include pseudobutton;
   color: #fff;
-  background-color: #3751ff;
+  background-color: $special_color;
 }
 
 @mixin pseudobutton-white {
   @include pseudobutton;
-  color: #455880;
+  color: $regular_color;
   background-color: #fff;
 }
