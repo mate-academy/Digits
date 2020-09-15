@@ -1,0 +1,64 @@
+@import "utils/vars";
+
+.good-design {
+  &__top {
+    padding: 0 210px;
+    height: 880px;
+    background: linear-gradient(180deg, rgba(242, 249, 255, 0.12) 0%,
+    #f2f9ff 100%);
+    margin-bottom: 186px;
+  }
+
+  &__text {
+    text-align: center;
+  }
+
+  &__title {
+    white-space: pre-line;
+    margin-bottom: 27px;
+    line-height: 1;
+    padding-top: 146px;
+  }
+
+  &__paragraph {
+    color: $regular-text-color;
+    margin-bottom: 45px;
+  }
+
+  &__buttons {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__button {
+    margin: 0 11px;
+    width: 148px;
+    height: 50px;
+    border-radius: 25px;
+    margin-bottom: 20px;
+
+    &--white {
+      width: 200px;
+      background-color: white;
+      color: $regular-text-color;
+      box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+    }
+  }
+
+  &__collage {
+    height: 620px;
+    width: 1000px;
+    background-image: url("/images/graphic-header.svg");
+    background-size: cover;
+    background-position: center;
+
+    position: absolute;
+    left: calc(50% - 450px);
+  }
+
+  &__bottom-text {
+    text-align: center;
+    color: $regular-text-color;
+    margin-bottom: 49px;
+  }
+}

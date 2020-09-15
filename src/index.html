@@ -3,11 +3,153 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Title</title>
+    <title>Digits</title>
     <link rel="stylesheet" href="./styles/main.scss">
+    <link rel="icon" href="images/logos/favicon.svg">
+    <link href="//db.onlinewebfonts.com/c/89248b0583721153668df86453b579de?family=Halyard+Text" rel="stylesheet"
+      type="text/css">
+    <link href="//db.onlinewebfonts.com/c/c4d8819fda4c3fd79e36cedcc8d422bb?family=Halyard+Display" rel="stylesheet"
+      type="text/css">
   </head>
-  <body>
-    <h1>Hello Mate Academy</h1>
+  <body class="page">
+
+    <!------------------Header------------------>
+    <header class="header page__header">
+      <div class="logo header__logo"></div>
+
+      <nav class="navigation header__navigation">
+
+        <input
+          class="navigation__toggler"
+          type="checkbox"
+          id="nav-toggler"
+        >
+        <label class="navigation__toggler-label" for="nav-toggler"></label>
+
+        <ul class="navigation__list">
+          <li class="navigation__item"><a class="navigation__link">Homepages</a></li>
+          <li class="navigation__item"><a class="navigation__link">Products</a></li>
+          <li class="navigation__item navigation__item--active"><a class="navigation__link">Company</a></li>
+          <li class="navigation__item"><a class="navigation__link">Pricing</a></li>
+          <li class="navigation__item"><a class="navigation__link">Blog</a></li>
+        </ul>
+      </nav>
+
+      <div class="header__feedback">
+        <a class="header__phone" href="tel:+00 123 456 789">+00 123 456 789</a>
+        <button class="button header__button"><a class="button__contact-us" href="tel:+00 123 456 789">Contact Us</a></button>
+      </div>
+
+    </header>
+    <!------------------Main------------------>
+    <main>
+      <!------------------Good desigh block------------------>
+      <section class="section">
+        <div class="good-design section__good-design">
+
+          <div class="good-design__top">
+            <div class="good-design__text">
+              <h1 class="good-design__title">Good design meets
+                great user experience
+              </h1>
+              <p class="good-design__paragraph">For everyone, from beginners to experts</p>
+            </div>
+
+            <div class="good-design__buttons">
+              <button class="button good-design__button">Buy Digits</button>
+              <button class="button good-design__button good-design__button--white">See the Features</button>
+            </div>
+            <div class="good-design__collage"></div>
+          </div>
+
+          <div class="good-design__bottom">
+            <p class="good-design__bottom-text">Trusted by forward-thinking software teams around the world</p>
+            <div class="partners-logos good-design__partners-logos">
+              <div class="partners-logos__netflix"></div>
+              <div class="partners-logos__drawkit"></div>
+              <div class="partners-logos__figma"></div>
+              <div class="partners-logos__cinemax"></div>
+              <div class="partners-logos__stripe"></div>
+              <div class="partners-logos__google"></div>
+              <div class="partners-logos__disney"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!------------------Our help block------------------>
+      <section class="section">
+
+        <div class="our-help">
+          <h2 class="our-help__title">Whatever work you do,
+            we're able to help
+          </h2>
+
+          <div class="our-help__blocks">
+            <img
+              class="our-help__collage"
+              src="/images/our-help.png"
+              alt="Сollage of three people"
+            >
+          </img>
+
+            <div class="cards our-help__cards">
+
+              <div class="card cards__card">
+                <img
+                    class="card__icon"
+                    src="/images/cards-icons/green-card-icon.png"
+                    alt="Green icon"
+                  >
+                </img>
+                <div class="card__description">
+                  <h3 class="card__title">Design and Assets</h3>
+                  <p class="card__text">Make your brand stand out with
+                    pixel-perfect design crafted to
+                    perfection.
+                  </p>
+                </div>
+              </div>
+
+              <div class="card cards__card">
+                <img
+                  class="card__icon"
+                  src="/images/cards-icons/orange-card-icon.png"
+                  alt="Orange icon"
+                >
+                </img>
+                <div class="card__description">
+                  <h3 class="card__title">Design and Assets</h3>
+                  <p class="card__text">Make your brand stand out with
+                    pixel-perfect design crafted to
+                    perfection.
+                  </p>
+                </div>
+              </div>
+
+              <div class="card cards__card">
+                <img
+                  class="card__icon"
+                  src="/images/cards-icons/pink-card-icon.png"
+                  alt="Pink icon"
+                >
+                </img>
+                <div class="card__description">
+                  <h3 class="card__title">Design and Assets</h3>
+                  <p class="card__text">Make your brand stand out with
+                    pixel-perfect design crafted to
+                    perfection.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+    </main>
+
     <script type="text/javascript" src="scripts/main.js"></script>
   </body>
 </html>

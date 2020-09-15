@@ -1,0 +1,24 @@
+@import "utils/vars";
+
+.our-help {
+  padding: 0 210px;
+
+  &__title {
+    text-align: center;
+    white-space: pre-line;
+    line-height: 1;
+  }
+
+  &__blocks {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__collage {
+    margin-right: 168px;
+  }
+
+  &__cards {
+    margin-top: 122px;
+  }
+}

@@ -1,0 +1,80 @@
+@import "utils/vars";
+@import "fonts";
+
+.navigation {
+  /*-------------------- Burger menu ---------------------*/
+  &__toggler-label {
+    display: none;
+    padding: 10px;
+    background-image: url("/images/burger.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    top: 20px;
+
+    // &::before {
+    //   content: "=";
+    // }
+
+    &:checked ~ .navigation__toggler-label::before {
+      content: "X";
+    }
+  }
+
+  &__toggler {
+    display: none;
+  }
+  /*-------------------- ^Burger menu^ ---------------------*/
+  &__list {
+    display: flex;
+    left: calc(100% / 4 - 35px);
+  }
+
+  &__item {
+    margin: 0 22px;
+    font-size: 16px;
+    color: $titles-text-color;
+
+    &--active {
+      &::after {
+        content: "";
+        border: solid $titles-text-color;
+        border-width: 0 3px 3px 0;
+        border-radius: 2px;
+        display: inline-block;
+        position: relative;
+        left: 10px;
+        bottom: 2px;
+        padding: 3px;
+        transform: rotate(45deg);
+        -webkit-transform: rotate(45deg);
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+
+  .navigation {
+    /*-------------------- Burger menu ---------------------*/
+    &__toggler-label {
+      display: inline-block;
+      position: absolute;
+      left: 220px;
+    }
+
+    &__list {
+      width: 200px;
+      height: 200px;
+      flex-direction: column;
+      position: absolute;
+      top: 10px;
+    }
+
+    &__toggler:not(:checked) ~ .navigation__list {
+      display: none;
+    }
+  }
+}
+/*-------------------- ^Burger menu^ ---------------------*/

@@ -1,0 +1,16 @@
+@import "utils/vars";
+
+.button {
+  width: 113px;
+  height: 40px;
+  border-style: none;
+  border-radius: 20px;
+  background-color: $button-color;
+  color: white;
+  cursor: pointer;
+
+  &__contact-us {
+    text-decoration: none;
+    color: white;
+  }
+}
