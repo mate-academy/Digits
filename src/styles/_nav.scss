@@ -2,7 +2,6 @@
 
   &__list {
     display: flex;
-    max-width: 600px;
   }
 
   &__item:not(:last-child) {

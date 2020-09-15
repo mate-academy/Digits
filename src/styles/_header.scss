@@ -18,7 +18,8 @@
   }
 
   &__nav {
-    margin-right: auto;
+    margin-right: 200px;
+    max-width: 600px;
   }
 
   &__phone {
@@ -27,6 +28,12 @@
     > .link {
       color: $color-text-hard;
       background-color: transparent;
+    }
+  }
+
+  &__action {
+    .link {
+      padding: 8px 16px;
     }
   }
 
@@ -64,6 +71,18 @@
     justify-content: center;
     max-width: 540px;
     margin: 30px auto 0;
+
+    .link:first-child {
+      padding: 8px 18px;
+      margin-right: 22px;
+    }
+
+    .link:last-child {
+      padding: 8px 28px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+      color: $color-text-light;
+      background-color: #fff;
+    }
   }
 
   &__bottom {
