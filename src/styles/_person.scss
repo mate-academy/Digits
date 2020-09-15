@@ -1,0 +1,20 @@
+.person {
+  display: flex;
+  width: 80%;
+  justify-content: space-around;
+
+  &__block {
+    // margin-right: 40px;
+    width: 373px;
+    height: 467px;
+    border: 1px solid rgba(69, 88, 128, 0.2);
+    border-radius: 4px;
+    padding: 45px 38px;
+    
+  }
+
+  &__info {
+    white-space: pre-line;
+    text-align: start;
+  }
+}

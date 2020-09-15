@@ -1,0 +1,33 @@
+.portfolio {
+  background-color: #fff9ea;
+  margin-top: 100px;
+  height: 895px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+
+  &__title {
+    color: $color-title;
+    font-size: 48px;
+    line-height: 60px;
+    font-weight: 500;
+  }
+
+  &__text {
+    white-space: pre-line;
+    font-size: 21px;
+    line-height: 150%;
+    color: #455880;
+  }
+
+  &__button {
+    background-color: $color-button;
+    color: white;
+    width: 148px;
+    height: 50px;
+    font-size: 16px;
+    border-radius: 100px;
+    border: 0;
+  }
+}

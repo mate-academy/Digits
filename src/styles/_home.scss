@@ -1,0 +1,48 @@
+.home {
+  width: 1600px;
+  position: relative;
+  height: 878px;
+  text-align: center;
+  background: linear-gradient(180deg, rgba(242, 249, 255, 0.12));
+
+  &__title {
+    margin-top: 144px;
+
+    &--head {
+      font-size: 56px;
+      height: 118px;
+      line-height: 105%;
+      color: $color-title;
+      font-weight: 500;
+    }
+
+    &--text {
+      height: 27px;
+      font-size: 18px;
+      line-height: 150%;
+      color: #455880;
+      margin-bottom: 50px;
+    }
+  }
+
+  &__button {
+    text-align: center;
+    &--buy {
+      background-color: #3751ff;
+      color: white;
+      border-radius: 25px;
+      padding: 15px 35px;
+      margin-right: 40px;
+    }
+
+    &--see {
+      background-color: #fff;
+      border-radius: 25px;
+      padding: 15px 35px;
+    }
+  }
+
+  &__img {
+    margin-top: 130px;
+  }
+}

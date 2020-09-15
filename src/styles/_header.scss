@@ -1,0 +1,30 @@
+.header {
+  background: white;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+  height: 80px;
+  line-height: 80px;
+  border-bottom: 2px solid #1e266d;
+  flex-wrap: nowrap;
+
+  &__logo {
+    color: $color-title;
+    font-size: 31px;
+
+    &--el {
+      color: #ff2e6a;
+    }
+    
+  }
+
+  &__button {
+    padding: 5px 15px;
+    margin-left: 20px;
+    border: 2px solid $color-button;
+    border-radius: 15px;
+    background-color: $color-button;
+    color: white;
+  }
+}

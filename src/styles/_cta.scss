@@ -1,0 +1,35 @@
+.cta {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: space-around;
+  height: 323px;
+  background-color: #3751ff;
+  color: white;
+
+  &__title {
+    text-align: left;
+    white-space: pre-line;
+    font-size: 48px;
+    font-weight: 500;
+    line-height: 60px;
+    margin-bottom: 150px;
+  }
+
+  &__button {
+    width: 245px;
+    height: 56px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    border-radius: 100px;
+    color: #455880;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 110%;
+
+    &--text {
+      font-size: 16px;
+      line-height: 125%;
+      color: #dfe0eb;
+    }
+  }
+}
