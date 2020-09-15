@@ -1,0 +1,18 @@
+@import "utils/vars";
+
+.people {
+  padding: 0 210px;
+
+  height: 583px;
+
+  &__title {
+    text-align: center;
+    margin-top: 232px;
+    margin-bottom: 56px;
+    line-height: 1;
+  }
+
+  &__reviews {
+    justify-content: center;
+  }
+}

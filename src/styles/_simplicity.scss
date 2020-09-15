@@ -1,0 +1,45 @@
+@import "utils/vars";
+
+.simplicity {
+  background-color: #fff9ea;
+  padding: 0 210px;
+  height: 1000px;
+  position: relative;
+
+  &__title {
+    text-align: center;
+    padding-top: 140px;
+    margin-bottom: 40px;
+    line-height: 1;
+  }
+
+  &__paragraph {
+    text-align: center;
+    white-space: pre-line;
+    color: $regular-text-color;
+    font-size: 21px;
+    margin-bottom: 40px;
+  }
+
+  &__button-box {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__button {
+    width: 150px;
+    height: 50px;
+    border-radius: 25px;
+  }
+
+  &__collage {
+    background-image: url("/images/simplicity-collage.png");
+    background-size: cover;
+    // background-position: center;
+    height: 540px;
+    width: 100%;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+}

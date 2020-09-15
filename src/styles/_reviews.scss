@@ -1,0 +1,7 @@
+@import "utils/vars";
+
+.reviews {
+  display: grid;
+  grid-template-columns: repeat(3, 373px);
+  gap: 26px;
+}

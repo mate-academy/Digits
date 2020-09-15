@@ -1,0 +1,13 @@
+@import "utils/vars";
+
+.review {
+  height: 467px;
+  width: 373px;
+
+  &__text {
+    padding: 38px 43px;
+    font-size: 18px;
+    line-height: 180%;
+    color: $regular-text-color;
+  }
+}
