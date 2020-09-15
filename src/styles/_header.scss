@@ -1,0 +1,96 @@
+.header {
+
+  &__top {
+    /*  position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%); */
+    display: flex;
+    align-items: center;
+    @include container;
+    height: 80px;
+  }
+
+  &__logo {
+    width: 80px;
+    height: 30px;
+    margin-right: 80px;
+  }
+
+  &__nav {
+    margin-right: auto;
+  }
+
+  &__phone {
+    margin-right: 35px;
+    
+    > .link {
+      color: $color-text-hard;
+      background-color: transparent;
+    }
+  }
+
+  &__center {
+    @include container;
+
+    position: absolute;
+    top: 220px;
+    height: 270px;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+
+  }
+
+  &__topic {
+    max-width: 540px;
+    margin: 0 auto;
+    font-family: "Halyard Display", sans-serif;
+    font-size: 56px;
+    text-align: center;
+    line-height: 1;
+    color: $color-text-hard;
+  }
+
+  &__text {
+    max-width: 540px;
+    margin: 25px auto 0;
+    text-align: center;
+    color: $color-text-light;
+  }
+
+  &__links {
+    display: flex;
+    justify-content: center;
+    max-width: 540px;
+    margin: 30px auto 0;
+  }
+
+  &__bottom {
+    position: relative;
+    bottom: -510px;
+    margin: 0 auto;
+    padding: 0 20px;
+    max-width: 970px;
+    z-index: -1;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    &__logo,
+    &__nav,
+    &__phone {
+      margin-right: 10px;
+    }
+
+    &__topic {
+      font-size: 32px;
+      max-width: 300px;
+    }
+
+    &__text {
+      font-size: 12px;
+    }
+  }
+}

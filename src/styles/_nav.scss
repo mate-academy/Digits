@@ -1,0 +1,23 @@
+.nav {
+
+  &__list {
+    display: flex;
+    max-width: 600px;
+  }
+
+  &__item:not(:last-child) {
+    margin-right: 45px;
+  }
+
+  &__link {
+    color: $color-text-hard;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .nav {
+    &__item:not(:last-child) {
+      margin-right: 10px;
+    }
+  }
+}
