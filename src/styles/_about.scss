@@ -56,10 +56,36 @@
   }
 
   &__figure {
-    position: absolute;
-    top: 0;
-    left: 0;
+    position: relative;
+    top: -125px;
+    left: -100px;
     width: 58px;
     height: 58px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .about {
+    &__content {
+      flex-direction: column;
+      margin: auto;
+    }
+
+    &__block {
+      flex-basis: 0;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .about {
+    &__topic {
+      font-size: 18px;
+    }
+  
+    &__text {
+      margin-top: 10px;
+      font-size: 14px;
+    }
   }
 }
