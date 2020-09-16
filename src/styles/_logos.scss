@@ -20,5 +20,14 @@
   &__image {
     height: 33px;
     object-fit: contain;
+    border: 1px solid transparent;
+    background-color: transparent;
+    border-radius: 10px;
+    transition: $transition-time;
+
+    &:hover {
+      transform: scale(1.1);
+      background-color: $color-logo-hover;
+    }
   }
 }
