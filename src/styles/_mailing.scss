@@ -1,0 +1,56 @@
+@import "utils/vars";
+
+.mailing {
+  padding: 0 210px;
+  display: flex;
+  justify-content: space-between;
+
+  &__title-container {
+    height: 144px;
+    align-self: center;
+  }
+
+  &__title {
+    color: white;
+    white-space: pre-line;
+    line-height: 1.25;
+  }
+
+  &__feedback {
+    height: 100px;
+    align-self: center;
+    position: relative;
+  }
+
+  &__button {
+    height: 56px;
+    width: 245px;
+    border-radius: 28px;
+
+    display: flex;
+    align-items: center;
+
+    position: absolute;
+    right: 0;
+
+    &--white {
+      background-color: white;
+      color: $regular-text-color;
+      font-weight: 600;
+    }
+  }
+
+  &__button-icon {
+    padding: 0 17px;
+  }
+
+  &__text {
+    padding-top: 75px;
+    color: #dfe0eb;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: #fed385;
+  }
+}

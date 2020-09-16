@@ -10,6 +10,11 @@
   }
 
   &__people {
-    margin: 0 auto;
+    margin: 0 auto 150px;
+  }
+
+  &__mailing {
+    height: 323px;
+    background-color: $button-color;
   }
 }
