@@ -1,7 +1,7 @@
 .portfolio {
   background-color: #fff9ea;
   margin-top: 100px;
-  height: 895px;
+  height: 805px;
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -29,5 +29,16 @@
     font-size: 16px;
     border-radius: 100px;
     border: 0;
+    transition: all 700ms;
+
+    &:hover {
+      background-color: white;
+      color: black;
+      box-shadow: 0 0 3px 3px  #3751ff;
+    }
+  }
+
+  &__img {
+    max-width: 1350px;
   }
 }

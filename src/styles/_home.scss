@@ -1,5 +1,5 @@
 .home {
-  width: 1600px;
+  width: 100%;
   position: relative;
   height: 878px;
   text-align: center;
@@ -27,22 +27,80 @@
 
   &__button {
     text-align: center;
+
     &--buy {
+      align-self: center;
       background-color: #3751ff;
       color: white;
       border-radius: 25px;
-      padding: 15px 35px;
+      width: 150px;
+      height: 50px;
       margin-right: 40px;
+      border: 0;
+      transition: all 700ms;
+
+      &:hover {
+        background-color: white;
+        color: black;
+        box-shadow: 0 0 3px 3px  #3751ff;
+      }
     }
 
     &--see {
+      align-self: center;
+
       background-color: #fff;
       border-radius: 25px;
-      padding: 15px 35px;
+      width: 150px;
+      height: 50px;
+      border: 0;
+      transition: all 700ms;
+
+      &:hover {
+        background-color: #3751ff;
+        color: white;
+        box-shadow: 0 0 3px 3px  #3751ff;
+      }
     }
   }
 
   &__img {
     margin-top: 130px;
+    
+    &--size {
+      width: 950px;
+    }
+  }
+}
+
+@media screen and (max-width: $small-screen-breakpoint) {
+  .home {
+    height: 100%;
+    
+    &__title {
+      margin-top: 60px;
+
+      &--head {
+        font-size: 31px;
+        height: 60px;
+      }
+    }
+
+    &__button {
+      display: flex;
+      flex-direction: column;
+      
+      &--buy {
+        margin: 10px 0;
+      }
+    }
+
+    &__img {
+      margin-top: 80px;
+      
+      &--size {
+        width: 100%;
+      }
+    }
   }
 }

@@ -23,8 +23,25 @@
     padding: 5px 15px;
     margin-left: 20px;
     border: 2px solid $color-button;
-    border-radius: 15px;
+    border-radius: 100px;
     background-color: $color-button;
     color: white;
+    transition: box-shadow 700ms;
+
+    &:hover {
+      box-shadow: 0 0 3px 3px blue;
+    }
   }
+}
+
+@media screen and (max-width: $small-screen-breakpoint) {
+  
+  .header {
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    text-align: center;
+
+  }
+
 }

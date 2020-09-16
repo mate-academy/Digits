@@ -49,10 +49,14 @@
     }
 
     &--second {
+
       display: flex;
       width: 583px;
       justify-content: space-around;
       margin-right: 80px;
+      color: #455880;
+      font-size: 14px;
+      line-height: 27px;
     }
   }
 }

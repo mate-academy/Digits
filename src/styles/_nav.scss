@@ -3,6 +3,35 @@
   
   &__item {
     font-size: 16px;
+    width: 100px;
+
+    &--active::after {
+      content: "";
+      position: relative;
+      border: solid #1e266d;
+      border-width: 0 3px 3px 0;
+      border-radius: 2px;
+      display: inline-block;
+      left: 7px;
+      bottom: 2px;
+      padding: 3px;
+      transform: rotate(45deg);
+    }
+
+    &:hover {
+      &::after {
+        content: "";
+        position: relative;
+        border: solid #1e266d;
+        border-width: 3px 0 0 3px;
+        border-radius: 2px;
+        display: inline-block;
+        left: 7px;
+        bottom: 2px;
+        padding: 3px;
+        transform: rotate(45deg);
+      }
+    }
   }
 
   &__list {
@@ -11,5 +40,22 @@
     margin: 0;
     list-style: none;
     line-height: 80px;
+    
+  }
+}
+
+@media screen and (max-width: $small-screen-breakpoint) {
+  .nav {
+    width: 100%;
+    
+    &__item {
+      height: 53px;
+    }
+    
+    &__list {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
   }
 }
