@@ -10,6 +10,24 @@
 
   &__link {
     color: $color-text-hard;
+
+    @include hover(color, $color-text-hover);
+  }
+
+  &__item:nth-child(3) {
+    &::after {
+      content: "";
+      border: solid #1e266d;
+      border-width: 0 3px 3px 0;
+      border-radius: 2px;
+      display: inline-block;
+      position: relative;
+      left: 110%;
+      bottom: 50%;
+      padding: 3px;
+      transform: rotate(45deg);
+      -webkit-transform: rotate(45deg);
+    }
   }
 }
 

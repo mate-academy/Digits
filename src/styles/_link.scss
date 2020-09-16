@@ -2,4 +2,7 @@
   color: #fff;
   background-color: #3751ff;
   border-radius: 100px;
+
+  @include hover(color, $color-text-hover);
+
 }

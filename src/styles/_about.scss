@@ -1,0 +1,65 @@
+.about {
+  display: flex;
+  flex-direction: column;
+
+  &__header {
+    height: 120px;
+    margin-top: 150px;
+    text-align: center;
+    font-size: 48px;
+    line-height: 1.2;
+  }
+
+  &__content {
+    display: flex;
+    margin-bottom: 40px;
+  }
+
+  &__block {
+    height: 810px;
+    flex-basis: 50%;
+
+    &:last-child {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+
+  &__image {
+    display: block;
+    max-width: 100%;
+    position: relative;
+    top: -18%;
+  }
+
+  &__item {
+    position: relative;
+    width: 405px;
+    height: 190px;
+    margin: 15px auto;
+    padding-left: 100px;
+
+    &:first-child,
+    &:nth-child(2) {
+      border-bottom: 1px solid rgba(69, 88, 128, 0.2);
+    }
+  }
+
+  &__topic {
+    font-size: 22px;
+  }
+
+  &__text {
+    margin-top: 20px;
+    font-size: 18px;
+  }
+
+  &__figure {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 58px;
+    height: 58px;
+  }
+}

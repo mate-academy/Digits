@@ -1,0 +1,24 @@
+.logos {
+
+  &__top {
+    margin-top: 52px;
+    text-align: center;
+  }
+
+  &__text {
+    color: $color-text-hard;
+    opacity: 0.5;
+  }
+
+  &__bottom {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 50px;
+  }
+
+  &__image {
+    height: 33px;
+    object-fit: contain;
+  }
+}

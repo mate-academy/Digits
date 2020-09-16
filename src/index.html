@@ -9,23 +9,23 @@
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="images/favicon-32x32.png"
+      href="images/favicon/favicon-32x32.png"
     >
     <link
       rel="icon"
       type="image/png"
       sizes="16x16"
-      href="images/favicon-16x16.png"
+      href="images/favicon/favicon-16x16.png"
     >
   </head>
   <body class="page">
     <header class="header page__header">
       <div class="header__top">
-        <div class="header__logo">
-          <img src="images/logo.png" alt="digits logo">
-        </div>
-
         <nav class="nav header__nav">
+          <div class="header__logo">
+            <img src="images/logo.png" alt="digits logo">
+          </div>
+
           <ul class="nav__list">
             <li class="nav__item">
               <a href="#" class="nav__link">Homepages</a>
@@ -45,12 +45,14 @@
           </ul>
         </nav>
 
-        <div class="header__phone">
-          <a href="tel:+00 123 456 789" class="link">+00 123 456 789</a>
-        </div>
+        <div class="header__contacts">
+          <div class="header__phone">
+            <a href="tel:+00 123 456 789" class="link">+00 123 456 789</a>
+          </div>
 
-        <div class="header__action">
-          <a href="tel:+00 123 456 789" class="link">Contact Us</a>
+          <div class="header__action">
+            <a href="tel:+00 123 456 789" class="link">Contact Us</a>
+          </div>
         </div>
       </div>
 
@@ -64,15 +66,148 @@
         </p>
 
         <div class="header__links">
-          <a href="" class="link">Buy Digits</a>
-          <a href="" class="link">See the Features</a>
+          <a href="#" class="link">Buy Digits</a>
+          <a href="#" class="link">See the Features</a>
         </div>
       </div>
 
       <div class="header__bottom">
-        <img src="images/Header-Graphic-svg.svg" alt="">
+        <img
+          src="images/Header-Graphic-svg.svg"
+          class="header__image"
+          alt="header image"
+        >
       </div>
     </header>
+
+    <main>
+      <section class="page__container container">
+        <div class="logos">
+          <div class="logos__top">
+            <p class="logos__text">
+              Trusted by forward-thinking software teams around the world
+            </p>
+          </div>
+
+          <div class="logos__bottom">
+            <a href="#" class="logos__item">
+              <img
+                src="images/logos/logo-netflix.png"
+                class="logos__image"
+                alt="netflix logo"
+              >
+            </a>
+            <a href="#" class="logos__item">
+              <img
+                src="images/logos/logo-draw_kit.png"
+                class="logos__image"
+                alt="drawkit logo"
+              >
+            </a>
+            <a href="#" class="logos__item">
+              <img
+                src="images/logos/logo-figma.png"
+                class="logos__image"
+                alt="figma logo"
+              >
+            </a>
+            <a href="#" class="logos__item">
+              <img
+                src="images/logos/logo-cinemax.png"
+                class="logos__image"
+                alt="cinemax logo"
+              >
+            </a>
+            <a href="#" class="logos__item">
+              <img
+                src="images/logos/logo-stripe.png"
+                class="logos__image"
+                alt="stripe logo"
+              >
+            </a>
+            <a href="#" class="logos__item">
+              <img
+                src="images/logos/logo-google.png"
+                class="logos__image"
+                alt="google logo"
+              >
+            </a>
+            <a href="#" class="logos__item">
+              <img
+                src="images/logos/logo-disney.png"
+                class="logos__image"
+                alt="disney logo"
+              >
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="page__container container">
+        <div class="about">
+          <h2 class="about__header">
+            Whatever work you do,
+            <br>
+            we're able to help
+          </h2>
+
+          <div class="about__content">
+            <div class="about__block">
+              <img
+                src="images/about-image.png"
+                class="about__image"
+                alt="people image"
+              >
+            </div>
+
+            <div class="about__block">
+              <div class="about__item">
+                <h2 class="about__topic">
+                  Design and Assets
+                </h2>
+                <p class="about__text">
+                  Make your brand stand out with pixel-perfect design crafted to perfection.
+                </p>
+                <img
+                  src="images/mini-logo/Icon-figma.png"
+                  class="about__figure"
+                  alt=""
+                >
+              </div>
+
+              <div class="about__item">
+                <h2 class="about__topic">
+                  Easy Content
+                </h2>
+                <p class="about__text">
+                  Import your demos or build pages visually. Bonus: All images and illustrations included!
+                </p>
+                <img
+                  src="images/mini-logo/Icon-figure.png"
+                  class="about__figure"
+                  alt=""
+                >
+              </div>
+
+              <div class="about__item">
+                <h2 class="about__topic">
+                  Fast and Reliable
+                </h2>
+                <p class="about__text">
+                  No heavy-weight plugins. No builders. No unneccesary file loading. Pure WordPress.
+                </p>
+                <img
+                  src="images/mini-logo/Icon-lightning.png"
+                  class="about__figure"
+                  alt=""
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
 
     <script type="text/javascript" src="scripts/main.js"></script>
   </body>

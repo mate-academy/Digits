@@ -107,11 +107,6 @@ body {
   line-height: 1.5;
 }
 
-img {
-  display: block;
-  width: 100%;
-}
-
 ol,
 ul {
   list-style: none;
@@ -144,4 +139,14 @@ table {
 a {
   color: #000;
   text-decoration: none;
+}
+
+h2 {
+  font-family: "Halyard Display", sans-serif;
+  color: $color-text-hard;
+}
+
+p {
+  font-family: "Halyard Text", sans-serif;
+  color: $color-text-light;
 }

@@ -1,4 +1,10 @@
 .header {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  max-width: 1200px;
+  height: 1000px;
+  margin: 30px auto;
 
   &__top {
     /*  position: fixed;
@@ -6,8 +12,9 @@
     left: 50%;
     transform: translateX(-50%); */
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    @include container;
+    padding: 0 20px;
     height: 80px;
   }
 
@@ -18,8 +25,12 @@
   }
 
   &__nav {
-    margin-right: 200px;
+    display: flex;
     max-width: 600px;
+  }
+
+  &__contacts {
+    display: flex;
   }
 
   &__phone {
@@ -32,6 +43,8 @@
   }
 
   &__action {
+    width: 150px;
+
     .link {
       padding: 8px 16px;
     }
@@ -40,13 +53,11 @@
   &__center {
     @include container;
 
-    position: absolute;
-    top: 220px;
-    height: 270px;
     display: flex;
     flex-direction: column;
-    align-self: center;
-
+    height: 270px;
+    margin-top: 140px;
+    margin-bottom: 32px;
   }
 
   &__topic {
@@ -82,16 +93,20 @@
       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
       color: $color-text-light;
       background-color: #fff;
+
+      @include hover(color, $color-text-hover);
     }
   }
 
   &__bottom {
     position: relative;
-    bottom: -510px;
     margin: 0 auto;
     padding: 0 20px;
     max-width: 970px;
-    z-index: -1;
+  }
+
+  &__image {
+    width: 100%;
   }
 }
 
