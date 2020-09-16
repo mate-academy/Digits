@@ -1,0 +1,18 @@
+@import "utils/vars";
+
+.examples {
+
+  height: 261px;
+  width: 212px;
+
+  &__title {
+    margin-bottom: 20px;
+    font-weight: 600;
+  }
+
+  &__item {
+    text-decoration: none;
+    line-height: 35px;
+    color: $regular-text-color;
+  }
+}

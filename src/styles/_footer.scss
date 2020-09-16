@@ -1,0 +1,60 @@
+@import "utils/vars";
+
+.footer {
+  height: 660px;
+  display: flex;
+  justify-content: center;
+
+  &__top {
+    display: flex;
+    margin-top: 128px;
+    margin-bottom: 53px;
+    width: 1180px;
+    height: 337px;
+    border-bottom: 1px solid rgba(135, 146, 161, 0.08);
+  }
+
+  &__digits-logo {
+    height: 23px;
+    width: 67px;
+    margin-bottom: 32px;
+  }
+
+  &__digits-text {
+    color: $regular-text-color;
+    font-size: 18px;
+    line-height: 145%;
+    white-space: pre-line;
+    margin-right: 208px;
+  }
+
+  &__resources {
+    margin-left: 40px;
+  }
+
+  &__bottom {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__copyright {
+    font-size: 14px;
+    color: rgba(69, 88, 128, 0.5);
+  }
+
+  &__copyright-link {
+    text-decoration: none;
+    color: rgba(69, 88, 128, 0.5);
+  }
+
+  &__terms {
+    width: 255px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__terms-link {
+    text-decoration: none;
+    color: $regular-text-color;
+  }
+}

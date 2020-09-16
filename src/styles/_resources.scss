@@ -1,0 +1,27 @@
+@import "utils/vars";
+
+.resources {
+
+  &__title {
+    font-weight: 600;
+    margin-bottom: 31px;
+  }
+
+  &__logos {
+    display: flex;
+    justify-content: space-between;
+    width: 171px;
+    margin-bottom: 20px;
+  }
+
+  &__links {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__link {
+    text-decoration: none;
+    line-height: 35px;
+    color: $regular-text-color;
+  }
+}
