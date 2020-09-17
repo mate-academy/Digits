@@ -50,3 +50,16 @@
     }
   }
 }
+
+@media screen and (max-width: $small-screen-breakpoint) {
+  .cta {
+    flex-direction: column;
+    height: 450px;
+
+    &__title {
+      font-size: 36px;
+      margin-bottom: 0;
+      line-height: 40px;
+    }
+  }
+}

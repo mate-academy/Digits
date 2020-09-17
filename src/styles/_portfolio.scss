@@ -29,7 +29,10 @@
     font-size: 16px;
     border-radius: 100px;
     border: 0;
-    transition: all 700ms;
+    transition: background-color $transition-duration,
+      color $transition-duration,
+      box-shadow $transition-duration;
+    
 
     &:hover {
       background-color: white;
@@ -40,5 +43,26 @@
 
   &__img {
     max-width: 1350px;
+  }
+}
+
+@media screen and (max-width: $small-screen-breakpoint) {
+  .portfolio {
+    width: 100%;
+    flex-direction: column;
+    margin-top: 900px;
+    height: 405px;
+
+    &__title {
+      font-size: 36px;
+    }
+
+    &__text {
+      font-size: 16px;
+    }
+
+    &__img {
+      display: none;
+    }
   }
 }

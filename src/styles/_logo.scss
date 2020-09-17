@@ -15,3 +15,17 @@
   }
 
 }
+
+@media screen and (max-width: $small-screen-breakpoint) {
+  .logo {
+    width: 250px;
+    flex-wrap: wrap;
+    margin: 30px auto;
+
+    &__img {
+      width: 150px;
+      margin: 15px auto;
+      
+    }
+  }
+}

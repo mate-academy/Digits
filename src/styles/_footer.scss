@@ -1,6 +1,5 @@
 .footer {
   height: 660px;
-  // width: 1600px;
   display: flex;
   flex-direction: column;
 
@@ -57,6 +56,30 @@
       color: #455880;
       font-size: 14px;
       line-height: 27px;
+    }
+  }
+}
+
+@media screen and (max-width: $small-screen-breakpoint) {
+  .footer {
+    height: 990px;
+    text-align: center;
+
+    &__top {
+      flex-direction: column;
+    }
+
+    &__bottom {
+      flex-direction: column;
+      margin: 30px auto;
+
+      &--first {
+        margin: 0 auto;
+      }
+
+      &--second {
+        width: 100%;
+      }
     }
   }
 }
