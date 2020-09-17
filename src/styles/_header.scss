@@ -1,13 +1,18 @@
 .header {
   background: white;
   width: 100%;
-  display: flex;
-  justify-content: space-around;
   position: relative;
   height: 80px;
-  line-height: 80px;
   border-bottom: 2px solid #1e266d;
   flex-wrap: nowrap;
+
+  &__content {
+    width: 1100px;
+    display: flex;
+    justify-content: space-around;
+    line-height: 80px;
+    margin: 0 auto;
+  }
 
   &__logo {
     color: $color-title;
@@ -17,6 +22,15 @@
       color: #ff2e6a;
     }
     
+  }
+
+  &__contact {
+    color: #1e266d;
+    font-size: 16px;
+
+    &:hover {
+      border-bottom: 1px solid  #1e266d;
+    }
   }
 
   &__button {
@@ -35,13 +49,14 @@
 }
 
 @media screen and (max-width: $small-screen-breakpoint) {
-  
   .header {
-    display: flex;
-    flex-direction: column;
-    height: 400px;
+    height: 550px;
     text-align: center;
 
+    &__content {
+      flex-direction: column;
+      width: 100%;
+    }
   }
 
 }

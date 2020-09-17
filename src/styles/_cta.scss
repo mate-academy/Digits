@@ -1,11 +1,17 @@
 .cta {
-  display: flex;
-  text-align: center;
-  align-items: center;
-  justify-content: space-around;
   height: 323px;
   background-color: #3751ff;
   color: white;
+
+  &__content {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-around;
+    height: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
 
   &__title {
     text-align: left;
@@ -27,6 +33,7 @@
     line-height: 110%;
     text-align: end;
     padding-right: 25px;
+    transition: box-shadow $transition-duration;
 
     &--img {
       padding-right: 15px;
@@ -53,8 +60,12 @@
 
 @media screen and (max-width: $small-screen-breakpoint) {
   .cta {
-    flex-direction: column;
-    height: 450px;
+    height: 420px;
+
+    &__content {
+      flex-direction: column;
+      height: 450px;
+    }
 
     &__title {
       font-size: 36px;
