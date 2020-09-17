@@ -1,6 +1,6 @@
 .footer {
   width: 100%;
-  height: 660px;
+  height: 560px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -35,6 +35,9 @@
     margin-top: 4px;
     color: #455880;
     font-size: 18px;
+    transition: color $transition-duration * 2,
+      transform $transition-duration / 2,
+      text-shadow $transition-duration / 2;
 
     &:hover {
       color: rgb(0, 100, 147);
@@ -49,6 +52,7 @@
 
     &--img {
       margin-right: 15px;
+      transition: tranform 500ms, box-shadow 500ms;
 
       &:hover {
         transform: scale(2);
@@ -68,19 +72,32 @@
     }
 
     &--second {
-
       display: flex;
       width: 583px;
       justify-content: space-around;
       margin-right: 80px;
-      color: #455880;
-      font-size: 14px;
-      line-height: 27px;
+ 
     }
 
     &--club {
       color: rgba(69, 88, 128, 0.5);
       font-size: 14px;
+      line-height: 14px;
+    }
+
+    &--text {
+      color: #455880;
+      font-size: 14px;
+      line-height: 37px;
+      transition: color $transition-duration * 2,
+        transform $transition-duration / 2,
+        text-shadow $transition-duration / 2;
+
+      &:hover {
+        color: rgb(0, 100, 147);
+        transform: scale(1.2);
+        text-shadow: 1px 1px 7px rgba(0, 0, 0, 0.38);
+      }
     }
   }
 }

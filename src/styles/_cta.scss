@@ -60,11 +60,11 @@
 
 @media screen and (max-width: $small-screen-breakpoint) {
   .cta {
-    height: 420px;
+    height: 400px;
 
     &__content {
       flex-direction: column;
-      height: 450px;
+      height: 300px;
     }
 
     &__title {

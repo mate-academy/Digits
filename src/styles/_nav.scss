@@ -5,6 +5,10 @@
     font-size: 16px;
     width: 100px;
     color: #1e266d;
+    font-weight: 700;
+    transition: color $transition-duration / 2,
+      transform $transition-duration / 2,
+      text-shadow $transition-duration / 2;
 
     &--active::after {
       content: "";
@@ -20,18 +24,9 @@
     }
 
     &:hover {
-      &::after {
-        content: "";
-        position: relative;
-        border: solid #1e266d;
-        border-width: 3px 0 0 3px;
-        border-radius: 2px;
-        display: inline-block;
-        left: 7px;
-        bottom: 2px;
-        padding: 3px;
-        transform: rotate(45deg);
-      }
+      color: rgb(0, 100, 147);
+      transform: scale(1.2);
+      text-shadow: 1px 1px 7px rgba(0, 0, 0, 0.38);
     }
   }
 

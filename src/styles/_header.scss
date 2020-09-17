@@ -27,9 +27,15 @@
   &__contact {
     color: #1e266d;
     font-size: 16px;
+    transition: color $transition-duration / 2,
+      transform $transition-duration / 2,
+      text-shadow $transition-duration / 2;
 
     &:hover {
       border-bottom: 1px solid  #1e266d;
+      color: rgb(0, 100, 147);
+      transform: scale(1.2);
+      text-shadow: 1px 1px 7px rgba(0, 0, 0, 0.38);
     }
   }
 
@@ -50,7 +56,7 @@
 
 @media screen and (max-width: $small-screen-breakpoint) {
   .header {
-    height: 550px;
+    height: 570px;
     text-align: center;
 
     &__content {

@@ -1,9 +1,10 @@
 .testimonials {
+  height: 650px;
+  background-color: #fff;
   display: flex;
   flex-direction: column;
   text-align: center;
   align-items: center;
-  margin-bottom: 100px;
   
   &__title {
     margin-top: 130px;
@@ -12,5 +13,11 @@
     font-size: 48px;
     line-height: 60px;
     color: $color-title;
+  }
+}
+
+@media screen and (max-width: $small-screen-breakpoint) {
+  .testimonials {
+    height: 100%;
   }
 }
