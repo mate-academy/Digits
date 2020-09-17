@@ -8,6 +8,11 @@
   background-color: $button-color;
   color: white;
   cursor: pointer;
+  transition: box-shadow 0.4s;
+
+  &:hover {
+    box-shadow: 0 3px 7px 1px rgba(0,0,0,0.75);
+  }
 
   &__contact-us {
     text-decoration: none;

@@ -84,6 +84,11 @@
   &__copyright-link {
     text-decoration: none;
     color: rgba(69, 88, 128, 0.5);
+    transition: color 0.5s;
+
+    &:hover {
+      color: $hover-text-color;
+    }
   }
 
   &__terms {
@@ -95,5 +100,10 @@
   &__terms-link {
     text-decoration: none;
     color: $regular-text-color;
+    transition: color 0.5s;
+
+    &:hover {
+      color: $hover-text-color;
+    }
   }
 }

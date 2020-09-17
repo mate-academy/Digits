@@ -40,5 +40,10 @@
     left: calc(50% - 44px);
     text-decoration: none;
     color: $regular-text-color;
+    transition: color 0.3s;
+
+    &:hover {
+      color: $hover-text-color;
+    }
   }
 }

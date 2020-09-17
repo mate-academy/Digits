@@ -59,6 +59,10 @@
     position: absolute;
     right: 0;
 
+    &:hover {
+      box-shadow: 0 3px 8px 1px rgba(0, 0, 0, 0.75);
+    }
+
     &--white {
       background-color: white;
       color: $regular-text-color;
@@ -87,5 +91,10 @@
   &__link {
     text-decoration: none;
     color: #fed385;
+    transition: color 0.5s;
+
+    &:hover {
+      color: #ee85a3;
+    }
   }
 }

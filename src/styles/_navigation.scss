@@ -52,7 +52,7 @@
     display: flex;
     align-items: center;
 
-    @media (max-width: 1200px) { //youtube
+    @media (max-width: 1200px) { //to do: add hamburger menu
       display: none;
     }
   }
@@ -63,6 +63,8 @@
     color: $titles-text-color;
 
     &--active {
+      pointer-events: none;
+
       &::after {
         content: "";
         border: solid $titles-text-color;
@@ -76,6 +78,15 @@
         transform: rotate(45deg);
         -webkit-transform: rotate(45deg);
       }
+    }
+  }
+
+  &__link {
+    text-decoration: none;
+    transition: color 0.3s;
+
+    &:hover {
+      color: $hover-text-color;
     }
   }
 }

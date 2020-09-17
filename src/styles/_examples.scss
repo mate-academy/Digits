@@ -18,5 +18,10 @@
     text-decoration: none;
     line-height: 35px;
     color: $regular-text-color;
+    transition: color 0.5s;
+
+    &:hover {
+      color: $hover-text-color;
+    }
   }
 }

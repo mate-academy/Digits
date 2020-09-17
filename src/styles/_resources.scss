@@ -22,6 +22,14 @@
     }
   }
 
+  &__logo {
+    transition: transform 0.5s;
+
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+
   &__links {
     display: flex;
     flex-direction: column;
@@ -31,5 +39,10 @@
     text-decoration: none;
     line-height: 35px;
     color: $regular-text-color;
+    transition: color 0.5s;
+
+    &:hover {
+      color: $hover-text-color;
+    }
   }
 }
