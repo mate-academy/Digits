@@ -6,11 +6,19 @@
   }
 
   &__whatever {
-    margin-bottom: 150px;
+    margin: 0 auto 150px;
   }
 
   &__people {
     margin: 0 auto 150px;
+    
+    @media screen and (max-width: 1200px) {
+      margin-bottom: 600px;
+    }
+
+    @media screen and (max-width: 800px) {
+      margin-bottom: 1150px;
+    }
   }
 
   &__mailing {

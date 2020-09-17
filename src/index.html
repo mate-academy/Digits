@@ -15,16 +15,22 @@
 
     <!------------------Header------------------>
     <header class="header page__header">
-      <div class="logo header__logo"></div>
+
 
       <nav class="navigation header__navigation">
-
-        <input
+        <div class="logo navigation__logo"></div>
+        <!-- <input
           class="navigation__toggler"
           type="checkbox"
           id="nav-toggler"
-        >
-        <label class="navigation__toggler-label" for="nav-toggler"></label>
+        > -->
+        <!-- <label class="navigation__toggler-label" for="nav-toggler"> -->
+        <!-- <img
+          class="navigation__toggler-icon"
+          src="/images/burger.png"
+          alt="Hamburger menu icon"
+        > -->
+        <!-- </label> -->
 
         <ul class="navigation__list">
           <li class="navigation__item"><a class="navigation__link">Homepages</a></li>
@@ -33,12 +39,14 @@
           <li class="navigation__item"><a class="navigation__link">Pricing</a></li>
           <li class="navigation__item"><a class="navigation__link">Blog</a></li>
         </ul>
+
+        <div class="header__feedback">
+          <a class="header__phone" href="tel:+00 123 456 789">+00 123 456 789</a>
+          <button class="button header__button"><a class="button__contact-us" href="tel:+00 123 456 789">Contact Us</a></button>
+        </div>
       </nav>
 
-      <div class="header__feedback">
-        <a class="header__phone" href="tel:+00 123 456 789">+00 123 456 789</a>
-        <button class="button header__button"><a class="button__contact-us" href="tel:+00 123 456 789">Contact Us</a></button>
-      </div>
+
 
     </header>
     <!------------------Main------------------>
@@ -48,12 +56,10 @@
         <div class="good-design section__good-design">
 
           <div class="good-design__top">
-            <div class="good-design__text">
-              <h1 class="good-design__title">Good design meets
-                great user experience
-              </h1>
-              <p class="good-design__paragraph">For everyone, from beginners to experts</p>
-            </div>
+            <h1 class="good-design__title">Good design meets
+              great user experience
+            </h1>
+            <p class="good-design__paragraph">For everyone, from beginners to experts</p>
 
             <div class="good-design__buttons">
               <button class="button good-design__button">Buy Digits</button>
@@ -65,13 +71,41 @@
           <div class="good-design__bottom">
             <p class="good-design__bottom-text">Trusted by forward-thinking software teams around the world</p>
             <div class="partners-logos good-design__partners-logos">
-              <div class="partners-logos__netflix"></div>
-              <div class="partners-logos__drawkit"></div>
-              <div class="partners-logos__figma"></div>
-              <div class="partners-logos__cinemax"></div>
-              <div class="partners-logos__stripe"></div>
-              <div class="partners-logos__google"></div>
-              <div class="partners-logos__disney"></div>
+              <img
+                class="partners-logos__logo"
+                src="/images/logos/netflix.svg"
+                alt="Netflix logo"
+              >
+              <img
+                class="partners-logos__logo"
+                src="/images/logos/drawkit.svg"
+                alt="Drawkit logo"
+              >
+              <img
+                class="partners-logos__logo"
+                src="/images/logos/figma.svg"
+                alt="Figma logo"
+              >
+              <img
+                class="partners-logos__logo"
+                src="/images/logos/cinemax.svg"
+                alt="Cinemax logo"
+              >
+              <img
+                class="partners-logos__logo"
+                src="/images/logos/stripe.svg"
+                alt="Striple logo"
+              >
+              <img
+                class="partners-logos__logo"
+                src="/images/logos/google.svg"
+                alt="Google logo"
+              >
+              <img
+                class="partners-logos__logo"
+                src="/images/logos/disney.svg"
+                alt="Disney logo"
+              >
             </div>
           </div>
         </div>
@@ -159,7 +193,10 @@
           <div class="simplicity__button-box">
             <button class="button simplicity__button">Buy Digits</button>
           </div>
-          <div class="simplicity__collage"></div>
+          <img
+          class="simplicity__collage"
+          src="/images/simplicity-collage.png"
+          alt="Collage with landing pages">
         </div>
       </section>
 
@@ -222,29 +259,31 @@
         </div>
       </section>
 
-      <!------------------People block------------------>
+      <!------------------Mailing block------------------>
       <section class="section">
 
         <div class="mailing section__mailing">
-          <div class="mailing__title-container">
-            <h2 class="mailing__title">Ready to launch
-              your next website?
-            </h2>
-          </div>
+          <div class="mailing__container">
+            <div class="mailing__title-container">
+              <h2 class="mailing__title">Ready to launch
+                your next website?
+              </h2>
+            </div>
 
-          <div class="mailing__feedback">
-            <button class="button mailing__button mailing__button--white">
-              <img
-                class="mailing__button-icon"
-                src="/images/mail-icon.svg"
-                alt="Sending email icon"
-              >
-                Get in touch now
-            </button>
-            <p class="mailing__text">Or, take a peek inside our
-              <a class="mailing__link" href="#">design studio</a>
-            </p>
+            <div class="mailing__feedback">
+              <button class="button mailing__button mailing__button--white">
+                <img
+                  class="mailing__button-icon"
+                  src="/images/mail-icon.svg"
+                  alt="Sending email icon"
+                >
+                  Get in touch now
+              </button>
+              <p class="mailing__text">Or, take a peek inside our
+                <a class="mailing__link" href="#">design studio</a>
+              </p>
 
+            </div>
           </div>
         </div>
 
@@ -369,14 +408,16 @@
         </div>
 
         <div class="footer__bottom">
-          <div class="footer__copyright">
-            <p>Copyright © 2020 <a  class="footer__copyright-link" href="#">tempy.club</a></p>
-          </div>
+          <div class="footer__bottom-container">
+            <div class="footer__copyright">
+              <p>Copyright © 2020 <a  class="footer__copyright-link" href="#">tempy.club</a></p>
+            </div>
 
-          <div class="footer__terms">
-            <a class="footer__terms-link" href="#">Privacy Policy</a>
-            <a class="footer__terms-link" href="#">Terms of Use</a>
-            <a class="footer__terms-link" href="#">GDPR</a>
+            <div class="footer__terms">
+              <a class="footer__terms-link" href="#">Privacy Policy</a>
+              <a class="footer__terms-link" href="#">Terms of Use</a>
+              <a class="footer__terms-link" href="#">GDPR</a>
+            </div>
           </div>
         </div>
       </div>

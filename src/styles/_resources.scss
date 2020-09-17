@@ -5,6 +5,10 @@
   &__title {
     font-weight: 600;
     margin-bottom: 31px;
+
+    @media screen and (max-width: 710px) {
+      margin-bottom: 15px;
+    }
   }
 
   &__logos {
@@ -12,6 +16,10 @@
     justify-content: space-between;
     width: 171px;
     margin-bottom: 20px;
+
+    @media screen and (max-width: 710px) {
+      margin-bottom: 10px;
+    }
   }
 
   &__links {

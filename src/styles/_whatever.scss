@@ -1,12 +1,16 @@
 @import "utils/vars";
 
 .whatever {
-  padding: 0 210px;
+  // max-width: 1600px;
 
   &__title {
     text-align: center;
     white-space: pre-line;
     line-height: 1;
+
+    @media (max-width: 600px) {
+      font-size: 30px;
+    }
   }
 
   &__blocks {
@@ -16,9 +20,27 @@
 
   &__collage {
     margin-right: 168px;
+
+    @media (max-width: 1200px) {
+      transform: scale(0.7);
+      margin-right: 50px;
+    }
+
+    @media (max-width: 900px) {
+      display: none;
+    }
   }
 
   &__cards {
     margin-top: 122px;
+
+    @media (max-width: 1200px) {
+      transform: scale(0.9);
+    }
+
+    @media (max-width: 600px) {
+      transform: scale(0.75);
+      margin-top: 50px;
+    }
   }
 }

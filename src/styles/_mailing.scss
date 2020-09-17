@@ -1,25 +1,52 @@
 @import "utils/vars";
 
 .mailing {
-  padding: 0 210px;
+
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+
+  &__container {
+    width: 1180px;
+    display: flex;
+    justify-content: space-between;
+
+    @media screen and (max-width: 1200px) {
+      padding: 0 80px;
+    }
+
+    @media screen and (max-width: 900px) {
+      margin-top: 30px;
+      flex-direction: column;
+      justify-content: start;
+      text-align: center;
+    }
+  }
 
   &__title-container {
+    
     height: 144px;
     align-self: center;
+
+    @media (max-width: 600px) {
+      height: 120px;
+    }
   }
 
   &__title {
     color: white;
     white-space: pre-line;
     line-height: 1.25;
+
+    @media (max-width: 600px) {
+      font-size: 32px;
+    }
   }
 
   &__feedback {
     height: 100px;
     align-self: center;
     position: relative;
+    align-items: flex-end;
   }
 
   &__button {
@@ -29,7 +56,6 @@
 
     display: flex;
     align-items: center;
-
     position: absolute;
     right: 0;
 
@@ -37,6 +63,11 @@
       background-color: white;
       color: $regular-text-color;
       font-weight: 600;
+    }
+
+    @media (max-width: 600px) {
+      transform: scale(0.9);
+      position: relative;
     }
   }
 
@@ -47,6 +78,10 @@
   &__text {
     padding-top: 75px;
     color: #dfe0eb;
+
+    @media (max-width: 600px) {
+      padding-top: 15px;
+    }
   }
 
   &__link {

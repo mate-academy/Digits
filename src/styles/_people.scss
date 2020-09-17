@@ -1,7 +1,7 @@
 @import "utils/vars";
 
 .people {
-  padding: 0 210px;
+  // padding: 0 210px;
 
   height: 583px;
 
@@ -10,6 +10,10 @@
     margin-top: 232px;
     margin-bottom: 56px;
     line-height: 1;
+
+    @media (max-width: 800px) {
+      font-size: 30px;
+    }
   }
 
   &__reviews {

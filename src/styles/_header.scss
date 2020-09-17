@@ -1,54 +1,31 @@
 @import "utils/vars";
 
 .header {
-  padding: 0 calc(100% / 10);
+  max-width: 1180px;
   height: 82px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   position: relative;
 
   &__feedback {
     display: flex;
+    align-items: center;
   }
 
   &__phone {
     margin-right: 35px;
+    margin-left: 140px;
     font-size: 16px;
     color: $titles-text-color;
     white-space: nowrap;
     display: flex;
     align-items: center;
     text-decoration: none;
+
+    @media (max-width: 1200px) {
+      display: none;
+    }
   }
+
 }
-
-// @media screen and (max-width: 1200px) {
-
-//   .header {
-//     height: 82px;
-
-//     align-items: center;
-//     justify-content: space-between;
-//     position: relative;
-//   }
-// }
-
-// .heading {
-//   width: 220px;
-//   text-align: center;
-//   font-size: 30px;
-
-//   &::before,
-//   &::after {
-//     content: "";
-
-//     position: absolute;
-//     top: calc(100% + 5px);
-//     display: block;
-
-//     height: 2px;
-//     width: calc(50% - 20px);
-
-//   }
-// }

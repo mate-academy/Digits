@@ -2,8 +2,6 @@
 
 .simplicity {
   background-color: #fff9ea;
-  padding: 0 210px;
-  height: 1000px;
   position: relative;
 
   &__title {
@@ -11,6 +9,10 @@
     padding-top: 140px;
     margin-bottom: 40px;
     line-height: 1;
+
+    @media (max-width: 700px) {
+      font-size: 30px;
+    }
   }
 
   &__paragraph {
@@ -19,6 +21,10 @@
     color: $regular-text-color;
     font-size: 21px;
     margin-bottom: 40px;
+
+    @media (max-width: 700px) {
+      font-size: 12px;
+    }
   }
 
   &__button-box {
@@ -33,13 +39,15 @@
   }
 
   &__collage {
-    background-image: url("/images/simplicity-collage.png");
-    background-size: cover;
+    // background-image: url("/images/simplicity-collage.png");
+    // background-size: cover;
     // background-position: center;
-    height: 540px;
+    // height: 540px;
     width: 100%;
-    position: absolute;
-    right: 0;
-    bottom: 0;
+    // position: absolute;
+    // right: 0;
+    // bottom: 0;
+    object-fit: cover;
+    object-position: center;
   }
 }

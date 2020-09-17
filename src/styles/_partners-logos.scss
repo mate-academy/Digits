@@ -3,68 +3,21 @@
 .partners-logos {
   display: flex;
   justify-content: space-between;
-  padding: 0 210px;
+  max-width: 1180px;
+  flex-wrap: wrap;
+  margin: 0 auto;
 
-  &__netflix {
-    background-image: url("/images/logos/netflix.svg");
-    height: 34px;
-    width: 110px;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
+  @media (max-width: 1000px) {
+    justify-content: center;
   }
 
-  &__drawkit {
-    background-image: url("/images/logos/drawkit.svg");
-    height: 33px;
-    width: 95px;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-  }
+  &__logo {
+    @media (max-width: 1000px) {
+      margin: 0 25px 15px;
+    }
 
-  &__figma {
-    background-image: url("/images/logos/figma.svg");
-    height: 34px;
-    width: 80px;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-
-  &__cinemax {
-    background-image: url("/images/logos/cinemax.svg");
-    height: 33px;
-    width: 174px;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-
-  &__stripe {
-    background-image: url("/images/logos/stripe.svg");
-    height: 33px;
-    width: 115px;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-
-  &__google {
-    background-image: url("/images/logos/google.svg");
-    height: 34px;
-    width: 102px;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-
-  &__disney {
-    background-image: url("/images/logos/disney.svg");
-    height: 34px;
-    width: 72px;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
+    @media (max-width: 450px) {
+      margin: 0 10px 15px;
+    }
   }
 }
