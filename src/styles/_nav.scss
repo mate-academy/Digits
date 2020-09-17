@@ -23,9 +23,6 @@
       margin-right: 20px;
     }
 
-    &__link {
-      font-size: 14px;
-    }
   }
 }
 
@@ -36,7 +33,11 @@
     }
 
     &__link {
-      font-size: 12px;
+      font-size: 14px;
+    }
+
+    &__list {
+      margin-top: 10px;
     }
   }
 }

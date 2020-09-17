@@ -92,12 +92,12 @@
     margin: 30px auto 0;
 
     .link:first-child {
-      padding: 8px 18px;
+      padding: 6px 16px;
       margin-right: 22px;
     }
 
     .link:last-child {
-      padding: 8px 28px;
+      padding: 6px 24px;
       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
       color: $color-text-light;
       background-color: #fff;
@@ -124,23 +124,33 @@
     &__logo {
       width: 70px;
       height: 26px;
-      margin-right: 40px;
+      margin-right: 20px;
     }
 
     &__phone {
-      margin-right: 15px;
+      margin-right: 10px;
 
       .link {
-        font-size: 14px;
+        font-size: 15px;
       }
     }
 
     &__action {
-      width: 120px;
+      width: 110px;
 
       .link {
         padding: 6px 12px;
-        font-size: 14px;
+        font-size: 15px;
+      }
+    }
+
+    &__topic {
+      font-size: 32px;
+    }
+
+    &__links {
+      .link {
+        font-size: 15px;
       }
     }
 
@@ -156,7 +166,7 @@
     &__logo,
     &__nav,
     &__phone {
-      margin-right: 10px;
+      margin-right: 8px;
     }
 
     &__nav {
@@ -168,21 +178,32 @@
     }
 
     &__contacts {
-      padding-top: 40px;
+      padding-top: 20px;
     }
 
     &__phone .link {
-      font-size: 12px;
+      font-size: 14px;
     }
     
+    &__action {
+      .link {
+        font-size: 14px;
+      }
+    }
 
     &__topic {
-      font-size: 32px;
+      font-size: 30px;
       max-width: 300px;
     }
 
+    &__links {
+      .link {
+        font-size: 14px;
+      }
+    }
+
     &__text {
-      font-size: 12px;
+      font-size: 14px;
     }
   }
 }
