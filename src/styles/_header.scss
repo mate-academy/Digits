@@ -3,8 +3,7 @@
   width: 100%;
   position: relative;
   height: 80px;
-  border-bottom: 2px solid #1e266d;
-  flex-wrap: nowrap;
+  border-bottom: 2px solid $color-title;
 
   &__content {
     width: 1100px;
@@ -25,14 +24,14 @@
   }
 
   &__contact {
-    color: #1e266d;
+    color: $color-title;
     font-size: 16px;
     transition: color $transition-duration / 2,
       transform $transition-duration / 2,
       text-shadow $transition-duration / 2;
 
     &:hover {
-      border-bottom: 1px solid  #1e266d;
+      border-bottom: 1px solid  $color-title;
       color: rgb(0, 100, 147);
       transform: scale(1.2);
       text-shadow: 1px 1px 7px rgba(0, 0, 0, 0.38);

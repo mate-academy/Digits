@@ -4,7 +4,7 @@
   &__item {
     font-size: 16px;
     width: 100px;
-    color: #1e266d;
+    color: $color-title;
     font-weight: 700;
     transition: color $transition-duration / 2,
       transform $transition-duration / 2,
@@ -13,7 +13,7 @@
     &--active::after {
       content: "";
       position: relative;
-      border: solid #1e266d;
+      border: solid $color-title;
       border-width: 0 3px 3px 0;
       border-radius: 2px;
       display: inline-block;

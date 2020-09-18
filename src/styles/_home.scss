@@ -30,20 +30,23 @@
 
     &--buy {
       align-self: center;
-      background-color: #3751ff;
+      background-color: $color-button;
       color: white;
       border-radius: 25px;
       width: 150px;
       height: 50px;
       margin-right: 40px;
       border: 0;
-      transition: all 700ms;
       cursor: pointer;
+      transition: background-color $transition-duration,
+        color $transition-duration,
+        box-shadow  $transition-duration;
+      
 
       &:hover {
         background-color: white;
         color: black;
-        box-shadow: 0 0 3px 3px  #3751ff;
+        box-shadow: 0 0 3px 3px  $color-button;
       }
     }
 
@@ -55,13 +58,15 @@
       width: 150px;
       height: 50px;
       border: 0;
-      transition: all 700ms;
+      transition: background-color $transition-duration,
+        color $transition-duration,
+        box-shadow  $transition-duration;
       cursor: pointer;
 
       &:hover {
-        background-color: #3751ff;
+        background-color: $color-button;
         color: white;
-        box-shadow: 0 0 3px 3px  #3751ff;
+        box-shadow: 0 0 3px 3px  $color-button;
       }
     }
   }
