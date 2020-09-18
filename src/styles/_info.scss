@@ -45,6 +45,10 @@
     height: 600px;
     align-items: center;
 
+    &__size {
+      padding: 0 5px;
+    }
+
     &__logo {
       display: none;
     }

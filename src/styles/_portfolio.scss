@@ -31,6 +31,7 @@
     border-radius: 100px;
     border: 0;
     padding: 15px 0;
+    cursor: pointer;
     transition: background-color $transition-duration,
       color $transition-duration,
       box-shadow $transition-duration;
@@ -52,11 +53,13 @@
   .portfolio {
     width: 100%;
     flex-direction: column;
-    margin-top: 160px;
-    height: 405px;
+    margin-top: 230px;
+    height: 375px;
+    padding: 0 10px;
 
     &__title {
       font-size: 36px;
+      line-height: 40px;
     }
 
     &__text {

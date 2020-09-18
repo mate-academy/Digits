@@ -8,6 +8,7 @@
     width: 102px;
     height: 38px;
     transition: transform $transition-duration;
+    cursor: pointer;
 
     &:hover {
       transform: scale(1.2);

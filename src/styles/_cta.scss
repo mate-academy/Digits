@@ -33,6 +33,7 @@
     line-height: 110%;
     text-align: end;
     padding-right: 25px;
+    cursor: pointer;
     transition: box-shadow $transition-duration;
 
     &--img {
@@ -65,12 +66,13 @@
     &__content {
       flex-direction: column;
       height: 300px;
+      padding: 0 15px;
     }
 
     &__title {
-      font-size: 36px;
+      font-size: 32px;
       margin-bottom: 0;
-      line-height: 40px;
+      line-height: 30px;
     }
   }
 }
