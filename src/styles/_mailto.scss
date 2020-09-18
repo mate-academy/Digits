@@ -59,3 +59,19 @@
     }
   }
 }
+
+@media screen and (max-width: 1024px) {
+  .mailto {
+    &__container {
+      flex-direction: column;
+      
+      padding: 90px 40px;
+    }
+  }
+}
+
+/* @media screen and (max-width: 768px) {
+  .mailto {
+    
+  }
+} */
