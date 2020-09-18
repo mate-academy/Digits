@@ -3,32 +3,34 @@
 .good-design {
   &__top {
     height: 880px;
+    margin-bottom: 186px;
+
     background: linear-gradient(180deg, rgba(242, 249, 255, 0.12) 0%,
     #f2f9ff 100%);
-    margin-bottom: 186px;
+
     text-align: center;
 
-    @media (max-width: 1000px) {
+    @media screen and (max-width: 1000px) {
       margin-bottom: 60px;
     }
   }
 
   &__title {
-    // white-space: pre-line;
     margin-bottom: 27px;
     line-height: 1;
     padding-top: 146px;
 
-    @media (max-width: 600px) {
+    @media screen and (max-width: $fourth-break-point) {
       font-size: 30px;
     }
   }
 
   &__paragraph {
-    color: $regular-text-color;
     margin-bottom: 45px;
 
-    @media (max-width: 600px) {
+    color: $regular-text-color;
+
+    @media screen and (max-width: $fourth-break-point) {
       font-size: 12px;
     }
   }
@@ -37,51 +39,52 @@
     display: flex;
     justify-content: center;
 
-    @media (max-width: 600px) {
+    @media screen and (max-width: $fourth-break-point) {
       flex-direction: column;
       align-items: center;
     }
   }
 
   &__button {
-    margin: 0 11px;
     width: 148px;
     height: 50px;
+    margin: 0 11px 20px;
     border-radius: 25px;
-    margin-bottom: 20px;
 
     &--white {
       width: 200px;
+
       background-color: white;
-      color: $regular-text-color;
       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+      color: $regular-text-color;
     }
   }
 
   &__collage {
-    height: 620px;
+    position: absolute;
+    left: calc(50% - 450px);
+
     width: 1000px;
+    height: 620px;
+
     background-image: url("/images/graphic-header.svg");
     background-size: cover;
     background-position: center;
 
-    position: absolute;
-    left: calc(50% - 450px);
-
-    @media (max-width: 1000px) {
+    @media screen and (max-width: 1000px) {
       transform: scale(0.6);
       left: calc(50% - 500px);
     }
 
-    @media (max-width: 600px) {
+    @media screen and (max-width: $fourth-break-point) {
       transform: scale(0.3);
-      left: calc(50% - 500px);
     }
   }
 
   &__bottom-text {
-    text-align: center;
-    color: $regular-text-color;
     margin-bottom: 49px;
+    color: $regular-text-color;
+    text-align: center;
   }
 }

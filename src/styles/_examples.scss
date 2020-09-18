@@ -1,11 +1,10 @@
 @import "utils/vars";
 
 .examples {
-
-  height: 261px;
   width: 212px;
+  height: 261px;
 
-  @media screen and (max-width: 1200px) {
+  @media screen and (max-width: $first-break-point) {
     display: none;
   }
 
@@ -14,9 +13,10 @@
   }
 
   &__item {
+    color: $regular-text-color;
     text-decoration: none;
     line-height: 35px;
-    color: $regular-text-color;
+
     transition: color 0.5s;
 
     &:hover {

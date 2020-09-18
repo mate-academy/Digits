@@ -3,11 +3,12 @@
 .partners-logos {
   display: flex;
   justify-content: space-between;
-  max-width: 1180px;
   flex-wrap: wrap;
+
+  max-width: 1180px;
   margin: 0 auto;
 
-  @media (max-width: 1000px) {
+  @media screen and (max-width: 1000px) {
     justify-content: center;
   }
 
@@ -20,11 +21,11 @@
     }
   }
   &__logo {
-    @media (max-width: 1000px) {
+    @media screen and (max-width: 1000px) {
       margin: 0 25px 15px;
     }
 
-    @media (max-width: 450px) {
+    @media screen and (max-width: 450px) {
       margin: 0 10px 15px;
     }
   }

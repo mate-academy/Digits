@@ -4,12 +4,13 @@
   height: 583px;
 
   &__title {
-    text-align: center;
     margin-top: 232px;
     margin-bottom: 56px;
+
+    text-align: center;
     line-height: 1;
 
-    @media (max-width: 800px) {
+    @media screen and (max-width: $second-break-point) {
       font-size: 30px;
     }
   }

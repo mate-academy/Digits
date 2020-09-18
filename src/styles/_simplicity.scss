@@ -1,27 +1,32 @@
 @import "utils/vars";
 
 .simplicity {
-  background-color: #fff9ea;
   position: relative;
+
+  background-color: #fff9ea;
 
   &__title {
     text-align: center;
+
     padding-top: 140px;
     margin-bottom: 40px;
+
     line-height: 1;
 
-    @media (max-width: 700px) {
+    @media screen and (max-width: 700px) {
       font-size: 30px;
     }
   }
 
   &__paragraph {
     text-align: center;
-    color: $regular-text-color;
-    font-size: 21px;
+
     margin-bottom: 40px;
 
-    @media (max-width: 700px) {
+    font-size: 21px;
+    color: $regular-text-color;
+
+    @media screen and (max-width: 700px) {
       font-size: 12px;
     }
   }
@@ -32,6 +37,7 @@
   }
 
   &__button {
+
     width: 150px;
     height: 50px;
     border-radius: 25px;
@@ -39,6 +45,7 @@
 
   &__collage {
     width: 100%;
+
     object-fit: cover;
     object-position: center;
   }

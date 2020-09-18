@@ -1,12 +1,22 @@
 @import "utils/vars";
 
 .header {
-  max-width: 1180px;
-  height: 82px;
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
+
+  max-width: $first-break-point;
+  height: 82px;
+
+  @media screen and (max-width: $first-break-point) {
+    position: fixed;
+    z-index: 2;
+
+    width: 100vw;
+
+    background-color: white;
+  }
 
   &__feedback {
     display: flex;
@@ -14,21 +24,24 @@
   }
 
   &__phone {
-    margin-right: 35px;
-    margin-left: 140px;
-    font-size: 16px;
-    color: $titles-text-color;
-    white-space: nowrap;
     display: flex;
     align-items: center;
+    white-space: nowrap;
+
+    margin-right: 35px;
+    margin-left: 140px;
+
+    font-size: 16px;
+    color: $titles-text-color;
     text-decoration: none;
+
     transition: color 0.3s;
 
     &:hover {
       color: $hover-text-color;
     }
 
-    @media (max-width: 1200px) {
+    @media screen and (max-width: $first-break-point) {
       display: none;
     }
   }

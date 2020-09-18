@@ -12,17 +12,18 @@
   &__people {
     margin: 0 auto 150px;
     
-    @media screen and (max-width: 1200px) {
+    @media screen and (max-width: $first-break-point) {
       margin-bottom: 600px;
     }
 
-    @media screen and (max-width: 800px) {
+    @media screen and (max-width: $second-break-point) {
       margin-bottom: 1150px;
     }
   }
 
   &__mailing {
     height: 323px;
+
     background-color: $button-color;
   }
 }

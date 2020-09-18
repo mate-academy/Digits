@@ -1,94 +1,107 @@
 @import "utils/vars";
-@import "fonts";
 
 .navigation {
+  position: relative;
   display: flex;
   align-items: center;
-  position: relative;
-  // background-color: red;  // delete after all done
- 
-  ///////////////////////burger menu
-  &__toggler-label {
-    display: none;
-    padding: 20px;
-    color: black;
-    cursor: pointer;
-    position: absolute;
-    bottom: 0;
-    left: 50%;
 
-    @media (max-width: 1200px) {
+  &__toggler-label {
+    position: absolute;
+    bottom: 30;
+    left: calc(50% - 40px);
+    display: none;
+
+    padding: 20px;
+
+    color: black;
+
+    cursor: pointer;
+
+   
+    @media screen and (max-width: $first-break-point) {
       display: inline-block;
     }
 
     &::before {
-      content: "=";
+      content: "";
+
+      display: inline-block;
+
+      width: 20px;
+      height: 20px;
+
+      background-image: url("/images/burger.png");
+      background-position: center;
+      background-size: cover;
     }
   }
 
-  &__list {                         //my CSS, don't delete
+  &__list {
     display: flex;
     align-items: center;
 
-    ///////////////////////burger menu
-    @media (max-width: 1200px) {
-      flex-direction: column;
-      position: absolute;
-      top: 70px;
-      left: 50%;
-      transform: translateX(-30%);
-      
+    @media screen and (max-width: $first-break-point) {
+      display: none;
     }
-    /////////////////////^^burger menu^^
   }
 
   &__toggler {
     display: none;
 
-    @media (max-width: 1200px) {
+    @media screen and (max-width: $first-break-point) {
       &:checked ~ .navigation__toggler-label::before {
-        content: "X";
+        background-image: url("/images/x-icon.png");
       }
 
-      &:not(:checked) ~ .navigation__list {
-        display: none;
+      &:checked ~ .mobile-menu {
+        transform: translateY(0);
       }
     }
   }
-  ///////////////////^^burger menu^^
 
-  @media (max-width: 1200px) {
+  @media screen and (max-width: $first-break-point) {
     justify-content: space-between;
-    width: calc(100% - 35px);  /// 100% -95px ??
+
+    width: calc(100% - 65px);
   }
 
   &__logo {
     margin-right: 80px;
 
-    @media (max-width: 600px) {
+    @media screen and (max-width: $fourth-break-point) {
       margin-right: 10px;
     }
   }
   
   &__item {
     margin: 0 22px;
+
     font-size: 16px;
+
+    @media screen and (max-width: $first-break-point) {
+      margin-bottom: 70px;
+
+      font-size: 30px;
+    }
 
     &--active {
       pointer-events: none;
 
       &::after {
         content: "";
-        border: solid $titles-text-color;
-        border-width: 0 3px 3px 0;
-        border-radius: 2px;
-        display: inline-block;
+
         position: relative;
         left: 10px;
         bottom: 2px;
+        display: inline-block;
+
         padding: 3px;
+
+        border: solid $titles-text-color;
+        border-width: 0 3px 3px 0;
+        border-radius: 2px;
+
         transform: rotate(45deg);
-        -webkit-transform: rotate(45deg);
       }
     }
   }

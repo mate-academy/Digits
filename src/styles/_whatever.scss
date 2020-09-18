@@ -4,9 +4,10 @@
 
   &__title {
     text-align: center;
+
     line-height: 1;
 
-    @media (max-width: 600px) {
+    @media screen and (max-width: $fourth-break-point) {
       font-size: 30px;
     }
   }
@@ -19,12 +20,13 @@
   &__collage {
     margin-right: 168px;
 
-    @media (max-width: 1200px) {
-      transform: scale(0.7);
+    @media screen and (max-width: $first-break-point) {
       margin-right: 50px;
+
+      transform: scale(0.7);
     }
 
-    @media (max-width: 900px) {
+    @media screen and (max-width: 900px) {
       display: none;
     }
   }
@@ -32,13 +34,14 @@
   &__cards {
     margin-top: 122px;
 
-    @media (max-width: 1200px) {
+    @media screen and (max-width: $first-break-point) {
       transform: scale(0.9);
     }
 
-    @media (max-width: 600px) {
-      transform: scale(0.75);
+    @media screen and (max-width: $fourth-break-point) {
       margin-top: 50px;
+
+      transform: scale(0.75);
     }
   }
 }

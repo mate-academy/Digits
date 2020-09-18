@@ -5,11 +5,11 @@
   grid-template-columns: repeat(3, 373px);
   gap: 26px;
 
-  @media screen and (max-width: 1200px) {
+  @media screen and (max-width: $first-break-point) {
     grid-template-columns: repeat(2, 373px);
   }
 
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: $second-break-point) {
     grid-template-columns: repeat(1, 373px);
   }
 

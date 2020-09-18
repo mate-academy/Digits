@@ -2,6 +2,7 @@
 
 .card {
   display: flex;
+
   width: 412px;
   height: 177px;
 
@@ -11,8 +12,8 @@
   }
 
   &__icon {
-    height: 58px;
     width: 58px;
+    height: 58px;
     margin-right: 43px;
   }
   

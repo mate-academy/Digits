@@ -5,18 +5,23 @@
   height: 40px;
   border-style: none;
   border-radius: 20px;
+
   background-color: $button-color;
+
   color: white;
-  cursor: pointer;
+
   transition: box-shadow 0.4s;
+
+  cursor: pointer;
 
   &:hover {
     box-shadow: 0 3px 7px 1px rgba(0,0,0,0.75);
   }
 
   &__contact-us {
-    text-decoration: none;
     color: white;
+
+    text-decoration: none;
     line-height: 40px;
   }
 }
