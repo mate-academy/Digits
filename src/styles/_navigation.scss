@@ -4,11 +4,62 @@
 .navigation {
   display: flex;
   align-items: center;
+  position: relative;
+  // background-color: red;  // delete after all done
  
+  ///////////////////////burger menu
+  &__toggler-label {
+    display: none;
+    padding: 20px;
+    color: black;
+    cursor: pointer;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+
+    @media (max-width: 1200px) {
+      display: inline-block;
+    }
+
+    &::before {
+      content: "=";
+    }
+  }
+
+  &__list {                         //my CSS, don't delete
+    display: flex;
+    align-items: center;
+
+    ///////////////////////burger menu
+    @media (max-width: 1200px) {
+      flex-direction: column;
+      position: absolute;
+      top: 70px;
+      left: 50%;
+      transform: translateX(-30%);
+      
+    }
+    /////////////////////^^burger menu^^
+  }
+
+  &__toggler {
+    display: none;
+
+    @media (max-width: 1200px) {
+      &:checked ~ .navigation__toggler-label::before {
+        content: "X";
+      }
+
+      &:not(:checked) ~ .navigation__list {
+        display: none;
+      }
+    }
+  }
+  ///////////////////^^burger menu^^
 
   @media (max-width: 1200px) {
     justify-content: space-between;
-    width: calc(100% - 95px);
+    width: calc(100% - 35px);  /// 100% -95px ??
   }
 
   &__logo {
@@ -16,44 +67,6 @@
 
     @media (max-width: 600px) {
       margin-right: 10px;
-    }
-  }
-
-  /*------------------------------------------burger menu----*/
-
-  // &__toggler {
-  //   display: none;
-
-  // &:checked ~ .navigation__toggler-label::after {
-  //   content: "X";
-  // }
-  // }
-
-  // &__toggler-label {
-  //   display: none;
-  //   padding: 20px;
-
-  //   @media (max-width: 1200px) {
-  //     display: inline-block;
-  //     cursor: pointer;
-  //   }
-  // }
-
-  // &__toggler-icon {
-  //   height: 20px;
-  //   width: 20px;
-  /*------------------------------------------burger menu----*/
-  //   @media (min-width: 1201px) { //youtube
-  //     display: none;
-  //   }
-  // }
-
-  &__list {
-    display: flex;
-    align-items: center;
-
-    @media (max-width: 1200px) { //to do: add hamburger menu
-      display: none;
     }
   }
   
