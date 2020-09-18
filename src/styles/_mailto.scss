@@ -62,16 +62,46 @@
 
 @media screen and (max-width: 1024px) {
   .mailto {
-    &__container {
-      flex-direction: column;
-      
-      padding: 90px 40px;
+    &__header {
+      font-size: 42px;
     }
   }
 }
 
-/* @media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .mailto {
-    
+    &__container {
+      flex-direction: column;
+    }
+
+    &__header {
+      font-size: 36px;
+      margin-bottom: 50px;
+      text-align: -webkit-center;
+    }
+
+    &__form {
+      text-align: -webkit-center;
+    }
+
+    &__button {
+      font-size: 16px;
+    }
+
+    &__text {
+      font-size: 14px;
+    }
+  
+    &__link {
+      font-size: 14px;
+    }
   }
-} */
+}
+
+@media screen and (max-width: 480px) {
+  .mailto {
+    &__header {
+      font-size: 30px;
+    }
+  }
+}

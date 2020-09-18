@@ -17,7 +17,7 @@
   }
 
   &__logo {
-    width: 80px;
+    width: 87px;
     height: 30px;
     margin-right: 80px;
     padding: 2px;
@@ -122,7 +122,7 @@
   .header {
 
     &__logo {
-      width: 70px;
+      width: 80px;
       height: 26px;
       margin-right: 20px;
     }
@@ -170,15 +170,16 @@
     }
 
     &__nav {
-      flex-direction: column;
+      width: 100%;
+      justify-content: space-around;
     }
 
     &__logo {
-      width: 64px;
+      width: 76px;
     }
 
     &__contacts {
-      padding-top: 20px;
+      padding-top: 40px;
     }
 
     &__phone .link {
@@ -204,6 +205,14 @@
 
     &__text {
       font-size: 14px;
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .header {
+    &__nav {
+      flex-direction: column;
     }
   }
 }

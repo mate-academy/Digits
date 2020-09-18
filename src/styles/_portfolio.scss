@@ -1,6 +1,6 @@
 .portfolio {
   width: 100%;
-  height: 125vh;
+  height: 100vh;
   background-color: #fff9ea;
   background-image: url("../images/potfolio_background-image.png");
   background-repeat: no-repeat;
@@ -26,5 +26,42 @@
     margin: 40px auto 0;
     text-align: center;
   }
+}
 
+@media screen and (max-width: 1024px) {
+  .portfolio {
+    &__header {
+      font-size: 42px;
+    }
+
+    &__text {
+      font-size: 19px;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .portfolio {
+    &__header {
+      padding-top: 80px;
+      font-size: 36px;
+    }
+
+    &__text {
+      margin-top: 20px;
+      font-size: 16px;
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .portfolio {
+    &__header {
+      font-size: 30px;
+    }
+
+    &__text {
+      font-size: 12px;
+    }
+  }
 }
