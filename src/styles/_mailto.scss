@@ -1,0 +1,61 @@
+.mailto {
+  &__container {
+    @include container;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 90px 40px;
+  }
+
+  &__header {
+    font-size: 48px;
+    color: #fff;
+  }
+
+  &__form {
+    text-align: -webkit-right;
+  }
+
+  &__button {
+    position: relative;
+    display: block;
+    width: 245px;
+    padding: 13px 31px 13px 53px;
+    border-radius: 100px;
+    font-family: "Halyard Display", sans-serif;
+    font-size: 18px;
+    text-align: center;
+    line-height: 1.1;
+    background-color: #fff;
+    color: $color-text-light;
+    transition: transform 0.3s, color 0.3s;
+
+    &::before {
+      content: url("../images/mini-logo/icon-mailto.png");
+      position: absolute;
+      left: 25px;
+      top: 10px;
+    }
+
+    &:hover {
+      color: $color-text-hover;
+      transform: scale(1.1);
+    }
+  }
+
+  &__text {
+    margin-top: 20px;
+    color: #dfe0eb;
+  }
+
+  &__link {
+    color: #fed385;
+    transition: color 0.3s;
+
+    &:hover {
+      color: $color-text-hover;
+    }
+  }
+}
