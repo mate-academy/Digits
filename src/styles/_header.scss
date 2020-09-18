@@ -53,6 +53,15 @@
   }
 }
 
+@media screen and (max-width: $small-screen-breakpoint + 100) {
+  .header {
+    
+    &__content {
+      width: 95%;
+    }
+  }
+}
+
 @media screen and (max-width: $small-screen-breakpoint) {
   .header {
     height: 570px;
