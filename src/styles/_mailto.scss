@@ -101,7 +101,7 @@
 @media screen and (max-width: 480px) {
   .mailto {
     &__header {
-      font-size: 30px;
+      font-size: $header-text-min-media;
     }
   }
 }

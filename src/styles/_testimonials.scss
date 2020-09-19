@@ -74,7 +74,7 @@
 @media screen and (max-width: 480px) {
   .testimonials {
     &__header {
-      font-size: 30px;
+      font-size: $header-text-min-media;
     }
 
     &__text {

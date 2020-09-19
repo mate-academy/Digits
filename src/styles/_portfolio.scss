@@ -1,6 +1,6 @@
 .portfolio {
   width: 100%;
-  height: 100vh;
+  height: 1000px;
   background-color: #fff9ea;
   background-image: url("../images/potfolio_background-image.png");
   background-repeat: no-repeat;
@@ -30,6 +30,8 @@
 
 @media screen and (max-width: 1024px) {
   .portfolio {
+    height: 800px;
+
     &__header {
       font-size: 42px;
     }
@@ -42,6 +44,8 @@
 
 @media screen and (max-width: 768px) {
   .portfolio {
+    height: 700px;
+
     &__header {
       padding-top: 80px;
       font-size: 36px;
@@ -56,8 +60,10 @@
 
 @media screen and (max-width: 480px) {
   .portfolio {
+    height: 500px;
+
     &__header {
-      font-size: 30px;
+      font-size: $header-text-min-media;
     }
 
     &__text {
