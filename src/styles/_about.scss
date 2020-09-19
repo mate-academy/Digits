@@ -16,9 +16,9 @@
   }
 
   &__block {
+    width: 50%;
     height: 800px;
     margin: 30px 0;
-    flex-basis: 50%;
 
     &:last-child {
       display: flex;
@@ -81,7 +81,7 @@
     }
 
     &__block {
-      max-width: 500px;
+      width: 100%;
       height: auto;
       
       &:first-child {
@@ -114,11 +114,6 @@
     &__text {
       margin-top: 10px;
       font-size: 14px;
-    }
-
-    &__block {
-      max-width: 400px;
-      flex-basis: 0;
     }
 
   }
