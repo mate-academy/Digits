@@ -47,7 +47,7 @@
     justify-content: flex-end;
     margin-top: 77px;
     padding: 100px 0 53px;
-    border-top: 1px solid rgba(135, 146, 161, 0.08);
+    border-top: 1px solid rgba(135, 146, 161, 0.3);
     font-size: 18px;
 
     > :first-child {
@@ -101,12 +101,11 @@
 
 @media screen and (max-width: 768px) {
   .footer {
-
     &__top {
       grid-template-columns: repeat(2, 1fr);
       grid-template-rows: repeat(2 , 1fr);
       justify-content: center;
-      gap: 10px 0;
+      gap: 30px 30px;
     }
 
     &__logo {
@@ -115,6 +114,12 @@
 
     &__block {
       padding-left: 30px;
+      padding-bottom: 20px;
+    }
+
+    &__block:first-child,
+    &__block:nth-child(2) {
+      border-bottom: 1px solid rgba(135, 146, 161, 0.3);
     }
 
     &__topic {
