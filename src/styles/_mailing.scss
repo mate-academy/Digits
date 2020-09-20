@@ -8,10 +8,10 @@
     display: flex;
     justify-content: space-between;
 
-    width: 1180px;
+    width: 1200px;
 
     @media screen and (max-width: $first-break-point) {
-      padding: 0 80px;
+      padding: 0 40px;
     }
 
     @media screen and (max-width: 900px) {

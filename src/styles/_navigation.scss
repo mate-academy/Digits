@@ -18,7 +18,7 @@
     cursor: pointer;
 
    
-    @media screen and (max-width: $first-break-point) {
+    @media screen and (max-width: $header-break-point) {
       display: inline-block;
     }
 
@@ -40,7 +40,7 @@
     display: flex;
     align-items: center;
 
-    @media screen and (max-width: $first-break-point) {
+    @media screen and (max-width: $header-break-point) {
       display: none;
     }
   }
@@ -48,7 +48,7 @@
   &__toggler {
     display: none;
 
-    @media screen and (max-width: $first-break-point) {
+    @media screen and (max-width: $header-break-point) {
       &:checked ~ .navigation__toggler-label::before {
         background-image: url("/images/x-icon.png");
       }
@@ -59,7 +59,7 @@
     }
   }
 
-  @media screen and (max-width: $first-break-point) {
+  @media screen and (max-width: $header-break-point) {
     justify-content: space-between;
 
     width: calc(100% - 65px);
@@ -74,11 +74,11 @@
   }
   
   &__item {
-    margin: 0 22px;
+    margin: 0 21px;
 
     font-size: 16px;
 
-    @media screen and (max-width: $first-break-point) {
+    @media screen and (max-width: $header-break-point) {
       margin-bottom: 70px;
 
       font-size: 30px;

@@ -6,10 +6,10 @@
   justify-content: center;
   position: relative;
 
-  max-width: $first-break-point;
+  max-width: 1200px;
   height: 82px;
 
-  @media screen and (max-width: $first-break-point) {
+  @media screen and (max-width: $header-break-point) {
     position: fixed;
     z-index: 2;
 
@@ -41,7 +41,7 @@
       color: $hover-text-color;
     }
 
-    @media screen and (max-width: $first-break-point) {
+    @media screen and (max-width: $header-break-point) {
       display: none;
     }
   }

@@ -3,7 +3,7 @@
 .mobile-menu {
   display: none;
 
-  @media screen and (max-width: $first-break-point) {
+  @media screen and (max-width: $header-break-point) {
     position: fixed;
     top: 70px;
     left: 0;
