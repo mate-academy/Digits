@@ -30,7 +30,7 @@
     line-height: 1.1;
     background-color: #fff;
     color: $color-text-light;
-    transition: transform 0.3s, color 0.3s;
+    transition: transform $transition-time, color $transition-time;
 
     &::before {
       content: url("../images/mini-logo/icon-mailto.png");
@@ -52,7 +52,7 @@
 
   &__link {
     color: #fed385;
-    transition: color 0.3s;
+    transition: color $transition-time;
 
     &:hover {
       color: $color-text-hover;

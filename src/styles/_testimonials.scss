@@ -21,16 +21,23 @@
   &__card {
     padding: 30px;
     display: grid;
+    grid-template-rows: 3fr 1fr;
     justify-items: center;
 
     border: 1px solid rgba(69, 88, 128, 0.2);
     border-radius: 4px;
+
+    transition: box-shadow $transition-time;
+
+    &:hover {
+      box-shadow: 10px 10px 12px 1px rgba(37,79,107,1);
+    }
   }
 }
 
 @media screen and (max-width: 1024px) {
   .testimonials {
-    grid-template-columns: repeat(2, minmax(220px, 370px));
+    grid-template-columns: repeat(3, minmax(220px, 370px));
     grid-template-rows: 110px repeat(2, 460px);
     justify-content: space-evenly;
   
@@ -39,7 +46,7 @@
   
     &__header {
       grid-column-start: 1;
-      grid-column-end: 3;
+      grid-column-end: 4;
       
       font-size: 42px;
       line-height: 45px;

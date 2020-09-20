@@ -21,14 +21,15 @@
     height: 30px;
     margin-right: 80px;
     padding: 2px;
-    border: transparent;
+    /*     border: transparent;
     border-radius: 10px;
+    cursor: pointer;
     transition: $transition-time;
 
     &:hover {
       transform: scale(1.1);
       background-color: $color-logo-hover;
-    }
+    } */
   }
 
   &__nav {

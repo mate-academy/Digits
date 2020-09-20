@@ -28,6 +28,12 @@
   }
 }
 
+@media screen and (min-width: 1440px) {
+  .portfolio {
+    height: 100vh;
+  }
+}
+
 @media screen and (max-width: 1024px) {
   .portfolio {
     height: 800px;
@@ -47,7 +53,7 @@
     height: 700px;
 
     &__header {
-      padding-top: 80px;
+      padding: 80px 20px 0;
       font-size: 36px;
     }
 
@@ -63,7 +69,7 @@
     height: 500px;
 
     &__header {
-      padding: 60px 20px 0;
+      padding-top: 60px;
       font-size: $header-text-min-media;
     }
 
