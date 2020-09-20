@@ -7,6 +7,9 @@
 
   &__whatever {
     margin: 0 auto 150px;
+    @media screen and (max-width: $fourth-break-point) {
+      margin-bottom: 0;
+    }
   }
 
   &__people {
