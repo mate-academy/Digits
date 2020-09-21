@@ -11,11 +11,14 @@
   &__block {
     width: 373px;
     height: 367px;
+    padding: 5px 38px;
+
     border: 1px solid rgba(69, 88, 128, 0.2);
     border-radius: 4px;
-    padding: 5px 38px;
-    cursor: pointer;
+
     transition: transform $transition-duration;
+
+    cursor: pointer;
     
     &:hover {
       transform: translate(0, -20px);

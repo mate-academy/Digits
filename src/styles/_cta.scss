@@ -1,7 +1,9 @@
 .cta {
   height: 323px;
-  background-color: $color-button;
+
   color: white;
+
+  background-color: $color-button;
 
   &__content {
     display: flex;
@@ -14,44 +16,45 @@
   }
 
   &__title {
+    margin-bottom: 150px;
     text-align: left;
     white-space: pre-line;
+
     font-size: 48px;
     font-weight: 500;
     line-height: 60px;
-    margin-bottom: 150px;
   }
 
   &__button {
-    width: 245px;
-    height: 56px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-    border-radius: 100px;
+    padding: 20px 40px;
+
     color: #455880;
     font-size: 18px;
     font-weight: 500;
     line-height: 110%;
     text-align: end;
-    padding-right: 25px;
+
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    border-radius: 100px;
+
+    transition: box-shadow $transition-duration, color $transition-duration;
+
     cursor: pointer;
-    transition: box-shadow $transition-duration;
 
     &--img {
-      padding-right: 15px;
-    }
-    
-    &:hover > &--img {
-      animation-duration: 1s;
-      animation-name: slidein;
-      animation-iteration-count: infinite;
-      animation-direction: alternate;
+      padding-right: 25px;
     }
 
     &:hover {
-      box-shadow: 0 0 3px 2px mediumblue;
+      color: rgb(0, 100, 147);
+
+      box-shadow: 0 0 13px 2px mediumblue;
     }
 
     &--text {
+      margin-top: 30px;
+
       font-size: 16px;
       line-height: 125%;
       color: #dfe0eb;
@@ -70,8 +73,9 @@
     }
 
     &__title {
-      font-size: 32px;
       margin-bottom: 0;
+      
+      font-size: 32px;
       line-height: 30px;
     }
   }
