@@ -64,10 +64,8 @@
     width: 58px;
     height: 58px;
   }
-}
 
-@media screen and (max-width: 1024px) {
-  .about {
+  @media screen and (max-width: 1024px) {
     &__header {
       height: auto;
       margin-top: 100px;
@@ -92,12 +90,9 @@
     &__image {
       height: 580px;
     }
-
   }
-}
 
-@media screen and (max-width: 768px) {
-  .about {
+  @media screen and (max-width: 768px) {
     &__header {
       margin-top: 90px;
       font-size: 36px;
@@ -115,12 +110,9 @@
       margin-top: 10px;
       font-size: 14px;
     }
-
   }
-}
 
-@media screen and (max-width: 480px) {
-  .about {
+  @media screen and (max-width: 480px) {
     &__block {
       max-width: 360px;
     }

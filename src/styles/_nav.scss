@@ -15,31 +15,19 @@
     @include hover(color, $color-text-hover);
   }
 
-}
-
-@media screen and (max-width: 1024px) {
-  .nav {
+  @media screen and (max-width: 1024px) {
     &__item:not(:last-child) {
       margin-right: 20px;
     }
-
   }
-}
-
-@media screen and (max-width: 768px) {
-  .nav {
+  
+  @media screen and (max-width: 768px) {
     &__link {
       font-size: 14px;
     }
-
-    &__list {
-      margin-top: 10px;
-    }
   }
-}
-
-@media screen and (max-width: 480px) {
-  .nav {
+  
+  @media screen and (max-width: 480px) {
     &__item:not(:last-child) {
       margin-right: 10px;
     }
@@ -48,4 +36,5 @@
       margin-top: 30px;
     }
   }
+
 }

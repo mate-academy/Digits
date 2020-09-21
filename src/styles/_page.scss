@@ -13,18 +13,18 @@
   &__mailto {
     background-color: #3751ff;
   }
-}
 
-@media screen and (max-width: 1024px) {
-  .page__testimonials {
-    margin-top: 120px;
-    margin-bottom: 80px;
+  @media screen and (max-width: 1024px) {
+    &__testimonials {
+      margin-top: 120px;
+      margin-bottom: 80px;
+    }
   }
-}
 
-@media screen and (max-width: 768px) {
-  .page__testimonials {
-    margin-top: 80px;
-    margin-bottom: 60px;
+  @media screen and (max-width: 768px) {
+    &__testimonials {
+      margin-top: 80px;
+      margin-bottom: 60px;
+    }
   }
 }

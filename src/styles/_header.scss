@@ -5,10 +5,6 @@
   max-width: 1200px;
 
   &__top {
-    /*  position: fixed;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%); */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -20,15 +16,6 @@
     height: 30px;
     margin-right: 80px;
     padding: 2px;
-    /*     border: transparent;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: $transition-time;
-
-    &:hover {
-      transform: scale(1.1);
-      background-color: $color-logo-hover;
-    } */
   }
 
   &__nav {
@@ -44,9 +31,11 @@
   &__phone {
     margin-right: 35px;
     
-    > .link {
+    &-link {
       color: $color-text-hard;
       background-color: transparent;
+
+      @include hover(color, $color-text-hover);
     }
   }
 
@@ -116,11 +105,8 @@
   &__image {
     width: 100%;
   }
-}
 
-@media screen and (max-width: 1024px) {
-  .header {
-
+  @media screen and (max-width: 1024px) {
     &__logo {
       width: 80px;
       height: 26px;
@@ -153,12 +139,9 @@
         font-size: 15px;
       }
     }
-
   }
-}
-
-@media screen and (max-width: 768px) {
-  .header {
+  
+  @media screen and (max-width: 768px) {
     &__top {
       flex-direction: column;
     }
@@ -207,10 +190,8 @@
       font-size: 14px;
     }
   }
-}
-
-@media screen and (max-width: 480px) {
-  .header {
+  
+  @media screen and (max-width: 480px) {
     &__nav {
       flex-direction: column;
     }

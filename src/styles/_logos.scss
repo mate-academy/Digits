@@ -11,11 +11,11 @@
   }
 
   &__bottom {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(75px, 165px));
+    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     justify-items: center;
-    gap: 40px 0;
+    gap: 40px 40px;
     margin-top: 50px;
   }
 
