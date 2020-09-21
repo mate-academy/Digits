@@ -1,11 +1,20 @@
 h1 {
-  @extend %h1;
+  font-family: "Halyard Display", sans-serif;
+  font-weight: 500;
+  font-size: 56px;
+  color: $titles-text-color;
 }
 
 h2 {
-  @extend %h2;
+  font-family: "Halyard Display", sans-serif;
+  font-weight: 500;
+  font-size: 48px;
+  color: $titles-text-color;
 }
 
 h3 {
-  @extend %h3;
+  font-family: "Halyard Display", sans-serif;
+  font-weight: 500;
+  font-size: 22px;
+  color: $titles-text-color;
 }

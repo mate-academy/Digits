@@ -14,12 +14,12 @@
 
   &__link {
     transition: transform 0.5s;
-
+    padding: 0 10px;
     &:hover {
       transform: scale(1.1);
-      
     }
   }
+
   &__logo {
     @media screen and (max-width: 1000px) {
       margin: 0 25px 15px;

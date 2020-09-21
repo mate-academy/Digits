@@ -23,5 +23,7 @@
 
   &__text {
     color: $regular-text-color;
+    display: inline-block;
+    width: 235px;
   }
 }

@@ -3,12 +3,18 @@
 .whatever {
 
   &__title {
+    display: inline-block;
+    margin: 0 calc(50% - 250px);
     text-align: center;
+
+    width: 500px;
 
     line-height: 1;
 
     @media screen and (max-width: $fourth-break-point) {
       font-size: 30px;
+      width: 300px;
+      margin: 0 calc(50% - 150px);
     }
   }
 

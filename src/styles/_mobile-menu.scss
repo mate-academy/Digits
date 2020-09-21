@@ -17,16 +17,26 @@
     width: 100vw;
     height: 100vh;
 
-    background-color: white;
+    background-color: $background-white-color;
 
-    transform: translateY(-100%);
+    transform: translateY(-130%);
     transition: transform 1s;
+  }
+
+  @media screen and (max-height: 400px) {
+    top: 40px;
   }
 
   &__item {
     margin-bottom: 70px;
 
     font-size: 30px;
+
+    @media screen and (max-height: 400px) {
+      margin-bottom: 30px;
+
+      font-size: 20px;
+    }
 
     &--active {
       pointer-events: none;

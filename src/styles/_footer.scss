@@ -43,6 +43,9 @@
   }
 
   &__digits-text {
+    display: inline-block;
+    width: 284px;
+
     margin-right: 208px;
 
     font-size: 18px;
@@ -78,11 +81,11 @@
 
   &__copyright {
     font-size: 14px;
-    color: rgba(69, 88, 128, 0.5);
+    color: $copyright-color;
   }
 
   &__copyright-link {
-    color: rgba(69, 88, 128, 0.5);
+    color: $copyright-color;
     text-decoration: none;
 
     transition: color 0.5s;

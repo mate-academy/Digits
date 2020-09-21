@@ -6,7 +6,9 @@
   gap: 26px;
 
   @media screen and (max-width: $first-break-point) {
-    grid-template-columns: repeat(2, 373px);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 
   @media screen and (max-width: $second-break-point) {

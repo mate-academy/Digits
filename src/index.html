@@ -21,46 +21,62 @@
           class="navigation__toggler"
           type="checkbox"
           id="nav-toggler"
-          >
+        >
         <label class="navigation__toggler-label" for="nav-toggler"></label>
 
         <!------------------Desktop navigation------------------>
         <ul class="navigation__list">
-          <li class="navigation__item"><a class="navigation__link" href="#">Homepages</a></li>
-          <li class="navigation__item"><a class="navigation__link" href="#">Products</a></li>
-          <li class="navigation__item navigation__item--active"><a class="navigation__link" href="#">Company</a></li>
-          <li class="navigation__item"><a class="navigation__link" href="#">Pricing</a></li>
-          <li class="navigation__item"><a class="navigation__link" href="#">Blog</a></li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="#homepages">Homepages</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="#products">Products</a>
+          </li>
+          <li class="navigation__item navigation__item--active">
+            <a class="navigation__link" href="#">Company</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="#pricing">Pricing</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="#blog">Blog</a>
+          </li>
         </ul>
 
         <!------------------Mobile menu------------------>
         <ul class="mobile-menu">
-          <li class="mobile-menu__item"><a class="mobile-menu__link" href="#">Homepages</a></li>
-          <li class="mobile-menu__item"><a class="mobile-menu__link" href="#">Products</a></li>
-          <li class="mobile-menu__item mobile-menu__item--active"><a class="mobile-menu__link" href="#">Company</a></li>
-          <li class="mobile-menu__item"><a class="mobile-menu__link" href="#">Pricing</a></li>
-          <li class="mobile-menu__item"><a class="mobile-menu__link" href="#">Blog</a></li>
+          <li class="mobile-menu__item">
+            <a class="mobile-menu__link" href="#homepages">Homepages</a>
+          </li>
+          <li class="mobile-menu__item">
+            <a class="mobile-menu__link" href="#products">Products</a>
+          </li>
+          <li class="mobile-menu__item mobile-menu__item--active">
+            <a class="mobile-menu__link" href="#">Company</a>
+          </li>
+          <li class="mobile-menu__item">
+            <a class="mobile-menu__link" href="#pricing">Pricing</a>
+          </li>
+          <li class="mobile-menu__item">
+            <a class="mobile-menu__link" href="#">Blog</a>
+          </li>
         </ul>
 
         <div class="header__feedback">
           <a class="header__phone" href="tel:+00 123 456 789">+00 123 456 789</a>
-          <button class="button header__button"><a class="button__contact-us" href="tel:+00 123 456 789">Contact Us</a></button>
+          <button class="button header__button">Contact Us</button>
         </div>
       </nav>
-
-
 
     </header>
     <!------------------Main------------------>
     <main>
       <!------------------Good desigh block------------------>
       <section class="section">
-        <div class="good-design section__good-design">
+        <div class="good-design section__good-design" id="homepages">
 
           <div class="good-design__top">
-            <h1 class="good-design__title">Good design meets<br>
-              great user experience
-            </h1>
+            <h1 class="good-design__title">Good design meets great user experience</h1>
             <p class="good-design__paragraph">For everyone, from beginners to experts</p>
 
             <div class="good-design__buttons">
@@ -131,10 +147,8 @@
       <!------------------Whatever block------------------>
       <section class="section">
 
-        <div class="whatever section__whatever">
-          <h2 class="whatever__title">Whatever work you do,<br>
-            we're able to help
-          </h2>
+        <div class="whatever section__whatever" id="products">
+          <h2 class="whatever__title">Whatever work you do, we're able to help</h2>
 
           <div class="whatever__blocks">
             <img
@@ -155,8 +169,9 @@
                 </img>
                 <div class="card__description">
                   <h3 class="card__title">Design and Assets</h3>
-                  <p class="card__text">Make your brand stand out with<br>
-                    pixel-perfect design crafted to<br>
+                  <p class="card__text">
+                    Make your brand stand out with
+                    pixel-perfect design crafted to
                     perfection.
                   </p>
                 </div>
@@ -171,8 +186,9 @@
                 </img>
                 <div class="card__description">
                   <h3 class="card__title">Design and Assets</h3>
-                  <p class="card__text">Make your brand stand out with<br>
-                    pixel-perfect design crafted to<br>
+                  <p class="card__text">
+                    Make your brand stand out with
+                    pixel-perfect design crafted to
                     perfection.
                   </p>
                 </div>
@@ -187,8 +203,9 @@
                 </img>
                 <div class="card__description">
                   <h3 class="card__title">Design and Assets</h3>
-                  <p class="card__text">Make your brand stand out with<br>
-                    pixel-perfect design crafted to<br>
+                  <p class="card__text">
+                    Make your brand stand out with
+                    pixel-perfect design crafted to
                     perfection.
                   </p>
                 </div>
@@ -201,11 +218,12 @@
 
       <!------------------Simplicity block------------------>
       <section class="section">
-        <div class="simplicity section__simplicity">
+        <div class="simplicity section__simplicity" id="pricing">
           <h2 class="simplicity__title">Simplicity meets innovative design</h2>
-          <p class="simplicity__paragraph">It's really easy to start using Digits.<br>
-            Install the theme, choose a demo and<br>
-            start designing the future of your business!
+          <p class="simplicity__paragraph">
+            <span class="simplicity__paragraph-row">It's really easy to start using Digits.</span>
+            <span class="simplicity__paragraph-row">Install the theme, choose a demo and</span>
+            <span class="simplicity__paragraph-row">start designing the future of your business!</span>
           </p>
           <div class="simplicity__button-box">
             <button class="button simplicity__button">Buy Digits</button>
@@ -225,7 +243,8 @@
 
           <div class="reviews people__reviews">
             <div class="review">
-              <p class="review__text">Completely beautiful website and
+              <p class="review__text">
+                Completely beautiful website and
                 amazing support! This is my second
                 website from this author and I love
                 both of the sites so much and she
@@ -242,7 +261,8 @@
             </div>
 
             <div class="review">
-              <p class="review__text">Really easy to use and customize.
+              <p class="review__text">
+                Really easy to use and customize.
                 easy to understand. Darinka helped
                 me with my site! She answers very
                 quickly, a good service! Thank you
@@ -258,7 +278,8 @@
             </div>
 
             <div class="review">
-              <p class="review__text">Really pleasing to look at!
+              <p class="review__text">
+                Really pleasing to look at!
                 Documentation (including
                 installation instructions) are clear
                 and that is coming from a relatively
@@ -282,7 +303,8 @@
         <div class="mailing section__mailing">
           <div class="mailing__container">
             <div class="mailing__title-container">
-              <h2 class="mailing__title">Ready to launch<br>
+              <h2 class="mailing__title">
+                Ready to launch
                 your next website?
               </h2>
             </div>
@@ -309,7 +331,7 @@
 
     <!------------------------Footer------------------------->
     <footer class="footer">
-      <div class="footer__container">
+      <div class="footer__container" id="blog">
 
         <div class="footer__top">
           <div class="footer__digits">
@@ -320,9 +342,10 @@
                 alt="Digits Logo"
               >
             </a>
-            <p class="footer__digits-text">Digits is a website template built to<br>
-              work seamlesly with the WordPress<br>
-              block editor to create beautifully<br>
+            <p class="footer__digits-text">
+              Digits is a website template built to
+              work seamlesly with the WordPress
+              block editor to create beautifully
               designed pages in minutes.
             </p>
           </div>
@@ -330,22 +353,42 @@
           <div class="examples footer__examples">
             <h3 class="examples__title">Pages</h3>
             <ul class="examples__list">
-              <li><a class="examples__item" href="#">Home</a></li>
-              <li><a class="examples__item" href="#">About</a></li>
-              <li><a class="examples__item" href="#">News</a></li>
-              <li><a class="examples__item" href="#">Pricing</a></li>
-              <li><a class="examples__item" href="#">Contact</a></li>
+              <li>
+                <a class="examples__item" href="#">Home</a>
+              </li>
+              <li>
+                <a class="examples__item" href="#">About</a>
+              </li>
+              <li>
+                <a class="examples__item" href="#">News</a>
+              </li>
+              <li>
+                <a class="examples__item" href="#">Pricing</a>
+              </li>
+              <li>
+                <a class="examples__item" href="#">Contact</a>
+              </li>
             </ul>
           </div>
 
           <div class="examples footer__examples">
             <h3 class="examples__title">Demos</h3>
             <ul class="examples__list">
-              <li><a class="examples__item" href="#">Classic</a></li>
-              <li><a class="examples__item" href="#">Boxy</a></li>
-              <li><a class="examples__item" href="#">Gradient</a></li>
-              <li><a class="examples__item" href="#">Minimal</a></li>
-              <li><a class="examples__item" href="#">Night</a></li>
+              <li>
+                <a class="examples__item" href="#">Classic</a>
+              </li>
+              <li>
+                <a class="examples__item" href="#">Boxy</a>
+              </li>
+              <li>
+                <a class="examples__item" href="#">Gradient</a>
+              </li>
+              <li>
+                <a class="examples__item" href="#">Minimal</a>
+              </li>
+              <li>
+                <a class="examples__item" href="#">Night</a>
+              </li>
             </ul>
           </div>
 
@@ -429,7 +472,9 @@
         <div class="footer__bottom">
           <div class="footer__bottom-container">
             <div class="footer__copyright">
-              <p>Copyright © 2020 <a  class="footer__copyright-link" href="#">tempy.club</a></p>
+              <p>Copyright © 2020
+                <a class="footer__copyright-link" href="#">tempy.club</a>
+              </p>
             </div>
 
             <div class="footer__terms">

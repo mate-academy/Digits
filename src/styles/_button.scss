@@ -9,18 +9,18 @@
 
   background-color: $button-color;
 
-  color: white;
+  color: $button-white-color;
 
   transition: box-shadow 0.4s;
 
   cursor: pointer;
 
   &:hover {
-    box-shadow: 0 3px 7px 1px rgba(0,0,0,0.75);
+    box-shadow: 0 3px 7px 1px $box-shadow-color;
   }
 
   &__contact-us {
-    color: white;
+    color: $button-white-color;
 
     text-decoration: none;
     line-height: 40px;

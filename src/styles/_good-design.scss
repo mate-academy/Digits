@@ -16,12 +16,17 @@
   }
 
   &__title {
+    display: inline-block;
+
+    width: 500px;
     margin-bottom: 27px;
-    line-height: 1;
     padding-top: 146px;
+
+    line-height: 1;
 
     @media screen and (max-width: $fourth-break-point) {
       font-size: 30px;
+      width: 300px;
     }
   }
 
@@ -54,8 +59,8 @@
     &--white {
       width: 200px;
 
-      background-color: white;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      background-color: $background-white-color;
+      box-shadow: 0 2px 4px $box-shadow-color;
 
       color: $regular-text-color;
     }
@@ -68,9 +73,7 @@
     width: 1000px;
     height: 620px;
 
-    background-image: url("/images/graphic-header.svg");
-    background-size: cover;
-    background-position: center;
+    background: url("/images/graphic-header.svg") center/cover;
 
     @media screen and (max-width: 1000px) {
       transform: scale(0.6);

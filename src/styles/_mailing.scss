@@ -34,10 +34,16 @@
   }
 
   &__title {
-    color: white;
+    display: inline-block;
+
+    width: 368px;
+
+    color: $text-white-color;
     line-height: 1.25;
 
     @media screen and (max-width: $fourth-break-point) {
+      width: 268px;
+
       font-size: 32px;
     }
   }
@@ -61,11 +67,11 @@
     border-radius: 28px;
 
     &:hover {
-      box-shadow: 0 3px 8px 1px rgba(0, 0, 0, 0.75);
+      box-shadow: 0 3px 8px 1px $box-shadow-color;
     }
 
     &--white {
-      background-color: white;
+      background-color: $background-white-color;
 
       color: $regular-text-color;
     }
@@ -84,7 +90,7 @@
   &__text {
     padding-top: 75px;
 
-    color: #dfe0eb;
+    color: $mailing-text-color;
 
     @media screen and (max-width: $fourth-break-point) {
       padding-top: 15px;
@@ -92,13 +98,13 @@
   }
 
   &__link {
-    color: #fed385;
+    color: $hover-text-color;
     text-decoration: none;
 
     transition: color 0.5s;
 
     &:hover {
-      color: #ee85a3;
+      color: $hover-pink-color;
     }
   }
 }
