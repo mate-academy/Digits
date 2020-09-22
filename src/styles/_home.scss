@@ -9,24 +9,6 @@
 
   &__title {
     margin-top: 144px;
-
-    &--head {
-      height: 118px;
-
-      font-size: 56px;
-      line-height: 105%;
-      color: $color-title;
-      font-weight: 500;
-    }
-
-    &--text {
-      height: 27px;
-      margin-bottom: 50px;
-
-      font-size: 18px;
-      line-height: 150%;
-      color: #455880;
-    }
   }
 
   &__button {
@@ -99,11 +81,6 @@
     
     &__title {
       margin-top: 60px;
-
-      &--head {
-        font-size: 31px;
-        height: 60px;
-      }
     }
 
     &__button {
