@@ -56,11 +56,13 @@
     margin: 0 11px 20px;
     border-radius: 25px;
 
+    line-height: 50px;
+    text-decoration: none;
     &--white {
       width: 200px;
 
       background-color: $background-white-color;
-      box-shadow: 0 2px 4px $box-shadow-color;
+      box-shadow: 0 2px 4px $button-static-shadow-color;
 
       color: $regular-text-color;
     }
