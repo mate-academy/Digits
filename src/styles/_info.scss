@@ -5,8 +5,11 @@
   text-align: center;
   justify-content: space-around;
 
-  background-color: #f0f2f6;
+  background-color: $color-background-second;
   
+  &__size {
+    margin-right: 15px;
+  }
   
   &__logo {
     float: left;
@@ -18,8 +21,6 @@
     display: flex;
     width: 420px;
     margin-top: 45px;
-
-    white-space: pre-line;
 
     &--border {
       padding-top: 60px;
@@ -59,8 +60,16 @@
 
     &__work {
       width: 100%;
-      margin: 25px auto;
+      margin: 0 auto;
       padding: 20px 10px;
+
+      &--text {
+        line-height: 1.5;
+      }
+    }
+
+    &__icon {
+      margin-top: 40px;
     }
   }
 }
