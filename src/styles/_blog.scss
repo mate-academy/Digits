@@ -1,4 +1,4 @@
-.cta {
+.blog {
   height: 323px;
 
   color: white;
@@ -27,7 +27,7 @@
 }
 
 @media screen and (max-width: $small-screen-breakpoint) {
-  .cta {
+  .blog {
     height: 400px;
 
     &__content {
