@@ -24,42 +24,6 @@
     font-weight: 500;
     line-height: 60px;
   }
-
-  &__button {
-    padding: 20px 40px;
-
-    color: $color-text;
-    font-size: 18px;
-    font-weight: 500;
-    line-height: 110%;
-    text-align: end;
-
-    background-color: #fff;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-    border-radius: 100px;
-
-    transition: box-shadow $transition-duration, color $transition-duration;
-
-    cursor: pointer;
-
-    &__img {
-      padding-right: 25px;
-    }
-
-    &:hover {
-      color: rgb(0, 100, 147);
-
-      box-shadow: 0 0 13px 2px mediumblue;
-    }
-
-    &__text {
-      margin-top: 30px;
-
-      font-size: 16px;
-      line-height: 125%;
-      color: #dfe0eb;
-    }
-  }
 }
 
 @media screen and (max-width: $small-screen-breakpoint) {

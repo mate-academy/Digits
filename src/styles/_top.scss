@@ -1,0 +1,74 @@
+.top {
+
+  &__title {
+    color: $color-title;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__text {
+    width: 280px;
+    margin: 0 auto;
+
+    white-space: pre-line;
+    color: $color-text;
+    font-size: 18px;
+    line-height: 1.5;
+  }
+
+  &__link {
+    margin-top: 4px;
+
+    color: $color-text;
+    font-size: 18px;
+
+    transition: color $transition-duration * 2,
+      transform $transition-duration / 2,
+      text-shadow $transition-duration / 2;
+
+    &:hover {
+      color: rgb(0, 100, 147);
+      transform: scale(1.1);
+      text-shadow: 1px 1px 7px rgba(0, 0, 0, 0.38);
+    }
+  }
+
+  &__logo {
+    color: $color-title;
+    font-size: 31px;
+
+    & span {
+      color: #ff2e6a;
+      font-weight: 700;
+    }
+    
+  }
+
+  &__icon {
+    height: 14px;
+    margin-bottom: 25px;
+  }
+
+  &__img {
+    margin-right: 15px;
+
+    cursor: pointer;
+
+    &:hover {
+      transform: scale(1.5);
+      box-shadow: 5px 5px 20px rgba(85, 84, 84, 0.64);
+    }
+  }
+}
+
+@media screen and (max-width: $small-screen-breakpoint) {
+  .top {
+
+    &__info {
+      margin-top: 10px;
+    }
+  }
+}
