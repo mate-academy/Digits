@@ -41,13 +41,19 @@
     position: relative;
     
     height: 58px;
+
+    transition: transform 300ms;
+
+    &:hover {
+      transform: scale(1.2);
+    }
   }
 }
 
 @media screen and (max-width: $small-screen-breakpoint) {
   .info {
     flex-direction: column;
-    height: 600px;
+    height: 555px;
     align-items: center;
 
     &__size {
