@@ -24,7 +24,9 @@
   }
 
   &__title {
-    white-space: pre-line;
+    max-width: 560px;
+    margin: 100px auto 0;
+
     font-weight: 500;
     font-size: 48px;
     color: $color-title;
