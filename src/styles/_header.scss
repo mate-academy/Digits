@@ -20,7 +20,7 @@
     font-size: 31px;
 
     & span {
-      color: #ff2e6a;
+      color: $color-space;
       font-weight: 700;
     }
     
@@ -38,7 +38,7 @@
       color: rgb(0, 100, 147);
 
       border-bottom: 1px solid  $color-title;
-      text-shadow: 1px 1px 7px rgba(0, 0, 0, 0.38);
+      text-shadow: 1px 1px 7px $color-box-shadow;
 
       transform: scale(1.2);
     }
@@ -57,7 +57,7 @@
     transition: box-shadow 700ms;
 
     &:hover {
-      box-shadow: 0 0 3px 3px blue;
+      box-shadow: 0 0 3px 3px $color-hover;
     }
   }
 }

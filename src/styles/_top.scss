@@ -30,9 +30,9 @@
       text-shadow $transition-duration / 2;
 
     &:hover {
-      color: rgb(0, 100, 147);
+      color: $color-hover;
       transform: scale(1.1);
-      text-shadow: 1px 1px 7px rgba(0, 0, 0, 0.38);
+      text-shadow: 1px 1px 7px $color-box-shadow;
     }
   }
 
@@ -41,7 +41,7 @@
     font-size: 31px;
 
     & span {
-      color: #ff2e6a;
+      color: $color-space;
       font-weight: 700;
     }
     

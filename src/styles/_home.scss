@@ -5,9 +5,9 @@
   height: 878px;
   text-align: center;
 
-  background: linear-gradient(180deg, rgba(242, 249, 255, 0.12));
+  background: $color-gradient;
 
-  &__title {
+  &__heading {
     margin-top: 144px;
     padding: 0 15px;
   }
@@ -22,7 +22,7 @@
   .home {
     height: 315px;
     
-    &__title {
+    &__heading {
       margin-top: 60px;
     }
 

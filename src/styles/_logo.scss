@@ -20,7 +20,7 @@
 
 @media screen and (max-width: $small-screen-breakpoint) {
   .logo {
-    width: 100%;
+    width: 80%;
     flex-wrap: wrap;
     margin: 30px auto;
 
@@ -28,5 +28,11 @@
       width: 150px;
       margin: 15px auto;
     }
+  }
+}
+
+@media screen and (max-width: $midle-screen-breakpoint) {
+  .logo {
+    width: 95%;
   }
 }

@@ -30,7 +30,7 @@
     &:hover {
       color: rgb(0, 100, 147);
 
-      text-shadow: 1px 1px 7px rgba(0, 0, 0, 0.38);
+      text-shadow: 1px 1px 7px $color-box-shadow;
 
       transform: scale(1.2);
     }

@@ -10,7 +10,7 @@
     text-align: end;
 
     background-color: #fff;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 2px 4px $color-box-shadow;
     border-radius: 100px;
 
     transition: box-shadow $transition-duration, color $transition-duration;
@@ -18,7 +18,7 @@
     cursor: pointer;
 
     &:hover {
-      color: rgb(0, 100, 147);
+      color: $color-hover;
   
       box-shadow: 0 0 13px 2px mediumblue;
     }
@@ -33,6 +33,6 @@
 
     font-size: 16px;
     line-height: 125%;
-    color: #dfe0eb;
+    color: $color-text-block;
   }
 }
