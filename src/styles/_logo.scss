@@ -1,0 +1,38 @@
+.logo {
+  display: flex;
+  justify-content: space-between;
+  width: 1000px;
+
+  &__img {
+    width: 102px;
+    height: 38px;
+
+    transition: transform $transition-duration;
+    
+    cursor: pointer;
+
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+
+}
+
+@media screen and (max-width: $small-screen-breakpoint) {
+  .logo {
+    width: 80%;
+    flex-wrap: wrap;
+    margin: 30px auto;
+
+    &__img {
+      width: 150px;
+      margin: 15px auto;
+    }
+  }
+}
+
+@media screen and (max-width: $midle-screen-breakpoint) {
+  .logo {
+    width: 95%;
+  }
+}
