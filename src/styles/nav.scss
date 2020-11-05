@@ -72,7 +72,7 @@
   transition: box-shadow 0.3s, transform 0.3s;
 
   &:hover {
-    box-shadow: 3px 3px 20px  rgb(15, 22, 47);
+    box-shadow: 1px 1px 10px  rgb(15, 22, 47);
     transform: scale(1.1);
     cursor: pointer;
   }
