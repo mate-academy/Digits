@@ -7,5 +7,6 @@ Implement landing page according to [Figma design](https://www.figma.com/file/yM
 - Tablet 1024
 - Mobile (> 320px)
 
-Click the link to see [DEMO](https://Andrii1996.github.io/Digits/)
+Click the link to see [DEMO](https://Andrii1996.github.io/Digits/)                                                                                
+ 
 Design of the landing page you could find [here](https://www.figma.com/file/yM9iS3NKeGOII5Bl7LOooG/Digits-Demo-%26-Preview-(Copy)?node-id=0%3A1)
