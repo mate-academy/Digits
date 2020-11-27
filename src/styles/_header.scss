@@ -1,0 +1,199 @@
+.header {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  max-width: 1200px;
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+  }
+
+  &__logo {
+    width: 87px;
+    height: 30px;
+    margin-right: 80px;
+    padding: 2px;
+  }
+
+  &__nav {
+    display: flex;
+    align-items: center;
+    max-width: 644px;
+  }
+
+  &__contacts {
+    display: flex;
+  }
+
+  &__phone {
+    margin-right: 35px;
+    
+    &-link {
+      color: $color-text-hard;
+      background-color: transparent;
+
+      @include hover(color, $color-text-hover);
+    }
+  }
+
+  &__action {
+    width: 150px;
+
+    .link {
+      padding: 8px 16px;
+    }
+  }
+
+  &__center {
+    @include container;
+
+    display: flex;
+    flex-direction: column;
+    height: 270px;
+    margin-top: 140px;
+    margin-bottom: 32px;
+  }
+
+  &__topic {
+    max-width: 540px;
+    margin: 0 auto;
+    font-family: "Halyard Display", sans-serif;
+    font-size: 56px;
+    text-align: center;
+    line-height: 1;
+    color: $color-text-hard;
+  }
+
+  &__text {
+    max-width: 540px;
+    margin: 25px auto 0;
+    text-align: center;
+    color: $color-text-light;
+  }
+
+  &__links {
+    display: flex;
+    justify-content: center;
+    max-width: 540px;
+    margin: 30px auto 0;
+
+    .link:first-child {
+      padding: 6px 16px;
+      margin-right: 22px;
+    }
+
+    .link:last-child {
+      padding: 6px 24px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+      color: $color-text-light;
+      background-color: #fff;
+
+      @include hover(color, $color-text-hover);
+    }
+  }
+
+  &__bottom {
+    position: relative;
+    margin: 0 auto;
+    padding: 0 20px;
+    max-width: 970px;
+  }
+
+  &__image {
+    width: 100%;
+  }
+
+  @media screen and (max-width: 1024px) {
+    &__logo {
+      width: 80px;
+      height: 26px;
+      margin-right: 20px;
+    }
+
+    &__phone {
+      margin-right: 10px;
+
+      .link {
+        font-size: 15px;
+      }
+    }
+
+    &__action {
+      width: 110px;
+
+      .link {
+        padding: 6px 12px;
+        font-size: 15px;
+      }
+    }
+
+    &__topic {
+      font-size: 32px;
+    }
+
+    &__links {
+      .link {
+        font-size: 15px;
+      }
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    &__top {
+      flex-direction: column;
+    }
+
+    &__logo,
+    &__nav,
+    &__phone {
+      margin-right: 8px;
+    }
+
+    &__nav {
+      width: 100%;
+      justify-content: space-around;
+    }
+
+    &__logo {
+      width: 76px;
+    }
+
+    &__contacts {
+      padding-top: 40px;
+    }
+
+    &__phone .link {
+      font-size: 14px;
+    }
+    
+    &__action {
+      .link {
+        font-size: 14px;
+      }
+    }
+
+    &__topic {
+      font-size: $header-text-min-media;
+      max-width: 300px;
+    }
+
+    &__links {
+      .link {
+        font-size: 14px;
+      }
+    }
+
+    &__text {
+      font-size: 14px;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    &__nav {
+      flex-direction: column;
+    }
+  }
+}
