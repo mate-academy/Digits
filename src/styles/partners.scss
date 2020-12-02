@@ -16,10 +16,25 @@
     @include for-1220 {
       grid-template-columns: repeat(4, 1fr);
     }
+
+    @include for-960 {
+      grid-template-columns: repeat(auto-fit, 180px);
+      justify-content: space-evenly;
+      grid-gap: 40px 20px;
+    }
+
+    @include for-540 {
+      grid-template-columns: repeat(auto-fit, 120px);
+    }
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
   }
 
   &__img {
-    display: block;
     margin: 0 auto;
+    max-width: 100%;
   }
 }

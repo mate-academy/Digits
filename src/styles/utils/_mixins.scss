@@ -6,9 +6,23 @@
 }
 
 @mixin link-hover {
-  transition: text-shadow 0.3s;
-  &:hover {
-    text-shadow: 0 0 4px $bright-blue;
+  position: relative;
+
+  &:before {
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: $pink;
+    opacity: 0;
+    transition: width 0.3s, opacity 0.3s;
+  }
+
+  &:hover:before {
+    width: 100%;
+    opacity: 1;
   }
 }
 
@@ -25,6 +39,30 @@
 
 @mixin for-1080 {
   @media (max-width: 1080px) {
+    @content;
+  }
+}
+
+@mixin for-960 {
+  @media (max-width: 960px) {
+    @content;
+  }
+}
+
+@mixin for-720 {
+  @media (max-width: 720px) {
+    @content;
+  }
+}
+
+@mixin for-540 {
+  @media (max-width: 540px) {
+    @content;
+  }
+}
+
+@mixin for-400 {
+  @media (max-width: 400px) {
     @content;
   }
 }

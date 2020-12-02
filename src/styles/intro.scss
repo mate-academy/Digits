@@ -1,8 +1,13 @@
 .intro {
   padding-top: 146px;
-  background-image: linear-gradient(
-    180deg, rgba(242, 249, 255, 0.12) 0%, #f2f9ff 100%);
+  background-image: linear-gradient(180deg,
+  rgba(242, 249, 255, 0.12) 0%, #f2f9ff 100%);
   background-size: 100% 878px;
+
+  @include for-960 {
+    padding-top: 80px;
+    background-size: 100%;
+  }
 
   &__title {
     margin: 0 auto 27px;
@@ -23,11 +28,22 @@
     display: flex;
     justify-content: center;
     margin-bottom: 32px;
+
+    @include for-540 {
+      flex-direction: column;
+      margin: 0 auto;
+      max-width: 260px;
+    }
+
   }
 
   &__button {
     margin: 0 11px;
     padding: 0 40px;
+
+    @include for-540 {
+      margin-bottom: 20px;
+    }
   }
 
   &__pic {

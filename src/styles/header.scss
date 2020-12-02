@@ -83,14 +83,26 @@
 
   &__tel {
     margin-right: 34px;
+    padding: 9px 0;
     @include link-hover;
 
     @include for-1080 {
       margin-right: 0;
       margin-bottom: 10px;
-      padding: 10px 0;
       width: 100%;
       text-align: center;
+    }
+
+    &:before {
+      @include for-1080 {
+        height: 100%;
+        background-color: $bright-blue;
+      }
+    }
+    &:hover:before {
+      @include for-1080 {
+        width: 10px;
+      }
     }
   }
 

@@ -9,7 +9,7 @@
   }
 
   &__item {
-    margin-right: 37px;
+    margin-right: 47px;
 
     @include for-1080 {
       margin-right: 0;
@@ -23,12 +23,24 @@
   &__link {
     display: flex;
     align-items: center;
-    padding: 10px;
+    min-height: 40px;
     @include font(16px, 20px);
     @include link-hover;
 
     @include for-1080 {
       justify-content: center;
+    }
+  }
+
+  &__link:before {
+    @include for-1080 {
+      height: 100%;
+      background-color: $bright-blue;
+    }
+  }
+  &__link:hover:before {
+    @include for-1080 {
+      width: 10px;
     }
   }
 }

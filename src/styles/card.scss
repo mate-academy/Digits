@@ -18,6 +18,31 @@
     @extend .content-text;
     color: $muddy-blue;
     line-height: 1.8;
+
+    @include for-540 {
+      margin-bottom: 0;
+      text-align: center;
+    }
+
+    @include for-400 {
+      @include font(16px, 1.5);
+    }
+  }
+
+  &__bottom--comments {
+    @include for-960 {
+      order: -1;
+      flex-shrink: 0;
+      margin-right: 40px;
+      padding-top: 9px;
+      text-align: center;
+    }
+
+    @include for-540 {
+      margin-right: 0;
+      margin-bottom: 20px;
+      padding-top: 0;
+    }
   }
 
   &__img {

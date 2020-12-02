@@ -1,0 +1,15 @@
+@keyframes text-blink {
+  50% {
+    color: transparent;
+  }
+}
+
+@keyframes button-stripe {
+  20% {
+    left: 120%;
+  }
+
+  100% {
+    left: 120%;
+  }
+}

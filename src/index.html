@@ -4,13 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Digits</title>
+    <link
+      rel="shortcut icon"
+      href="/images/favicon.ico"
+      type="image/x-icon"
+    >
     <link rel="stylesheet" href="./styles/main.scss">
   </head>
 
   <body>
     <header class="header">
       <div class="header__content container">
-        <a class="header__logo logo" href="#">
+        <a class="header__logo logo" href="#intro">
           digits<span class="logo__dots">:</span>
         </a>
 
@@ -18,26 +23,28 @@
           <nav class="header__nav nav">
             <ul class="nav__list">
               <li class="nav__item">
-                <a class="nav__link" href="#">Homepages</a>
+                <a class="nav__link" href="#intro">Homepages</a>
               </li>
               <li class="nav__item">
-                <a class="nav__link" href="#">Products</a>
+                <a class="nav__link" href="#partners">Products</a>
               </li>
               <li class="nav__item">
-                <a class="nav__link" href="#">Company</a>
+                <a class="nav__link" href="#activity">Company</a>
               </li>
               <li class="nav__item">
-                <a class="nav__link" href="#">Pricing</a>
+                <a class="nav__link" href="#design">Pricing</a>
               </li>
               <li class="nav__item">
-                <a class="nav__link" href="#">Blog</a>
+                <a class="nav__link" href="#comments">Blog</a>
               </li>
             </ul>
           </nav>
 
           <div class="header__contacts">
             <a class="header__tel" href="tel:+00123456789">+00 123 456 789</a>
-            <a class="button button--small" href="#">Contact Us</a>
+            <a class="button button--striped button--small" href="#subscribe">
+              Contact Us
+            </a>
           </div>
         </div>
       </div>
@@ -48,14 +55,14 @@
     </header>
 
     <main class="main">
-      <section class="intro">
+      <section id="intro" class="intro">
         <div class="intro__content container">
           <h1 class="intro__title">Good design meets great user experience</h1>
           <p class="intro__sub-title">For everyone, from beginners to experts</p>
 
           <div class="intro__buttons">
-            <a href="#" class="button intro__button">Buy Digits</a>
-            <a href="#" class="button intro__button button--light">
+            <a href="#subscribe" class="button intro__button button--striped">Buy Digits</a>
+            <a href="#activity" class="button intro__button button--light">
               See the Features
             </a>
           </div>
@@ -70,13 +77,13 @@
         </div>
       </section>
 
-      <section class="partners">
+      <section id="partners" class="partners">
         <div class="container">
           <p class="partners__text">
             Trusted by forward-thinking software teams around the world
           </p>
           <ul class="partners__list">
-            <li>
+            <li class="partners__item">
               <img
                 class="partners__img"
                 src="images/partner-1.png"
@@ -84,7 +91,7 @@
               >
             </li>
 
-            <li>
+            <li class="partners__item">
               <img
                 class="partners__img"
                 src="images/partner-2.png"
@@ -92,7 +99,7 @@
               >
             </li>
 
-            <li>
+            <li class="partners__item">
               <img
                 class="partners__img"
                 src="images/partner-3.png"
@@ -100,7 +107,7 @@
               >
             </li>
 
-            <li>
+            <li class="partners__item">
               <img
                 class="partners__img"
                 src="images/partner-4.png"
@@ -108,7 +115,7 @@
               >
             </li>
 
-            <li>
+            <li class="partners__item">
               <img
                 class="partners__img"
                 src="images/partner-5.png"
@@ -116,7 +123,7 @@
               >
             </li>
 
-            <li>
+            <li class="partners__item">
               <img
                 class="partners__img"
                 src="images/partner-6.png"
@@ -124,7 +131,7 @@
               >
             </li>
 
-            <li>
+            <li class="partners__item">
               <img
                 class="partners__img"
                 src="images/partner-7.png"
@@ -135,57 +142,57 @@
         </div>
       </section>
 
-      <section class="help">
+      <section id="activity" class="activity">
         <div class="container">
-          <h2 class="help__title">Whatever work you do, we're able to help</h2>
+          <h2 class="activity__title">Whatever work you do, we're able to help</h2>
 
-          <div class="help__content">
-            <div class="help__pic">
+          <div class="activity__content">
+            <div class="activity__pic">
               <img
-                class="help__img"
-                src="images/help-bg.png"
+                class="activity__img"
+                src="images/activity-bg.png"
                 alt="our team"
               >
             </div>
 
-            <ul class="help__services-list">
-              <li class="help__service">
+            <ul class="activity__services-list">
+              <li class="activity__service">
                 <img
-                  class="help__service-ico"
+                  class="activity__service-ico"
                   src="images/ico-services.svg"
                   alt="design and assets"
                 >
-                <div class="help__service-info">
-                  <h3 class="help__service-title">Design and Assets</h3>
-                  <p class="help__service-text">
+                <div class="activity__service-info">
+                  <h3 class="activity__service-title">Design and Assets</h3>
+                  <p class="activity__service-text">
                     Make your brand stand out with pixel-perfect design crafted to perfection.
                   </p>
                 </div>
               </li>
 
-              <li class="help__service">
+              <li class="activity__service">
                 <img
-                  class="help__service-ico"
+                  class="activity__service-ico"
                   src="images/ico-services1.svg"
                   alt="design and assets"
                 >
-                <div class="help__service-info">
-                  <h3 class="help__service-title">Easy Content</h3>
-                  <p class="help__service-text">
+                <div class="activity__service-info">
+                  <h3 class="activity__service-title">Easy Content</h3>
+                  <p class="activity__service-text">
                     Import your demos or build pages visually. Bonus: All images and illustrations included!
                   </p>
                 </div>
               </li>
 
-              <li class="help__service">
+              <li class="activity__service">
                 <img
-                  class="help__service-ico"
+                  class="activity__service-ico"
                   src="images/ico-services2.svg"
                   alt="design and assets"
                 >
-                <div class="help__service-info">
-                  <h3 class="help__service-title">Fast and Reliable</h3>
-                  <p class="help__service-text">
+                <div class="activity__service-info">
+                  <h3 class="activity__service-title">Fast and Reliable</h3>
+                  <p class="activity__service-text">
                     No heavy-weight plugins. No builders. No unneccesary file loading. Pure WordPress.
                   </p>
                 </div>
@@ -195,7 +202,7 @@
         </div>
       </section>
 
-      <section class="design">
+      <section id="design" class="design">
         <div class="design__content container">
           <h2 class="design__title">Simplicity meets innovative design</h2>
           <p class="design__sub-title">
@@ -205,112 +212,165 @@
           </p>
 
           <div class="design__button-wrapper">
-            <a class="button design__button" href="#">Buy Digits</a>
+            <a class="button button--striped design__button" href="#">Buy Digits</a>
           </div>
 
-          <div class="design__bg-box">
-            <img
-              class="design__card"
-              src="images/design1.png"
-              alt="design"
-            >
-            <img
-              class="design__card"
-              src="images/design4.png"
-              alt="design"
-            >
-            <img
-              class="design__card"
-              src="images/design5.png"
-              alt="design"
-            >
-            <img
-              class="design__card"
-              src="images/design6.png"
-              alt="design"
-            >
-            <img
-              class="design__card"
-              src="images/design7.png"
-              alt="design"
-            >
-            <img
-              class="design__card"
-              src="images/design8.png"
-              alt="design"
-            >
-            <img
-              class="design__card"
-              src="images/design9.png"
-              alt="design"
-            >
-            <img
-              class="design__card"
-              src="images/design10.png"
-              alt="design"
-            >
-            <img
-              class="design__card"
-              src="images/design11.png"
-              alt="design"
-            >
-          </div>
+          <ul class="design__bg-box">
+            <li>
+              <a href="#">
+                <img
+                  class="design__card"
+                  src="images/design1.png"
+                  alt="design"
+                >
+              </a>
+            </li>
+
+            <li>
+              <a href="#">
+                <img
+                  class="design__card"
+                  src="images/design4.png"
+                  alt="design"
+                >
+              </a>
+            </li>
+
+            <li>
+              <a href="#">
+                <img
+                  class="design__card"
+                  src="images/design5.png"
+                  alt="design"
+                >
+              </a>
+            </li>
+
+            <li>
+              <a href="#">
+                <img
+                 class="design__card"
+                 src="images/design6.png"
+                 alt="design"
+                >
+              </a>
+            </li>
+
+            <li>
+              <a href="#">
+                <img
+                  class="design__card"
+                  src="images/design7.png"
+                  alt="design"
+                >
+              </a>
+            </li>
+
+            <li>
+              <a href="#">
+                <img
+                  class="design__card"
+                  src="images/design8.png"
+                  alt="design"
+                >
+              </a>
+            </li>
+
+            <li>
+              <a href="#">
+                <img
+                  class="design__card"
+                  src="images/design9.png"
+                  alt="design"
+                >
+              </a>
+            </li>
+
+            <li>
+              <a href="#">
+                <img
+                  class="design__card"
+                  src="images/design10.png"
+                  alt="design"
+                >
+              </a>
+            </li>
+
+            <li>
+              <a href="#">
+                <img
+                  class="design__card"
+                  src="images/design11.png"
+                  alt="design"
+                >
+              </a>
+            </li>
+          </ul>
         </div>
       </section>
 
-      <section class="comments">
+      <section id="comments" class="comments">
         <div class="container">
           <h2 class="comments__title">What others are saying</h2>
 
-          <div class="comments__content container">
+          <div class="comments__content">
             <div class="card comments__card">
               <p class="card__text">
                 Completely beautiful website and amazing support! This is my second website from this author and I love both of the sites so much and she has helped me so well when I needed it!
               </p>
-              <img
-                class="card__img"
-                src="images/user1.jpg"
-                alt="happy user"
-              >
-              <strong class="card__name">Happy User</strong>
-              <p class="card__site">tempy.club</p>
+
+              <div class="card__bottom card__bottom--comments">
+                <img
+                  class="card__img"
+                  src="images/user1.jpg"
+                  alt="happy user"
+                >
+                <strong class="card__name">Happy User</strong>
+                <p class="card__site">tempy.club</p>
+              </div>
             </div>
 
             <div class="card comments__card">
               <p class="card__text">
                 Really easy to use and customize. easy to understand. Darinka helped me with my site! She answers very quickly, a good service! Thank you very much!
               </p>
-              <img
-                class="card__img"
-                src="images/user2.jpg"
-                alt="happy user"
-              >
-              <strong class="card__name">Happy User</strong>
-              <p class="card__site">tempy.club</p>
+
+              <div class="card__bottom card__bottom--comments">
+                <img
+                  class="card__img"
+                  src="images/user2.jpg"
+                  alt="happy user"
+                >
+                <strong class="card__name">Happy User</strong>
+                <p class="card__site">tempy.club</p>
+              </div>
             </div>
 
             <div class="card comments__card">
               <p class="card__text">
                 Really pleasing to look at! Documentation (including installation instructions) are clear and that is coming from a relatively new WordPress user.
               </p>
-              <img
-                class="card__img"
-                src="images/user3.jpg"
-                alt="happy user"
-              >
-              <strong class="card__name">Happy User</strong>
-              <p class="card__site">tempy.club</p>
+
+              <div class="card__bottom card__bottom--comments">
+                <img
+                  class="card__img"
+                  src="images/user3.jpg"
+                  alt="happy user"
+                >
+                <strong class="card__name">Happy User</strong>
+                <p class="card__site">tempy.club</p>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="subscribe">
+      <section id="subscribe" class="subscribe">
         <div class="subscribe__content container">
           <h2 class="subscribe__title">Ready to launch your next website?</h2>
 
           <div class="subscribe__right">
-            <a class="button subscribe__button" href="#">
+            <a class="button button--mail subscribe__button" href="mailto:mail@mail.com">
               <img
                 class="subscribe__button-img"
                 src="images/ico-sign-up.svg" alt="sign up"
@@ -330,7 +390,7 @@
       <div class="footer__content container">
         <div class="footer__top">
           <div class="footer__info-col">
-            <a class="footer__logo logo logo--footer" href="#">
+            <a class="footer__logo logo logo--footer" href="#intro">
               digits<span class="logo__dots">:</span>
             </a>
             <p class="footer__text">
@@ -387,9 +447,10 @@
                 <li class="footer__public-item">
                   <a class="footer__public-link" href="#">
                     <img
-                      class="footer__publick-ico"
+                      class="footer__public-ico"
                       src="images/ico-fb.svg"
                       alt="Facebook"
+                      title="Facebook"
                     >
                   </a>
                 </li>
@@ -397,9 +458,10 @@
                 <li class="footer__public-item">
                   <a class="footer__public-link" href="#">
                     <img
-                      class="footer__publick-ico"
+                      class="footer__public-ico"
                       src="images/ico-insta.svg"
                       alt="Instagram"
+                      title="Instagram"
                     >
                   </a>
                 </li>
@@ -407,9 +469,10 @@
                 <li class="footer__public-item">
                   <a class="footer__public-link" href="#">
                     <img
-                      class="footer__publick-ico"
+                      class="footer__public-ico"
                       src="images/ico-twit.svg"
                       alt="Twitter"
+                      title="Twitter"
                     >
                   </a>
                 </li>
@@ -417,9 +480,10 @@
                 <li class="footer__public-item">
                   <a class="footer__public-link" href="#">
                     <img
-                      class="footer__publick-ico"
+                      class="footer__public-ico"
                       src="images/ico-footer-4.svg"
-                      alt="public logo 1"
+                      alt="Envato"
+                      title="Envato"
                     >
                   </a>
                 </li>
@@ -427,9 +491,10 @@
                 <li class="footer__public-item">
                   <a class="footer__public-link" href="#">
                     <img
-                      class="footer__publick-ico"
+                      class="footer__public-ico"
                       src="images/ico-footer-5.svg"
-                      alt="public logo 2"
+                      alt="Envato"
+                      title="Envato"
                     >
                   </a>
                 </li>
@@ -458,6 +523,7 @@
       </div>
     </footer>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script type="text/javascript" src="scripts/main.js"></script>
   </body>
 </html>
