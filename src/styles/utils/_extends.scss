@@ -1,4 +1,23 @@
 %h1 {
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
+  font-family: $font-med, sans-serif;
+  font-weight: 500;
+  @include font(56px, 1.05);
+}
+
+%h2 {
+  font-family: $font-med, sans-serif;
+  font-weight: 500;
+  @include font(48px, 60px);
+}
+
+%h3 {
+  font-family: $font-med, sans-serif;
+  font-weight: 500;
+  @include font(22px, 1.25);
+}
+
+.content-text {
+  font-family: $font-reg, sans-serif;
+  font-size: 18px;
+  color: $muddy-blue;
 }

@@ -1,0 +1,43 @@
+.subscribe {
+  padding: 88px 0 113px;
+  background-color: $bright-blue;
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__title {
+    max-width: 420px;
+    @extend %h2;
+    color: #fff;
+  }
+
+  &__right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  &__button {
+    margin-bottom: 19px;
+    min-width: 245px;
+    font-family: $font-med;
+    background-color: #fff;
+    color: $muddy-blue;
+  }
+
+  &__button-img {
+    margin-right: 16px;
+  }
+
+  &__notice {
+    @include font(16px, 1.25);
+    color: $light-grey;
+  }
+
+  &__notice-important {
+    color: #fedc71;
+  }
+}

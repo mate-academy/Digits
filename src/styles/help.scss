@@ -1,0 +1,70 @@
+.help {
+  padding: 120px 0 150px;
+
+  &__title {
+    margin: 0 auto;
+    max-width: 550px;
+    @extend %h2;
+    text-align: center;
+  }
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__pic {
+    margin-top: -125px;
+    margin-right: 25px;
+    max-width: 612px;
+  }
+
+  &__img {
+    display: block;
+    object-fit: contain;
+    width: 100%;
+    height: auto;
+  }
+
+  &__services-list {
+    padding-top: 125px;
+    max-width: 405px;
+  }
+
+  &__service {
+    display: flex;
+    align-items: flex-start;
+    padding-top: 41px;
+    padding-bottom: 45px;
+    border-bottom: 1px solid rgba(69, 88, 128, 0.2);
+
+    &:first-of-type {
+      padding-top: 0;
+    }
+
+    &:last-of-type {
+      border: 0;
+    }
+  }
+
+  &__service-info {
+    margin-left: 47px;
+  }
+
+  &__service-ico {
+    display: block;
+    margin-top: 6px;
+    width: 58px;
+    height: auto;
+  }
+
+  &__service-title {
+    margin-bottom: 30px;
+    @extend %h3;
+  }
+
+  &__service-text {
+    @extend .content-text;
+    line-height: 27px;
+  }
+}

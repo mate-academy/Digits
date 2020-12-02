@@ -1,0 +1,17 @@
+.comments {
+  padding: 132px 0 150px;
+
+  &__title {
+    margin-bottom: 56px;
+    text-align: center;
+    @extend %h2;
+  }
+
+  &__content {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(270px, 372px));
+    grid-gap: 28px;
+  }
+
+  
+}

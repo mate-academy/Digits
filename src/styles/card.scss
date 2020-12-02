@@ -1,0 +1,41 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  padding: 38px 43px 32px;
+  border: 1px solid rgba(69, 88, 128, 0.2);
+  border-radius: 4px;
+
+  @include for-1220 {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  &__text {
+    flex-grow: 1;
+    margin-bottom: 39px;
+    @extend .content-text;
+    color: $muddy-blue;
+    line-height: 1.8;
+  }
+
+  &__img {
+    display: block;
+    margin: 0 auto 23px;
+    object-fit: contain;
+    max-width: 100%;
+    height: auto;
+  }
+
+  &__name {
+    @extend %h3;
+    font-weight: 500;
+    color: $dark-blue;
+  }
+
+  &__site {
+    @extend .content-text;
+    line-height: 1.8;
+  }
+}

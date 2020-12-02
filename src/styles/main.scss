@@ -1,7 +1,29 @@
 @import "utils";
 @import "fonts";
 @import "typography";
+@import "reset";
+
+@import "button";
+@import "card";
+@import "logo";
+
+@import "header";
+@import "nav";
+@import "intro";
+@import "partners";
+@import "help";
+@import "design";
+@import "comments";
+@import "subscribe";
+@import "footer";
 
 body {
-  background: $c-gray;
+  font-family: $font-reg, Arial, sans-serif;
+  color: $dark-blue;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 $container-padding-destop;
+  max-width: 1220px;
 }

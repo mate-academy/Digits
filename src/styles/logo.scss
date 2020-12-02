@@ -1,0 +1,20 @@
+.logo {
+  @include font(31px, 1);
+  font-family: $font-semi;
+  @include hover(color, $pink);
+
+  &--footer {
+    font-size: 26px;
+  }
+
+  &__dots {
+    color: $pink;
+    animation: text-blink 2s linear infinite;
+  }
+}
+
+@keyframes text-blink {
+  50% {
+    color: transparent;
+  }
+}

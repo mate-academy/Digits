@@ -1,0 +1,109 @@
+.footer {
+  padding: 124px 0 107px;
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__info-col {
+    margin-right: 25px;
+    max-width: 310px;
+  }
+
+  &__logo {
+    display: inline-block;
+    margin-bottom: 34px;
+  }
+
+  &__text {
+    @extend .content-text;
+    line-height: 1.45;
+  }
+
+  &__lists {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 690px;
+  }
+
+  &__list {
+    margin-right: 25px;
+  }
+
+  &__list-title {
+    margin-bottom: 34px;
+    @extend %h3;
+  }
+
+  &__list-item {
+    margin-bottom: 22px;
+    @extend .content-text;
+    line-height: 1;
+  }
+
+  &__list-link {
+    @include link-hover;
+  }
+
+  &__public {
+    max-width: 220px;
+  }
+
+  &__public-list {
+    display: flex;
+    align-items: center;
+    margin-bottom: 32px;
+  }
+
+  &__public-item {
+    margin-right: 25px;
+    line-height: 0;
+
+    &:last-of-type {
+      margin-right: 0;
+    }
+  }
+
+  &__public-link {
+    display: block;
+  }
+
+  &__public-ico {
+    display: block;
+    min-width: 14px;
+    height: auto;
+  }
+
+  &__public-docs {
+    display: inline-block;
+    margin-bottom: 25px;
+    @extend .content-text;
+    line-height: 1;
+    @include link-hover;
+  }
+
+  &__copyrights {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 130px;
+  }
+
+  &__copyrights-list {
+    display: flex;
+    margin-left: 30px;
+  }
+
+  &__copyrights-item {
+    margin-right: 27px;
+
+    &:last-of-type {
+      margin-right: 0;
+    }
+  }
+
+  &__copyrights-link {
+    @include link-hover;
+  }
+}

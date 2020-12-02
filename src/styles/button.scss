@@ -1,0 +1,22 @@
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 18px;
+  height: 50px;
+
+  @include font(16px, 40px);
+  color: #fff;
+  background-color: $bright-blue;
+  border-radius: 30px;
+
+  &--light {
+    background-color: #fff;
+    color: $muddy-blue;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  }
+
+  &--small {
+    height: 40px;
+  }
+}

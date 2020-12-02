@@ -4,3 +4,27 @@
     #{$_property}: $_toValue;
   }
 }
+
+@mixin link-hover {
+  transition: text-shadow 0.3s;
+  &:hover {
+    text-shadow: 0 0 4px $bright-blue;
+  }
+}
+
+@mixin font($font-size: null, $line-height: null) {
+  font-size: $font-size;
+  line-height: $line-height;
+}
+
+@mixin for-1220 {
+  @media (max-width: 1220px) {
+    @content;
+  }
+}
+
+@mixin for-1080 {
+  @media (max-width: 1080px) {
+    @content;
+  }
+}
