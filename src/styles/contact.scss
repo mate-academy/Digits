@@ -1,0 +1,80 @@
+.contact {
+  background: #3751ff;
+  height: 323px;
+  margin-top: 150px;
+
+  &__title {
+    text-align: start;
+    color: white;
+  }
+
+  &__button {
+    background-color: white;
+    color: #455880;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 110%;
+    padding: 17px 40px 17px 70px;
+    position: relative;
+
+    &:before {
+      content: url(../images/mailpic.svg);
+      display: block;
+      position: absolute;
+      left: 26px;
+      top: 13px;
+    }
+  }
+
+  &__right {
+    text-align: right;
+  }
+}
+
+.section__contact {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.button__text {
+  margin-top: 19px;
+  font-family: "Halyard Text", sans-serif;
+  font-size: 16px;
+  line-height: 125%;
+  color: #dfe0eb;
+  text-align: right;
+
+}
+
+.button__text--color {
+  color: rgb(254, 211, 133);
+  text-decoration: none;
+}
+
+@media screen and (max-width: 319px) {
+  .section__contact {
+    padding: 20px;
+  }
+}
+
+@media screen and (max-width: 740px) {
+  .section__contact {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .button__text {
+    text-align: center;
+  }
+  
+  .contact__title {
+    text-align: center;
+  }
+
+  .contact__right {
+    width: 388px;
+    margin-top: 30px;
+    text-align: center;
+  }
+}

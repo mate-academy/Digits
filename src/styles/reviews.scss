@@ -1,0 +1,79 @@
+.talk {
+  &__title {
+    margin-top: 150px;
+    margin-bottom: 56px;
+  }
+
+  &__cards {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__card {
+    max-width: 372px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 38px 43px 32px;
+    border: 1px solid rgba(69, 88, 128, 0.2);
+    border-radius: 4px;
+    transition: all 0.5s;
+
+    &:hover {
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);
+      transform: translateY(-15px);
+    }
+
+    p {
+      font-family: "Halyard Text", sans-serif;
+      font-size: 18px;
+      line-height: 180%;
+      color: #455880;
+
+    }
+
+    .talk__img {
+      margin-top: 39px;
+      margin-bottom: 23px;
+      transition: all 0.5s;
+      &:hover {
+        transform: scale(1.2);
+      }
+    }
+
+    .card__text {
+      margin-bottom: auto;
+    }
+
+    .card__user {
+      font-family: "Halyard Display", sans-serif;
+      font-weight: 500;
+      font-size: 22px;
+      line-height: 125%;
+      color: #1e266d;
+
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+
+  .talk {
+    &__cards {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    &__title {
+      margin-top: 30px;
+    }
+  }
+}
+
+@media screen and (max-width: 330px) {
+  .card p {
+    font-size: 12px;
+  }
+}
