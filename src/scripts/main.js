@@ -1,12 +1,12 @@
 'use strict';
 
-const burgerMenu = document.querySelector('#burgerMenu');
+const burgerMenu = document.querySelector('#burger-menu');
 const burgerMenuClasses = burgerMenu.classList;
-const headerMenuClasses = document.querySelector('#headerMenu').classList;
+const headerMenuClasses = document.querySelector('#header-menu').classList;
 
 burgerMenu.addEventListener('click', () => {
   burgerMenuClasses.toggle('header__burger--active');
-  headerMenuClasses.toggle('header__right--active');
+  headerMenuClasses.toggle('header__menu--active');
 });
 
 // smooth scroll
