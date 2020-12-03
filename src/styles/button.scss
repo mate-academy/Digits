@@ -39,9 +39,10 @@
       position: absolute;
       content: "";
       left: -10%;
+      top: -120px;
       width: 2px;
-      height: 100px;
-      transform: rotate(22deg);
+      height: 250px;
+      transform: rotate(22deg) translateX(0);
       background-color: #fff;
       box-shadow: 0 0 3px 4px #fff;
       animation: button-stripe 5s linear infinite;

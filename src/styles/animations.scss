@@ -1,15 +1,15 @@
-// @keyframes text-blink {
-//   50% {
-//     color: transparent;
-//   }
-// }
+@keyframes text-blink {
+  50% {
+    color: transparent;
+  }
+}
 
-// @keyframes button-stripe {
-//   20% {
-//     left: 120%;
-//   }
+@keyframes button-stripe {
+  40% {
+    transform: rotate(22deg) translateX(300px);
+  }
 
-//   100% {
-//     left: 120%;
-//   }
-// }
+  100% {
+    transform: rotate(22deg) translateX(300px);
+  }
+}

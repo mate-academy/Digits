@@ -19,6 +19,7 @@
   &__content {
     display: flex;
     justify-content: space-between;
+    padding-top: 45px;
 
     @include for-720 {
       flex-direction: column;
@@ -27,13 +28,8 @@
   }
 
   &__pic {
-    margin-top: -125px;
-    margin-right: 25px;
+    margin-right: 55px;
     max-width: 612px;
-
-    @include for-960 {
-      margin-top: 0;
-    }
 
     @include for-720 {
       margin-right: 0;
@@ -53,12 +49,16 @@
   }
 
   &__services-list {
-    padding-top: 125px;
+    padding-top: 80px;
     max-width: 405px;
 
-    @include for-720 {
+    @include for-960 {
       padding-top: 50px;
       max-width: 600px;
+    }
+
+    @include for-540 {
+      padding-top: 0;
     }
   }
 
