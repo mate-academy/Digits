@@ -1,0 +1,57 @@
+@import "utils";
+
+.top-clients {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px;
+
+  @media (max-width: 400px) {
+    padding: 40px;
+  }
+
+  &__description {
+    margin-bottom: 40px;
+    font-family: $textFont;
+    text-align: center;
+    line-height: 27px;
+    color: $textColor;
+    opacity: 50%;
+
+    @media (max-width: 400px) {
+      margin-bottom: 30px;
+    }
+  }
+
+  &__logos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0 60px;
+
+    @media (max-width: 400px) {
+      gap: 0 40px;
+    }
+
+  }
+
+  &__link {
+    display: inline-block;
+    padding: 15px 0;
+    border-radius: 10px;
+    transition: transform 0.5s ease;
+
+    @media (max-width: 400px) {
+      padding: 10px 0;
+    }
+  }
+
+  &__link:hover {
+    transform: translateY(-20px);
+  }
+
+  @media (max-width: 768px) {
+    transform: translateY(-5px);
+  }
+
+}

@@ -1,7 +1,60 @@
 @import "utils";
 @import "fonts";
 @import "typography";
+@import "header";
+@import "reset";
+@import "nav";
+@import "top-bar";
+@import "top-clients";
+@import "help";
+@import "card";
+@import "simlicity";
+@import "testimonials";
+@import "testimonial";
+@import "launch";
+@import "footer";
 
-body {
-  background: $c-gray;
+html {
+  scroll-behavior: smooth;
+}
+
+.container {
+  max-width: 1230px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.section-title {
+  font-family: $headersFont;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 60px;
+
+  @media (max-width: 560px) {
+    font-size: 48px;
+  }
+  @media (max-width: 415px) {
+    font-size: 40px;
+    line-height: 46px;
+  }
+}
+
+.subtitle {
+  font-family: $headersFont;
+  font-size: 22px;
+  line-height: 22px;
+  font-weight: 500;
+}
+
+.link {
+  font-family: $textFont;
+}
+
+.btn {
+  position: relative;
+  display: inline-block;
+  border-radius: 100px;
+  font-family: $textFont;
+  font-size: 16px;
+  min-width: 120px;
 }

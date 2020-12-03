@@ -1,0 +1,30 @@
+@import "utils";
+
+.testimonials {
+  padding: 140px 0 80px;
+
+  @media (max-width: 900px) {
+    padding-top: 80px;
+  }
+
+  @media (max-width: 415px) {
+    padding-top: 40px;
+  }
+
+  &__cards {
+    display: flex;
+    justify-content: center;
+    gap: 28px;
+    flex-wrap: wrap;
+  }
+
+  &__title {
+    margin-bottom: 80px;
+    color: $headersTextColor;
+    text-align: center;
+
+    @media (max-width: 415px) {
+      margin-bottom: 40px;
+    }
+  }
+}
