@@ -41,7 +41,6 @@
 
     @include for-720 {
       align-items: center;
-      text-align: center;
     }
   }
 
@@ -58,11 +57,17 @@
   }
 
   &__notice {
+    text-align: right;
     @include font(16px, 1.25);
     color: $light-grey;
+
+    @include for-720 {
+      text-align: center;
+    }
   }
 
   &__notice-important {
     color: #fedc71;
+    @include hover(opacity, 0.6);
   }
 }
