@@ -1,7 +1,26 @@
 @import "utils";
 @import "fonts";
+
 @import "typography";
+@import "intro";
+
+$blueColor: #13266d;
+$backgroundButton: #3751ff;
+@import "header";
+@import "partnerse";
+@import "services";
+@import "examples";
+@import "reviews";
 
 body {
-  background: $c-gray;
+  font-family: halyard-text, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
 }
