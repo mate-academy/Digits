@@ -1,0 +1,17 @@
+<svg width="399" height="408" viewBox="0 0 399 408" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="85" y="9" width="289" height="12" fill="#DFE0EB"/>
+<rect x="85" y="36" width="201" height="6" fill="#DFE0EB"/>
+<circle cx="24" cy="24" r="24" fill="#FED892"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M366 236C370.418 236 374 239.582 374 244V293C374 297.418 370.418 301 366 301H350.676L353.5 309L335.618 301H164C159.582 301 156 297.418 156 293V244C156 239.582 159.582 236 164 236H366Z" fill="#DFE0EB"/>
+<rect x="188" y="258" width="155" height="6" fill="white"/>
+<rect x="187" y="270" width="54" height="6" fill="white"/>
+<ellipse rx="12.5" ry="12" transform="matrix(-1 0 0 1 386.5 337)" fill="#FACFCA"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M34 119C29.5817 119 26 122.582 26 127V176C26 180.418 29.5817 184 34 184H49.3235L46.5 192L64.3824 184H190C194.418 184 198 180.418 198 176V127C198 122.582 194.418 119 190 119H34Z" fill="#DFE0EB"/>
+<rect x="55" y="138" width="115" height="6" fill="white"/>
+<rect x="55" y="150" width="74" height="6" fill="white"/>
+<ellipse cx="13.5" cy="220" rx="12.5" ry="12" fill="#FACFCA"/>
+<rect y="380" width="399" height="28" rx="8" fill="#DFE0EB"/>
+<rect x="39" y="385" width="17" height="3" transform="rotate(90 39 385)" fill="white"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M17.6 401.8C12.9608 401.8 9.2 398.039 9.2 393.4C9.2 388.761 12.9608 385 17.6 385C22.2392 385 26 388.761 26 393.4C26 398.039 22.2392 401.8 17.6 401.8ZM17.6 399.6C14.5072 399.6 12.2 397.417 12.2 394.6C12.2 394.3 14.5072 395.285 17.6 395.285C20.6928 395.285 23 394.3 23 394.6C23 397.417 20.6928 399.6 17.6 399.6ZM19.9 393.4C19.4029 393.4 19 392.37 19 391.1C19 389.83 19.4029 388.8 19.9 388.8C20.3971 388.8 20.8 389.83 20.8 391.1C20.8 392.37 20.3971 393.4 19.9 393.4ZM15.3 393.4C14.8029 393.4 14.4 392.37 14.4 391.1C14.4 389.83 14.8029 388.8 15.3 388.8C15.7971 388.8 16.2 389.83 16.2 391.1C16.2 392.37 15.7971 393.4 15.3 393.4Z" fill="white"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M375 393.5H389L375 389V393.5ZM375 395H389L375 399.5V395Z" fill="white"/>
+</svg>

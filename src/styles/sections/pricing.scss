@@ -1,0 +1,68 @@
+.pricing {
+  padding: 88px 0;
+  background-color: $colorHover;
+
+  @media (min-width: 1920px) {
+    padding: 120px 0;
+  }
+
+  @media (max-width: 1200px) {
+    padding: 60px 0;
+  }
+
+  &__container.container {
+    display: flex;
+    justify-content: space-between;
+
+    @media (min-width: 2000px) {
+      width: 1600px;
+      margin: 0 auto;
+    }
+
+    @media (max-width: 1200px) {
+      flex-direction: column;
+    }
+  }
+
+  &__heading {
+    text-align: left;
+    font-weight: 500;
+    color: #fff;
+
+    @media (max-width: 1200px) {
+      text-align: center;
+      margin-bottom: 50px;
+    }
+  }
+
+  &__right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__button.button {
+    background-color: #fff;
+    border: 1px solid #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    background-image: url(.\..\images\icon-send.svg);
+    background-repeat: no-repeat;
+    background-position: 24px center;
+
+    & .button__text {
+      color: $colorText;
+      padding: 0 64px 0 80px;
+    }
+  }
+
+  &__text-small {
+    margin-top: 19px;
+    color: #dfe0eb;
+    font-size: 16px;
+
+    @media (max-width: 700px) {
+      font-size: 14px;
+    }
+  }
+}
