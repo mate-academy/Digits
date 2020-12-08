@@ -53,6 +53,12 @@ $tablet: 600px;
     width: 150px;
     height: 50px;
     margin-right: 50px;
+    transition: background-color 0.3s, color 0.3s;
+  }
+
+  &__link-buy:hover {
+    background-color: #fff;
+    color: $darkBlueFont;
   }
 
   &__link-see {
@@ -61,9 +67,15 @@ $tablet: 600px;
     justify-content: center;
     width: 200px;
     height: 50px;
+    color: #fff;
+    background: #3751ff;
+    border-radius: 100px;
+    transition: background-color 0.3s, color 0.3s;
+  }
+
+  &__link-see:hover {
     background-color: #fff;
     color: $darkBlueFont;
-    border-radius: 100px;
   }
 
   &__img {
@@ -98,4 +110,37 @@ $tablet: 600px;
     }
   }
 
+  @media (max-width: 300px) {
+    &__link-see {
+      font-size: 12px;
+      width: 100px;
+      height: 40px;
+    }
+
+    &__link-buy {
+      margin-right: 10px;
+      font-size: 12px;
+      width: 100px;
+      height: 40px;
+    }
+
+    &__header {
+      max-width: 300px;
+      margin-top: 40px;
+      font-size: 25px;
+      line-height: 90%;
+    }
+    
+  }
+
+  @media (max-width: 210px) {
+    &__link-see {
+      font-size: 8px;
+    }
+
+    &__link-buy {
+      font-size: 8px;
+    }
+
+  }
 }

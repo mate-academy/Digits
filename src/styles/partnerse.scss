@@ -33,11 +33,16 @@
   @media (max-width: 950px) {
     &__items {
       flex-wrap: wrap;
-      
     }
 
     &__item {
       margin: 30px 20px;
+      cursor: pointer;
+      transition: transform 0.5s;
+    }
+
+    &__item:hover {
+      transform: scale(1.2);
     }
   }
 }

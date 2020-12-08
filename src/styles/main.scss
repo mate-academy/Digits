@@ -11,12 +11,17 @@ $backgroundButton: #3751ff;
 @import "services";
 @import "examples";
 @import "reviews";
+@import "launch";
+@import "outro";
+@import "footer";
+@import "nav";
 
 body {
   font-family: halyard-text, sans-serif;
 }
 
 * {
+  scroll-behavior: smooth;
   box-sizing: border-box;
   margin: 0;
 }

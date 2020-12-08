@@ -3,16 +3,19 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Title</title>
+    <title>Digit</title>
+    <link rel="shortcut icon" href="\images\favicon.ico">
     <link rel="stylesheet" href="./styles/main.scss">
   </head>
   <body>
-    <header class="header">
-      <img
-        src="\images\logo.png"
-        alt="logo"
-        class="header__logo"
-      >
+    <header class="header" id="home">
+      <a href="">
+        <img
+          src="\images\logo.png"
+          alt="logo"
+          class="header__logo"
+        >
+      </a>
 
       <nav class="nav top-bar__nav">
         <input
@@ -31,7 +34,7 @@
             </a>
           </li>
           <li class="nav__item">
-            <a href="#help" class="nav__link">
+            <a href="#examples" class="nav__link">
               Products
             </a>
           </li>
@@ -46,7 +49,7 @@
             </a>
           </li>
           <li class="nav__item">
-            <a href="#testimonials" class="nav__link">
+            <a href="#blog" class="nav__link">
               Blog
             </a>
           </li>
@@ -54,12 +57,15 @@
       </nav>
 
       <div class="header__contacts">
-        <div class="contacts__number">
-          +00 123456 789
+        <div>
+          <a href="tel: +00 123456 789" class="contacts__number">
+            +00 123456 789
+          </a>
         </div>
-        <a href="#" class="contacts__button">Contact us</a>
+        <a href="tel: +00 123456 789" class="contacts__button">Contact us</a>
       </div>
     </header>
+
     <div class="intro__wrapper">
       <section class="intro">
         <div class="intro__main">
@@ -91,41 +97,55 @@
           software teams around the world
         </h3>
         <div class="partnerse__items">
-          <img
-            src="\images\logo-1.png"
-            alt=""
-            class="partnerse__item partnerse__items-netflix"
-          >
-          <img
-            src="\images\logo-2.png"
-            alt=""
-            class="partnerse__item partnerse__items-drawKit"
-          >
-          <img
-            src="\images\logo-3.png"
-            alt=""
-            class="partnerse__item partnerse__items-figma"
-          >
-          <img
-            src="\images\logo-4.png"
-            alt=""
-            class="partnerse__item partnerse__items-cinemaX"
-          >
-          <img
-            src="\images\logo-5.png"
-            alt=""
-            class="partnerse__item partnerse__items-stripe"
-          >
-          <img
-            src="\images\logo-6.png"
-            alt=""
-            class="partnerse__item partnerse__items-google"
-          >
-          <img
-            src="\images\logo-7.png"
-            alt=""
-            class="partnerse__item partnerse__items-disney"
-          >
+          <a href="https://www.netflix.com/ua/">
+            <img
+              src="\images\logo-1.png"
+              alt="Netflix logo"
+              class="partnerse__item partnerse__items-netflix"
+            >
+          </a>
+          <a href="https://www.drawkit.io/">
+            <img
+              src="\images\logo-2.png"
+              alt="Drawkit logo"
+              class="partnerse__item partnerse__items-drawKit"
+            >
+          </a>
+          <a href="https://www.figma.com/">
+            <img
+              src="\images\logo-3.png"
+              alt="figma logo"
+              class="partnerse__item partnerse__items-figma"
+            >
+          </a>
+          <a href="https://www.cinemax.com/">
+            <img
+              src="\images\logo-4.png"
+              alt="cinemaX logo"
+              class="partnerse__item partnerse__items-cinemaX"
+            >
+          </a>
+          <a href="https://stripe.com/">
+            <img
+              src="\images\logo-5.png"
+              alt="stripe logo"
+              class="partnerse__item partnerse__items-stripe"
+            >
+          </a>
+          <a href="https://www.google.com/">
+            <img
+              src="\images\logo-6.png"
+              alt="google logo"
+              class="partnerse__item partnerse__items-google"
+            >
+          </a>
+          <a href="https://www.disney.com/">
+            <img
+              src="\images\logo-7.png"
+              alt="disney logo"
+              class="partnerse__item partnerse__items-disney"
+            >
+          </a>
         </div>
       </section>
     </div>
@@ -199,7 +219,7 @@
       </section>
     </div>
 
-    <section class="examples">
+    <section class="examples" id="examples">
       <h2 class="examples__header">
         Simplicity meets innovative design
       </h2>
@@ -220,7 +240,7 @@
       </div>
     </section>
 
-    <section class="reviews">
+    <section class="reviews" id="blog">
       <h2 class="reviews__header">
         What others are saying
       </h2>
@@ -289,6 +309,148 @@
 
       </div>
     </section>
+
+    <section class="launch">
+      <p class="launch__header">
+        Ready to launch
+        your next website?
+      </p>
+      <div class="launch__main">
+        <a href="mailto: somemail@gmail.com" class="launch__link">
+          <img
+            src="\images\mail.png"
+            alt="mail"
+            class="launch__mail"
+          >
+            Get in touch now
+        </a>
+        <a class="launch__text" href="#">
+          Or, take a peek inside our design studio
+        </a>
+      </div>
+    </section>
+
+    <section class="outro">
+      <div class="outro__digits outro__block">
+        <img
+          src="\images\logoOutro.png"
+          alt="footer image"
+          class="outro__header-img"
+        >
+        <p class="outro__text">
+          Digits is a website template built to work
+          seamlesly with the WordPress block
+          editor to create beautifully
+          designed pages in minutes.
+        </p>
+      </div>
+
+      <div class="outro__pages outro__block">
+        <h2 class="outro__header">
+          Pages
+        </h2>
+        <a href="#home" class="outro__link outro__text">
+          Home
+        </a>
+        <a href="" class="outro__link outro__text">
+          About
+        </a>
+        <a href="" class="outro__link outro__text">
+          News
+        </a>
+        <a href="" class="outro__link outro__text">
+          Pricing
+        </a>
+        <a href="" class="outro__link outro__text">
+          Contact
+        </a>
+      </div>
+
+      <div class="outro__demos outro__block">
+        <h2 class="outro__header">
+          Demos
+        </h2>
+
+        <a href="" class="outro__link outro__text">
+          Classic
+        </a>
+        <a href="" class="outro__link outro__text">
+          Boxy
+        </a>
+        <a href="" class="outro__link outro__text">
+          gradient
+        </a>
+        <a href="" class="outro__link outro__text">
+          Minimal
+        </a>
+        <a href="" class="outro__link outro__text">
+          Night
+        </a>
+      </div>
+
+      <div class="outro__resources outro__block">
+        <h2 class="outro__header">
+          Resources
+        </h2>
+        <div class="outro__icons">
+          <a href="#">
+            <img
+              src="\images\icon-facebook.png"
+              alt="facebook ocin"
+              class="outro__icon"
+            >
+          </a>
+          <a href="#">
+            <img
+              src="\images\icon-instagram.png"
+              alt="instgaram icon"
+              class="outro__icon"
+            >
+          </a>
+          <a href="#">
+            <img
+              src="\images\icon-twitter.png"
+              alt="twittr logo"
+              class="outro__icon"
+            >
+          </a>
+          <a href="#">
+            <img
+              src="\images\icon-dribbble.png"
+              alt="drible icon"
+              class="outro__icon"
+            >
+          </a>
+          <a href="#">
+            <img
+              src="\images\icon-envato.png"
+              alt="envato icon"
+              class="outro__icon"
+            >
+          </a>
+        </div>
+        <a href="" class="outro__link outro__text">
+          Download now
+        </a>
+        <a href="" class="outro__link outro__text">
+          Documentation
+        </a>
+      </div>
+
+
+    </section>
+
+    <footer class="footer">
+      <a href="#" class="footer__copy">
+        Copyright © 2020 tempy.club
+      </a>
+      <div class="footer__links">
+        <a href="" class="footer__link">Privacy Policy</a>
+        <a href="" class="footer__link">Term of Use</a>
+        <a href="" class="footer__link">GDPR</a>
+      </div>
+    </footer>
+
 
     <script type="text/javascript" src="scripts/main.js"></script>
   </body>
