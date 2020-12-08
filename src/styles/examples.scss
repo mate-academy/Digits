@@ -1,7 +1,7 @@
 .examples {
   background-color: #fff9ea;
   text-align: center;
-  padding-top: 50px;
+  padding-top: 8%;
 
   &__header {
     font-weight: 600;
@@ -50,7 +50,7 @@
 
   &__image-wrapper {
     
-    max-height: 550px;
+    max-height: max-content;
     background-repeat: no-repeat ;
     background-size: contain;
     max-width: 100%;

@@ -33,9 +33,10 @@ $mainColor: lightblue;
     }
     
     .contacts__button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
       color: #fff;
-      text-align: center;
-      padding: 7px;
       margin-left: 30px;
       width: 113px;
       height: 40px;

@@ -1,5 +1,5 @@
 .partnerse {
-  margin-top: 300px;
+  margin-top: 400px;
   margin-bottom: 80px;
 
   @media (max-width: 960px) {
@@ -21,13 +21,13 @@
     line-height: 27px;
     text-align: center;
     color: rgba(69, 88, 128, 0.5);
+    margin-bottom: 40px;
   }
 
   &__items {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin-top: 20px;
   }
 
   @media (max-width: 950px) {
