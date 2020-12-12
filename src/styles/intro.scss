@@ -86,27 +86,32 @@ $tablet: 600px;
 
   @media (max-width: $tablet) {
 
-    &__header {
-      max-width: 400px;
-      margin-top: 80px;
-      font-weight: 500;
-      font-size: 40px;
-      line-height: 85%;
-    }
-
     &__link-buy {
       margin-right: 30px;
     }
-
-  }
-
-  @media (max-width: $tablet) {
     
     &__header {
       max-width: 300px;
       margin-top: 60px;
       font-size: 30px;
       line-height: 90%;
+    }
+  }
+
+  @media (max-width: 500px) {
+    &__links {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &__link-buy {
+      margin-bottom: 30px;
+      width: 150px;
+      margin-right: 0;
+    }
+
+    &__link-see {
+      width: 150px;
     }
   }
 
@@ -118,7 +123,6 @@ $tablet: 600px;
     }
 
     &__link-buy {
-      margin-right: 10px;
       font-size: 12px;
       width: 100px;
       height: 40px;
@@ -141,6 +145,5 @@ $tablet: 600px;
     &__link-buy {
       font-size: 8px;
     }
-
   }
 }
