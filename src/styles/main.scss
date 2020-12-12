@@ -31,9 +31,11 @@ a {
 }
 
 .container {
-
-  @media (min-width: 3000px) {
-    padding: 0 25%;
+  @media (min-width: 1800px) {
+    padding: 0 10%;
   }
 
+  @media (min-width: 2400px) {
+    padding: 0 25%;
+  }
 }
