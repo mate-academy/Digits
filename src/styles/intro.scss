@@ -1,0 +1,149 @@
+
+$blueFont: #1e266d;
+$darkBlueFont:  #455880;
+$tablet: 600px;
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(180deg, rgba(242, 249,
+  255, 0.12) 0%, #f2f9ff 100%);
+  max-height: 735px;
+
+  &__header-wrapper {
+    width: 100%;
+    text-align: center;
+  }
+
+  &__main {
+    margin-bottom: 30px;
+  }
+
+  &__header {
+    margin: 0 auto;
+    max-width: 600px;
+    margin-top: 150px;
+    color: $blueFont;
+    font-weight: 600;
+    font-size: 56px;
+    line-height: 105%;
+  }
+
+  &__text {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 18px;
+    line-height: 150%;
+    color: $darkBlueFont;
+  }
+
+  &__links {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+  }
+
+  &__link-buy {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    background: #3751ff;
+    border-radius: 100px;
+    width: 150px;
+    height: 50px;
+    margin-right: 50px;
+    transition: background-color 0.3s, color 0.3s;
+  }
+
+  &__link-buy:hover {
+    background-color: #fff;
+    color: $darkBlueFont;
+  }
+
+  &__link-see {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 50px;
+    color: #fff;
+    background: #3751ff;
+    border-radius: 100px;
+    transition: background-color 0.3s, color 0.3s;
+  }
+
+  &__link-see:hover {
+    background-color: #fff;
+    color: $darkBlueFont;
+  }
+
+  &__img {
+    margin: 40px auto 0;
+    max-width: 80%;
+    flex-shrink: 2;
+  }
+
+  @media (max-width: $tablet) {
+
+    &__link-buy {
+      margin-right: 30px;
+    }
+    
+    &__header {
+      max-width: 300px;
+      margin-top: 60px;
+      font-size: 30px;
+      line-height: 90%;
+    }
+  }
+
+  @media (max-width: 500px) {
+    &__links {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &__link-buy {
+      margin-bottom: 30px;
+      width: 150px;
+      margin-right: 0;
+    }
+
+    &__link-see {
+      width: 150px;
+    }
+  }
+
+  @media (max-width: 300px) {
+    &__link-see {
+      font-size: 12px;
+      width: 100px;
+      height: 40px;
+    }
+
+    &__link-buy {
+      font-size: 12px;
+      width: 100px;
+      height: 40px;
+    }
+
+    &__header {
+      max-width: 300px;
+      margin-top: 40px;
+      font-size: 25px;
+      line-height: 90%;
+    }
+    
+  }
+
+  @media (max-width: 210px) {
+    &__link-see {
+      font-size: 8px;
+    }
+
+    &__link-buy {
+      font-size: 8px;
+    }
+  }
+}
