@@ -107,4 +107,10 @@
       line-height: 105%;
     }
   }
+
+  @media (min-width: 2000px) {
+    &__header {
+      padding: 5% 0;
+    }
+  }
 }
