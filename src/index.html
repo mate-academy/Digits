@@ -3,11 +3,529 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Title</title>
+    <title>Digits</title>
+    <meta name="msapplication-navbutton-color" content="#3751ff">
+    <meta name="theme-color" content="#3751ff">
+    <link
+      rel="shortcut icon"
+      href="/images/favicon.ico"
+      type="image/x-icon"
+    >
     <link rel="stylesheet" href="./styles/main.scss">
   </head>
+
   <body>
-    <h1>Hello Mate Academy</h1>
+    <header class="header">
+      <div class="header__content container">
+        <a class="header__logo logo" href="#intro">
+          digits<span class="logo__dots">:</span>
+        </a>
+
+        <div id="header-menu" class="header__menu">
+          <nav class="header__nav nav">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a class="nav__link" href="#intro">Homepages</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#partners">Products</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#activity">Company</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#design">Pricing</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#comments">Blog</a>
+              </li>
+            </ul>
+          </nav>
+
+          <div class="header__contacts">
+            <a class="header__tel" href="tel:+00123456789">+00 123 456 789</a>
+            <a class="button button--striped button--small" href="#subscribe">
+              Contact Us
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div id="burger-menu" class="header__burger">
+        <span class="header__burger-stripe"></span>
+      </div>
+    </header>
+
+    <main class="main">
+      <section id="intro" class="intro">
+        <div class="intro__content container">
+          <h1 class="intro__title">Good design meets great user experience</h1>
+          <p class="intro__sub-title">For everyone, from beginners to experts</p>
+
+          <div class="intro__buttons">
+            <a href="#subscribe" class="button intro__button button--striped">Buy Digits</a>
+            <a href="#activity" class="button intro__button button--light">
+              See the Features
+            </a>
+          </div>
+
+          <div class="intro__pic">
+            <img
+              class="intro__bg-img"
+              src="images/intro.svg"
+              alt="design"
+            >
+          </div>
+        </div>
+      </section>
+
+      <section id="partners" class="partners">
+        <div class="container">
+          <p class="partners__text">
+            Trusted by forward-thinking software teams around the world
+          </p>
+          <ul class="partners__list">
+            <li class="partners__item">
+              <img
+                class="partners__img"
+                src="images/partner-1.png"
+                alt="Netflix"
+              >
+            </li>
+
+            <li class="partners__item">
+              <img
+                class="partners__img"
+                src="images/partner-2.png"
+                alt="DrawKit"
+              >
+            </li>
+
+            <li class="partners__item">
+              <img
+                class="partners__img"
+                src="images/partner-3.png"
+                alt="figma"
+              >
+            </li>
+
+            <li class="partners__item">
+              <img
+                class="partners__img"
+                src="images/partner-4.png"
+                alt="Cinemax"
+              >
+            </li>
+
+            <li class="partners__item">
+              <img
+                class="partners__img"
+                src="images/partner-5.png"
+                alt="stripe"
+              >
+            </li>
+
+            <li class="partners__item">
+              <img
+                class="partners__img"
+                src="images/partner-6.png"
+                alt="Google"
+              >
+            </li>
+
+            <li class="partners__item">
+              <img
+                class="partners__img"
+                src="images/partner-7.png"
+                alt="Disney"
+              >
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="activity" class="activity">
+        <div class="container">
+          <h2 class="activity__title">Whatever work you do, we're able to help</h2>
+
+          <div class="activity__content">
+            <div class="activity__pic">
+              <img
+                class="activity__img"
+                src="images/activity-bg.png"
+                alt="our team"
+              >
+            </div>
+
+            <ul class="activity__services-list">
+              <li class="activity__service">
+                <img
+                  class="activity__service-ico"
+                  src="images/ico-services.svg"
+                  alt="design and assets"
+                >
+                <div class="activity__service-info">
+                  <h3 class="activity__service-title">Design and Assets</h3>
+                  <p class="activity__service-text">
+                    Make your brand stand out with pixel-perfect design crafted to perfection.
+                  </p>
+                </div>
+              </li>
+
+              <li class="activity__service">
+                <img
+                  class="activity__service-ico"
+                  src="images/ico-services1.svg"
+                  alt="design and assets"
+                >
+                <div class="activity__service-info">
+                  <h3 class="activity__service-title">Easy Content</h3>
+                  <p class="activity__service-text">
+                    Import your demos or build pages visually. Bonus: All images and illustrations included!
+                  </p>
+                </div>
+              </li>
+
+              <li class="activity__service">
+                <img
+                  class="activity__service-ico"
+                  src="images/ico-services2.svg"
+                  alt="design and assets"
+                >
+                <div class="activity__service-info">
+                  <h3 class="activity__service-title">Fast and Reliable</h3>
+                  <p class="activity__service-text">
+                    No heavy-weight plugins. No builders. No unneccesary file loading. Pure WordPress.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="design" class="design">
+        <div class="design__content container">
+          <h2 class="design__title">Simplicity meets innovative design</h2>
+          <p class="design__sub-title">
+            It's really easy to start using Digits.<br>
+            Install the theme, choose a demo and<br>
+            start designing the future of your business!
+          </p>
+
+          <div class="design__button-wrapper">
+            <a class="button button--striped design__button" href="#">Buy Digits</a>
+          </div>
+
+          <ul class="design__bg-box">
+            <li>
+              <a href="#">
+                <img
+                  class="design__card"
+                  src="images/design1.png"
+                  alt="design"
+                >
+              </a>
+            </li>
+
+            <li>
+              <a href="#">
+                <img
+                  class="design__card"
+                  src="images/design4.png"
+                  alt="design"
+                >
+              </a>
+            </li>
+
+            <li>
+              <a href="#">
+                <img
+                  class="design__card"
+                  src="images/design5.png"
+                  alt="design"
+                >
+              </a>
+            </li>
+
+            <li>
+              <a href="#">
+                <img
+                 class="design__card"
+                 src="images/design6.png"
+                 alt="design"
+                >
+              </a>
+            </li>
+
+            <li>
+              <a href="#">
+                <img
+                  class="design__card"
+                  src="images/design7.png"
+                  alt="design"
+                >
+              </a>
+            </li>
+
+            <li>
+              <a href="#">
+                <img
+                  class="design__card"
+                  src="images/design8.png"
+                  alt="design"
+                >
+              </a>
+            </li>
+
+            <li>
+              <a href="#">
+                <img
+                  class="design__card"
+                  src="images/design9.png"
+                  alt="design"
+                >
+              </a>
+            </li>
+
+            <li>
+              <a href="#">
+                <img
+                  class="design__card"
+                  src="images/design10.png"
+                  alt="design"
+                >
+              </a>
+            </li>
+
+            <li>
+              <a href="#">
+                <img
+                  class="design__card"
+                  src="images/design11.png"
+                  alt="design"
+                >
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="comments" class="comments">
+        <div class="container">
+          <h2 class="comments__title">What others are saying</h2>
+
+          <div class="comments__content">
+            <div class="card comments__card">
+              <p class="card__text">
+                Completely beautiful website and amazing support! This is my second website from this author and I love both of the sites so much and she has helped me so well when I needed it!
+              </p>
+
+              <div class="card__bottom card__bottom--comments">
+                <img
+                  class="card__img"
+                  src="images/user1.jpg"
+                  alt="happy user"
+                >
+                <strong class="card__name">Happy User</strong>
+                <p class="card__site">tempy.club</p>
+              </div>
+            </div>
+
+            <div class="card comments__card">
+              <p class="card__text">
+                Really easy to use and customize. easy to understand. Darinka helped me with my site! She answers very quickly, a good service! Thank you very much!
+              </p>
+
+              <div class="card__bottom card__bottom--comments">
+                <img
+                  class="card__img"
+                  src="images/user2.jpg"
+                  alt="happy user"
+                >
+                <strong class="card__name">Happy User</strong>
+                <p class="card__site">tempy.club</p>
+              </div>
+            </div>
+
+            <div class="card comments__card">
+              <p class="card__text">
+                Really pleasing to look at! Documentation (including installation instructions) are clear and that is coming from a relatively new WordPress user.
+              </p>
+
+              <div class="card__bottom card__bottom--comments">
+                <img
+                  class="card__img"
+                  src="images/user3.jpg"
+                  alt="happy user"
+                >
+                <strong class="card__name">Happy User</strong>
+                <p class="card__site">tempy.club</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="subscribe" class="subscribe">
+        <div class="subscribe__content container">
+          <h2 class="subscribe__title">Ready to launch your next website?</h2>
+
+          <div class="subscribe__right">
+            <a class="button button--mail subscribe__button" href="mailto:mail@mail.com">
+              <img
+                class="subscribe__button-img"
+                src="images/ico-sign-up.svg" alt="sign up"
+              >
+              Get in touch now
+            </a>
+            <small class="subscribe__notice">
+              Or, take a peek inside our
+              <a class="subscribe__notice-important" href="#">design studio</a>
+            </small>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__content container">
+        <div class="footer__top">
+          <div class="footer__info-col">
+            <a class="footer__logo logo logo--footer" href="#intro">
+              digits<span class="logo__dots">:</span>
+            </a>
+            <p class="footer__text">
+              Digits is a website template built to work seamlesly with the WordPress block editor to create beautifully designed pages in minutes.
+            </p>
+          </div>
+
+          <div class="footer__lists">
+            <div class="footer__list">
+              <h3 class="footer__list-title">Pages</h3>
+              <ul>
+                <li class="footer__list-item">
+                  <a class="footer__list-link" href="#intro">Home</a>
+                </li>
+                <li class="footer__list-item">
+                  <a class="footer__list-link" href="#activity">About</a>
+                </li>
+                <li class="footer__list-item">
+                  <a class="footer__list-link" href="#comments">News</a>
+                </li>
+                <li class="footer__list-item">
+                  <a class="footer__list-link" href="#design">Pricing</a>
+                </li>
+                <li class="footer__list-item">
+                  <a class="footer__list-link" href="#subscribe">Contact</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="footer__list">
+              <h3 class="footer__list-title">Demos</h3>
+              <ul>
+                <li class="footer__list-item">
+                  <a class="footer__list-link" href="#">Classic</a>
+                </li>
+                <li class="footer__list-item">
+                  <a class="footer__list-link" href="#">Boxy</a>
+                </li>
+                <li class="footer__list-item">
+                  <a class="footer__list-link" href="#">Gradient</a>
+                </li>
+                <li class="footer__list-item">
+                  <a class="footer__list-link" href="#">Minimal</a>
+                </li>
+                <li class="footer__list-item">
+                  <a class="footer__list-link" href="#">Night</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="footer__public">
+              <h3 class="footer__list-title">Resources</h3>
+              <ul class="footer__public-list">
+                <li class="footer__public-item">
+                  <a class="footer__public-link" href="#">
+                    <img
+                      class="footer__public-ico"
+                      src="images/ico-fb.svg"
+                      alt="Facebook"
+                      title="Facebook"
+                    >
+                  </a>
+                </li>
+
+                <li class="footer__public-item">
+                  <a class="footer__public-link" href="#">
+                    <img
+                      class="footer__public-ico"
+                      src="images/ico-insta.svg"
+                      alt="Instagram"
+                      title="Instagram"
+                    >
+                  </a>
+                </li>
+
+                <li class="footer__public-item">
+                  <a class="footer__public-link" href="#">
+                    <img
+                      class="footer__public-ico"
+                      src="images/ico-twit.svg"
+                      alt="Twitter"
+                      title="Twitter"
+                    >
+                  </a>
+                </li>
+
+                <li class="footer__public-item">
+                  <a class="footer__public-link" href="#">
+                    <img
+                      class="footer__public-ico"
+                      src="images/ico-footer-4.svg"
+                      alt="Envato"
+                      title="Envato"
+                    >
+                  </a>
+                </li>
+
+                <li class="footer__public-item">
+                  <a class="footer__public-link" href="#">
+                    <img
+                      class="footer__public-ico"
+                      src="images/ico-footer-5.svg"
+                      alt="Envato"
+                      title="Envato"
+                    >
+                  </a>
+                </li>
+              </ul>
+
+              <a class="footer__public-docs" href="#">Download now</a>
+              <a class="footer__public-docs" href="#">Documentation</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer__copyrights">
+          <p>Copyright © 2020 tempy.club</p>
+          <ul class="footer__copyrights-list">
+            <li class="footer__copyrights-item">
+              <a class="footer__copyrights-link" href="#">Privacy Policy</a>
+            </li>
+            <li class="footer__copyrights-item">
+              <a class="footer__copyrights-link" href="#">Terms of Use</a>
+            </li>
+            <li class="footer__copyrights-item">
+              <a class="footer__copyrights-link" href="#">GDPR</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script type="text/javascript" src="scripts/main.js"></script>
   </body>
 </html>

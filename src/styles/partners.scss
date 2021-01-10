@@ -1,0 +1,40 @@
+.partners {
+  padding: 28px 0 40px;
+
+  &__text {
+    margin-bottom: 51px;
+    text-align: center;
+    @include font(16px, 27px);
+    color: rgba(69, 88, 128, 0.5);
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-gap: 30px 72px;
+
+    @include for-1220 {
+      grid-template-columns: repeat(4, 1fr);
+    }
+
+    @include for-960 {
+      grid-template-columns: repeat(auto-fit, 180px);
+      justify-content: space-evenly;
+      grid-gap: 40px 20px;
+    }
+
+    @include for-540 {
+      grid-template-columns: repeat(auto-fit, 120px);
+    }
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+  }
+
+  &__img {
+    margin: 0 auto;
+    max-width: 100%;
+  }
+}

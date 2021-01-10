@@ -1,0 +1,210 @@
+.footer {
+  padding: 124px 0 107px;
+
+  @include for-960 {
+    padding: 60px 0;
+  }
+
+  @include for-400 {
+    padding: 40px 0;
+  }
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+
+    @include for-960 {
+      flex-direction: column;
+    }
+  }
+
+  &__info-col {
+    margin-right: 25px;
+    max-width: 310px;
+
+    @include for-960 {
+      display: flex;
+      margin-right: 0;
+      margin-bottom: 40px;
+      max-width: 100%;
+    }
+    
+    @include for-400 {
+      flex-direction: column;
+    }
+  }
+
+  &__logo {
+    display: inline-block;
+    margin-bottom: 34px;
+
+    @include for-960 {
+      margin-right: 30px;
+    }
+
+    @include for-400 {
+      margin: 0 auto 10px;
+    }
+  }
+
+  &__text {
+    @extend .content-text;
+    line-height: 1.45;
+
+    @include for-960 {
+      padding-top: 4px;
+    }
+
+    @include for-400 {
+      text-align: center;
+    }
+  }
+
+  &__lists {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 690px;
+
+    @include for-960 {
+      max-width: 100%;
+    }
+
+    @include for-540 {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+
+  &__list {
+    margin-right: 25px;
+
+    @include for-540 {
+      margin-right: 0;
+      width: 50%;
+      text-align: center;
+    }
+  }
+
+  &__list-title {
+    margin-bottom: 34px;
+    @extend %h3;
+  }
+
+  &__list-item {
+    margin-bottom: 22px;
+    @extend .content-text;
+    line-height: 1;
+  }
+
+  &__list-link {
+    @include link-hover;
+  }
+
+  &__public {
+    max-width: 220px;
+
+    @include for-540 {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 20px;
+      max-width: 100%;
+      text-align: center;
+    }
+  }
+
+  &__public-list {
+    display: flex;
+    align-items: center;
+    margin-bottom: 32px;
+
+    @include for-540 {
+      justify-content: center;
+    }
+  }
+
+  &__public-item {
+    margin-right: 25px;
+    line-height: 0;
+
+    @include for-540 {
+      margin: 0 10px;
+    }
+  }
+
+  &__public-link {
+    display: block;
+    @include hover(transform, scale(2.4));
+
+    @include for-540 {
+      @include hover(transform, scale(1.5));
+    }
+  }
+
+  &__public-ico {
+    display: block;
+    min-width: 14px;
+    height: auto;
+
+    @include for-540 {
+      width: 30px;
+    }
+  }
+
+  &__public-docs {
+    display: inline-block;
+    margin-bottom: 22px;
+    @extend .content-text;
+    @include link-hover;
+  }
+
+  &__copyrights {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 130px;
+
+    @include for-960 {
+      padding-top: 60px;
+    }
+
+    @include for-720 {
+      flex-direction: column;
+      align-items: center;
+      padding-top: 30px;
+    }
+  }
+
+  &__copyrights-list {
+    display: flex;
+    margin-left: 30px;
+
+    @include for-720 {
+      order: -1;
+      margin-left: 0;
+      margin-bottom: 20px;
+    }
+    
+    @include for-400 {
+      flex-direction: column;
+    }
+  }
+
+  &__copyrights-item {
+    margin-right: 27px;
+
+    &:last-of-type {
+      margin-right: 0;
+    }
+
+    @include for-400 {
+      margin-right: 0;
+      margin-bottom: 10px;
+      text-align: center;
+    }
+  }
+
+  &__copyrights-link {
+    @include link-hover;
+  }
+}
