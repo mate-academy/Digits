@@ -1,0 +1,140 @@
+.nav {
+  display: block;
+
+  &__list {
+    display: inline-grid;
+    grid-template-columns: repeat(5, max-content);
+    list-style: none;
+  }
+
+  &__link {
+    display: block;
+    text-align: center;
+    font-size: 16px;
+    margin-left: 40px;
+    line-height: 48px;
+    color: $headersTextColor;
+    transition: color 0.3s, scale 0.5s;
+  }
+
+  @media (max-width: 800px) {
+
+    &__link {
+      margin-left: -40px;
+    }
+  }
+
+  &__link:hover {
+    color: pink;
+  }
+
+  &__toggle {
+    opacity: 0;
+    position: absolute;
+    top: -100%;
+  }
+
+  &__toggle:checked ~ &__btn > &__span {
+    transform: rotate(45deg);
+  }
+
+  &__toggle:checked ~ &__btn > &__span::before {
+    top: 0;
+    transform: rotate(0);
+  }
+
+  &__toggle:checked ~ &__btn > &__span::after {
+    top: 0;
+    transform: rotate(90deg);
+  }
+
+  &__toggle:checked ~ .nav__list {
+    visibility: visible;
+    top: 70px;
+  }
+
+  &__btn {
+    display: none;
+    position: relative;
+    margin: 30px 0 0;
+
+    width: 40px;
+    height: 30px;
+
+    cursor: pointer;
+    z-index: 1;
+  }
+
+  @media (max-width: 400px) {
+    margin: 0 auto;
+  }
+
+  @media (max-width: 800px) {
+
+    &__btn {
+      display: block;
+    }
+
+    &__list {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      z-index: 20;
+      visibility: hidden;
+      margin: 0 auto;
+      top: -100%;
+      left: 50%;
+      transform: translate(-50%, 0);
+      width: calc(100vw - 40px);
+      background-color: rgb(219, 212, 212);
+      box-shadow: 2px 0 6px rgba(0, 0, 0, 0.3);
+
+      transition-duration: 0.3s;
+    }
+
+    &__link {
+      width: calc(100vw - 40px);
+      display: block;
+      color: #fff;
+      text-align: center;
+      transition-duration: 0.3s;
+    }
+
+    &__link:hover {
+      background-color: rgb(146, 141, 142);
+      color: #fff;
+    }
+
+    &__span,
+    &__span::before,
+    &__span::after {
+      display: block;
+      position: absolute;
+
+      width: 100%;
+      height: 4px;
+      background-color: black;
+      transition-duration: 0.3s;
+    }
+
+    &__span::before {
+      content: "";
+      top: -8px;
+    }
+
+    &__span::after {
+      content: "";
+      top: 8px;
+    }
+
+  }
+
+  @media (min-width: 400px) {
+   
+    &__btn {
+      margin: 30px 25% 0;
+    }
+  }
+}
