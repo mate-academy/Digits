@@ -1,0 +1,90 @@
+.about {
+  margin-bottom: 30px;
+
+  @media (min-width: 768px) {
+    margin-bottom: 60px;
+  }
+
+  @media (min-width: 1024px) {
+    margin-bottom: 90px;
+  }
+
+  &__content {
+    $headerContentPaddingX: 40px;
+    margin: 0 auto;
+    padding: 20px 0;
+    max-width: 1120px + 2 * $headerContentPaddingX;
+    width: calc(100% - 2 * #{$headerContentPaddingX});
+  }
+
+  &__title {
+    margin-bottom: 50px;
+    text-align: center;
+    font-family: "Halyard Display", sans-serif;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 34px;
+    color: $halyardDisplay;
+
+    @media (min-width: 768px) {
+      font-size: 48px;
+      line-height: 60px;
+    }
+  }
+
+  &__image {
+    display: none;
+    width: 611px;
+
+    @media (min-width: 768px) {
+      display: block;
+      margin-bottom: 50px;
+    }
+  }
+
+  &__info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    @media (min-width: 1024px) {
+      justify-content: space-between;
+    }
+  }
+
+  &__description {
+    margin-left: 50px;
+    margin-bottom: 30px;
+
+    &-title {
+      margin-bottom: 30px;
+      font-family: "Halyard Display", sans-serif;
+      font-weight: 500;
+      font-size: 22px;
+      line-height: 27px;
+      color: $halyardDisplay;
+    }
+
+    &-text {
+      font-size: 18px;
+      line-height: 27px;
+      color: $halyardText;
+    }
+  }
+
+  &__item {
+    display: flex;
+    margin-bottom: 30px;
+    border-bottom: 1px solid rgba(69, 88, 128, 0.2);
+
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+
+  &__icon {
+    height: 58px;
+    width: 58px;
+  }
+}

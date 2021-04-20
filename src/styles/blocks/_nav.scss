@@ -1,0 +1,104 @@
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+
+  @media (min-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin: auto;
+    text-align: center;
+  }
+
+  &__list {
+    &--footer {
+      display: flex;
+      flex-direction: column;
+    }
+
+    @media (min-width: 768px) {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      width: 100%;
+    }
+  }
+
+  &__item {
+    margin-bottom: 40px;
+    padding-right: 10px;
+
+    @media (min-width: 768px) {
+      margin-bottom: 0;
+    }
+  }
+
+  &__link {
+    text-transform: uppercase;
+    font-weight: 700;
+    line-height: 22px;
+    font-size: 22px;
+    color: $white;
+    transition: font 0.4s;
+
+    &--list {
+      margin-right: 10px;
+      @media (min-width: 768px) {
+        position: relative;
+
+        &::after {
+          content: "";
+          position: fixed;
+          top: 47%;
+          right: 34%;
+          height: 9px;
+          width: 9px;
+          background-image: url("../images/icons/arrow.svg");
+          background-repeat: no-repeat;
+
+          @media (min-width: 820px) {
+            right: 35%;
+          }
+
+          @media (min-width: 900px) {
+            right: 38%;
+          }
+
+          @media (min-width: 1024px) {
+            right: 32%;
+          }
+
+          @media (min-width: 1120px) {
+            right: 33%;
+          }
+
+          @media (min-width: 1200px) {
+            right: 34%;
+          }
+        }
+      }
+    }
+
+    &:hover {
+      padding-bottom: 8px;
+      border-bottom: 1px solid $white;
+      color: $white;
+
+      @media (min-width: 768px) {
+        border-bottom: 1px solid tomato;
+        color: tomato;
+      }
+    }
+
+    @media (min-width: 768px) {
+      text-transform: capitalize;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 80px;
+      color: $halyardDisplay;
+    }
+  }
+}
