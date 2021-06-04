@@ -1,7 +1,28 @@
-@import "utils";
-@import "fonts";
-@import "typography";
+@import "utils/reset";
+@import "utils/typography";
+@import "utils/variables";
+@import "utils/palette";
+@import "utils/fonts";
+
+*{
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Halyard Display", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: $H-color;
+}
 
 body {
-  background: $c-gray;
+  margin: 0;
 }
+
+
+@import "blocks/block-digits-navigation.scss";
+// @import "blocks/block_good-design.scss";
+// @import "blocks/block_main.scss";
+// @import "blocks/block_we-help.scss";
+// @import "blocks/block_simplicity.scss";
+// @import "blocks/block_feedback.scss";
