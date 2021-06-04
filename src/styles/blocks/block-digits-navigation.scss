@@ -5,7 +5,7 @@
   background-color: #fff;
   color: $H-color;
   justify-content: space-evenly;
-  padding: 0 20px 0;
+  padding: 0 20px;
   &__pages {
     display: flex;
     justify-content: space-between;
@@ -17,7 +17,7 @@
     position: relative;
     font-weight: 600;
     font-size: 2em;
-    margin-right: 5.125em;
+    margin-right: 5.13em;
     padding-bottom: 7px;
 
     &::after {
@@ -63,9 +63,9 @@
       content: "\02D1";
       position: absolute;
       right: -1rem;
-      bottom: -1.875rem;
+      bottom: -1.88rem;
       display: block;
-      font-size: 3.125em;
+      font-size: 3.13em;
       font-weight: 700;
     }
   }
@@ -128,7 +128,7 @@
       height: auto;
     }
     &__logo {
-      margin-right: 20px;
+      margin-right: 30px;
     }
     &__item {
       margin-right: 15px;
@@ -142,9 +142,8 @@
       margin-bottom: 0;
     }
     &__item:nth-child(3)::after {
-      top:-0.42em;
+      top: -0.42em;
       right: -0.3em;
     }
   }
 }
-

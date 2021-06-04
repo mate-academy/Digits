@@ -1,10 +1,9 @@
 @import "utils/reset";
-@import "utils/typography";
 @import "utils/variables";
 @import "utils/palette";
 @import "utils/fonts";
 
-*{
+* {
   box-sizing: border-box;
 }
 
@@ -18,7 +17,6 @@ html {
 body {
   margin: 0;
 }
-
 
 @import "blocks/block-digits-navigation.scss";
 // @import "blocks/block_good-design.scss";
