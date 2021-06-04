@@ -1,0 +1,183 @@
+@use "../utils/variables";
+
+.help {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30em 0 0;
+  width: 100%;
+  background-color: #fff;
+  padding-bottom: 180px;
+  
+  &__tittle {
+    width: 34.38rem;
+    font-size: 3em;
+    line-height: 3.75rem;
+    margin-bottom: 126px;
+    text-align: center;
+  }
+
+  &__content{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+  }
+
+  &__image{
+    position: relative;
+    width: 430px;
+    height: 650px;
+    z-index: 1;
+  }
+
+  &__image-girl {
+    position: absolute;
+    width: 331px;
+    height: 357px;
+    background-color: #999fe3;
+    border-radius: 4px;
+    right: -70px;
+
+    &::after {
+      content: "";
+      width: 64px;
+      height: 64px;
+      border-radius: 4px;
+      background-color: #b5f2e3;
+      position: absolute;
+      right: -20px;
+      bottom: 73px;
+      z-index: -1;
+    }
+
+    &-foto {
+      position: absolute;
+      top: -255px;
+    }
+  }
+
+  &__image-b-man { 
+    width: 266px;
+    height: 308px;
+    background-color:#fed892;
+    position: absolute;
+    border-radius: 4px;
+    left: 10px;
+    top: 260px;
+
+    &::after {
+      content: "";
+      width: 102px;
+      height: 102px;
+      background-color: #facfca;
+      border-radius: 50%;
+      position: absolute;
+      left: -38px;
+      bottom: 67px;
+      z-index: -1;
+    }
+
+    &-foto {
+      position: absolute;
+      top: -5px;
+    }
+  }
+
+  &__image-w-man {
+    width: 201px;
+    height: 200px;
+    background-color: #f47b9e;
+    border-radius: 4px;
+    position: absolute;
+    bottom: 5px;
+    right: 15px;
+    &::after {
+      content: "";
+      width: 66px;
+      height: 66px;
+      background-image: url(/images/block-help/pink3angle.svg);
+      position: absolute;
+      right: -33px;
+      bottom: -33px;
+      z-index: -1;
+    }
+
+      &-foto { 
+    position: absolute;
+    top: -56px;
+    left: 19px;
+    }
+  }
+  
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    margin-left: 6.25em;
+  }
+
+  &__info-des, &__info-easycontent, &__info-fast {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    max-width: 25.125em;
+    border-bottom: 1px solid rgba(69, 88, 128, 0.2);
+    margin-bottom: 45px;
+  }
+
+  &__info-des-tittle, &__info-easycontent-tittle, &__info-fast-tittle {
+    font-size: 1.375em;
+    line-height: 1.72em;
+    padding-left: 47px;
+  }
+
+  &__info-des-text, &__info-easycontent-text, &__info-fast-text {
+    margin: 0 0 0 105px;
+    color: $h2-color;
+    font-family: $ff-h-text;
+    width: 13.75em;
+    padding-bottom: 45px;
+  }
+
+  &__info-fast {
+    border: none;
+    margin-bottom: 0;
+  }
+
+  &__info-fast-text {
+    padding-bottom: 0;
+  }
+
+  @media (max-width:600px) {
+    &__tittle {
+      font-size: 1.8rem;
+      width: 60%;
+      line-height: 2em;
+    }
+  }
+
+  @media (max-width:950px) {
+    & {
+      padding-top: 50px;
+    }
+    &__tittle {
+      width: 60%;
+      line-height: 2em;
+    }
+    &__image {
+      display: none;
+    }
+    &__content {
+      justify-content: center;
+    }
+    &__info {
+      margin: 0;
+      max-width: 90%;
+    }
+  }
+  @media (min-width:2000px) {
+    & {
+      font-size: 22px;
+    }
+  }
+}
