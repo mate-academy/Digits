@@ -1,0 +1,106 @@
+@use "../utils/variables";
+
+.feedback {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 232px 0 150px;
+  background-color: #fff;
+
+  &__tittle {
+    font-size: 3em;
+    line-height: 3.75em;
+    align-items: center;
+    margin-bottom: 56px;
+  }
+
+  &__reviews {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  &__review { 
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgba(69, 88, 128, 0.2);
+    margin: 0 15px;
+    padding: 38px 32px;
+    flex-basis: 373px;
+    font-family: $ff-h-text;
+    font-size: 1.13em;
+    color: $h2-color;
+    line-height: 32.4px;
+    justify-content: space-between;
+  }
+
+  &__profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 39px;
+  }
+
+  &__user-name {
+    position: relative;
+    text-align: center;
+    font-family: "Halyard Display",sans-serif;
+    font-weight: 500;
+    font-size: 1.38em;
+    line-height: 27.5px;
+    color: $H-color;
+    margin-top: 23px;
+
+    &--avatar-left,
+    &--avatar-mid,
+    &--avatar-rgt {
+      width: 4em;
+      height: 4em;
+      background-size: cover;
+    }
+
+    &--avatar-left {
+      background-image: url(/images/block-feedback/image1.png);
+    }
+
+    &--avatar-mid {
+      background-image: url(/images/block-feedback/image2.png);
+    }
+
+    &--avatar-rgt {
+      background-image: url(/images/block-feedback/image3.png);
+    }
+  }
+
+  &__website {
+    text-align: center;
+  }
+
+  @media (min-width: 2000px) {
+    & {
+      font-size: 22px;
+    }
+
+    &__review {
+      flex-basis: 450px;
+    }
+  }
+
+  @media (max-width: 900px) {
+    &__reviews {
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    &__review {
+      width: 75%;
+      margin-bottom: 20px;
+    }
+  }
+
+  @media (max-width: 700px) {
+    &__tittle {
+      font-size: 1.8em;
+    }
+  }
+}
+
