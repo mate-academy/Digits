@@ -10,27 +10,31 @@
   background: linear-gradient(180deg, rgba(242, 249, 255, 0.12) 0%, 
   #f2f9ff 100%);
   height: 58.13em;
+
   &:nth-child(n) {
     text-align: center;
   }
+
   &__item-tittle {
     width: 10em;
-    font-size: 3.5em;
+    font-size: 3em;
     line-height: 1.7em;
     margin-bottom: 27px;
   }
 
   &__item-subtittle {
     font-family: $ff-h-text;
-    font-size: 1.13em;
+    font-size: 1.3em;
     color: $h2-color;
     margin-bottom: 1.68em;
   }
+
   &__item-links {
     display: flex;
     justify-content: center;
     margin: 4.25em;
   }
+
   &__item-buy {
     text-align: center;
     text-decoration: none;
@@ -45,7 +49,11 @@
     width: 9.25em;
     margin-right: 1.41em;
 
+    &:hover {
+      box-shadow: 0 0 15px blue;
+    }
   }
+
   &__item-see {
     text-decoration: none;
     font-family: $ff-h-text;
@@ -58,7 +66,12 @@
     border-radius: 100px;
     background-color: #fff;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+
+    &:hover {
+      box-shadow: 0 0 15px grey;
+    }
   }
+
   &__item-images {
     display: flex;
     flex-direction: column;
@@ -75,6 +88,7 @@
     background-image: url("/images/block-good_design/browser.svg");
     z-index: 1;
     background-position: center;
+
     &::after {
       content: "";
       position: absolute;
@@ -85,6 +99,7 @@
       left: 0;
       z-index: 1;
     }
+
     &::before {
       content: "";
       position: absolute;
@@ -171,13 +186,15 @@
   }
 
   &__item-images-dot1 {
-    left: 17px;
+    left: 1rem;
   }
+
   &__item-images-dot2 {
-    left: 31px;
+    left: 2rem;
   }
+
   &__item-images-dot3 {
-    left: 45px;
+    left: 3rem;
   }
 
   &__item-down-subtittle {
@@ -186,6 +203,7 @@
     opacity: 0.5;
     line-height: 27px;
     margin-bottom: 50px;
+    font-size: 1.3em;
   }
 
   &__item-logos {
@@ -204,6 +222,7 @@
     &__item-images {
       display: none;
     }
+
     &__item-logos {
       flex-direction: column;
       padding: 0;
@@ -216,6 +235,7 @@
       line-height: 24.4px;
       margin-bottom: 27px;
     }
+
     &__item-links {
       margin: 30px;
       font-size: 0.75rem;
@@ -223,10 +243,12 @@
       align-items: center;
       justify-content: center;
     }
+
     &__item-buy {
       margin-bottom: 10px;
       margin-right: 0;
     }
+
     &-down-subtittle {
       padding: 0 10px;
     }
@@ -237,11 +259,18 @@
       padding-top: 50px;
       height: auto;
     }
+
     &__item-images {
       display: none;
     }
+    
     &__item-logos {
       flex-wrap: wrap;
+    }
+  }
+  @media (min-width:2000px) {
+    & {
+      font-size: 22px;
     }
   }
 }

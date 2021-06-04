@@ -17,13 +17,13 @@
     text-align: center;
   }
 
-  &__content{
+  &__content {
     display: flex;
     width: 100%;
     justify-content: space-evenly;
   }
 
-  &__image{
+  &__image {
     position: relative;
     width: 430px;
     height: 650px;
@@ -49,17 +49,17 @@
       bottom: 73px;
       z-index: -1;
     }
-
-    &-foto {
-      position: absolute;
-      top: -255px;
-    }
   }
 
-  &__image-b-man { 
+  &__image-girl-foto {
+    position: absolute;
+    top: -255px;
+  }
+
+  &__image-b-man {
     width: 266px;
     height: 308px;
-    background-color:#fed892;
+    background-color: #fed892;
     position: absolute;
     border-radius: 4px;
     left: 10px;
@@ -76,11 +76,11 @@
       bottom: 67px;
       z-index: -1;
     }
+  }
 
-    &-foto {
-      position: absolute;
-      top: -5px;
-    }
+  &__image-b-man-foto {
+    position: absolute;
+    top: -5px;
   }
 
   &__image-w-man {
@@ -101,14 +101,13 @@
       bottom: -33px;
       z-index: -1;
     }
-
-      &-foto { 
+  }
+  
+  &__image-w-man-foto {
     position: absolute;
     top: -56px;
     left: 19px;
-    }
   }
-  
 
   &__info {
     display: flex;
@@ -116,22 +115,28 @@
     margin-left: 6.25em;
   }
 
-  &__info-des, &__info-easycontent, &__info-fast {
+  &__info-des,
+  &__info-easycontent,
+  &__info-fast {
     display: flex;
     flex-wrap: wrap;
     align-content: flex-start;
-    max-width: 25.125em;
+    max-width: 25.13em;
     border-bottom: 1px solid rgba(69, 88, 128, 0.2);
     margin-bottom: 45px;
   }
 
-  &__info-des-tittle, &__info-easycontent-tittle, &__info-fast-tittle {
-    font-size: 1.375em;
+  &__info-des-tittle,
+  &__info-easycontent-tittle,
+  &__info-fast-tittle {
+    font-size: 1.38em;
     line-height: 1.72em;
     padding-left: 47px;
   }
 
-  &__info-des-text, &__info-easycontent-text, &__info-fast-text {
+  &__info-des-text,
+  &__info-easycontent-text,
+  &__info-fast-text {
     margin: 0 0 0 105px;
     color: $h2-color;
     font-family: $ff-h-text;
@@ -175,6 +180,7 @@
       max-width: 90%;
     }
   }
+
   @media (min-width:2000px) {
     & {
       font-size: 22px;
