@@ -60,13 +60,15 @@
     }
 
     &:nth-child(3)::after {
-      content: "\02D1";
+      content: "";
+      background-image: url(/images/block-navigation/arrow-down.svg);
+      background-size: cover;
       position: absolute;
-      right: -1rem;
-      bottom: -1.88rem;
-      display: block;
-      font-size: 3.13em;
-      font-weight: 700;
+      right: -0.7rem;
+      bottom: 0.35rem;
+      width: 10px;
+      height: 10px;
+      cursor: pointer;
     }
   }
   &__link {
@@ -80,6 +82,7 @@
   }
   &__telephone-num {
     margin-right: 1em;
+    color: $H-color;
   }
   &__button {
     text-decoration: none;
@@ -111,7 +114,8 @@
       margin-right: 8px;
 
       &:nth-child(3)::after {
-        top: -22px;
+        top: 0.45rem;
+        right: -0.9rem;
       }
     }
     &__pages {
@@ -142,8 +146,10 @@
       margin-bottom: 0;
     }
     &__item:nth-child(3)::after {
-      top: -0.42em;
-      right: -0.3em;
+      top: 0.6rem;
+      right: -1.3rem;
+      width: 15px;
+      height: 15px;
     }
   }
 }

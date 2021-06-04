@@ -7,20 +7,22 @@
   align-items: center;
   padding: 146px 0 0;
   width: 100%;
-  background: linear-gradient(180deg, rgba(242, 249, 255, 0.12) 0%, #F2F9FF 100%);
-  height: 58.125em;
-  &__item {
+  background: linear-gradient(180deg, rgba(242, 249, 255, 0.12) 0%, 
+  #f2f9ff 100%);
+  height: 58.13em;
+  &:nth-child(n) {
     text-align: center;
   }
   &__item-tittle {
     width: 10em;
     font-size: 3.5em;
-    line-height: 1.675em;
+    line-height: 1.7em;
     margin-bottom: 27px;
   }
-  &__item-subtittle { 
+
+  &__item-subtittle {
     font-family: $ff-h-text;
-    font-size: 1.125em;
+    font-size: 1.13em;
     color: $h2-color;
     margin-bottom: 1.68em;
   }
@@ -35,27 +37,27 @@
     font-family: $ff-h-text;
     color: #fff;
     font-weight: 400;
-    line-height: 3.125em;
+    line-height: 3.13em;
 
     background-color: $ready-and-button-bg;
     border-radius: 100px;
-    height: 3.125em;
+    height: 3.13em;
     width: 9.25em;
     margin-right: 1.41em;
 
   }
   &__item-see {
     text-decoration: none;
-    font-family:$ff-h-text;
+    font-family: $ff-h-text;
     color: $h2-color;
     font-weight: 400;
-    line-height: 3.125em;
+    line-height: 3.13em;
 
     width: 9.25em;
-    height: 3.125em;
+    height: 3.13em;
     border-radius: 100px;
     background-color: #fff;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
   }
   &__item-images {
     display: flex;
@@ -66,35 +68,35 @@
   }
 
   &__item-images-window {
-      position: relative;
-      height:33.31em;
+    position: relative;
+    height: 33.31em;
+    width: 44.94em;
+    border-radius: 40px;
+    background-image: url("/images/block-good_design/browser.svg");
+    z-index: 1;
+    background-position: center;
+    &::after {
+      content: "";
+      position: absolute;
       width: 44.94em;
-      border-radius: 40px;
-      background-image: url("/images/block-good_design/browser.svg");
+      height: 2em;
+      background-image: url(/images/block-good_design/Rectangle.svg);
+      top: 0;
+      left: 0;
       z-index: 1;
-      background-position: center;
-      &::after {
-        content: "";
-        position: absolute;
-        width: 44.94em;
-        height: 2em;
-        background-image: url(/images/block-good_design/Rectangle.svg);
-        top: 0;
-        left: 0;
-        z-index: 1;
-      }
-      &::before {
-        content: "";
-        position: absolute;
-        width: 25em;
-        height: 25.5em;
-        background-image: url(/images/block-good_design/ui.svg);
-        background-repeat: no-repeat;
-        top: 4.375em;
-        left: 3.625em;
-        z-index: 1;
-      }
     }
+    &::before {
+      content: "";
+      position: absolute;
+      width: 25em;
+      height: 25.5em;
+      background-image: url(/images/block-good_design/ui.svg);
+      background-repeat: no-repeat;
+      top: 4.38em;
+      left: 3.63em;
+      z-index: 1;
+    }
+  }
 
   &__item-images-avatar {
     width: 3.75em;
@@ -103,7 +105,7 @@
     border-radius: 50%;
     position: absolute;
     top: 7.81em;
-    left: -2.625em;
+    left: -2.63em;
     z-index: 1;
   }
 
@@ -114,7 +116,7 @@
     background-repeat: no-repeat;
     position: absolute;
     top: -35px;
-    left:-115px;
+    left: -115px;
     
   }
   
@@ -139,7 +141,7 @@
   &__item-images-square {
     width: 64px;
     height: 64px;
-    background: #B5F2E3;
+    background: #b5f2e3;
     border-radius: 4px;
     position: absolute;
     right: -27px;
@@ -156,7 +158,9 @@
     right: -13.5px;
   }
 
-  &__item-images-dot1, &__item-images-dot2, &__item-images-dot3{
+  &__item-images-dot1,
+  &__item-images-dot2,
+  &__item-images-dot3 {
     width: 8px;
     height: 8px;
     position: absolute;
@@ -185,6 +189,7 @@
   }
 
   &__item-logos {
+    display: flex;
     width: 100%;
     justify-content: space-evenly;
     z-index: 1;
@@ -202,7 +207,7 @@
     &__item-logos {
       flex-direction: column;
       padding: 0;
-      max-width: 100px;
+      min-width: 200px;
     }
 
     &__item-tittle {
@@ -216,13 +221,14 @@
       font-size: 0.75rem;
       flex-direction: column;
       align-items: center;
+      justify-content: center;
     }
     &__item-buy {
       margin-bottom: 10px;
       margin-right: 0;
     }
     &-down-subtittle {
-      padding:0 10px 0;
+      padding: 0 10px;
     }
   }
 
