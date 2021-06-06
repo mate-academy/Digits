@@ -45,6 +45,20 @@
     }
   }
 
+  &__headline {
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      background: #fff;
+      width: 0.97em;
+      height: 0.2em;
+      left: 25%;
+      top: 28%;
+    }
+  }
+
   &__list {
     margin: 0;
     padding: 0;
