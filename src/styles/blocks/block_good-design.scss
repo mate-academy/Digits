@@ -9,7 +9,7 @@
   width: 100%;
   background: linear-gradient(180deg, rgba(242, 249, 255, 0.12) 0%, 
   #f2f9ff 100%);
-  height: 58.13em;
+  height: 58.13rem;
 
   &:nth-child(n) {
     text-align: center;
@@ -26,13 +26,13 @@
     font-family: $ff-h-text;
     font-size: 1.3em;
     color: $h2-color;
-    margin-bottom: 1.68em;
+    margin-bottom: 1.68rem;
   }
 
   &__item-links {
     display: flex;
     justify-content: center;
-    margin: 4.25em;
+    margin: 4.25rem;
   }
 
   &__item-buy {
@@ -82,8 +82,8 @@
 
   &__item-images-window {
     position: relative;
-    height: 33.31em;
-    width: 44.94em;
+    height: 33.31rem;
+    width: 44.94rem;
     border-radius: 40px;
     background-image: url("/images/block-good_design/browser.svg");
     z-index: 1;
@@ -92,8 +92,8 @@
     &::after {
       content: "";
       position: absolute;
-      width: 44.94em;
-      height: 2em;
+      width: 44.94rem;
+      height: 2rem;
       background-image: url(/images/block-good_design/Rectangle.svg);
       top: 0;
       left: 0;
@@ -114,13 +114,13 @@
   }
 
   &__item-images-avatar {
-    width: 3.75em;
-    height: 3.56em;
+    width: 3.75rem;
+    height: 3.56rem;
     background-image: url(/images/block-good_design/avatar.svg);
     border-radius: 50%;
     position: absolute;
-    top: 7.81em;
-    left: -2.63em;
+    top: 7.81rem;
+    left: -2.63rem;
     z-index: 1;
   }
 
@@ -211,6 +211,7 @@
     width: 100%;
     justify-content: space-evenly;
     z-index: 1;
+
   }
 
   @media (max-width:600px) {
@@ -274,6 +275,11 @@
   @media (min-width:2000px) {
     & {
       font-size: 22px;
+      height: 48.5em;
+    }
+
+    &__item-logos {
+      max-width: 1800px;
     }
   }
 }

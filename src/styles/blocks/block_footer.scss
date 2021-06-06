@@ -1,0 +1,99 @@
+.footer {
+  height: 660px;
+  background-color: #fff;
+  padding: 124px 212px 107px 204px;
+
+  &__nav {
+    display: flex;
+    margin:0 auto 130px;
+    justify-content: space-between;
+    max-width: 1800px;
+  }
+  &__digits-about {
+  }
+  &__logo { }
+  &__about,
+  &__link {
+    font-family: $ff-h-text;
+    font-size: 1.13em;
+    color: $h2-color;
+    font-weight: normal;
+  }
+  &__about {
+    width:16em;
+    line-height: 145%;
+  }
+  &__list {
+    font-size: 1.38em;
+  }
+  &__list-item {
+    &--margin-bot {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__list-item:first-child {
+    margin-top: 20px;
+  }
+  &__link {
+    font-size: 1.13rem;
+    line-height: 225%;
+
+    &--fb,
+    &--inst,
+    &--twit,
+    &--ball,
+    &--egg {
+      display: inline-block;
+      width: 1em;
+      height: 1em;
+      margin: 0 20px 0 5px;
+    }
+
+    &--fb { 
+      background-image: url(/images/block-footer/fb.svg);
+      background-size: cover;
+    }
+    &--inst {
+      background-image: url(/images/block-footer/insta.svg);
+      background-size: cover;
+    }
+    &--twit {
+      background-image: url(/images/block-footer/Twitter.svg);
+      background-size: cover;
+    }
+    &--ball {
+      background-image: url(/images/block-footer/BasBall.svg);
+      background-size: cover;
+    }
+    &--egg {
+      background-image: url(/images/block-footer/Egg.svg);
+      background-size: cover;
+      margin-right: 44px;
+    }
+  }
+
+  &__terms-and-conditions {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1800px;
+    margin: 0 auto;
+  }
+  &__copyright,
+  &__rules {
+    font-family: $ff-h-text;
+    font-weight: normal;
+    font-size: 0.88em;
+  }
+  &__copyright {
+    color: rgba(69, 88, 128, 0.5);
+  }
+  &__rules {
+    display: flex;
+    flex-basis: 23em;
+    justify-content: space-between;
+    color: $h2-color;
+  }
+}
+

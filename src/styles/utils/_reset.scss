@@ -1,13 +1,17 @@
 p,
 h1,
 h2,
-h3 {
+h3,
+ul {
   margin-block-start: 0;
   margin-block-end: 0;
   font-size: inherit;
   font-weight: inherit;
+  list-style: none;
+  padding: 0;
 }
 
 a {
   text-decoration: none;
 }
+
