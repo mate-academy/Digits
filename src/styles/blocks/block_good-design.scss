@@ -5,7 +5,7 @@
   font-size: 16px;
   flex-direction: column;
   align-items: center;
-  padding: 146px 0 0;
+  padding: 146px 20px 0;
   width: 100%;
   background: linear-gradient(180deg, rgba(242, 249, 255, 0.12) 0%, 
   #f2f9ff 100%);
@@ -36,6 +36,7 @@
   }
 
   &__item-buy {
+    display: block;
     text-align: center;
     text-decoration: none;
     font-family: $ff-h-text;
@@ -55,6 +56,7 @@
   }
 
   &__item-see {
+    display: block;
     text-decoration: none;
     font-family: $ff-h-text;
     color: $h2-color;
@@ -208,10 +210,14 @@
 
   &__item-logos {
     display: flex;
+    flex-wrap: wrap;
     width: 100%;
     justify-content: space-evenly;
     z-index: 1;
+  }
 
+  &__item-logos > img {
+    margin: 10px 30px;
   }
 
   @media (max-width:600px) {

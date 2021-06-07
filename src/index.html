@@ -3,18 +3,57 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=yes"/>
     <title>Title</title>
     <link rel="stylesheet" href="./styles/main.scss">
+    <link rel="shortcut icon" href="images/Vector 1.png" type="image/x-icon">
   </head>
   <body>
     <nav class="digits-navigation">
       <div class="digits-navigation__pages">
         <div class="digits-navigation__logo">
-          <span class="digits-navigation__headline">
+          <span class="digits-navigation__headline" tabindex="-1">
             digits
           </span>
         </div>
-        <ul class="digits-navigation__list">
+        <div class="menu-maxwidth700">
+          <input
+          type="checkbox"
+          name="menu"
+          class="menu-maxwidth700__toggler"
+          id="toggler">
+          <label class="menu-maxwidth700__label" for="toggler">
+            <span>Menu</span>
+          </label>
+          <ul class="menu-maxwidth700__list">
+            <li class="menu-maxwidth700__item">
+              <a href="#" class="menu-maxwidth700__link">
+                Homepages
+              </a>
+            </li>
+            <li class="menu-maxwidth700__item">
+              <a href="#" class="menu-maxwidth700__link">
+                Products
+              </a>
+            </li>
+            <li class="menu-maxwidth700__item">
+              <a href="#" class="menu-maxwidth700__link">
+                Company
+              </a>
+            </li>
+            <li class="menu-maxwidth700__item">
+              <a href="#" class="menu-maxwidth700__link">
+                Pricing
+              </a>
+            </li>
+            <li class="menu-maxwidth700__item">
+              <a href="#" class="menu-maxwidth700__link">
+                Blog
+              </a>
+            </li>
+          </ul>
+        </div>
+        <ul class="digits-navigation__list" tabindex="0">
           <li class="digits-navigation__item">
             <a href="#" class="digits-navigation__link">Homepages</a>
           </li>
@@ -33,7 +72,7 @@
         </ul>
       </div>
       <div class="digits-navigation__contacts">
-        <a href = "#" class="digits-navigation__telephone-num">
+        <a href = "tel:+00 123 456 789" class="digits-navigation__telephone-num">
           +00 123 456 789
         </a>
         <a href="#" class="digits-navigation__button">
@@ -43,16 +82,20 @@
     </nav>
     <main class="main">
       <section class="good-design">
-        <h2 class="good-design__item-tittle">
+        <h2 class="good-design__item-tittle" tabindex="0">
           Good design meets great user experience
         </h2>
-        <h3 class="good-design__item-subtittle">
+        <h3 class="good-design__item-subtittle" tabindex="0">
           For everyone, from beginners to experts
         </h3>
-        <div class="good-design__item-links">
-          <a href="#" class="good-design__item-buy">Buy digits</a>
-          <a href="#" class="good-design__item-see">See the Features</a>
-        </div>
+        <ul class="good-design__item-links" tabindex="0">
+          <li>
+            <a href="#launch" class="good-design__item-buy">Buy digits</a>
+          </li>
+          <li>
+            <a href="#examples" class="good-design__item-see">See the Features</a>
+          </li>
+        </ul>
         <div class="good-design__item-images">
           <div class="good-design__item-images-window"></div>
           <div class="good-design__item-images-3angle"></div>
@@ -79,7 +122,7 @@
         </div>
       </section>
       <section class="help">
-        <h2 class="help__tittle">
+        <h2 class="help__tittle" tabindex="0">
           Whatever work you do, we're able to help
         </h2>
         <div class="help__content">
@@ -104,57 +147,57 @@
             </div>
           </div>
           <div class="help__info">
-            <div class="help__info-des">
+            <div class="help__info-des" tabindex="0">
               <img
                 class="help__info-des-logo"
                 src="/images/block-help/help-icons/Icon1.svg"
                 alt="design logo">
-              <h3 class="help__info-des-tittle">
+              <h3 class="help__info-des-tittle" tabindex="0">
                 Design and Assets
               </h3>
-              <p class="help__info-des-text">
+              <p class="help__info-des-text" tabindex="0">
                 Make your brand stand out with pixel-perfect design crafted to perfection.
               </p>
             </div>
-            <div class="help__info-easycontent">
+            <div class="help__info-easycontent" tabindex="0">
               <img
                 src="/images//block-help/help-icons/Icon2.svg"
                 alt="easy content logo"
                 class="help__info-easycontent-logo">
-              <h3 class="help__info-easycontent-tittle">
+              <h3 class="help__info-easycontent-tittle" tabindex="0">
                 Easy Content
               </h3>
-              <p class="help__info-easycontent-text">
+              <p class="help__info-easycontent-text" tabindex="0">
                 Import your demos or build pages visually. Bonus: All images and illustrations included!
               </p>
             </div>
-            <div class="help__info-fast">
+            <div class="help__info-fast" tabindex="0">
               <img
                 src="/images/block-help/help-icons/Icon3.svg"
                 alt="fast-logo"
                 class="help__info-fast-logo">
-              <h3 class="help__info-fast-tittle">
+              <h3 class="help__info-fast-tittle" tabindex="0">
                 Fast and Reliable
               </h3>
-              <p class="help__info-fast-text">
+              <p class="help__info-fast-text" tabindex="0">
                 No heavy-weight plugins. No builders. No unneccesary file loading. Pure WordPress.
               </p>
             </div>
           </div>
         </div>
       </section>
-      <section class="simplicity">
-        <h2 class="simplicity__tittle">
+      <section class="simplicity" id="examples">
+        <h2 class="simplicity__tittle" tabindex="0">
           Simplicity meets innovative design
         </h2>
-        <h3 class="simplicity__subtittle">
-          <p class="simplicity__sent">
+        <h3 class="simplicity__subtittle" tabindex="0">
+          <p class="simplicity__sent" tabindex="0">
             It's really easy to start using Digits.
           </p>
-          <p class="simplicity__sent">Install the theme, choose a demo and</p> start designing the future of your business!
+          <p class="simplicity__sent" tabindex="0">Install the theme, choose a demo and</p> start designing the future of your business!
         </h3>
         <div class="simplicity__button">
-          <a href="#" class="simplicity__link">
+          <a href="#launch" class="simplicity__link">
             Buy Digits
           </a>
         </div>
@@ -216,12 +259,12 @@
         </div>
       </section>
       <section class="feedback">
-        <h2 class="feedback__tittle">
+        <h2 class="feedback__tittle" tabindex="0">
           What others are saying
         </h2>
         <div class="feedback__reviews">
-          <div class="feedback__review">
-            <p>
+          <div class="feedback__review" tabindex="0">
+            <p tabindex="0">
               Completely beautiful website and amazing support!
               This is my second website from this author and
               I love both of the sites so much and she has helped
@@ -237,8 +280,8 @@
               </p>
             </div>
           </div>
-          <div class="feedback__review">
-            <p>
+          <div class="feedback__review" tabindex="0">
+            <p tabindex="0">
               Really easy to use and customize. easy to understand.
               Darinka helped me with my site!
               She answers very quickly, a good service!
@@ -255,13 +298,13 @@
               </p>
             </div>
           </div>
-          <div class="feedback__review">
-            <p>
+          <div class="feedback__review" tabindex="0">
+            <p tabindex="0">
               Really pleasing to look at!
               Documentation (including installation instructions)
               are clear and that is coming from a relatively new WordPress user.
             </p>
-            <div class="feedback__profile">
+            <div class="feedback__profile" >
               <div class="feedback__user-name-avatar-rgt"></div>
               <p class="feedback__user-name">
                 Happy User
@@ -273,15 +316,18 @@
           </div>
         </div>
       </section>
-      <section class="launch-website">
-        <h2 class="launch-website__title">
+      <section class="launch-website" id="launch">
+        <h2
+        class="launch-website__title"
+        tabindex="0"
+        >
           Ready to launch your next website?
         </h2>
-        <div class="launch-website__container-link">
+        <div class="launch-website__container-link" tabindex="0">
           <a href="#" class="launch-website__link-launch-now">
             Get in touch now
           </a>
-          <p class="launch-website__another-variant">
+          <p class="launch-website__another-variant" tabindex="0">
             Or, take a peek inside our
             <a
               href="#"
