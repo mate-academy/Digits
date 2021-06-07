@@ -1,0 +1,24 @@
+.nav {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-evenly;
+}
+
+.nav__logo-text {
+  color: $color-accent-blue;
+  font-family: "Halyard Display", sans-serif;
+  font-size: 31px;
+}
+
+.nav__list {
+  display: flex;
+  list-style: none;
+}
+
+.nav__link {
+  color: $color-accent-blue;
+  font-family: "Halyard Text", sans-serif;
+  font-size: 16px;
+  margin-left: 40px;
+  text-decoration: none;
+}
