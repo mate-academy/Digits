@@ -1,7 +1,7 @@
 .digits-navigation {
   display: flex;
   align-items: center;
-  height: 5em;
+  min-height: 5em;
   background-color: #fff;
   color: $H-color;
   justify-content: space-evenly;
@@ -100,6 +100,8 @@
   &__telephone-num {
     margin-right: 1em;
     color: $H-color;
+    font-family: $ff-h-text;
+    font-weight: normal;
   }
   &__button {
     text-decoration: none;
@@ -143,27 +145,7 @@
       align-items: center;
     }
   }
-  @media (max-width:1050px) {
-    & {
-      flex-direction: column;
-      height: auto;
-    }
 
-    &__pages {
-      width: 90%;
-    }
-
-    &__item {
-      margin:0 20px;
-    }
-
-    &__logo {
-      margin-right: 30px;
-    }
-    &__item {
-      margin-right: 15px;
-    }
-  }
   @media (min-width:2000px) {
     & {
       font-size: 22px;
@@ -179,13 +161,17 @@
     }
   }
 
-  @media (max-width:700px) {
+  @media (max-width:1050px) {
     &__list {
       display: none;
     }
 
+    &__logo {
+      margin-right: 30px;
+    }
+
     &__pages {
-      display: block;
+      display: flex;
       width: auto;
     }
   }

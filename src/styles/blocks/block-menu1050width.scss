@@ -1,0 +1,64 @@
+.menu-maxwidth1050 {
+  display: none;
+  position: relative;
+
+  &__label {
+    cursor: pointer;
+    &:after {
+      content: "\25BC";
+      font-size: 13px;
+    }
+  }
+
+  &__toggler {
+    opacity: 0;
+  }
+
+  &__list {
+    display: none;
+    font-family: $ff-h-text;
+    font-weight: normal;
+  }
+
+  &__item {
+    background: rgba(55, 81, 255, 0.3);
+
+    &:hover {
+      background: rgba(55, 81, 255, 0.5);
+    }
+  }
+
+  &__link {
+    display: block;
+    color: $h2-color;
+    transition: color 0.3s;
+    width: 100%;
+
+    &:hover {
+      color: greenyellow;
+    }
+  }
+
+  @media (max-width: 1050px) {
+    & {
+      display: block;
+    }
+
+    &__toggler:checked ~ &__list {
+      display: block;
+      position: absolute;
+      margin-bottom: 20px;
+    }
+
+    &__toggler:checked + &__label:after {
+      content: "X";
+      font-size: 12px;
+      font-weight: 700;
+    }
+  }
+  @media (max-width: 600px) {
+    &__toggler:checked ~ &__list {
+      position: static;
+    }
+  }
+}
