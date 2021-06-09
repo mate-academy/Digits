@@ -26,7 +26,6 @@
           class="menu-maxwidth1050__toggler"
           id="toggler">
           <label class="menu-maxwidth1050__label" for="toggler">
-            <span>Menu</span>
           </label>
           <ul class="menu-maxwidth1050__list">
             <li class="menu-maxwidth1050__item">
@@ -54,7 +53,18 @@
                 Blog
               </a>
             </li>
+            <li class="menu-maxwidth1050__item-contacts">
+              <div class="menu-maxwidth1050__contacts">
+                <a href = "tel:+00 123 456 789" class="menu-maxwidth1050__telephone-num">
+                  +00 123 456 789
+                </a>
+                <a href="#" class="menu-maxwidth1050__button">
+                  Contact Us
+                </a>
+              </div>
+            </li>
           </ul>
+
         </div>
         <ul class="digits-navigation__list" tabindex="0">
           <li class="digits-navigation__item">
@@ -344,7 +354,7 @@
         </div>
       </section>
     </main>
-    <!-- <footer class="footer">
+    <footer class="footer">
       <nav class="footer__nav">
         <div class="footer__digits-about">
           <div class="footer__logo">
@@ -358,82 +368,92 @@
             in minutes.
           </p>
         </div>
-        <ul class="footer__list">
-          Pages
-          <li class="footer__list-item">
-            <a href="#" class="footer__link">
-              Home
-            </a>
-          </li>
-          <li class="footer__list-item">
-            <a href="#" class="footer__link">
-              About
-            </a>
-          </li>
-          <li class="footer__list-item">
-            <a href="#" class="footer__link">
-              News
-            </a>
-          </li>
-          <li class="footer__list-item">
-            <a href="#" class="footer__link">
-              Pricing
-            </a>
-          </li>
-          <li class="footer__list-item">
-            <a href="#" class="footer__link">
-              Contact
-            </a>
-          </li>
-        </ul>
-        <ul class="footer__list">
-          Demos
-          <li class="footer__list-item">
-            <a href="#" class="footer__link">
-              Classic
-            </a>
-          </li>
-          <li class="footer__list-item">
-            <a href="#" class="footer__link">
-              Boxy
-            </a>
-          </li>
-          <li class="footer__list-item">
-            <a href="#" class="footer__link">
-              Gradien
-            </a>
-          </li>
-          <li class="footer__list-item">
-            <a href="#" class="footer__link">
-              Minimal
-            </a>
-          </li>
-          <li class="footer__list-item">
-            <a href="#" class="footer__link">
-              Night
-            </a>
-          </li>
-        </ul>
-        <ul class="footer__list">
-          Resources
-          <li class="footer__list-item footer__list-item--margin-bot">
-            <a href="#" class="footer__link footer__link--fb"></a>
-            <a href="#" class="footer__link footer__link--inst"></a>
-            <a href="#" class="footer__link footer__link--twit"></a>
-            <a href="#" class="footer__link footer__link--ball"></a>
-            <a href="#" class="footer__link footer__link--egg"></a>
-          </li>
-          <li class="footer__list-item">
-            <a href="#" class="footer__link">
-              Download now
-            </a>
-          </li>
-          <li class="footer__list-item">
-            <a href="#" class="footer__link">
-              Documentation
-            </a>
-          </li>
-        </ul>
+        <div class="footer__lists-container">
+          <ul class="footer__list">
+            <input
+              type="checkbox"
+              name="pages menu"
+              id="toggler-pages"
+              class="footer__toggler footer__toggler--pages"
+            >
+            <label for="toggler-pages" class="footer__label">
+              Pages
+            </label>
+            <li class="footer__list-item">
+              <a href="#" class="footer__link">
+                Home
+              </a>
+            </li>
+            <li class="footer__list-item">
+              <a href="#" class="footer__link">
+                About
+              </a>
+            </li>
+            <li class="footer__list-item">
+              <a href="#" class="footer__link">
+                News
+              </a>
+            </li>
+            <li class="footer__list-item">
+              <a href="#" class="footer__link">
+                Pricing
+              </a>
+            </li>
+            <li class="footer__list-item">
+              <a href="#" class="footer__link">
+                Contact
+              </a>
+            </li>
+          </ul>
+          <ul class="footer__list">
+            Demos
+            <li class="footer__list-item">
+              <a href="#" class="footer__link">
+                Classic
+              </a>
+            </li>
+            <li class="footer__list-item">
+              <a href="#" class="footer__link">
+                Boxy
+              </a>
+            </li>
+            <li class="footer__list-item">
+              <a href="#" class="footer__link">
+                Gradien
+              </a>
+            </li>
+            <li class="footer__list-item">
+              <a href="#" class="footer__link">
+                Minimal
+              </a>
+            </li>
+            <li class="footer__list-item">
+              <a href="#" class="footer__link">
+                Night
+              </a>
+            </li>
+          </ul>
+          <ul class="footer__list">
+            Resources
+            <li class="footer__list-item footer__list-item--margin-bot">
+              <a href="http://www.facebook.com" class="footer__link footer__link--fb" target="_blank"></a>
+              <a href="#" class="footer__link footer__link--inst"></a>
+              <a href="#" class="footer__link footer__link--twit"></a>
+              <a href="#" class="footer__link footer__link--ball"></a>
+              <a href="#" class="footer__link footer__link--egg"></a>
+            </li>
+            <li class="footer__list-item">
+              <a href="#" class="footer__link">
+                Download now
+              </a>
+            </li>
+            <li class="footer__list-item">
+              <a href="#" class="footer__link">
+                Documentation
+              </a>
+            </li>
+          </ul>
+        </div>
       </nav>
       <section class="footer__terms-and-conditions">
         <div class="footer__copyright">
@@ -450,7 +470,7 @@
             GDPR
           </a>
         </div>
-      </section> -->
+      </section>
     </footer>
   </body>
 </html>

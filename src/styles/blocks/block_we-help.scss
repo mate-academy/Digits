@@ -154,6 +154,9 @@
   }
 
   @media (max-width:600px) {
+    & {
+      padding-bottom: 50px;
+    }
     &__tittle {
       font-size: 1.8rem;
       width: 60%;

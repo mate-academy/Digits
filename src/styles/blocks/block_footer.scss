@@ -10,6 +10,33 @@
     max-width: 1800px;
   }
 
+  &__logo {
+    display: inline-block;
+    font-size: 1.64em;
+    font-weight: 600;
+    line-height: 125%;
+    position: relative;
+
+    &::after, &::before{
+      position: absolute;
+      display: block;
+      background-color: #ff2e6a;
+      width: 0.16em;
+      height: 0.16em;
+      border-radius: 50%;
+      content: "";
+      right:-12%;
+    }
+    &::after {
+
+      top:40%;
+    }
+
+    &::before {
+      top: 68%;
+    }
+  }
+
   &__about,
   &__link {
     font-family: $ff-h-text;
@@ -21,10 +48,29 @@
   &__about {
     width: 16em;
     line-height: 145%;
+    margin-top: 34px;
+  }
+
+  &__lists-container {
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-evenly;
   }
 
   &__list {
     font-size: 1.38em;
+  }
+  &__label {
+    cursor: pointer;
+    transform: translateY(40px);
+    &::after {
+      content: '\25BC';
+      font-size: 18px;
+      
+    }
+  }
+  &__toggler {
+    opacity: 0;
   }
 
   &__list-item {
@@ -40,6 +86,11 @@
   &__link {
     font-size: 1.13rem;
     line-height: 225%;
+    transition: color 0.3s;
+
+    &:hover {
+      color: rgba(69, 88, 128, 0.5);
+    }
 
     &--fb,
     &--inst,
@@ -103,5 +154,73 @@
     flex-basis: 23em;
     justify-content: space-between;
     color: $h2-color;
+  }
+
+  @media (min-width:2000px) {
+    & {
+      font-size: 22px;
+    }
+  }
+  @media (max-width:1300px) {
+    & {
+      padding-right: 30px;
+      padding-left: 30px;
+    }
+  }
+  @media (max-width:900px) {
+    & {
+      height: auto;
+    }
+    &__nav {
+      flex-direction: column;
+      align-items: center;
+    }
+    &__digits-about {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    &__lists-container {
+      width: 100%;
+      margin-top: 40px;
+
+    }
+  }
+  @media (max-width:600px) {
+    & {
+      padding: 50px 10px;
+    }
+    &__lists-container {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &__list {
+      margin-top: 30px;
+      text-align: left;
+    }
+
+    &__list-item {
+      display: none;
+    }
+    
+    &__toggler--pages:checked ~ &__list-item {
+      display:block;
+    }
+
+    &__toggler--pages:checked + &__label::after {
+        transform: rotate(180deg);
+    }
+
+    &__terms-and-conditions {
+      flex-direction: column;
+    }
+    &__rules {
+      width: 100%;
+      flex-basis: auto;
+      order: -1;
+      justify-content: space-evenly;
+      margin-bottom: 50px;
+    }
   }
 }
