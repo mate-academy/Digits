@@ -177,11 +177,16 @@
   }
   @media (max-width:600px) {
     & {
-      padding: 50px 10px;
+      padding: 50px 30px;
     }
+
     &__lists-container {
       flex-wrap: wrap;
-      gap: 20px 30px;
+      gap: 20px 20px;
+    }
+
+    &__about {
+      width: auto;
     }
 
     &__terms-and-conditions {
@@ -194,6 +199,10 @@
       flex-basis: auto;
       justify-content: space-between;
       margin-bottom: 30px;
+    }
+    
+    &__rules > a {
+      font-size: 16px;
     }
   }
 }
