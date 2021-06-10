@@ -6,9 +6,10 @@
     display: inline-block;
     cursor: pointer;
     background: url(/images/block-navigation/menu.svg);
-    width: 25px;
-    height: 25px;
-    background-size: 25px 16px;
+    width: 20px;
+    height: 20px;
+    background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
     position: relative;
     z-index: 1;
@@ -28,7 +29,7 @@
     border-radius: 15px;
     
     position: absolute;
-    right: -65px;
+    right: -55px;
     top: -15px;
     
     background: rgba(248, 174, 195, 1);
@@ -112,9 +113,8 @@
     }
   }
   @media (max-width: 600px) {
-
     &__list {
-      left: -125px;
+      right: -25px;
       width: 300px;
       padding-right: 10px;
     }

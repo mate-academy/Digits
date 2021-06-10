@@ -112,34 +112,6 @@
       box-shadow: 0 0 15px rgba(17, 17, 255, 1);
     }
   }
-  
-  @media (max-width:600px) {
-    & {
-      padding: 20px 0;
-    }
-
-    &__logo {
-      margin-right: 20px;
-      margin-bottom: 30px;
-    }
-
-    &__item {
-      margin-right: 8px;
-
-      &:nth-child(3)::after {
-        top: 0.45rem;
-        right: -0.9rem;
-      }
-    }
-
-    &__pages {
-      flex-direction: column;
-    }
-    &__list {
-      flex-direction: column;
-      align-items: center;
-    }
-  }
 
   @media (min-width:2000px) {
     & {
