@@ -54,20 +54,14 @@
   }
 
   &__contacts-button {
-    background-color: $color-button;
-    border-radius: 100px;
-    color: #fff;
-    font-family: $font-nav;
-    font-size: 16px;
-    padding: 10px 16px;
-    text-decoration: none;
+    @include colored-button;
   }
 
   &__toggler {
     display: none;
   }
 
-  @media (max-width: 1024px) {
+  @media (max-width: $tablet-screen) {
     justify-content: space-between;
 
     &__list {
@@ -94,7 +88,7 @@
     }
   }
 
-  @media (min-width: 1024px) and (max-width: 1280px) {
+  @media (min-width: $tablet-screen) and (max-width: $notebook-screen) {
     &__contacts-phone {
       display: none;
     }
