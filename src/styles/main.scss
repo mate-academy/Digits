@@ -1,13 +1,16 @@
-@import "utils";
-@import "fonts";
-@import "typography";
+@import "./utils";
+@import "./fonts";
+@import "./typography";
+@import "./reset";
 
-@import "./variables.scss";
 @import "./blocks/header.scss";
 @import "./blocks/nav.scss";
 
 @import "./blocks/hero.scss";
 @import "./blocks/logos.scss";
+
+@import "./blocks/about.scss";
+@import "./blocks/services.scss";
 
 body {
   background: #fff;
