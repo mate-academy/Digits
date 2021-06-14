@@ -1,0 +1,31 @@
+.reviews {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 110px;
+
+  &__heading {
+    @include heading;
+    text-align: center;
+  }
+
+  &__cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+  }
+
+  @media (max-width: 500px) {
+    padding-top: 0;
+
+    &__heading {
+      transform: scale(0.8);
+    }
+
+    &__cards {
+      padding-top: 0;
+      transform: scale(0.7);
+    }
+  }
+}
