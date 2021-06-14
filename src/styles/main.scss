@@ -12,6 +12,12 @@
 @import "./blocks/about.scss";
 @import "./blocks/services.scss";
 
+@import "./blocks/portfolio.scss";
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background: #fff;
 }

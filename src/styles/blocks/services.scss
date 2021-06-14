@@ -16,6 +16,7 @@
 
     &-item:last-child {
       border: none;
+      padding-bottom: 0;
     }
 
     &-icon {
@@ -34,10 +35,7 @@
     }
 
     &-text {
-      color: $color-accent-blue;
-      font-family: "Halyard Text", sans-serif;
-      font-size: 18px;
-      padding-top: 20px;
+      @include description;
       width: 300px;
     }
   }

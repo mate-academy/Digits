@@ -1,0 +1,54 @@
+.portfolio {
+  background-color: #fff9ea;
+  margin-top: 180px;
+  padding-top: 100px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+
+  &__heading {
+    @include heading;
+    margin: 0;
+    padding-bottom: 20px;
+  }
+
+  &__text {
+    @include description;
+    padding-bottom: 40px;
+    text-align: center;
+  }
+
+  &__button {
+    @include colored-button;
+  }
+
+  &__mask {
+    align-self: stretch;
+    padding-top: 100px;
+
+    &-image {
+      width: 100%;
+    }
+  }
+
+  @media (max-width: $tablet-screen) {
+    margin-top: 0;
+    padding-top: 0;
+  }
+
+  @media (max-width: 900px) {
+    margin-top: 0;
+    padding-bottom: 20px;
+    padding-top: 0;
+
+    &__mask {
+      display: none;
+    }
+
+    &__heading {
+      font-size: 40px;
+    }
+  }
+}

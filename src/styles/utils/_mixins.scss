@@ -30,3 +30,10 @@
   line-height: 59px;
   text-align: center;
 }
+
+@mixin description {
+  color: $color-accent-blue;
+  font-family: "Halyard Text", sans-serif;
+  font-size: 18px;
+  padding-top: 20px;
+}
