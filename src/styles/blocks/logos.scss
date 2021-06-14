@@ -1,0 +1,66 @@
+.logos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding-top: 160px;
+
+  &__description {
+    color: $color-content;
+    font-family: "Halyard Text", sans-serif;
+    opacity: 0.5;
+    text-align: center;
+  }
+
+  &__toggler {
+    display: none;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-around;
+
+    padding: 30px;
+  }
+
+  &__list-item {
+    padding-right: 72px;
+    text-align: center;
+  }
+
+  &__list-item:last-child {
+    padding-right: 0;
+  }
+
+  @media (max-width: $notebook-screen) {
+    &__list {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 40px;
+    }
+
+    &__list-item {
+      padding-right: 0;
+    }
+  }
+
+  @media (max-width: $tablet-screen) {
+    padding-top: 0;
+
+    &__list {
+      grid-template-columns: 1fr 1fr;
+      justify-content: center;
+    }
+  }
+
+  @media (max-width: 500px) {
+    &__list {
+      display: none;
+      grid-template-columns: 1fr;
+    }
+
+    &__toggler {
+      display: block;
+    }
+  }
+}
