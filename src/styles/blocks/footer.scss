@@ -1,0 +1,29 @@
+.footer {
+  margin-top: 130px;
+  padding: 20px;
+
+  &__copyright {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 160px;
+
+    &-text {
+      @include description;
+      font-size: 16px;
+      padding-top: 0;
+    }
+  }
+
+  @media (max-width: 900px) {
+    &__copyright {
+      flex-direction: column-reverse;
+      justify-content: center;
+      align-items: center;
+
+      &-text {
+        padding-top: 30px;
+      }
+    }
+  }
+}

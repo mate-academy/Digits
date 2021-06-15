@@ -1,0 +1,32 @@
+.column {
+
+  &__info {
+    padding-top: 20px;
+
+    &-text {
+      @include description;
+      width: 310px;
+    }
+  }
+
+  &__title {
+    @include heading;
+    font-size: 22px;
+    text-align: left;
+  }
+
+  &__list {
+    padding-left: 0;
+
+    &-item {
+      list-style: none;
+      padding-bottom: 10px;
+    }
+
+    &-link {
+      @include description;
+      text-decoration: none;
+      padding-top: 0;
+    }
+  }
+}

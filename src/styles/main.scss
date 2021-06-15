@@ -19,6 +19,12 @@
 
 @import "./blocks/cta.scss";
 
+@import "./blocks/footer.scss";
+@import "./blocks/columns.scss";
+@import "./blocks/column.scss";
+@import "./blocks/icons-list.scss";
+@import "./blocks/privacy-list.scss";
+
 html {
   scroll-behavior: smooth;
 }
