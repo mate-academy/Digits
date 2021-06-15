@@ -1,0 +1,41 @@
+.burger-nav {
+  padding: 40% 0;
+  margin: 0 auto;
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    row-gap: 20px;
+    padding: 0;
+    list-style: none;
+  }
+
+  &__item {
+    // display: flex;
+    // justify-content: center;
+    width: 100%;
+    font-size: 30px;
+    text-transform: uppercase;
+
+  }
+
+  &__link {
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+    align-self: center;
+    color: #fff;
+    &::before,
+    &::after {
+      display: block;
+      content: " ";
+      height: 3px;
+      width: 20%;
+      align-self: center;
+      background-color: #fff;
+    }
+  }
+
+}

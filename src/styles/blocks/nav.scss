@@ -1,0 +1,16 @@
+.nav {
+  max-width: 603px;
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    row-gap: 20px;
+    padding: 0;
+    list-style: none;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: inherit;
+  }
+}

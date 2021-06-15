@@ -1,7 +1,13 @@
+@import "./utils/vars";
+@import "./utils/extends";
 @import "utils";
-@import "fonts";
-@import "typography";
+@import "./fonts";
+@import "./blocks/normalize.scss";
 
-body {
-  background: $c-gray;
-}
+@import "./blocks/logo.scss";
+@import "./blocks/nav.scss";
+@import "./blocks/call-us.scss";
+@import "./blocks/hamburger.scss";
+@import "./blocks/hamburger-menu.scss";
+@import "./blocks/burger-nav.scss";
+@import "./blocks/header.scss";
