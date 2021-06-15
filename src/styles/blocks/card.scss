@@ -35,6 +35,11 @@
       font-size: 18px;
     }
   }
+
+  @media (max-width: 500px) {
+    transform: scale(0.8);
+    margin: 0;
+  }
 }
 
 .card:hover {
