@@ -1,4 +1,18 @@
-%h1 {
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
+%FF-Halyard-500 {
+  font-weight: 500;
+}
+
+%link {
+  display: block;
+  text-decoration: none;
+}
+
+%button1 {
+  background-color: $button-bgc1;
+  color: $button-color1;
+  border-radius: 100px;
+  transition: box-shadow 0.5s;
+  &:hover {
+    box-shadow: 0 0 33px -3px rgba(55, 81, 255, 1);
+  }
 }

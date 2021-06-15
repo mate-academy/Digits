@@ -1,0 +1,42 @@
+.header {
+  display: grid;
+  grid-template-columns: 2fr 3fr 2fr;
+  align-items: center;
+  font-size: 16px;
+  height: 80px;
+  color: $body-main-color;
+
+  &__hamburger {
+    display: none;
+  }
+
+  &__logo {
+    margin-left: 50%;
+  }
+
+  @media (max-width: $tablet-width) {
+    & {
+      display: flex;
+      justify-content: flex-end;
+      align-self: center;
+
+      &__logo {
+        margin-right: 5%;
+      }
+
+      &__nav {
+        display: none;
+      }
+
+      &__call-us {
+        display: none;
+      }
+
+      &__hamburger {
+        display: block;
+        top: calc(80px / 2 - 15px / 2);
+        left: 4%;
+      }
+    }
+  }
+}
