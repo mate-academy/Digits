@@ -1,0 +1,35 @@
+.demos {
+  display: none;
+  background-color: #fff;
+  box-shadow: #0003 0 18px 50px -10px;
+  position: absolute;
+  right: -20px;
+  z-index: 1;
+
+  &__list {
+    cursor: pointer;
+    padding-left: 0;
+    text-align: center;
+
+    &-item {
+      list-style: none;
+      transition: background-color 0.2s linear;
+
+      &:hover {
+        background-color: $color-button;
+      }
+    }
+
+    &-link {
+      @include description;
+      cursor: pointer;
+      font-size: 16px;
+      padding: 0 20px;
+      text-decoration: none;
+    }
+
+    &-item:hover &-link {
+      color: #fff;
+    }
+  }
+}
