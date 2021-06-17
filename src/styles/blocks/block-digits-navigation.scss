@@ -85,6 +85,10 @@
   &__link {
     color: inherit;
     text-decoration: none;
+
+    &:hover {
+      color: yellowgreen;
+    }
   }
   &__contacts {
     display: flex;
@@ -96,6 +100,10 @@
     color: $H-color;
     font-family: $ff-h-text;
     font-weight: normal;
+    
+    &:hover {
+      color: yellowgreen;
+    }
   }
   &__button {
     text-decoration: none;

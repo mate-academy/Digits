@@ -51,14 +51,6 @@
     margin-top: 23px;
   }
 
-  &__user-name-avatar-left,
-  &__user-name-avatar-mid,
-  &__user-name-avatar-rgt {
-    width: 4em;
-    height: 4em;
-    background-size: cover;
-  }
-
   &__user-name-avatar-left {
     background-image: url(/images/block-feedback/image1.png);
   }
@@ -69,6 +61,19 @@
 
   &__user-name-avatar-rgt {
     background-image: url(/images/block-feedback/image3.png);
+  }
+
+  &__user-name-avatar-left,
+  &__user-name-avatar-mid,
+  &__user-name-avatar-rgt {
+    width: 4em;
+    height: 4em;
+    background-size: cover;
+    transition: transform 500ms;
+    
+    &:hover {
+      transform: scale(1.2);
+    }
   }
 
   &__website {

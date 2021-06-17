@@ -218,6 +218,11 @@
 
   &__item-logos > img {
     margin: 10px 30px;
+    transition: transform 500ms;
+
+    &:hover {
+      transform: scale(1.2);
+    }
   }
 
   @media (max-width:600px) {

@@ -37,6 +37,11 @@
     background-color: #999fe3;
     border-radius: 4px;
     right: -70px;
+    transition: transform 500ms;
+
+    &:hover {
+      transform: scale(1.2);
+    }
 
     &::after {
       content: "";
@@ -64,6 +69,11 @@
     border-radius: 4px;
     left: 10px;
     top: 260px;
+    transition: transform 500ms;
+
+    &:hover {
+      transform: scale(1.2);
+    }
 
     &::after {
       content: "";
@@ -91,6 +101,12 @@
     position: absolute;
     bottom: 5px;
     right: 15px;
+    transition: transform 500ms;
+
+    &:hover {
+      transform: scale(1.2);
+    }
+
     &::after {
       content: "";
       width: 66px;
@@ -113,6 +129,14 @@
     display: flex;
     flex-direction: column;
     margin-left: 6.25em;
+  }
+
+  .logo {
+    transition: transform 500ms;
+
+    &:hover {
+      transform: scale(1.2);
+    }
   }
 
   &__info-des,

@@ -81,41 +81,45 @@
       color: rgba(69, 88, 128, 0.5);
     }
 
-    &--fb,
-    &--inst,
-    &--twit,
-    &--ball,
-    &--egg {
-      display: inline-block;
-      width: 1em;
-      height: 1em;
-      margin: 0 20px 0 5px;
-    }
-
     &--fb {
       background-image: url(/images/block-footer/fb.svg);
-      background-size: cover;
+      
     }
 
     &--inst {
       background-image: url(/images/block-footer/insta.svg);
-      background-size: cover;
     }
 
     &--twit {
       background-image: url(/images/block-footer/Twitter.svg);
-      background-size: cover;
     }
 
     &--ball {
       background-image: url(/images/block-footer/BasBall.svg);
-      background-size: cover;
     }
 
     &--egg {
       background-image: url(/images/block-footer/Egg.svg);
-      background-size: cover;
       margin-right: 44px;
+    }
+  }
+
+  &--fb,
+  &--inst,
+  &--twit,
+  &--ball,
+  &--egg {
+    display: inline-block;
+    width: 1.4em;
+    height: 1.4em;
+    margin: 0 20px 0 5px;
+    background-size: cover;
+    background-position: center;
+    transition: transform 500ms;
+    background-repeat: no-repeat;
+  
+    &:hover {
+      transform: scale(1.2);
     }
   }
 
