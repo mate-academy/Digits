@@ -1,7 +1,9 @@
 .column {
 
   &__info {
-    padding-top: 20px;
+    &-logo {
+      padding-top: 25px;
+    }
 
     &-text {
       @include description;

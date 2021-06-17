@@ -108,7 +108,16 @@
       margin-left: 0;
     }
 
-    &__contacts {
+    &__contacts-phone {
+      display: none;
+      position: absolute;
+      padding-left: 30px;
+      right: 50%;
+      top: 5px;
+      transform: translateX(50%);
+    }
+
+    &__contacts-button {
       display: none;
     }
 

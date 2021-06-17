@@ -12,6 +12,7 @@
       @include description;
       font-size: 16px;
       padding-top: 0;
+      text-align: center;
     }
   }
 
@@ -23,6 +24,20 @@
 
       &-text {
         padding-top: 30px;
+      }
+    }
+  }
+
+  @media (max-width: 500px) {
+    margin-top: 0;
+    padding-top: 0;
+
+    &__copyright {
+      align-items: start;
+      padding: 0;
+
+      &-text {
+        align-self: center;
       }
     }
   }
