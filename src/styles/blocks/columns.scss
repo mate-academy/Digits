@@ -2,10 +2,27 @@
   display: flex;
   align-items: start;
   justify-content: space-around;
-  flex-wrap: wrap;
+
+  @media (max-width: 800px) {
+    flex-basis: 50%;
+
+    &__pages {
+      display: none;
+    }
+
+    &__demos {
+      display: none;
+    }
+  }
 
   @media (max-width: 500px) {
-    flex-direction: column;
-    align-items: start;
+
+    &__info {
+      display: none;
+    }
+
+    &__resources {
+      text-align: center;
+    }
   }
 }
