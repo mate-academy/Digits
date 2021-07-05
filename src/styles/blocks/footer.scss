@@ -9,7 +9,6 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     align-items: center;
-    // justify-items: center;
     margin: 0 auto;
     padding: 50px;
 
@@ -27,8 +26,9 @@
     }
   }
 
-  @media (max-width: 900px) {
+  @media (max-width: $tablet-screen) {
     &__copyright {
+      display: flex;
       flex-direction: column-reverse;
       justify-content: center;
       align-items: center;
@@ -39,8 +39,12 @@
     }
   }
 
-  @media (max-width: 500px) {
-    margin-top: 0;
+  @media (max-width: 900px) {
+    margin-top: 30px;
+  }
+
+  @media (max-width: 650px) {
+    margin-top: 30px;
     padding-top: 0;
 
     &__copyright {
@@ -49,6 +53,10 @@
 
       &-text {
         align-self: center;
+      }
+
+      &-links {
+        display: none;
       }
     }
   }

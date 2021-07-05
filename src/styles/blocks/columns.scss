@@ -4,6 +4,7 @@
   justify-items: center;
 
   margin: 0 auto;
+  padding: 0 50px;
 
   max-width: $notebook-screen;
 
@@ -11,8 +12,8 @@
     justify-self: end;
   }
 
-  @media (max-width: 800px) {
-    flex-basis: 50%;
+  @media (max-width: 900px) {
+    grid-template-columns: repeat(2, 1fr);
 
     &__pages {
       display: none;
@@ -23,13 +24,18 @@
     }
   }
 
-  @media (max-width: 500px) {
+  @media (max-width: 650px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
     &__info {
       display: none;
     }
 
     &__resources {
+      justify-self: start;
+      align-self: center;
       text-align: center;
     }
   }
