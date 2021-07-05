@@ -1,17 +1,29 @@
 .footer {
+  box-sizing: border-box;
   margin-top: 130px;
   padding: 20px;
 
+  width: 100%;
+
   &__copyright {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
     align-items: center;
-    justify-content: space-between;
-    padding: 50px 0;
+    // justify-items: center;
+    margin: 0 auto;
+    padding: 50px;
+
+    max-width: $notebook-screen;
 
     &-text {
       @include description;
       font-size: 16px;
       padding-top: 0;
+    }
+
+    &-links {
+      grid-column: 4 / 5;
+      justify-self: end;
     }
   }
 
@@ -40,4 +52,9 @@
       }
     }
   }
+}
+
+.container {
+  margin: 0 auto;
+  max-width: $large-screen;
 }

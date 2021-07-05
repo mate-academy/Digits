@@ -1,7 +1,15 @@
 .columns {
-  display: flex;
-  align-items: start;
-  justify-content: space-around;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+
+  margin: 0 auto;
+
+  max-width: $notebook-screen;
+
+  &__resources {
+    justify-self: end;
+  }
 
   @media (max-width: 800px) {
     flex-basis: 50%;
