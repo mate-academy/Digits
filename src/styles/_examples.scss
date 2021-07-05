@@ -1,0 +1,26 @@
+@import "utils/vars";
+
+.examples {
+  width: 212px;
+  height: 261px;
+
+  @media screen and (max-width: $first-break-point) {
+    display: none;
+  }
+
+  &__title {
+    margin-bottom: 20px;
+  }
+
+  &__item {
+    color: $regular-text-color;
+    text-decoration: none;
+    line-height: 35px;
+
+    transition: color 0.5s;
+
+    &:hover {
+      color: $hover-text-color;
+    }
+  }
+}

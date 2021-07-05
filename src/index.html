@@ -3,11 +3,491 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Title</title>
+    <title>Digits</title>
     <link rel="stylesheet" href="./styles/main.scss">
+    <link rel="icon" href="images/logos/favicon.svg">
   </head>
-  <body>
-    <h1>Hello Mate Academy</h1>
+  <body class="page">
+
+    <!------------------Header------------------>
+    <header class="header page__header">
+
+      <nav class="navigation header__navigation">
+
+        <a class="logo navigation__logo" href="https://antonskliarov.github.io/Digits/"></a>
+
+        <!------------------Toggler for mobile menu------------------>
+        <input
+          class="navigation__toggler"
+          type="checkbox"
+          id="nav-toggler"
+        >
+        <label class="navigation__toggler-label" for="nav-toggler"></label>
+
+        <!------------------Desktop navigation------------------>
+        <ul class="navigation__list">
+          <li class="navigation__item">
+            <a class="navigation__link" href="#homepages">Homepages</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="#products">Products</a>
+          </li>
+          <li class="navigation__item navigation__item--active">
+            <a class="navigation__link" href="#">Company</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="#pricing">Pricing</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="#blog">Blog</a>
+          </li>
+        </ul>
+
+        <!------------------Mobile menu------------------>
+        <ul class="mobile-menu">
+          <li class="mobile-menu__item">
+            <a class="mobile-menu__link" href="#homepages">Homepages</a>
+          </li>
+          <li class="mobile-menu__item">
+            <a class="mobile-menu__link" href="#products">Products</a>
+          </li>
+          <li class="mobile-menu__item mobile-menu__item--active">
+            <a class="mobile-menu__link" href="#">Company</a>
+          </li>
+          <li class="mobile-menu__item">
+            <a class="mobile-menu__link" href="#pricing">Pricing</a>
+          </li>
+          <li class="mobile-menu__item">
+            <a class="mobile-menu__link" href="#blog">Blog</a>
+          </li>
+        </ul>
+
+        <div class="header__feedback">
+          <a class="header__phone" href="tel:+00 123 456 789">+00 123 456 789</a>
+          <a class="button header__button" href="tel:+00 123 456 789">Contact Us</a>
+        </div>
+      </nav>
+
+    </header>
+    <!------------------Main------------------>
+    <main>
+      <!------------------Good desigh block------------------>
+      <section class="section">
+        <div class="good-design section__good-design" id="homepages">
+
+          <div class="good-design__top">
+            <h1 class="good-design__title">Good design meets great user experience</h1>
+            <p class="good-design__paragraph">For everyone, from beginners to experts</p>
+
+            <div class="good-design__buttons">
+              <a class="button good-design__button" href="#pricing">Buy Digits</a>
+              <a class="button good-design__button good-design__button--white" href="#features">See the Features</a>
+            </div>
+            <div class="good-design__collage"></div>
+          </div>
+
+          <div class="good-design__bottom">
+            <p class="good-design__bottom-text">Trusted by forward-thinking software teams around the world</p>
+
+            <div class="partners-logos good-design__partners-logos">
+              <a class="partners-logos__link" href="https://www.netflix.com/">
+                <img
+                  class="partners-logos__logo"
+                  src="/images/logos/netflix.svg"
+                  alt="Netflix logo"
+                >
+              </a>
+              <a class="partners-logos__link" href="https://www.drawkit.io/">
+                <img
+                  class="partners-logos__logo"
+                  src="/images/logos/drawkit.svg"
+                  alt="Drawkit logo"
+                >
+              </a>
+              <a class="partners-logos__link" href="https://www.figma.com/">
+                <img
+                  class="partners-logos__logo"
+                  src="/images/logos/figma.svg"
+                  alt="Figma logo"
+                >
+              </a>
+              <a class="partners-logos__link" href="https://www.cinemax.com/">
+                <img
+                  class="partners-logos__logo"
+                  src="/images/logos/cinemax.svg"
+                  alt="Cinemax logo"
+                >
+              </a>
+              <a class="partners-logos__link" href="https://stripe.com/">
+                <img
+                  class="partners-logos__logo"
+                  src="/images/logos/stripe.svg"
+                  alt="Striple logo"
+                >
+              </a>
+              <a class="partners-logos__link" href="https://www.google.com/">
+                <img
+                  class="partners-logos__logo"
+                  src="/images/logos/google.svg"
+                  alt="Google logo"
+                >
+              </a>
+              <a class="partners-logos__link" href="https://www.disney.com/">
+                <img
+                  class="partners-logos__logo"
+                  src="/images/logos/disney.svg"
+                  alt="Disney logo"
+                >
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!------------------Whatever block------------------>
+      <section class="section">
+
+        <div class="whatever section__whatever" id="products">
+          <h2 class="whatever__title">Whatever work you do, we're able to help</h2>
+
+          <div class="whatever__blocks">
+            <img
+              class="whatever__collage"
+              src="/images/our-help.png"
+              alt="Сollage of three people"
+            >
+          </img>
+
+            <div class="cards whatever__cards">
+
+              <div class="card cards__card">
+                <img
+                  class="card__icon"
+                  src="/images/cards-icons/green-card-icon.png"
+                  alt="Green icon"
+                >
+                </img>
+                <div class="card__description">
+                  <h3 class="card__title">Design and Assets</h3>
+                  <p class="card__text">
+                    Make your brand stand out with
+                    pixel-perfect design crafted to
+                    perfection.
+                  </p>
+                </div>
+              </div>
+
+              <div class="card cards__card">
+                <img
+                  class="card__icon"
+                  src="/images/cards-icons/orange-card-icon.png"
+                  alt="Orange icon"
+                >
+                </img>
+                <div class="card__description">
+                  <h3 class="card__title">Design and Assets</h3>
+                  <p class="card__text">
+                    Make your brand stand out with
+                    pixel-perfect design crafted to
+                    perfection.
+                  </p>
+                </div>
+              </div>
+
+              <div class="card cards__card">
+                <img
+                  class="card__icon"
+                  src="/images/cards-icons/pink-card-icon.png"
+                  alt="Pink icon"
+                >
+                </img>
+                <div class="card__description">
+                  <h3 class="card__title">Design and Assets</h3>
+                  <p class="card__text">
+                    Make your brand stand out with
+                    pixel-perfect design crafted to
+                    perfection.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!------------------Simplicity block------------------>
+      <section class="section">
+        <div class="simplicity section__simplicity" id="pricing">
+          <h2 class="simplicity__title">Simplicity meets innovative design</h2>
+          <p class="simplicity__paragraph">
+            <span class="simplicity__paragraph-row">It's really easy to start using Digits.</span>
+            <span class="simplicity__paragraph-row">Install the theme, choose a demo and</span>
+            <span class="simplicity__paragraph-row">start designing the future of your business!</span>
+          </p>
+          <div class="simplicity__button-box">
+            <a class="button simplicity__button" href="#">Buy Digits</a>
+          </div>
+          <img
+            class="simplicity__collage"
+            src="/images/simplicity-collage.png"
+            alt="Collage with landing pages"
+          >
+        </div>
+      </section>
+
+      <!------------------People block------------------>
+      <section class="section">
+
+        <div class="people section__people">
+          <h2 class="people__title">What others are saying</h2>
+
+          <div class="reviews people__reviews">
+            <div class="review">
+              <p class="review__text">
+                Completely beautiful website and
+                amazing support! This is my second
+                website from this author and I love
+                both of the sites so much and she
+                has helped me so well when I
+                needed it!
+              </p>
+              <img
+                class="review__photo"
+                src="/images/image5.jpg"
+                alt="Happy User Photo"
+              >
+              <h3 class="review__title">Happy User</h3>
+              <a class="review__link" href="#">tempy.club</a>
+            </div>
+
+            <div class="review">
+              <p class="review__text">
+                Really easy to use and customize.
+                easy to understand. Darinka helped
+                me with my site! She answers very
+                quickly, a good service! Thank you
+                very much!
+              </p>
+              <img
+                class="review__photo"
+                src="/images/image6.jpg"
+                alt="Happy User Photo"
+              >
+              <h3 class="review__title">Happy User</h3>
+              <a class="review__link" href="#">tempy.club</a>
+            </div>
+
+            <div class="review">
+              <p class="review__text">
+                Really pleasing to look at!
+                Documentation (including
+                installation instructions) are clear
+                and that is coming from a relatively
+                new WordPress user.
+              </p>
+              <img
+                class="review__photo"
+                src="/images/image7.jpg"
+                alt="Happy User Photo"
+              >
+              <h3 class="review__title">Happy User</h3>
+              <a class="review__link" href="#">tempy.club</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!------------------Mailing block------------------>
+      <section class="section">
+
+        <div class="mailing section__mailing" id="features">
+          <div class="mailing__container">
+            <div class="mailing__title-container">
+              <h2 class="mailing__title">
+                Ready to launch
+                your next website?
+              </h2>
+            </div>
+
+            <div class="mailing__feedback">
+              <a class="button mailing__button mailing__button--white" href="#">
+                <img
+                  class="mailing__button-icon"
+                  src="/images/mail-icon.svg"
+                  alt="Sending email icon"
+                >
+                  Get in touch now
+              </a>
+              <p class="mailing__text">Or, take a peek inside our
+                <a class="mailing__link" href="#">design studio</a>
+              </p>
+
+            </div>
+          </div>
+        </div>
+
+      </section>
+    </main>
+
+    <!------------------------Footer------------------------->
+    <footer class="footer">
+      <div class="footer__container" id="blog">
+
+        <div class="footer__top">
+          <div class="footer__digits">
+            <a class="footer__logo-link" href="https://antonskliarov.github.io/Digits/">
+              <img
+                class="footer__digits-logo"
+                src="/images/logos/digits.svg"
+                alt="Digits Logo"
+              >
+            </a>
+            <p class="footer__digits-text">
+              Digits is a website template built to
+              work seamlesly with the WordPress
+              block editor to create beautifully
+              designed pages in minutes.
+            </p>
+          </div>
+
+          <div class="examples footer__examples">
+            <h3 class="examples__title">Pages</h3>
+            <ul class="examples__list">
+              <li>
+                <a class="examples__item" href="#">Home</a>
+              </li>
+              <li>
+                <a class="examples__item" href="#">About</a>
+              </li>
+              <li>
+                <a class="examples__item" href="#">News</a>
+              </li>
+              <li>
+                <a class="examples__item" href="#">Pricing</a>
+              </li>
+              <li>
+                <a class="examples__item" href="#">Contact</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="examples footer__examples">
+            <h3 class="examples__title">Demos</h3>
+            <ul class="examples__list">
+              <li>
+                <a class="examples__item" href="#">Classic</a>
+              </li>
+              <li>
+                <a class="examples__item" href="#">Boxy</a>
+              </li>
+              <li>
+                <a class="examples__item" href="#">Gradient</a>
+              </li>
+              <li>
+                <a class="examples__item" href="#">Minimal</a>
+              </li>
+              <li>
+                <a class="examples__item" href="#">Night</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="resources footer__resources">
+            <h3 class="resources__title">Resources</h3>
+            <div class="resources__logos">
+
+              <a
+                class="resources__logo-link"
+                href="https://www.facebook.com/"
+                target="_blank"
+                rel="noopener"
+              >
+                <img
+                  class="resources__logo"
+                  src="/images/footer-icons/icon-facebook.png"
+                  alt="Facebook icon"
+                >
+              </a>
+
+              <a
+                class="resources__logo-link"
+                href="https://www.instagram.com/"
+                target="_blank"
+                rel="noopener"
+              >
+                <img
+                  class="resources__logo"
+                  src="/images/footer-icons/icon-instagram.png"
+                  alt="Instagram icon"
+                >
+              </a>
+
+              <a
+                class="resources__logo-link"
+                href="https://twitter.com/"
+                target="_blank"
+                rel="noopener"
+              >
+                <img
+                  class="resources__logo"
+                  src="/images/footer-icons/icon-twitter.png"
+                  alt="Twitter icon"
+                >
+              </a>
+
+              <a
+                class="resources__logo-link"
+                href="https://dribbble.com/"
+                target="_blank"
+                rel="noopener"
+              >
+                <img
+                  class="resources__logo"
+                  src="/images/footer-icons/icon-dribbble.png"
+                  alt="Dribbble icon"
+                >
+              </a>
+
+              <a
+                class="resources__logo-link"
+                href="https://elements.envato.com/"
+                target="_blank"
+                rel="noopener"
+              >
+                <img
+                  class="resources__logo"
+                  src="/images/footer-icons/icon-envato.png"
+                  alt="Envato icon"
+                >
+              </a>
+            </div>
+
+            <div class="resources__links">
+              <a class="resources__link" href="#">Download now</a>
+              <a class="resources__link" href="#">Documentation</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer__bottom">
+          <div class="footer__bottom-container">
+            <div class="footer__copyright">
+              <p>Copyright © 2020
+                <a class="footer__copyright-link" href="#">tempy.club</a>
+              </p>
+            </div>
+
+            <div class="footer__terms">
+              <a class="footer__terms-link" href="#">Privacy Policy</a>
+              <a class="footer__terms-link" href="#">Terms of Use</a>
+              <a class="footer__terms-link" href="#">GDPR</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
     <script type="text/javascript" src="scripts/main.js"></script>
   </body>
 </html>

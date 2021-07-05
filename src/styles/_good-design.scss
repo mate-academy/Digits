@@ -1,0 +1,95 @@
+@import "utils/vars";
+
+.good-design {
+  &__top {
+    height: 880px;
+    margin-bottom: 186px;
+
+    background: linear-gradient(180deg, rgba(242, 249, 255, 0.12) 0%,
+    #f2f9ff 100%);
+
+    text-align: center;
+
+    @media screen and (max-width: 1000px) {
+      margin-bottom: 60px;
+    }
+  }
+
+  &__title {
+    display: inline-block;
+
+    width: 500px;
+    margin-bottom: 27px;
+    padding-top: 146px;
+
+    line-height: 1;
+
+    @media screen and (max-width: $fourth-break-point) {
+      font-size: 30px;
+      width: 300px;
+    }
+  }
+
+  &__paragraph {
+    margin-bottom: 45px;
+
+    color: $regular-text-color;
+
+    @media screen and (max-width: $fourth-break-point) {
+      font-size: 12px;
+    }
+  }
+
+  &__buttons {
+    display: flex;
+    justify-content: center;
+
+    @media screen and (max-width: $fourth-break-point) {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  &__button {
+    width: 148px;
+    height: 50px;
+    margin: 0 11px 20px;
+    border-radius: 25px;
+
+    line-height: 50px;
+    text-decoration: none;
+    &--white {
+      width: 200px;
+
+      background-color: $background-white-color;
+      box-shadow: 0 2px 4px $button-static-shadow-color;
+
+      color: $regular-text-color;
+    }
+  }
+
+  &__collage {
+    position: absolute;
+    left: calc(50% - 450px);
+
+    width: 1000px;
+    height: 620px;
+
+    background: url("/images/graphic-header.svg") center/cover;
+
+    @media screen and (max-width: 1000px) {
+      transform: scale(0.6);
+      left: calc(50% - 500px);
+    }
+
+    @media screen and (max-width: $fourth-break-point) {
+      transform: scale(0.3);
+    }
+  }
+
+  &__bottom-text {
+    margin-bottom: 49px;
+    color: $regular-text-color;
+    text-align: center;
+  }
+}

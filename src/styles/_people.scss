@@ -1,0 +1,21 @@
+@import "utils/vars";
+
+.people {
+  height: 583px;
+
+  &__title {
+    margin-top: 232px;
+    margin-bottom: 56px;
+
+    text-align: center;
+    line-height: 1;
+
+    @media screen and (max-width: $second-break-point) {
+      font-size: 30px;
+    }
+  }
+
+  &__reviews {
+    justify-content: center;
+  }
+}

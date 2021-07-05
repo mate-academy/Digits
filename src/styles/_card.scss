@@ -1,0 +1,29 @@
+@import "utils/vars";
+
+.card {
+  display: flex;
+
+  width: 412px;
+  height: 177px;
+
+  &:nth-child(1),
+  &:nth-child(2) {
+    border-bottom: 2px solid rgba(69, 88, 128, 0.2);
+  }
+
+  &__icon {
+    width: 58px;
+    height: 58px;
+    margin-right: 43px;
+  }
+  
+  &__title {
+    margin-bottom: 18px;
+  }
+
+  &__text {
+    color: $regular-text-color;
+    display: inline-block;
+    width: 235px;
+  }
+}

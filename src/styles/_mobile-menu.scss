@@ -1,0 +1,73 @@
+@import "utils/vars";
+
+.mobile-menu {
+  display: none;
+
+  @media screen and (max-width: $header-break-point) {
+    position: fixed;
+    top: 70px;
+    left: 0;
+    z-index: -1;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+
+    width: 100vw;
+    height: 100vh;
+
+    background-color: $background-white-color;
+
+    transform: translateY(-130%);
+    transition: transform 1s;
+  }
+
+  @media screen and (max-height: 400px) {
+    top: 40px;
+  }
+
+  &__item {
+    margin-bottom: 70px;
+
+    font-size: 30px;
+
+    @media screen and (max-height: 400px) {
+      margin-bottom: 30px;
+
+      font-size: 20px;
+    }
+
+    &--active {
+      pointer-events: none;
+
+      &::after {
+        content: "";
+        position: relative;
+        left: 10px;
+        bottom: 2px;
+
+        display: inline-block;
+
+        padding: 3px;
+        border: solid $titles-text-color;
+        border-width: 0 3px 3px 0;
+        border-radius: 2px;
+
+        transform: rotate(45deg);
+      }
+    }
+  }
+
+  &__link {
+    color: $titles-text-color;
+
+    text-decoration: none;
+
+    transition: color 0.3s;
+
+    &:hover {
+      color: $hover-text-color;
+    }
+  }
+}

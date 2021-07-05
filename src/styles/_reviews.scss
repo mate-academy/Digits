@@ -1,0 +1,23 @@
+@import "utils/vars";
+
+.reviews {
+  display: grid;
+  grid-template-columns: repeat(3, 373px);
+  gap: 26px;
+
+  @media screen and (max-width: $first-break-point) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  @media screen and (max-width: $second-break-point) {
+    grid-template-columns: repeat(1, 373px);
+  }
+
+  @media screen and (max-width: 450px) {
+    grid-template-columns: repeat(1, 318px);
+    gap: 10px;
+    justify-items: center;
+  }
+}

@@ -1,0 +1,61 @@
+@import "utils/vars";
+
+.simplicity {
+  position: relative;
+
+  background-color: $background-simplcity-color;
+
+  &__title {
+    text-align: center;
+
+    padding-top: 140px;
+    margin-bottom: 40px;
+
+    line-height: 1;
+
+    @media screen and (max-width: 700px) {
+      font-size: 30px;
+    }
+  }
+
+  &__paragraph {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    width: 420px;
+    margin: 0 calc(50% - 210px) 40px;
+
+    font-size: 21px;
+    color: $regular-text-color;
+
+    @media screen and (max-width: 700px) {
+      font-size: 12px;
+      width: 270px;
+      margin: 0 calc(50% - 135px) 40px;
+    }
+  }
+
+  &__button-box {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__button {
+    text-align: center;
+
+    width: 150px;
+    height: 50px;
+    border-radius: 25px;
+
+    text-decoration: none;
+    line-height: 50px;
+  }
+
+  &__collage {
+    width: 100%;
+
+    object-fit: cover;
+    object-position: center;
+  }
+}

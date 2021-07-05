@@ -1,0 +1,32 @@
+@import "utils/vars";
+
+.section {
+  &__good-design {
+    margin-bottom: 160px;
+  }
+
+  &__whatever {
+    margin: 0 auto 150px;
+    @media screen and (max-width: $fourth-break-point) {
+      margin-bottom: 0;
+    }
+  }
+
+  &__people {
+    margin: 0 auto 150px;
+    
+    @media screen and (max-width: $first-break-point) {
+      margin-bottom: 600px;
+    }
+
+    @media screen and (max-width: $second-break-point) {
+      margin-bottom: 1150px;
+    }
+  }
+
+  &__mailing {
+    height: 323px;
+
+    background-color: $button-color;
+  }
+}

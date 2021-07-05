@@ -1,0 +1,54 @@
+@import "utils/vars";
+
+.review {
+  position: relative;
+
+  width: 373px;
+  height: 467px;
+
+  border: 1px solid rgba(69, 88, 128, 0.2);
+  border-radius: 4px;
+
+  @media screen and (max-width: 450px) {
+    transform: scale(0.85);
+  }
+
+  &__text {
+    margin-bottom: 26px;
+    padding: 38px 42px;
+
+    font-size: 18px;
+    color: $regular-text-color;
+    line-height: 180%;
+  }
+
+  &__photo {
+    position: absolute;
+    bottom: 115px;
+    left: calc(50% - 32px);
+
+    width: 63px;
+    height: 64px;
+  }
+
+  &__title {
+    position: absolute;
+    bottom: 64px;
+    left: calc(50% - 52px);
+  }
+
+  &__link {
+    position: absolute;
+    bottom: 32px;
+    left: calc(50% - 44px);
+
+    color: $regular-text-color;
+    text-decoration: none;
+
+    transition: color 0.3s;
+
+    &:hover {
+      color: $hover-text-color;
+    }
+  }
+}

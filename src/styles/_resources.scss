@@ -1,0 +1,51 @@
+@import "utils/vars";
+
+.resources {
+
+  &__title {
+    margin-bottom: 31px;
+
+    @media screen and (max-width: $third-break-point) {
+      margin-bottom: 15px;
+    }
+  }
+
+  &__logos {
+    display: flex;
+    justify-content: space-between;
+
+    width: 171px;
+    margin-bottom: 20px;
+
+    @media screen and (max-width: $third-break-point) {
+      margin-bottom: 10px;
+      position: relative;
+      right: 30px;
+    }
+  }
+
+  &__logo {
+    transition: transform 0.5s;
+
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+
+  &__links {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__link {
+    color: $regular-text-color;
+    text-decoration: none;
+    line-height: 35px;
+
+    transition: color 0.5s;
+
+    &:hover {
+      color: $hover-text-color;
+    }
+  }
+}

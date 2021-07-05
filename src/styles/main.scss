@@ -2,6 +2,41 @@
 @import "fonts";
 @import "typography";
 
-body {
-  background: $c-gray;
+@import "reset";
+
+@import "page";
+
+@import "logo";
+@import "header";
+@import "navigation";
+@import "button";
+
+@import "section";
+@import "good-design";
+@import "partners-logos";
+
+@import "whatever";
+@import "cards";
+@import "card";
+
+@import "simplicity";
+@import "people";
+
+@import "reviews";
+@import "review";
+
+@import "mailing";
+
+@import "footer";
+@import "examples";
+@import "resources";
+
+@import "mobile-menu";
+
+html {
+  font-family: "Halyard Text", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+
+  scroll-behavior: smooth;
 }

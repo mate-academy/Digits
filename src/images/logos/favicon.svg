@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 18" width="14" height="18">
+	<defs>
+		<image width="14" height="18" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAASCAMAAABcgh8DAAAAAXNSR0IB2cksfwAAAEtQTFRFAAAAHiZtHiZtICBoECBwIChoGyBlHCRsHSVrGCBoHSBpHiVtGChwHiZsHCRsHCNqHiZrICBwICBlHidrHChsHiVuIChwHCRrHidpKZ0SRAAAABl0Uk5TAN//IBAgML+fIFDvIIBAkF8QMHBAzyC/cGRtBG8AAABoSURBVHiclc7bFoAQEAXQmYl0MUoX+v8vzZD02nmYZS8cAGqQiDr4TaU/7E1aDOPDiXJwzrT4QsgCB7AUysU1NfhyWKaTepNJ9Tnz7m6NMjnJtmba9XEWeqSWVBKKY/1z4IhxhYuZ1Q00ygNi/OuBygAAAABJRU5ErkJggg=="/>
+	</defs>
+	<style>
+		tspan { white-space:pre }
+	</style>
+	<use id="Слой 1" href="#img1" x="0" y="0" />
+</svg>

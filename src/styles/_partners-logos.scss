@@ -1,0 +1,32 @@
+@import "utils/vars";
+
+.partners-logos {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  max-width: 1180px;
+  margin: 0 auto;
+
+  @media screen and (max-width: 1000px) {
+    justify-content: center;
+  }
+
+  &__link {
+    transition: transform 0.5s;
+    padding: 0 10px;
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+
+  &__logo {
+    @media screen and (max-width: 1000px) {
+      margin: 0 25px 15px;
+    }
+
+    @media screen and (max-width: 450px) {
+      margin: 0 10px 15px;
+    }
+  }
+}
