@@ -3,11 +3,473 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Title</title>
     <link rel="stylesheet" href="./styles/main.scss">
+    <title>Digits</title>
   </head>
   <body>
-    <h1>Hello Mate Academy</h1>
-    <script type="text/javascript" src="scripts/main.js"></script>
+    <header id="header" class="header">
+      <nav class="nav">
+        <div class="nav__menu">
+          <div class="nav__logo">
+            <a href="#">
+              <img src="./images/logo.svg" alt="Digits logo">
+            </a>
+          </div>
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#about" class="nav__link">Homepages</a>
+            </li>
+            <li class="nav__item">
+              <a href="#portfolio" class="nav__link">Products</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">Company</a>
+              <div class="demos">
+                <ul class="demos__list">
+                  <li class="demos__list-item">
+                    <a href="#" class="demos__list-link">Classic</a>
+                  </li>
+                  <li class="demos__list-item">
+                    <a href="#" class="demos__list-link">Boxy</a>
+                  </li>
+                  <li class="demos__list-item">
+                    <a href="#" class="demos__list-link">Gradient</a>
+                  </li>
+                  <li class="demos__list-item">
+                    <a href="#" class="demos__list-link">Minimal</a>
+                  </li>
+                  <li class="demos__list-item">
+                    <a href="#" class="demos__list-link">Night</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav__item">
+              <a href="#reviews" class="nav__link">Pricing</a>
+            </li>
+            <li class="nav__item">
+              <a href="#footer" class="nav__link">Blog</a>
+            </li>
+          </ul>
+        </div>
+        <div class="nav__contacts">
+          <a href="tel:+00123456789" class="nav__contacts-phone">+00 123 456 789</a>
+          <a href="mailto: example@mail.com" class="nav__contacts-button color-button">Contact Us</a>
+        </div>
+        <div class="nav__toggler nav__toggler--menu"></div>
+        <script src="scripts/menuToggler.js"></script>
+      </nav>
+    </header>
+    <main class="content">
+      <section class="hero">
+        <div class="hero__gradient">
+          <h1 class="hero__heading">
+            Good design meets<br>
+            great user experience
+          </h1>
+          <p class="hero__description">
+            For everyone, from beginners to experts
+          </p>
+          <div class="hero__buttons">
+            <a href="#contact" class="hero__buttons-buy color-button">Buy Digits</a>
+            <a href="#about" class="hero__buttons-features">See the Features</a>
+          </div>
+        </div>
+        <div class="hero__graphic">
+          <img
+            class="hero__graphic-image"
+            src="./images/cover.png"
+            alt="Cover image"
+          >
+        </div>
+      </section>
+      <section class="logos">
+        <p class="logos__description">Trusted by forward-thinking software teams around the world</p>
+        <div class="logos__toggler">
+          <img
+            src="./images/arrow-down.svg"
+            alt="Toggle compamies list"
+            class="logos__toggler-image"
+          >
+        </div>
+        <div class="logos__list">
+          <div class="logos__list-item">
+            <img
+              src="./images/logo-1.svg"
+              alt="Netflix logo"
+              class="logos__list-image"
+            >
+          </div>
+          <div class="logos__list-item">
+            <img
+              src="./images/logo-2.svg"
+              alt="Drawkit logo"
+              class="logos__list-image"
+            >
+          </div>
+          <div class="logos__list-item">
+            <img
+              src="./images/logo-3.svg"
+              alt="Figma logo"
+              class="logos__list-image"
+            >
+          </div>
+          <div class="logos__list-item">
+            <img
+              src="./images/logo-4.svg"
+              alt="Cinemax logo"
+              class="logos__list-image"
+            >
+          </div>
+          <div class="logos__list-item">
+            <img
+              src="./images/logo-5.svg"
+              alt="Stripe logo"
+              class="logos__list-image"
+            >
+          </div>
+          <div class="logos__list-item">
+            <img
+              src="./images/logo-6.svg"
+              alt="Google logo"
+              class="logos__list-image"
+            >
+          </div>
+          <div class="logos__list-item">
+            <img
+              src="./images/logo-7.svg"
+              alt="Disney logo"
+              class="logos__list-image"
+            >
+          </div>
+        </div>
+        <script src="scripts/logosToggler.js"></script>
+      </section>
+      <section id="about" class="about">
+        <h1 class="about__heading">
+          Whatever work you do,<br>
+          we're able to help
+        </h1>
+        <div class="about__content">
+          <div class="about__content-people">
+            <img
+              src="./images/people.png"
+              alt="People that using our services"
+              class="about__content-image"
+            >
+          </div>
+          <div class="services">
+            <ul class="services__list">
+              <li class="services__list-item">
+                <img
+                  src="./images/icon-1.svg"
+                  alt="Design and assets icon"
+                  class="services__list-icon"
+                >
+                <div class="services__list-description">
+                  <h5 class="services__list-heading">Design and Assets</h5>
+                  <p class="services__list-text">
+                    Make your brand stand out with pixel-perfect design crafted to perfection.
+                  </p>
+                </div>
+              </li>
+              <li class="services__list-item">
+                <img
+                  src="./images/icon-2.svg"
+                  alt="Easy content icon"
+                  class="services__list-icon"
+                >
+                <div class="services__list-description">
+                  <h5 class="services__list-heading">Easy Content</h5>
+                  <p class="services__list-text">
+                    Import your demos or build pages visually. Bonus: All images and illustrations included!
+                  </p>
+                </div>
+              </li>
+              <li class="services__list-item">
+                <img
+                  src="./images/icon-3.svg"
+                  alt="Fast and reliable"
+                  class="services__list-icon"
+                >
+                <div class="services__list-description">
+                  <h5 class="services__list-heading">Fast and Reliable</h5>
+                  <p class="services__list-text">
+                    No heavy-weight plugins. No builders. No unneccesary file loading. Pure WordPress.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="above">
+          <a href="#header" class="above__button">&#8593;</a>
+        </div>
+        <script src="scripts/scrollUp.js"></script>
+      </section>
+      <section id="portfolio" class="portfolio">
+        <h1 class="portfolio__heading">Simplicity meets innovative design</h1>
+        <p class="portfolio__text">
+          It's really easy to start using Digits.<br>
+          Install the theme, choose a demo and<br>
+          start designing the future of your business!
+        </p>
+        <a href="#contact" class="portfolio__button color-button">Buy Digits</a>
+        <div class="portfolio__mask">
+          <img
+            src="./images/websites.png"
+            alt="Examples of websites developed"
+            class="portfolio__mask-image"
+          >
+        </div>
+      </section>
+      <section id="reviews" class="reviews">
+        <h1 class="reviews__heading">What others are saying</h1>
+        <div class="reviews__cards">
+          <div class="card">
+            <p class="card__text">
+              Completely beautiful website and
+              amazing support! This is my second
+              website from this author and I love
+              both of the sites so much and she
+              has helped me so well when I
+              needed it!
+            </p>
+            <div class="card__user">
+              <img
+                src="./images/user-1.png"
+                alt="Happy user avatar"
+                class="card__user-image"
+              >
+              <h5 class="card__user-name">Happy User</h5>
+              <p class="card__user-company">tempy.club</p>
+            </div>
+          </div>
+          <div class="card">
+            <p class="card__text">
+              Really easy to use and customize.
+              easy to understand. Darinka helped
+              me with my site! She answers very
+              quickly, a good service! Thank you
+              very much!
+            </p>
+            <div class="card__user">
+              <img
+                src="./images/user-2.png"
+                alt="Happy user avatar"
+                class="card__user-image"
+              >
+              <h5 class="card__user-name">Happy User</h5>
+              <p class="card__user-company">tempy.club</p>
+            </div>
+          </div>
+          <div class="card">
+            <p class="card__text">
+              Really pleasing to look at!
+              Documentation (including
+              installation instructions) are clear
+              and that is coming from a relatively
+              new WordPress user.
+            </p>
+            <div class="card__user">
+              <img
+                src="./images/user-3.png"
+                alt="Happy user avatar"
+                class="card__user-image"
+              >
+              <h5 class="card__user-name">Happy User</h5>
+              <p class="card__user-company">tempy.club</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="contact" class="cta">
+        <h1 class="cta__heading">
+          Ready to launch<br>
+          your next website?
+        </h1>
+        <div class="cta__links">
+          <a href="mailto: abc@example.com" class="cta__links-button">
+            <img
+              src="./images/letter.svg"
+              alt="Letter sending icon"
+              class="cta__links-icon"
+            >
+            Get in touch now
+          </a>
+          <p class="cta__links-extra">
+            Or, take a peek inside our
+            <a
+              href="https://studio.design"
+              class="cta__links-link"
+              target="_blank"
+              rel="noopener"
+            >
+              design studio
+            </a>
+          </p>
+        </div>
+      </section>
+    </main>
+    <footer id="footer" class="footer">
+      <div class="columns">
+        <div class="columns__info column">
+          <a href="#">
+            <img
+              src="./images/logo.svg"
+              alt="Digits logo"
+              class="column__info-logo"
+            >
+          </a>
+          <p class="column__info-text">
+            Digits is a website template built to
+            work seamlesly with the WordPress
+            block editor to create beautifully
+            designed pages in minutes.
+          </p>
+        </div>
+        <div class="columns__pages column">
+          <h5 class="column__title">Pages</h5>
+          <ul class="column__list">
+            <li class="column__list-item">
+              <a href="#header" class="column__list-link">Home</a>
+            </li>
+            <li class="column__list-item">
+              <a href="#about" class="column__list-link">About</a>
+            </li>
+            <li class="column__list-item">
+              <a href="#portfolio" class="column__list-link">News</a>
+            </li>
+            <li class="column__list-item">
+              <a href="#reviews" class="column__list-link">Pricing</a>
+            </li>
+            <li class="column__list-item">
+              <a href="#contant" class="column__list-link">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <div class="columns__demos column">
+          <h5 class="column__title">Demos</h5>
+          <ul class="column__list">
+            <li class="column__list-item">
+              <a href="#header" class="column__list-link">Classic</a>
+            </li>
+            <li class="column__list-item">
+              <a href="#about" class="column__list-link">Boxy</a>
+            </li>
+            <li class="column__list-item">
+              <a href="#portfolio" class="column__list-link">Gradient</a>
+            </li>
+            <li class="column__list-item">
+              <a href="#reviews" class="column__list-link">Minimal</a>
+            </li>
+            <li class="column__list-item">
+              <a href="#contant" class="column__list-link">Night</a>
+            </li>
+          </ul>
+        </div>
+        <div class="columns__resources column">
+          <h5 class="column__title">Resources</h5>
+          <div class="column__resources-icon">
+            <ul class="icons-list">
+              <li class="icons-list__item">
+                <a
+                  href="https://facebook.com"
+                  class="icons-list__link"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  <img
+                    src="./images/icon-facebook.svg"
+                    alt="Facebook link icon"
+                    class="icons-list__icon"
+                  >
+                </a>
+              </li>
+              <li class="icons-list__item">
+                <a
+                  href="https://instagram.com"
+                  class="icons-list__link"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  <img
+                    src="./images/icon-instagram.svg"
+                    alt="Instagram link icon"
+                    class="icons-list__icon"
+                  >
+                </a>
+              </li>
+              <li class="icons-list__item">
+                <a
+                  href="https://twitter.com"
+                  class="icons-list__link"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  <img
+                    src="./images/icon-twitter.svg"
+                    alt="Twitter link icon"
+                    class="icons-list__icon"
+                  >
+                </a>
+              </li>
+              <li class="icons-list__item">
+                <a
+                  href="https://dribbble.com"
+                  class="icons-list__link"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  <img
+                    src="./images/icon-dribbble.svg"
+                    alt="Dribbble link icon"
+                    class="icons-list__icon"
+                  >
+                </a>
+              </li>
+              <li class="icons-list__item">
+                <a
+                  href="https://envato.com"
+                  class="icons-list__link"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  <img
+                    src="./images/icon-envato.svg"
+                    alt="Envato link icon"
+                    class="icons-list__icon"
+                  >
+                </a>
+              </li>
+            </ul>
+          </div>
+          <ul class="column__list">
+            <li class="column__list-item">
+              <a href="#" class="column__list-link">Download now</a>
+            </li>
+            <li class="column__list-item">
+              <a href="#" class="column__list-link">Documentation</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__copyright">
+        <div class="footer__copyright-text">Copyright © 2020 tempy.club</div>
+        <div class="footer__copyright-links">
+          <ul class="privacy-list">
+            <li class="privacy-list__item">
+              <a href="#" class="privacy-list__link">Privacy Policy</a>
+            </li>
+            <li class="privacy-list__item">
+              <a href="#" class="privacy-list__link">Terms of Use</a>
+            </li>
+            <li class="privacy-list__item">
+              <a href="#" class="privacy-list__link">GDPR</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

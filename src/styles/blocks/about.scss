@@ -1,0 +1,48 @@
+.about {
+  padding-top: 100px;
+  height: 932px;
+
+  &__heading {
+    @include heading;
+  }
+
+  &__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    top: 35%;
+
+    &-image {
+      transform: translateY(-150px);
+    }
+  }
+
+  @media (max-width: $tablet-screen) {
+    padding-top: 0;
+
+    &__content {
+      padding-top: 80px;
+
+      &-people {
+        display: none;
+      }
+    }
+  }
+
+  @media (max-width: 700px) {
+    height: 780px;
+
+    &__heading {
+      margin: 0;
+      padding-top: 20px;
+      font-size: 40px;
+    }
+  }
+
+  @media (max-width: 500px) {
+    &__content {
+      padding-top: 0;
+    }
+  }
+}

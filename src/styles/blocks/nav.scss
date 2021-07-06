@@ -1,0 +1,136 @@
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  line-height: 40px;
+
+  &__menu {
+    display: flex;
+    align-items: center;
+  }
+
+  &__logo {
+    line-height: 0;
+  }
+
+  &__list {
+    display: flex;
+    list-style: none;
+  }
+
+  &__item:nth-child(3) {
+    position: relative;
+  }
+
+  &__item:nth-child(3):hover .demos {
+    display: block;
+  }
+
+  &__item:nth-child(3)::after {
+    content: "";
+    cursor: pointer;
+    background-image: url("../images/arrow-down.svg");
+    background-size: cover;
+    right: -20px;
+    top: 15px;
+    height: 10px;
+    width: 10px;
+    position: absolute;
+  }
+
+  &__item:nth-child(4) {
+    margin-left: 20px;
+  }
+
+  &__link {
+    color: $color-accent-blue;
+    font-family: $font-nav;
+    font-size: 16px;
+    margin-left: 50px;
+    text-decoration: none;
+  }
+
+  &__contacts-phone {
+    color: $color-accent-blue;
+    font-family: $font-nav;
+    font-size: 16px;
+    padding-right: 34px;
+    text-decoration: none;
+  }
+
+  &__contacts-button {
+    @include colored-button;
+  }
+
+  &__toggler {
+    display: none;
+    padding-right: 0;
+    margin-right: 25px;
+
+    &--menu {
+      background-image: url("../images/menu.svg");
+      color: #000;
+      height: 30px;
+    }
+
+    &--cancel {
+      background-image: url("../images/cancel.svg");
+      color: #000;
+      height: 30px;
+    }
+  }
+
+  @media (max-width: $tablet-screen) {
+    justify-content: space-between;
+    padding-top: 10px;
+
+    &__list {
+      background-color: #fff;
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      padding-left: 0;
+      position: absolute;
+      top: 30px;
+      width: 100%;
+      z-index: 1;
+    }
+
+    &__logo {
+      padding-left: 25px;
+    }
+
+    &__link {
+      margin-left: 0;
+    }
+
+    &__item:nth-child(4) {
+      margin-left: 0;
+    }
+
+    &__contacts-phone {
+      display: none;
+      position: absolute;
+      padding-left: 30px;
+      right: 50%;
+      top: 5px;
+      transform: translateX(50%);
+    }
+
+    &__contacts-button {
+      display: none;
+    }
+
+    &__toggler {
+      display: block;
+      line-height: 0;
+      width: 30px;
+    }
+  }
+
+  @media (min-width: $tablet-screen) and (max-width: $notebook-screen) {
+    &__contacts-phone {
+      display: none;
+    }
+  }
+}

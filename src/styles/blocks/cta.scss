@@ -1,0 +1,82 @@
+.cta {
+  background-color: $color-button;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 100px;
+  padding: 30px;
+
+  &__heading {
+    @include heading;
+    color: #fff;
+    text-align: left;
+  }
+
+  &__links {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    &-button {
+      @include white-button;
+      display: flex;
+      align-items: center;
+      border: none;
+      border-radius: 100px;
+      color: $color-content;
+      cursor: pointer;
+      font-family: "Halyard Display", sans-serif;
+      font-size: 18px;
+      padding: 10px 20px;
+      padding-right: 40px;
+      text-decoration: none;
+    }
+
+    &-icon {
+      padding-right: 15px;
+      transition: transform 0.2s linear;
+    }
+
+    &-button:hover &-icon {
+      transform: scale(1.1);
+    }
+
+    &-extra {
+      color: #fff;
+      font-family: "Halyard Text", sans-serif;
+      font-size: 16px;
+      padding-top: 15px;
+    }
+
+    &-link {
+      color: #fed385;
+      text-decoration: none;
+    }
+  }
+
+  @media (max-width: 800px) {
+    flex-direction: column;
+    align-items: center;
+
+    &__heading {
+      text-align: center;
+    }
+
+    &__links {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  @media (max-width: 700px) {
+    &__heading {
+      font-size: 40px;
+    }
+  }
+
+  @media (max-width: 500px) {
+    margin-top: 0;
+    padding-top: 0;
+  }
+}

@@ -1,7 +1,36 @@
-@import "utils";
-@import "fonts";
-@import "typography";
+@import "./utils";
+@import "./fonts";
+@import "./typography";
+@import "./reset";
+
+@import "./blocks/header.scss";
+@import "./blocks/nav.scss";
+@import "./blocks/demos.scss";
+@import "./blocks/above.scss";
+
+@import "./blocks/hero.scss";
+@import "./blocks/logos.scss";
+
+@import "./blocks/about.scss";
+@import "./blocks/services.scss";
+
+@import "./blocks/portfolio.scss";
+
+@import "./blocks/reviews.scss";
+@import "./blocks/card.scss";
+
+@import "./blocks/cta.scss";
+
+@import "./blocks/footer.scss";
+@import "./blocks/columns.scss";
+@import "./blocks/column.scss";
+@import "./blocks/icons-list.scss";
+@import "./blocks/privacy-list.scss";
+
+html {
+  scroll-behavior: smooth;
+}
 
 body {
-  background: $c-gray;
+  background: #fff;
 }

@@ -1,0 +1,51 @@
+.services {
+  display: flex;
+  transform: translateY(-105px);
+
+  &__list {
+    display: block;
+
+    &-item {
+      border-bottom: 1px solid $color-border;
+      display: flex;
+      align-items: start;
+      list-style: none;
+      padding-bottom: 30px;
+      padding-top: 40px;
+    }
+
+    &-item:last-child {
+      border: none;
+      padding-bottom: 0;
+    }
+
+    &-icon {
+      padding-top: 10px;
+      transition: transform 0.2s linear;
+    }
+
+    &-item:hover &-icon {
+      transform: scale(1.1);
+    }
+
+    &-description {
+      padding-left: 40px;
+    }
+
+    &-heading {
+      color: $color-accent-blue;
+      font-family: "Halyard Display", sans-serif;
+      font-size: 22px;
+      font-weight: normal;
+    }
+
+    &-text {
+      @include description;
+      width: 300px;
+    }
+  }
+
+  @media (max-width: 500px) {
+    transform: scale(0.8) translateY(0);
+  }
+}
