@@ -1,0 +1,77 @@
+.info {
+  padding-top: 122px;
+  padding-left: 168px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  &__block {
+    width: 400px;
+    box-sizing: border-box;
+    padding-left: 105px;
+    border-bottom: 1px solid rgba(69, 88, 128, 0.2);
+    position: relative;
+
+    &:not(:first-of-type) {
+      margin-top: 41px;
+    }
+  }
+
+  &__icon {
+    width: 58px;
+    height: 58px;
+    position: absolute;
+    top: 4px;
+    left: 0;
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    @for $i from 1 through 3 {
+      &_#{$i} {
+        background-image: url("/images/icons/icon-#{$i}.svg");
+      }
+    }
+  }
+
+  &__heading {
+    @extend %h3;
+    margin-bottom: 32px;
+    text-align: start;
+  }
+
+  &__text {
+    @extend %regular-font;
+    width: 100%;
+    height: 134px;
+    margin-bottom: -10px;
+  }
+}
+
+@each $screen-width, $block-width in $info-breakpoints {
+  @media screen and (max-width: $screen-width) {
+    .info__block {
+      width: $block-width;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .info {
+    padding-top: 61px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .info {
+    &__block {
+      padding-left: 68px;
+    }
+
+    &__icon {
+      width: 40px;
+      height: 40px;
+    }
+  }
+}

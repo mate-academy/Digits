@@ -1,0 +1,42 @@
+.logos {
+  margin-top: 48px;
+  display: grid;
+  grid-template-columns: 110px 95px 80px 174px 115px 102px 72px;
+  grid-row: auto;
+  grid-column-gap: 72px;
+
+  &__logo {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+
+    &_1,
+    &_3,
+    &_6,
+    &_7 {
+      height: 34px;
+    }
+
+    &_2,
+    &_4,
+    &_5 {
+      height: 33px;
+    }
+
+    @for $i from 1 through 7 {
+      &_#{$i} {
+        background-image: url("/images/logos/logo-#{$i}.svg");
+      }
+    }
+  }
+}
+
+//---PARTNERS-LOGOS-size
+@each $screen-width, $transformation-scale in $partners-logo-breakpoints {
+  @media screen and (max-width: $screen-width) {
+    .partners__logos {
+      transform: scale($transformation-scale);
+      transform-origin: top;
+    }
+  }
+}

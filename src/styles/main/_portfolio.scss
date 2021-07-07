@@ -1,0 +1,49 @@
+.portfolio {
+  padding-top: 139px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #fff9ea;
+
+  &__heading {
+    @extend %h2;
+  }
+
+  &__text {
+    @extend %regular-font;
+    width: 400px;
+    margin-top: 40px;
+    font-size: 21px;
+    text-align: center;
+  }
+
+  &__digits {
+    margin-top: 40px;
+  }
+
+  &__examples {
+    margin-top: 27px;
+    width: 100%;
+    object-fit: contain;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .portfolio {
+    padding-top: 70px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .portfolio {
+    &__heading {
+      width: 84%;
+    }
+
+    &__text {
+      width: 84%;
+      font-size: 19px;
+    }
+  }
+}

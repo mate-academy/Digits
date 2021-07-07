@@ -1,0 +1,91 @@
+.cta {
+  height: 323px;
+  padding: auto auto auto;
+  background: #3751ff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &__heading {
+    @extend %h2;
+    text-align: start;
+    color: #fff;
+  }
+
+  &__right {
+    position: relative;
+  }
+
+  &__action {
+    padding: 18px 44px 18px 29px;
+    @include pseudobutton-white;
+    font-family: "Halyard Display", sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 110%;
+    text-align: center;
+    color: #455880;
+    display: flex;
+    align-items: center;
+
+    &:hover {
+      border-color: #53c07e;
+    }
+
+    &::before {
+      content: url("/images/mail.svg");
+      margin-right: 17px;
+      display: block;
+      width: 27px;
+      height: 16px;
+    }
+  }
+
+  &__text {
+    position: absolute;
+    white-space: nowrap;
+    right: 0;
+    bottom: -39px;
+    font-family: "Halyard Text", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 125%;
+    text-align: right;
+    color: #dfe0eb;
+
+    &_link {
+      color: #fed385;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1599px) {
+  .cta {
+    padding: auto 13% auto;
+
+    &__text {
+      font-size: 14px;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .cta {
+    flex-direction: column;
+    padding: 50px 0 80px;
+
+    &__heading {
+      text-align: center;
+    }
+
+    &__text {
+      position: absolute;
+      right: -6px;
+    }
+  }
+}

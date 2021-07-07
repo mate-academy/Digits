@@ -1,0 +1,58 @@
+.nav {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+  }
+
+  &__item_arrow {
+    width: 87px;
+  }
+
+  &__link {
+    width: fit-content;
+    color: inherit;
+    position: relative;
+    transition: color 150ms;
+
+    &::after {
+      content: "";
+      opacity: 0;
+      width: 10%;
+      height: 3px;
+      position: absolute;
+      left: 45%;
+      bottom: -5px;
+      border-radius: 30px;
+      background: $heading_color;
+      transition: all 250ms;
+    }
+
+    &:hover::after{
+      opacity: 1;
+      width: 100%;
+      left: 0%;
+    }
+
+    &_arrow::before {
+      content: url(/images/arrow-down.svg);
+      position: absolute;
+      right: -18px;
+    }
+  }
+}
+
+//---NAVIGATION-gaps
+@each $screen-width, $nav-gap in $nav-breakpoints {
+  @media screen and (max-width: $screen-width) {
+    .nav {
+      &__list  {
+        grid-column-gap: $nav-gap;
+      }
+    }
+  }
+}

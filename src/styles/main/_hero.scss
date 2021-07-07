@@ -1,0 +1,80 @@
+.hero {
+  height: 878px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(180deg, rgba(242,249,255,0.12) 0%, #f2f9ff);
+
+  &__heading {
+    @extend %h1;
+    margin-top: 144px;
+  }
+
+  &__text {
+    @extend %regular-font;
+    margin-top: 27px;
+    line-height: 150%;
+    text-align: center;
+  }
+
+  &__actions {
+    margin-top: 29px;
+    display: flex;
+  }
+
+  &__features {
+    @include pseudobutton-white;
+    margin-left: 22px;
+    padding: 17px 40px;
+  }
+  
+  &__illustration {
+    width: 977px;
+    height: 585px;
+    display: block;
+    margin-top: 32px;
+  }
+}
+
+//---ILLUSTRATION-size
+@each $screen-width, $transformation-scale in $illustration-breakpoints {
+  @media screen and (max-width: $screen-width) {
+    .hero {
+      height: 434px + (444px * $transformation-scale);
+      
+      &__illustration {
+        transform: scale($transformation-scale);
+        transform-origin: top;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hero {
+    &__heading {
+      margin-top: 72px;
+    }
+
+    &__actions {
+      flex-direction: column;
+    }
+
+    &__features {
+      margin: 22px 0 0;
+    }
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .hero {
+    height: 586px;
+    padding: 0 7%;
+
+
+    &__heading {
+      margin-top: 36px;
+    }
+  }
+}

@@ -1,0 +1,58 @@
+//SVG-files are incorrect thus they cannot be imported correctly :(
+
+.examples {
+  width: 1635px;
+  height: 733px;
+  margin-top: 27px;
+
+  display: grid;
+  grid-template-columns: repeat(5, 311px);
+  grid-column-gap: 20px;
+
+  &__block {
+    display: grid;
+    grid-template-columns: 311px;
+    grid-template-rows: repeat(2, 231px);
+    grid-row-gap: 20px;
+    position: relative;
+
+    &_1 {
+      top: 0;
+      grid-template-rows: repeat(3, 231px);
+    }
+
+    &_2 {
+      top: 114px;
+    }
+
+    &_3 {
+      top: 171px;
+    }
+
+    &_4 {
+      top: 231px;
+    }
+
+    &_5 {
+      top: 114px;
+    }
+  }
+
+  &__image {
+    width: 311px;
+    height: 231px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    filter: drop-shadow(0 14px 25px rgba(135, 146, 161, 0.06)),
+      drop-shadow(0 4px 4px rgba(135, 146, 161, 0.08))
+    ;
+    border-radius: 18px;
+
+    @for $i from 1 through 11 {
+      &_#{$i} {
+        background-image: url("/images/examples/browser_#{$i}.svg");
+      }
+    }
+  }
+}

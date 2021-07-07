@@ -1,0 +1,46 @@
+.underline {
+  padding-top: 53px;
+  padding-bottom: 118px;
+  border-top: 1px solid rgba(135, 146, 161, 0.08);
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  font-family: "Halyard Text", sans-serif;
+  font-size: 14px;
+  line-height: 193%;
+  
+  &__copyright {
+    color: rgba(69, 88, 128, 0.5);
+  }
+
+  &__addition {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-gap: 24px;
+  }
+
+  & li {
+    text-align: center;
+  }
+
+  &__link {
+    color: $regular_color;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .underline {
+    flex-direction: column;
+    height: 220px;
+    padding-bottom: 46px;
+    align-items: center;
+
+    &__addition {
+      grid-template-columns: auto;
+      grid-template-rows: repeat(3, min-content);
+      align-items: inherit;
+    }
+  }
+}
