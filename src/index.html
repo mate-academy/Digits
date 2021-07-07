@@ -3,11 +3,287 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Title</title>
+    <title>Digits</title>
     <link rel="stylesheet" href="./styles/main.scss">
+    <link rel="stylesheet" href="./fonts/stylesheet.css">
+    <link rel="icon"
+      href="./images/favicon.ico"
+      type="image/x-icon"
+    >
   </head>
   <body>
-    <h1>Hello Mate Academy</h1>
-    <script type="text/javascript" src="scripts/main.js"></script>
+    <header class="header">
+      <section class="section section__header">
+        <nav class="header__navigation">
+          <a href="https://oleksandr-rohatnov.github.io/Digits/">
+            <img alt=""
+              src="./images/logo.svg"
+              class="header__logo"
+            >
+          </a>
+          <input class="hidden"
+            type="checkbox"
+            id="menuToggle"
+          >
+          <label class="menu-btn" for="menuToggle">
+            <div class="menu"></div>
+            <div class="menu"></div>
+            <div class="menu"></div>
+          </label>
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#" class="link nav__link">Homepages</a>
+            </li>
+            <li class="nav__item">
+              <a href="#buy" class="link nav__link">Products</a>
+            </li>
+            <li class="nav__item nav__item--list">
+              <a href="#help" class="link nav__link">Company</a>
+            </li>
+            <li class="nav__item">
+              <a href="#launch" class="link nav__link">Pricing</a>
+            </li>
+            <li class="nav__item">
+              <a href="#talk" class="link nav__link">Blog</a>
+            </li>
+          </ul>
+          <div class="header__contact">
+            <label for="contact" class="contact__lable"><a href="tel:00-123-456-789" class="link">123 456 789 </a></label>
+            <button id="contact"
+              class="button button__contact">
+              <a href="tel:00-123-456-789">Contact Us</a>
+            </button>
+          </div>
+        </nav>
+        <div class="header__info">
+          <h1 class="header__title">Good design meets<br>great user experience</h1>
+          <div class="header__buttons">
+            <button class="button button__info">Buy Digits</button>
+            <button class="button button__info--second">See the Features</button>
+          </div>
+          <div class="info__img"></div>
+        </div>
+      </section>
+      <div class="header__background">
+      </div>
+    </header>
+    <main>
+      <section class="section section__help">
+        <div id="help" class="help__brand-line">
+          <img src="/images/logo-1.svg" alt="">
+          <img src="/images/logo-2.svg" alt="">
+          <img src="/images/logo-3.svg" alt="">
+          <img src="/images/logo-4.svg" alt="">
+          <img src="/images/logo-5.svg" alt="">
+          <img src="/images/logo-6.svg" alt="">
+          <img src="/images/logo-7.svg" alt="">
+        </div>
+        <h2 class="title help__title">Whatever work you do,<br>we're able to help</h2>
+        <div class="help">
+          <div class="help__photos">
+            <div class="help__photos--first">
+              <img src="/images/image 4.png" alt="">
+            </div>
+            <div class="help__photos--second">
+              <img src="/images/image 3.png" alt="">
+            </div>
+            <div class="help__photos--third">
+              <img src="/images/image 2.png" alt="">
+            </div>
+          </div>
+          <div class="help__info">
+            <div class="info__item">
+              <h3>Design and Assets</h3>
+              <p>Make your brand stand out with<br>
+                  pixel-perfect design crafted to<br> perfection.
+              </p>
+            </div>
+            <div class="info__item">
+              <h3>Easy Content</h3>
+              <p>Import your demos or build pages<br>
+                  visually. Bonus: All images and<br>
+                  illustrations included!
+              </p>
+            </div>
+            <div class="info__item info__item--last">
+              <h3>Fast and Reliable</h3>
+              <p>No heavy-weight plugins. No<br>
+                builders. No unneccesary file<br>
+                loading. Pure WordPress.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="buy__background">
+        <section id="buy" class="section section__buy">
+          <div class="buy">
+            <h2 class="title buy__title">
+              Simplicity meets innovative design
+            </h2>
+            <p class="buy__title__down">It's really easy to start using Digits.<br>
+              Install the theme, choose a demo and<br>
+              start designing the future of your business!
+            </p>
+            <button class="button buy__button">Buy Digits</button>
+            <div class="buy__maket">
+              <div class="maket__collum maket__collum--first">
+                <img alt=""
+                  src="/images/maket1.png"
+                  class="maket__img maket__img--1"
+                >
+                <img alt=""
+                  src="/images/maket2.png"
+                  class="maket__img maket__img--2"
+                >
+                <img alt=""
+                  src="/images/maket3.png"
+                  class="maket__img maket__img--3"
+                >
+              </div>
+              <div class="maket__collum maket__collum--second">
+                <img alt=""
+                  src="/images/maket4.png"
+                  class="maket__img maket__img--1"
+                >
+                <img alt=""
+                  src="/images/maket5.png"
+                  class="maket__img maket__img--3"
+                >
+              </div>
+              <div class="maket__collum maket__collum--third">
+                <img alt=""
+                  src="/images/maket6.png"
+                  class="maket__img maket__img--1"
+                >
+                <img alt=""
+                  src="/images/maket7.png"
+                  class="maket__img maket__img--2"
+                >
+              </div>
+              <div class="maket__collum maket__collum--fourth">
+                <img alt=""
+                  src="/images/maket8.png"
+                  class="maket__img maket__img--1"
+                >
+                <img alt=""
+                  src="/images/maket9.png"
+                  class="maket__img maket__img--2"
+                >
+              </div>
+              <div class="maket__collum maket__collum--fives">
+                <img alt=""
+                  src="/images/maket10.png"
+                  class="maket__img maket__img--1"
+                >
+                <img alt=""
+                  src="/images/maket11.png"
+                  class="maket__img maket__img--2"
+                >
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <section id="talk" class="section section__talk">
+        <h2 class="title talk__title">What others are saying</h2>
+        <div class="talk__cards">
+          <div class="talk__card">
+            <p class="card__text">Completely beautiful website and<br>
+              amazing support! This is my second<br>
+                website from this author and I love<br>
+                both of the sites so much and she<br>
+                  has helped me so well when I<br>
+                  needed it!
+            </p>
+            <img src="/images/talk1.png" alt="">
+            <span class="card__user">Happy User</span>
+            <p class="club">tempy.club</p>
+          </div>
+          <div class="talk__card">
+            <p class="card__text">Really easy to use and customize.<br>
+              easy to understand. Darinka helped<br>
+                me with my site! She answers very<br>
+                quickly, a good service! Thank you<br>
+                  very much!
+            </p>
+            <img src="/images/talk2.png" alt="">
+            <span class="card__user">Happy User</span>
+            <p class="club">tempy.club</p>
+          </div>
+          <div class="talk__card">
+            <p class="card__text">Really pleasing to look at!<br>
+              Documentation (including<br>
+                installation instructions) are clear<br>
+                and that is coming from a relatively<br>
+                  new WordPress user.
+            </p>
+            <img src="/images/talk3.png" alt="">
+            <span class="card__user">Happy User</span>
+            <p class="club">tempy.club</p>
+          </div>
+        </div>
+      </section>
+      <div id="launch" class="launch">
+        <section class="section section__launch">
+          <h2 class="title launch__title">Ready to launch<br>your next website?</h2>
+          <div class="launch__right">
+            <button class="button launch__button">Get in touch now</button>
+            <p class="button__text">Or, take a peek inside our design studio</p>
+          </div>
+        </section>
+      </div>
+    </main>
+    <footer class="section section__footer">
+      <div class="footer__up">
+        <div class="footer__logo-text">
+          <img class="logo"
+            src="/images/logo.svg"
+            alt=""
+          >
+          <p class="text text__footer">Digits is a website template built to<br>
+             work seamlesly with the WordPress<br>
+              block editor to create beautifully<br>
+               designed pages in minutes.
+          </p>
+        </div>
+        <div class="footer__pages">
+          <h3>Pages</h3>
+          <a href="#" class="text link">Home</a>
+          <a href="#help" class="text link">About</a>
+          <a href="#talk" class="text link">News</a>
+          <a href="#buy" class="text link">Pricing</a>
+          <a href="#launch" class="text link">Contact</a>
+        </div>
+        <div class="footer__demos">
+          <h3>Demos</h3>
+          <a href="" class="text link">Classic</a>
+          <a href="" class="text link">Boxy</a>
+          <a href="" class="text link">Gradient</a>
+          <a href="" class="text link">Minimal</a>
+          <a href="" class="text link">Night</a>
+        </div>
+        <div class="footer__resources">
+          <h3>Resources</h3>
+          <div class="footer__network">
+            <div class="icon link__fbk"></div>
+            <div class="icon link__inst"></div>
+            <div class="icon link__twit"></div>
+            <div class="icon link__drb"></div>
+            <div class="icon link__env"></div>
+          </div>
+          <a href="" class="text link">Download now</a>
+          <a href="" class="text link">Documentation</a>
+        </div>
+      </div>
+      <div class="footer__down">
+        <p class="footer__down--left">Copyright © 2020 tempy.club</p>
+        <div class="footer__down--rigth">
+          <a href="" class="link">Privacy Policy</a>
+          <a href="" class="link">Terms of Use</a>
+          <a href="" class="link">GDPR</a>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
