@@ -1,0 +1,114 @@
+@use "../utils/variables";
+
+.simplicity {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $simplicity-bg;
+  padding: 139px 30px 0;
+  &__tittle {
+    font-size: 3em;
+    line-height: 3.75rem;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  &__subtittle {
+    font-family: $ff-h-text;
+    color: $h2-color;
+    font-size: 1.31em;
+    line-height: 2rem;
+    width: 25em;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  &__sent {
+    margin: 0;
+  }
+
+  &__button {
+    text-align: center;
+    margin-bottom: 37px;
+  }
+
+  &__link {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    font-family: $ff-h-text;
+    line-height: 3.13em;
+    width: 9.25em;
+    height: 3.13em;
+    background-color: $ready-and-button-bg;
+    border-radius: 100px;
+
+    &:hover {
+      box-shadow: 0 0 15px blue;
+    }
+  }
+
+  &__images {
+    display: flex;
+    align-items: flex-end;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  &__columns {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__columns:last-child {
+    margin: 0;
+  }
+
+  &__foto {
+    display: block;
+    width: 100%;
+    transition: transform 500ms;
+    
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+
+  &__foto:not(:last-child) {
+    max-height: 237px;
+  }
+
+  @media (min-width:2000px) {
+    & {
+      font-size: 22px;
+    }
+
+    &__images {
+      max-width: 2000px;
+    }
+  }
+  
+  @media (max-width:600px) {
+    & {
+      padding-top: 50px;
+    }
+    &__tittle {
+      padding: 0 1em;
+      font-size: 1.8rem;
+      text-align: center;
+    }
+
+    &__subtittle {
+      width: 90%;
+    }
+
+    &__images {
+      justify-content: center;
+    }
+
+    &__columns:not(:nth-child(3)) {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,122 @@
+.menu-maxwidth1050 {
+  display: none;
+  position: relative;
+
+  &__label {
+    display: inline-block;
+    cursor: pointer;
+    background: url(/images/block-navigation/menu.svg);
+    width: 20px;
+    height: 20px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 1;
+  }
+
+  &__toggler {
+    opacity: 0;
+  }
+
+  &__list {
+    font-family: $ff-h-text;
+    font-weight: normal;
+    line-height: 200%;
+
+    padding: 50px 150px 20px 20px;
+    width: 350px;
+    border-radius: 15px;
+    
+    position: absolute;
+    right: -55px;
+    top: -15px;
+    
+    background: rgba(248, 174, 195, 1);
+    
+    
+    transition: opacity 1s, z-index 3s;
+
+    z-index: -1;
+    opacity: 0;
+  }
+
+  &__link {
+    display: block;
+    color: $h2-color;
+    transition: color 0.3s;
+    width: 100%;
+
+    &:hover {
+      color: greenyellow;
+    }
+  }
+
+  &__contacts {
+    display: flex;
+    height: 100%;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  &__telephone-num {
+    margin-top: 15px;
+    margin-right: 1em;
+    color: $H-color;
+    font-family: $ff-h-text;
+    font-weight: normal;
+    transition: font-size 1s;
+
+    &:hover {
+      font-size: 18px;
+    }
+  }
+  &__button {
+    text-decoration: none;
+    width: 7.06em;
+    height: 2.5em;
+    background-color: $ready-and-button-bg;
+    border-radius: 100px;
+    text-align: center;
+    line-height: 2.5em;
+    color: #fff;
+    margin-top: 5px;
+
+    &:hover {
+      display: block;
+      box-shadow: 0 0 15px rgba(17, 17, 255, 1);
+    }
+  }
+
+  @media (max-width: 1050px) {
+    & {
+      display: block;
+    }
+
+    &__toggler:checked ~ &__list {
+      position: absolute;
+      z-index: 1;
+      opacity: 1;
+      transition: z-index 0s, opacity 1s;
+    }
+
+    &__toggler:checked + &__label {
+      background: url(/images/block-navigation/menu-X.svg);
+      background-size: cover;
+      height: 25px;
+      width: 25px;
+      padding-top: 0;
+      z-index: 2;
+    }
+
+    &__toggler:checked ~ &__contacts {
+      display: flex;
+    }
+  }
+  @media (max-width: 600px) {
+    &__list {
+      right: -25px;
+      width: 300px;
+      padding-right: 10px;
+    }
+  }
+}
