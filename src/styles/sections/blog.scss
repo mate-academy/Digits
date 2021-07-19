@@ -1,0 +1,122 @@
+.blog {
+  padding: 160px 0;
+
+  @media (min-width: 1920px) {
+    padding: 200px 0;
+  }
+
+  @media (max-width: 1200px) {
+    padding: 80px 0;
+  }
+
+  @media (max-width: 720px) {
+    padding: 60px 0;
+  }
+
+  &__respond {
+    margin: 55px auto;
+    display: grid;
+    gap: 32px;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+
+    @media (min-width: 2000px) {
+      margin: 0 auto;
+      width: 1600px;
+    }
+
+    @media (min-width: 1920px) {
+      margin: 70px auto;
+      gap: 48px;
+    }
+
+    @media (max-width: 1200px) {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  &__article {
+    padding: 32px 44px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid rgba(69, 88, 128, 0.2);
+    border-radius: 4px;
+    // cursor: pointer;
+    @include hover (background-color, #fff);
+    @include hover (border-radius, 15px);
+
+    @media (max-width: 1400px) {
+      padding: 30px 35px;
+    }
+
+    @media (max-width: 1200px) {
+      padding: 20px 25px;
+      flex-direction: row;
+      justify-content: space-between;
+      gap: 70px;
+    }
+
+    @media (max-width: 700px) {
+      flex-direction: column;
+      justify-content: center;
+      padding: 20px;
+      gap: 10px;
+    }
+  }
+
+  &__person {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 150px;
+
+    @media (max-width: 700px) {
+      order: 1;
+    }
+  }
+
+  &__text {
+    height: 210px;
+    line-height: 1.8;
+
+    @media (max-width: 1400px) {
+      line-height: 1.5;
+    }
+
+    @media (max-width: 1200px) {
+      line-height: 1.5;
+      height: 100px;
+      margin: 0;
+    }
+
+    @media (max-width: 700px) {
+      line-height: 1.5;
+      height: auto;
+      margin: 0;
+      order: 2;
+    }
+  }
+
+  &__name {
+    margin: 20px auto 0;
+    line-height: 1.8;
+
+    @media (max-width: 1400px) {
+      line-height: 1.5;
+    }
+
+    @media (max-width: 1200px) {
+      margin: 0 auto;
+    }
+  }
+
+  &__email {
+    line-height: 1.8;
+
+    @media (max-width: 1400px) {
+      line-height: 1.5;
+    }
+  }
+}

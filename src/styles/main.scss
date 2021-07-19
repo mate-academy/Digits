@@ -1,7 +1,78 @@
 @import "utils";
 @import "fonts";
 @import "typography";
+@import "sections/header";
+@import "sections/home";
+@import "sections/products";
+@import "sections/company";
+@import "sections/blog";
+@import "sections/pricing";
+@import "sections/footer";
+@import "blocks/button";
+@import "blocks/nav";
+@import "blocks/nav-mob";
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Helyard", sans-serif;
+  font-size: 18px;
+  color: $colorText;
+  scroll-behavior: smooth;
+}
 
 body {
   background: $c-gray;
+  margin: 0;
+  background-color: $colorBG;
+}
+
+a {
+  text-decoration: none;
+  color: $colorText;
+  @include hover (color, $colorHover);
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+.page__bg {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  max-height: 1440px;
+  background: linear-gradient(180deg, rgba(242, 249, 255, 0.12) 0%,
+  #f2f9ff 100%);
+  z-index: 0;
+
+  @media (max-width: 720px) {
+    max-height: 568px;
+  }
+}
+
+.container {
+  margin: 0 210px;
+
+  @media (min-width: 1920px) {
+    margin: 0 310px;
+  }
+
+  @media (max-width: 1400px) {
+    margin: 0 110px;
+  }
+
+  @media (max-width: 1200px) {
+    margin: 0 80px;
+  }
+
+  @media (max-width: 720px) {
+    margin: 0 30px;
+  }
 }

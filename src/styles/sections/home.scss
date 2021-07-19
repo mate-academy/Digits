@@ -1,0 +1,231 @@
+.home {
+  padding: 140px 0;
+  position: relative;
+  // display: flex;
+  // flex-direction: column;
+  // align-items: center;
+  z-index: 1;
+  margin-bottom: 10px;
+
+  @media (max-width: 1200px) {
+    padding: 20px 0 60px;
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__heading {
+    font-size: 56px;
+    line-height: 1.05;
+    margin: 0 auto;
+
+    @media (min-width: 1920px) {
+      font-size: 64px;
+    }
+
+    @media (max-width: 1200px) {
+      font-size: 48px;
+    }
+
+    @media (max-width: 720px) {
+      font-size: 28px;
+      line-height: 1.2;
+    }
+  }
+
+  &__text {
+    text-align: center;
+    margin: 27px 0;
+
+    @media (max-width: 1200px) {
+      margin: 22px 0;
+    }
+
+    @media (max-width: 720px) {
+      font-size: 14px;
+    }
+  }
+
+  &__buttons {
+    display: flex;
+    gap: 23px;
+    justify-content: center;
+    margin-bottom: 80px;
+
+    @media (max-width: 1200px) {
+      margin-bottom: 0;
+    }
+
+    @media (max-width: 720px) {
+      flex-direction: column;
+      margin-bottom: 0;
+    }
+  }
+
+  &__button--2.button {
+    background-color: #fff;
+    border: 1px solid #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    @include hover (border, 1px solid $colorHover);
+
+    @media (max-width: 720px) {
+      visibility: hidden;
+    }
+
+    & .button__text {
+      color: $colorText;
+
+      @media (max-width: 720px) {
+        visibility: visible;
+      }
+    }
+  }
+
+  &__picture {
+    position: relative;
+    text-align: center;
+    object-position: center;
+    object-fit: contain;
+    width: 719px;
+    height: 533px;
+    margin: 0 auto;
+    padding: 0;
+
+    @media (max-width: 1200px) {
+      transform: scale(0.5);
+      margin: 0;
+      height: 350px;
+    }
+
+    @media (max-width: 720px) {
+      transform: scale(0.3);
+      height: 100px;
+    }
+  }
+
+  &__svg-1 {
+    position: absolute;
+    left: -80px ;
+    top: -20px;
+    animation: move 1s ease 0.3s both;
+
+  }
+
+  &__svg-2 {
+    position: absolute;
+    right: -20px;
+    top: 50%;
+    animation: move 1s ease 0.3s both;
+
+    @media (max-width: 720px) {
+      top: 220%;
+    }
+  }
+
+  &__svg-3 {
+    position: absolute;
+    left: -50px;
+    bottom: 20%;
+    animation: move 1s ease 0.3s both;
+
+    @media (max-width: 1200px) {
+      bottom: -20%;
+    }
+
+    @media (max-width: 720px) {
+      bottom: -300%;
+    }
+  }
+
+  &__svg-4 {
+    position: absolute;
+    right: -60px;
+    top: 5%;
+    transform: scale(0.7);
+    animation: move 1s ease 0.3s both;
+  }
+
+  &__svg-5 {
+    position: absolute;
+    top: 80px;
+    left: 60px;
+    animation: ui 0.3s ease both;
+  }
+
+  &__svg-6 {
+    position: absolute;
+    top: 130px;
+    left: -15px;
+    border-radius: 50%;
+    animation: icon 1.5s ease-out 3s both alternate 5;
+  }
+
+  &__svg-7 {
+    position: absolute;
+    bottom: 12px;
+    right: 0;
+    transform: scale(0.9);
+    animation: person 3s ease-out 1.5s both;
+
+    @media (max-width: 1200px) {
+      animation: person-ipod 3s ease-out 1.5s both;
+    }
+
+    @media (max-width: 720px) {
+      animation: person-mob 3s ease-out 1.5s both;
+    }
+  }
+
+  &__img {
+    position: relative;
+    height: 533px;
+    margin: 0 auto;
+    padding: 0;
+
+    @media (max-width: 1200px) {
+      object-position: center;
+      object-fit: contain;
+    }
+  }
+
+  &__text-small {
+    margin: 48px auto;
+    text-align: center;
+    font-size: 16px;
+    color: rgba(69, 88, 128, 0.5);
+
+    @media (max-width: 1200px) {
+      margin: 30px auto;
+    }
+
+    @media (max-width: 720px) {
+      display: none;
+    }
+  }
+
+  &__companies {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+
+    @media (max-width: 1200px) {
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    @media (max-width: 720px) {
+      display: none;
+    }
+  }
+
+  &__companies-link {
+    margin: 0 auto;
+    @media (max-width: 1200px) {
+      transform: scale(0.5);
+    }
+  }
+}
