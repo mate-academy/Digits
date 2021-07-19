@@ -1,0 +1,33 @@
+.home {
+  position: relative;
+
+  width: 100%;
+  height: 878px;
+  text-align: center;
+
+  background: $color-gradient;
+
+  &__heading {
+    margin-top: 144px;
+    padding: 0 15px;
+  }
+
+  &__img {
+    margin: 130px auto 0;
+    width: 950px;
+  }
+}
+
+@media screen and (max-width: $small-screen-breakpoint) {
+  .home {
+    height: 315px;
+    
+    &__heading {
+      margin-top: 60px;
+    }
+
+    &__img {
+      display: none;
+    }
+  }
+}

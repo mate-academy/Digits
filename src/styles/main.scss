@@ -1,7 +1,49 @@
 @import "utils";
-@import "fonts";
 @import "typography";
+@import "header";
+@import "nav";
+@import "home";
+@import "about";
+@import "logo";
+@import "info";
+@import "portfolio";
+@import "testimonials";
+@import "person";
+@import "blog";
+@import "footer";
+@import "heading";
+@import "button";
+@import "block";
+@import "top";
+@import "bottom";
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   background: $c-gray;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+button {
+  outline: none;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 15px;
+  }
+  to {
+    margin-right: 15px;
+  }
 }

@@ -1,0 +1,29 @@
+.testimonials {
+  height: 650px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+
+  background-color: #fff;
+  
+  &__title {
+    margin-top: 130px;
+    height: 60px;
+    
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 60px;
+    color: $color-title;
+  }
+}
+
+@media screen and (max-width: $small-screen-breakpoint) {
+  .testimonials {
+    height: 1220px;
+
+    &__title {
+      margin-top: 65px;
+    }
+  }
+}
