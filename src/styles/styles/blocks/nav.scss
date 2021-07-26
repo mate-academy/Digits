@@ -1,0 +1,57 @@
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+
+  &__list {
+
+    @media (min-width: 768px) {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      width: 100%;
+    }
+  }
+
+  &__item {
+    margin-bottom: 40px;
+    padding-right: 10px;
+
+    @media (min-width: 768px) {
+      margin-bottom: 0;
+    }
+  }
+
+  &__link {
+    text-transform: uppercase;
+    font-weight: 700;
+    line-height: 22px;
+    font-size: 22px;
+    color: $white;
+    transition: font 0.4s;
+
+    &--list {
+      margin-right: 10px;
+    }
+
+    &:hover {
+      padding-bottom: 8px;
+      border-bottom: 1px solid $white;
+      color: $white;
+
+      @media (min-width: 768px) {
+        border-bottom: 1px solid tomato;
+        color: tomato;
+      }
+    }
+
+    @media (min-width: 768px) {
+      text-transform: capitalize;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 80px;
+      color: $halyardDisplay;
+    }
+  }
+}

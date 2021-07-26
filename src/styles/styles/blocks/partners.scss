@@ -1,0 +1,44 @@
+.partners {
+  margin-bottom: 32px;
+
+  @media (min-width: 768px) {
+    margin-bottom: 102px;
+  }
+
+  &__content {
+    margin: 0 auto;
+    padding: 20px 0;
+    max-width: 1120px;
+    width: 100% ;
+  }
+
+  &__title {
+    margin-bottom: 49px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 27px;
+    text-align: center;
+    color: rgba(69, 88, 128, 0.5);
+  }
+
+  &__items {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+
+    @media (min-width: 1024px) {
+      flex-wrap: nowrap;
+    }
+  }
+
+  &__item {
+    margin: 30px 20px;
+    cursor: pointer;
+    transition: transform 0.5s;
+  }
+
+  &__item:hover {
+    transform: scale(1.2);
+  }
+}
