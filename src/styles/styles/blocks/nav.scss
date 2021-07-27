@@ -25,11 +25,17 @@
 
   &__link {
     text-transform: uppercase;
+    transition: transform;
+    transition-duration: 0.5s;
+
     font-weight: 700;
     line-height: 22px;
     font-size: 22px;
+    border: none;
     color: $white;
-    transition: font 0.4s;
+    &:hover {
+      transform: scale(1.2);
+    }
 
     &--list {
       margin-right: 10px;
@@ -39,6 +45,7 @@
       padding-bottom: 8px;
       border-bottom: 1px solid $white;
       color: $white;
+      transform: scale(1.2);
 
       @media (min-width: 768px) {
         border-bottom: 1px solid tomato;

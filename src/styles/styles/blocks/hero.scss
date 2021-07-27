@@ -55,11 +55,12 @@
     width: 200px;
     padding: 17px 18px;
     margin-bottom: 20px;
-    border: 1px solid $white;
     border-radius: 100px;
     color: $white;
     background: $button;
-    transition: background-color 0.3s, color 0.3s;
+    border: 1px solid #3751ff;
+    transition: color, background-color, border;
+    transition-duration: 0.5s;
 
     @media (min-width: 768px) {
       width: 148px;
@@ -68,9 +69,8 @@
     }
 
     &:hover {
-      border: 1px solid $button;
-      color: $halyardText;
-      background-color: $white;
+      color: #3751ff;
+      background-color: #fff;
     }
 
     &:focus {
@@ -80,14 +80,14 @@
     &--secondary {
       width: 200px;
       padding: 17px 27px;
-      border: 1px solid $white;
       border-radius: 100px;
+      border: none;
       color: $halyardText;
       background: $white;
       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 
       &:hover {
-        border: 1px solid $button;
+       border: none;
       }
 
       &:focus {
