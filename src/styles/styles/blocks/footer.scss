@@ -3,7 +3,7 @@
     align-items: center;
     margin: 0 auto;
     max-width: 1120px;
-    width: 100% ;
+    width: calc(100% - 80px);
   }
 
   &__top {

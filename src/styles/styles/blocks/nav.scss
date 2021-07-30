@@ -4,6 +4,15 @@
   align-items: center;
   width: 100%;
 
+  @media (min-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin: auto;
+    text-align: center;
+  }
+
   &__list {
 
     @media (min-width: 768px) {
@@ -60,3 +69,5 @@
     }
   }
 }
+
+
