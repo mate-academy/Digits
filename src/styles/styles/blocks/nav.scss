@@ -28,9 +28,7 @@
     padding-right: 10px;
     transition: transform;
     transition-duration: 0.5s;
-    &:hover {
-      transform: scale(1.2);
-    }
+
     @media (min-width: 768px) {
       margin-bottom: 0;
     }
@@ -69,5 +67,3 @@
     }
   }
 }
-
-
