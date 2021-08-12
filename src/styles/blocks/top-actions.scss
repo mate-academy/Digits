@@ -1,0 +1,61 @@
+.top-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  padding: $topActionPadding 0;
+  box-sizing: border-box;
+
+  @include desktop() {
+    padding: $topActionPaddingDesk 0;
+  }
+
+  &__logo {
+    cursor: pointer;
+  }
+
+  &__nav {
+    @include tablet() {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      width: 60%;
+    }
+
+    @include desktop() {
+      width: 50%;
+    }
+  }
+
+  &--footer {
+    justify-content: center;
+
+    @include tablet() {
+      justify-content: space-between;
+    }
+  }
+
+  &__callback {
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+
+    &--footer {
+      display: none;
+
+      @include tablet() {
+        display: block;
+      }
+    }
+  }
+
+  &__callback-number {
+    display: none;
+    padding-right: 30px;
+    color: $titleColor;
+
+    @include desktop() {
+      display: inline;
+    }
+  }
+}

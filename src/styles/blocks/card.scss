@@ -1,0 +1,28 @@
+.card {
+  @include adaptiv-padding(64, 1, 0, 1, 0);
+  display: flex;
+
+  &--midle {
+    border-top: 1px solid $textColor2;
+    border-bottom: 1px solid $textColor2;
+  }
+
+  &__badge {
+    @include adaptiv-padding(64, 0, 1, 0, 0);
+  }
+
+  &__title {
+    @include adaptiv-font(19);
+
+    margin-top: 0;
+    margin-bottom: 38px;
+    color: $titleColor;
+  }
+
+  &__description {
+    @include adaptiv-font(15);
+
+    font-weight: 600;
+    color: $textColor2;
+  }
+}

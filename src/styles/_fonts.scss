@@ -1,6 +1,13 @@
 @font-face {
-  font-family: "Roboto";
-  src: url("../fonts/Roboto-Regular-webfont.woff") format("woff");
+  font-family: "Halyard text";
+  src: url("../fonts/Halyard/Halyard\ Text\ Regular.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Halyard display";
+  src: url("../fonts/Halyard/Halyard\ Display\ Regular.ttf");
   font-weight: normal;
   font-style: normal;
 }

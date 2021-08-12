@@ -1,1 +1,15 @@
-$c-gray: #eee;
+$blueColor: #2060f6;
+$titleColor: #00226c;
+$textColor: #88a;
+$textColor2: #b6b6cc;
+$ligthGreyColor: #dfe6eb;
+$viewportSizeNoPX: 1600;
+$viewportSize: #{$viewportSizeNoPX}px;
+$logoHeigth: 22px;
+$logoHeigthDesk: $logoHeigth * 1.3;
+$topActionPadding: 18px;
+$topActionPaddingDesk: $topActionPadding * 1.5;
+$topActionHeigth: $topActionPadding * 2 + $logoHeigth;
+$topActionHeigthDesk: $topActionPaddingDesk * 2 + $logoHeigthDesk;
+$containerPadding: 8px;
+$containerPaddingDesk: $containerPadding * 2;

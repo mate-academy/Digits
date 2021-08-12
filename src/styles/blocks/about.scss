@@ -1,0 +1,23 @@
+.about {
+  &__content {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__cards {
+    @include adaptiv-padding(96, 0.5, 0, 0.5, 1);
+    width: 100%;
+
+    @include tablet() {
+      width: 35%;
+    }
+  }
+
+  &__image-container {
+    width: 0;
+
+    @include tablet() {
+      width: 65%;
+    }
+  }
+}
