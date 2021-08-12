@@ -1,0 +1,17 @@
+.title {
+  @include adaptiv-font(32);
+
+  width: 70%;
+  margin: 24px auto;
+  line-height: 1.15;
+  text-align: center;
+  color: $titleColor;
+
+  @include tablet() {
+    width: 40%;
+  }
+
+  &--white {
+    color: #fff;
+  }
+}

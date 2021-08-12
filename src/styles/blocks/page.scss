@@ -1,0 +1,25 @@
+.page {
+  @include adaptiv-font(16);
+
+  font-family: "Halyard text", sans-serif;
+  line-height: 150%;
+  font-weight: 600;
+  color: $textColor;
+  scroll-behavior: smooth;
+
+  &__body {
+    margin: 0;
+  }
+
+  &__section {
+    margin-bottom: 48px;
+
+    @include tablet() {
+      margin-bottom: 96px;
+    }
+
+    &:last-child {
+      margin: 0;
+    }
+  }
+}

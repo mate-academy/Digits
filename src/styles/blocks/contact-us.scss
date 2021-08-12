@@ -1,0 +1,50 @@
+.contact-us {
+  background-color: $blueColor;
+
+  &__content {
+    @include adaptiv-padding(56, 1, 0, 1, 0);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @include tablet() {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+
+  &__title {
+    margin: 0;
+    width: 70%;
+    text-align: center;
+    line-height: 1.5;
+
+    @include tablet() {
+      width: 30%;
+      text-align: left;
+    }
+  }
+
+  &__button {
+    @include adaptiv-size(212, 48);
+    @include adaptiv-radius(24);
+
+    margin: 18px auto;
+
+    @include tablet() {
+      margin: 18px 0 18px auto;
+    }
+  }
+
+  &__link-text {
+    @include adaptiv-font(14);
+    font-weight: 400;
+    color: #fff;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: #d3c9a4;
+  }
+}

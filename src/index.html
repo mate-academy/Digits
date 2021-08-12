@@ -1,13 +1,485 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="page">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Title</title>
     <link rel="stylesheet" href="./styles/main.scss">
   </head>
-  <body>
-    <h1>Hello Mate Academy</h1>
+  <body class="page__body">
+    <header class="page__section header">
+      <div class="container">
+        <div class="top-actions">
+          <a href="#" class="top-actions__logo logo">
+            <img
+              src="./images/logo/logo.svg"
+              alt="Logo-digits"
+              class="logo__img"
+            >
+          </a>
+          <nav class="top-actions__nav nav nav--menu">
+            <ul class="nav__list">
+
+              <li class="nav__item">
+                <a href="#" class="link">
+                  Homepages
+                </a>
+              </li>
+
+              <li class="nav__item">
+                <a href="#products" class="link">
+                  Products
+                </a>
+              </li>
+
+              <li class="nav__item">
+                <a href="#company" class="link">
+                  Company
+                </a>
+              </li>
+
+              <li class="nav__item">
+                <a href="#company" class="link">
+                  Pricing
+                </a>
+              </li>
+
+              <li class="nav__item">
+                <a href="#blog" class="link">
+                  Blog
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <div class="top-actions__callback">
+            <span class="top-actions__callback-number">+00 123 456 789</span>
+            <a href="tel:00 123 456 789" class="button">
+              Contact us
+            </a>
+          </div>
+        </div>
+
+        <div class="header__content">
+          <h1 class="header__title">
+            Good design meets great user experience
+          </h1>
+          <h2 class="header__subtitle">
+            For everyone, from beginners to experts
+          </h2>
+          <div class="header__buttons">
+            <a href="#buy" class="header__button button">Buy Digits</a>
+            <a href="#company" class="header__button button button--white">See the Features</a>
+          </div>
+        </div>
+
+        <div class="header__container">
+          <div class="header__image-container">
+            <img
+              src="./images/header/header.png"
+              alt="header-image"
+              class="header__image image"
+            >
+          </div>
+          <div class="header__companies-text">
+            Trusted by forward-thinking software teams around tho world
+          </div>
+          <div class="header__companies">
+            <a href="https://www.netflix.com/ua-ru/" class="header__companies-link">
+              <img
+              src="./images/companies/Netflix.svg"
+              alt="logo-netflix"
+              class="header__companies-logo"
+              >
+            </a>
+            <a href="https://www.drawkit.io/" class="header__companies-link">
+              <img
+              src="./images/companies/draw.png"
+              alt="logo-drow"
+              class="header__companies-logo"
+              >
+            </a>
+            <a href="https://static.figma.com/" class="header__companies-link">
+              <img
+              src="./images/companies/figma.png"
+              alt="logo-figma" class="header__companies-logo"
+              >
+            </a>
+            <a href="https://www.cinemax.com/" class="header__companies-link">
+              <img
+              src="./images/companies/cinemax.svg"
+              alt="logo-cinemax"
+              class="header__companies-logo"
+              >
+            </a>
+            <a href="https://stripe.com/" class="header__companies-link">
+              <img
+              src="./images/companies/stripe.png"
+              alt="logo-stripe"
+              class="header__companies-logo"
+              >
+            </a>
+            <a href="https://www.google.com/" class="header__companies-link">
+              <img
+              src="./images/companies/google.png"
+              alt="logo-google"
+              class="header__companies-logo">
+            </a>
+            <a href="https://www.disney.com/" class="header__companies-link">
+              <img
+              src="./images/companies/disney..png"
+              alt="logo-disney"
+              class="header__companies-logo">
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="page__section about" id="products">
+        <div class="container">
+          <h2 class="about__title title">
+            Whatever work you do, we're able to help
+          </h2>
+          <div class="about__content">
+            <div class="about__image-container">
+              <img
+                src="./images/abotu-us/about.png"
+                alt="about-us"
+                class="about__image image"
+              >
+            </div>
+
+            <div class="about__cards">
+              <div class="about__card card">
+                <div class="card__badge">
+                  <img
+                    src="./images/work/design.png"
+                    alt="badge-design"
+                    class="card__img"
+                  >
+                </div>
+
+                <div class="card__text">
+                  <h3 class="card__title">
+                    Design and Assets
+                  </h3>
+                  <p class="card__description">
+                    Make your brand stand out with pixel-perfect design crafted ti perfection.
+                  </p>
+                </div>
+              </div>
+
+              <div class="about__card card card--midle">
+                <div class="card__badge">
+                  <img
+                    src="./images/work/easy.png"
+                    alt="badge-easy-content"
+                    class="card__img"
+                  >
+                </div>
+
+                <div class="card__text">
+                  <h3 class="card__title">
+                    Easy Content
+                  </h3>
+                  <p class="card__description">
+                    Import your or build pages visually. Bonus: All imahes and illustration includet!
+                  </p>
+                </div>
+              </div>
+
+              <div class="about__card card">
+                <div class="card__badge">
+                  <img
+                    src="./images/work/fast.png"
+                    alt="badge-fast-and-reliable"
+                    class="card__img"
+                  >
+                </div>
+
+                <div class="card__text">
+                  <h3 class="card__title">
+                    Fast And Reliable
+                  </h3>
+                  <p class="card__description">
+                    No heavy-weight plugins. No builders. No unneccesary file loading. Pure WordPress.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="page__section portfolio" id="company">
+        <h2 class="portfolio__title title">
+          Simplicity meets innovative design
+        </h2>
+        <p class="portfolio__description">
+          It's really easy to start using Digits. Install the theme, chose a demo and start designing the future of your busines!
+        </p>
+        <a href="#buy" class="portfolio__button button">Buy Digits</a>
+        <div class="portfolio__image-container">
+          <img
+            src="./images/portfolio/portfolio.png"
+            alt="portfolio-image"
+            class="portfolio__image"
+          >
+        </div>
+      </div>
+
+      <div class="page__section testimonials" id="blog">
+        <div class="container">
+          <h2 class="testimonials__title title">
+            What others are saying
+          </h2>
+          <div class="testimonials__cards">
+            <div class="testimonials__card">
+              <div class="testimonials__coment">
+                Completely beautiful website and amazing support! This is my second website from this author and I love both of the sites so much and she has helped me so well when I needed it!
+              </div>
+              <div class="testimonials__user">
+                <div class="testimonials__photo-container">
+                  <img
+                    src="./images/testimonials/testimonial-ava-1.jpg"
+                    alt="testimonial-1"
+                    class="testimonials__photo"
+                  >
+                </div>
+                <div class="testimonials__name">
+                  Happy User
+                </div>
+                <div class="testimonials__club">
+                  tempty.club
+                </div>
+              </div>
+            </div>
+            <div class="testimonials__card">
+              <div class="testimonials__coment">
+                Really easy to use and customize. easy to understand. Darinka helped me with my site! She answers very quickly, a good service! Thank you very much!
+              </div>
+              <div class="testimonials__user">
+                <div class="testimonials__photo-container">
+                  <img
+                    src="./images/testimonials/testimonial-ava-2.jpg"
+                    alt="testimonial-1"
+                    class="testimonials__photo"
+                  >
+                </div>
+                <div class="testimonials__name">
+                  Happy User
+                </div>
+                <div class="testimonials__club">
+                  tempty.club
+                </div>
+              </div>
+            </div>
+            <div class="testimonials__card">
+              <div class="testimonials__coment">
+                Really pleasing to look at! Documentation (including installation instructions) are clear and that is coming from a relatively new WordPress user.
+              </div>
+              <div class="testimonials__user">
+                <div class="testimonials__photo-container">
+                  <img
+                    src="./images/testimonials/testimonial-ava-3.jpg"
+                    alt="testimonial-1"
+                    class="testimonials__photo"
+                  >
+                </div>
+                <div class="testimonials__name">
+                  Happy User
+                </div>
+                <div class="testimonials__club">
+                  tempty.club
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="page__section contact-us" id="buy">
+        <div class="container">
+          <div class="contact-us__content">
+            <div class="contact-us__title title title--white">
+              Ready to launch your next website?
+            </div>
+            <div class="contact-us__button-container">
+              <a href="mailto: mail@mail.com" class="contact-us__button button button--white">
+                <img
+                  src="./images/mailto/mailto.png"
+                  alt="mail-logo"
+                  class="contact-us__button-img"
+                >
+                Get in touch now
+              </a>
+              <div class="contact-us__link-text">
+                Or, take a peek inside our
+                <a href="#" class="contact-us__link">
+                  design studio
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="page__section footer">
+      <div class="container">
+        <div class="footer__content">
+          <div class="footer__logo-content">
+            <a href="#" class="footer__logo logo">
+              <img
+                src="./images/logo/logo.svg"
+                alt="Logo-digits"
+                class="logo__img"
+              >
+            </a>
+            <p class="footer__description">
+              Digits is a website template built to work seamlesly with the WordPress block editor to create beautifully designed pages in minutes.
+            </p>
+          </div>
+          <div class="footer__section">
+            <h3 class="footer__title">
+              Pages
+            </h3>
+            <nav class="footer__nav nav">
+              <ul class="nav__list nav__list--column">
+
+                <li class="nav__item">
+                  <a href="#" class="link">
+                    Home
+                  </a>
+                </li>
+
+                <li class="nav__item">
+                  <a href="#products" class="link">
+                    About
+                  </a>
+                </li>
+
+                <li class="nav__item">
+                  <a href="#company" class="link">
+                    News
+                  </a>
+                </li>
+
+                <li class="nav__item">
+                  <a href="#prcing" class="link">
+                    Pricing
+                  </a>
+                </li>
+
+                <li class="nav__item">
+                  <a href="#blog" class="link">
+                    Contact
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="footer__section">
+            <h3 class="footer__title">
+              Demos
+            </h3>
+            <nav class="footer__nav nav">
+              <ul class="nav__list nav__list--column">
+
+                <li class="nav__item">
+                  <a href="#" class="link">
+                    Clasic
+                  </a>
+                </li>
+
+                <li class="nav__item">
+                  <a href="#products" class="link">
+                    Boxy
+                  </a>
+                </li>
+
+                <li class="nav__item">
+                  <a href="#company" class="link">
+                    Gradient
+                  </a>
+                </li>
+
+                <li class="nav__item">
+                  <a href="#prcing" class="link">
+                    Minimal
+                  </a>
+                </li>
+
+                <li class="nav__item">
+                  <a href="#blog" class="link">
+                    Night
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="footer__resources">
+            <h3 class="footer__title">
+              Resources
+            </h3>
+            <div class="footer__socials">
+              <img
+                src="./images/social/facebook.svg"
+                alt="Facebook"
+                class="footer__item"
+              >
+              <img
+                src="./images/social/instagram.svg"
+                alt="Instagram"
+                class="footer__item"
+              >
+              <img
+                src="./images/social/twitter.svg"
+                alt="Twitter"
+                class="footer__item"
+              >
+              <img
+                src="./images/social/drible.svg"
+                alt="Drible"
+                class="footer__item"
+              >
+              <img
+                src="./images/social/Envato.svg"
+                alt="Envato"
+                class="footer__item"
+              >
+            </div>
+            <nav class="footer__nav nav">
+              <ul class="nav__list nav__list--column nav__list--center">
+
+                <li class="nav__item">
+                  <a href="#" class="link">
+                    Download now
+                  </a>
+                </li>
+
+                <li class="nav__item">
+                  <a href="#" class="link">
+                    Documentation
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+        <div class="footer__copyright">
+          <div class="footer__copyright-text">
+            Copyright &copy; 2020 tempy.club
+          </div>
+          <div class="footer__copyright-links">
+            <a href="#" class="footer__copyright-link">Privacy Policy</a>
+            <a href="#" class="footer__copyright-link">Teerms Use</a>
+            <a href="#" class="footer__copyright-link">GDRP</a>
+          </div>
+        </div>
+      </div>
+    </footer>
     <script type="text/javascript" src="scripts/main.js"></script>
   </body>
 </html>

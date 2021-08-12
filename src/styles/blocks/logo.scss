@@ -1,0 +1,17 @@
+.logo {
+  height: $logoHeigth;
+  width: 81px;
+  z-index: 1;
+
+  &:focus ~ .nav {
+    transform: translateX(0);
+  }
+
+  &__link {
+    text-decoration: none;
+  }
+
+  @include desktop() {
+    height: $logoHeigthDesk;
+  }
+}

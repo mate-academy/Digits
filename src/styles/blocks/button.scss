@@ -1,0 +1,51 @@
+.button {
+  @include adaptiv-font(14);
+  @include adaptiv-size(95, 38);
+  @include adaptiv-radius(19);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  box-sizing: border-box;
+  background-color: $blueColor;
+
+  font-weight: 400;
+  text-decoration: none;
+  color: #fff;
+
+  cursor: pointer;
+  transition: all 0.3s;
+
+  &:hover {
+    color: #fff;
+    // border-color: #005ecc;
+    background-color: $blueColor;
+    box-shadow: 0 13px 27px rgba(0, 83, 181, 0.46);
+  }
+
+  &:active {
+    border-color: $blueColor;
+    background-color: $blueColor;
+    box-shadow: 0 8px 14px rgba(0, 83, 181, 0.48);
+  }
+
+  &--white {
+    background-color: #fff;
+    color: $blueColor;
+    border: 1px solid $blueColor;
+
+    &:hover {
+      color: $blueColor;
+      // border-color: $blueColor;
+      background-color: #fff;
+      box-shadow: 0 13px 27px rgba(0, 83, 181, 0.46);
+    }
+
+    &:active {
+      border-color: $blueColor;
+      background-color: #fff;
+      box-shadow: 0 8px 14px rgba(0, 83, 181, 0.48);
+    }
+  }
+}
