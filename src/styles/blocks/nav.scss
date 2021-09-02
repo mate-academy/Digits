@@ -1,0 +1,38 @@
+.nav {
+  background-color: #f0f2f6;
+
+  &__content {
+    box-sizing: border-box;
+    height: 100vh;
+  }
+
+  &__menu {
+    padding-top: 22px;
+    margin-bottom: 48px;
+  }
+
+  &__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    margin-bottom: 48px;
+  }
+
+  &__item {
+    margin-bottom: 24px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+  }
+
+  &__link {
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 22px;
+    text-transform: uppercase;
+    color: #1e266d;
+    text-decoration: none;
+  }
+}

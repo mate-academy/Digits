@@ -1,0 +1,35 @@
+.portfolio {
+  background-color: #fff9ea;
+
+  &__subtitle {
+    margin: 0;
+    margin-bottom: 40px;
+
+    font-size: 21px;
+    line-height: 150%;
+
+    text-align: center;
+
+    color: #455880;
+  }
+
+  &__button {
+    display: flex;
+    justify-content: center;
+
+    margin-bottom: 37px;
+  }
+
+  &__image {
+    display: flex;
+    justify-content: flex-start;
+    overflow: hidden;
+
+    height: 260px;
+
+    @include onTab {
+      justify-content: center;
+      height: 100%;
+    }
+  }
+}
