@@ -1,0 +1,52 @@
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 0 20px;
+
+  @include onDesktop {
+    padding: 0 40px;
+  }
+
+  &--about {
+    padding: 0 20px;
+    padding-top: 50px;
+
+    @include onTab {
+      padding: 0;
+      padding-top: 120px;
+    }
+  }
+
+  &--portfolio {
+    padding-top: 60px;
+
+    @include onTab {
+      padding-top: 140px;
+    }
+  }
+
+  &--testimonials {
+    padding-top: 60px;
+
+    @include onTab {
+      padding-top: 120px;
+    }
+  }
+
+  &--cta {
+    padding: 60px 20px;
+
+    @include onTab {
+      padding-top: 88px;
+      padding-bottom: 115px;
+    }
+  }
+
+  &--footer {
+    padding-top: 60px;
+
+    @include onTab {
+      padding-top: 117px;
+    }
+  }
+}

@@ -1,0 +1,168 @@
+.footer {
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    @include onDesktop {
+      display: grid;
+    }
+  }
+
+  &__block {
+    display: none;
+
+    @include onDesktop {
+      display: block;
+    }
+  }
+
+  &__logo {
+    display: none;
+    height: 23px;
+    margin-bottom: 31px;
+
+    @include onDesktop {
+      display: block;
+    }
+  }
+
+  &__text {
+    display: none;
+    width: 400px;
+    text-align: center;
+    margin: 0;
+
+    font-size: 23px;
+    line-height: 145%;
+    color: #455880;
+
+    @include onDesktop {
+      display: block;
+      width: 100%;
+      text-align: left;
+      font-size: 18px;
+    }
+  }
+
+  &__column {
+    display: flex;
+    justify-content: space-between;
+
+    @include onDesktop {
+      display: grid;
+    }
+  }
+
+  &__title {
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 125%;
+    margin-bottom: 22px;
+
+    color: #1e266d;
+    text-align: left;
+
+    &--resources {
+      font-size: 22px;
+      margin-bottom: 32px;
+    }
+  }
+
+  &__subtitle {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: left;
+
+    margin-bottom: 80px;
+
+    @include onDesktop {
+      margin-bottom: 130px;
+    }
+  }
+
+  &__link {
+    text-decoration: none;
+
+    line-height: 250%;
+    font-size: 22px;
+    color: #455880;
+
+    @include onDesktop {
+      font-size: 18px;
+    }
+  }
+
+  &--demos {
+    padding-left: 0;
+
+    @include onDesktop {
+      padding-left: 20px;
+    }
+  }
+
+  &--resourses {
+    padding-left: 0;
+
+    @include onDesktop {
+      padding-left: 70px;
+    }
+  }
+
+  &__icon {
+    display: flex;
+    justify-content: center;
+    column-gap: 24px;
+
+    margin-bottom: 24px;
+
+    @include onDesktop {
+      justify-content: left;
+    }
+  }
+
+  &__copyright {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 50px;
+
+    @include onDesktop {
+      padding-bottom: 115px;
+    }
+    &-text {
+      margin: 0;
+      font-weight: normal;
+      font-size: 10px;
+      line-height: 27px;
+      color: rgba(69, 88, 128, 0.5);
+
+      @include onTab {
+        font-size: 14px;
+      }
+    }
+  }
+
+  &__privacy {
+    display: flex;
+    column-gap: 40px;
+
+    &-text {
+      margin: 0;
+      font-weight: normal;
+      font-size: 10px;
+      line-height: 27px;
+
+      color: #455880;
+
+      @include onTab {
+        font-size: 14px;
+      }
+    }
+
+    &-link {
+      text-decoration: none;
+    }
+  }
+}

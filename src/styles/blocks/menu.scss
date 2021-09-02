@@ -1,0 +1,56 @@
+.menu {
+  
+  &__list {
+    display: none;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0;
+    
+
+    @include onTab {
+      display: flex;
+    }
+  }
+
+  &__item {
+    margin-right: 40px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__link {
+    display: block;
+    color: #1e266d;
+    text-decoration: none;
+  }
+
+  &__call {
+    display: none;
+    margin-right: 34px;
+    
+    color: #1e266d;
+    font-size: 16px;
+    text-decoration: none;
+
+    &--nav {
+      display: block;
+      font-size: 22px;
+      margin-bottom: 20px;
+    }
+
+    @include onDesktop {
+      display: block;
+    }
+
+    &--contact {
+      color: #fff;
+    }
+  }
+
+  &__contact-us {
+    display: flex;
+    align-items: center;
+  }
+}
