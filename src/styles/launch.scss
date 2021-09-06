@@ -1,0 +1,71 @@
+@import "utils";
+
+.launch {
+  background-color: $mainColor;
+
+  &__content {
+    padding: 40px 0;
+    height: 340px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+
+    }
+  }
+
+  &__title {
+    color: $colorWhite;
+    @media (max-width: 768px) {
+      text-align: center;
+    }
+  }
+
+  &__right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    @media (max-width: 768px) {
+      align-items: center;
+    }
+
+  }
+
+  &__icon {
+    margin-right: 15px;
+  }
+
+  &__btn {
+    color: $textColor;
+    height: 56px;
+    min-width: 245px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 40px;
+    background-color: $colorWhite;
+    font-family: $textFont;
+    font-size: 16px;
+    border-radius: 100px;
+    margin-bottom: 20px;
+    transition: box-shadow 0.5s;
+  }
+
+  &__btn:hover {
+    box-shadow: 1px 1px 10px #1e266d;
+  }
+
+  &__option {
+    color: $launchTextColor;
+    font-family: $textFont;
+    font-size: 16px;
+    line-height: 125%;
+  }
+
+  &__link {
+    color: $linkColor;
+  }
+
+}

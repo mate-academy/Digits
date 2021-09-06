@@ -3,11 +3,367 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Title</title>
+    <title>Digits</title>
+    <link rel="icon" href="images/digit-favicon.png">
     <link rel="stylesheet" href="./styles/main.scss">
   </head>
   <body>
-    <h1>Hello Mate Academy</h1>
     <script type="text/javascript" src="scripts/main.js"></script>
+    <div class="page">
+
+      <header class="header page__header">
+        <div class="container">
+          <div class="top-bar header__top" id="home">
+            <a href="https://zhenya-mezhueva.github.io/Digits/" class="top-bar__link">
+              <img
+                class="top-bar__logo"
+                src="images/digit_logo.png"
+                alt="logo">
+            </a>
+            <nav class="nav top-bar__nav">
+              <input
+                class="nav__toggle"
+                id="toggle"
+                type="checkbox">
+              <label for="toggle" class="nav__btn">
+                <span class="nav__span"></span>
+              </label>
+              <ul class="nav__list">
+                <li class="nav__item"><a href="#top-clients" class="nav__link">Homepages</a></li>
+                <li class="nav__item"><a href="#help" class="nav__link">Products</a></li>
+                <li class="nav__item"><a href="#simplicity" class="nav__link">Company</a></li>
+                <li class="nav__item"><a href="#launch" class="nav__link">Pricing</a></li>
+                <li class="nav__item"><a href="#testimonials" class="nav__link">Blog</a></li>
+              </ul>
+            </nav>
+            <div class="top-bar__contacts">
+              <a href="tel:+12 123 456 789" class="nav__link top-bar__phone">+12 123 456 789</a>
+              <a href="#launch" class="top-bar__button btn">Contact Us</a>
+            </div>
+          </div>
+          <div class="header__wrap">
+            <div class="header__main-info">
+              <h1 class="header__title">Good design meets<br>great user experience</h1>
+              <p class="header__subtitle">For everyone, from beginners to experts</p>
+              <div class="header__buttons">
+                <a href="#launch" class="header__button btn">Buy Digits</a>
+                <a href="#simplicity" class="header__button btn header__button--not-active">See the Features</a>
+              </div>
+            </div>
+
+            <div class="header__picture-wrap">
+              <img
+                class="header__picture"
+                src="images/header-graphic.svg"
+                alt="header picture"
+              >
+            </div>
+
+          </div>
+
+        </div>
+
+      </header>
+
+      <section class="top-clients page__top-clients" id="top-clients">
+        <p class="top-clients__description">Trusted by forward-thinking software teams around the world</p>
+        <div class="top-clients__logos">
+          <a
+            class="top-clients__link"
+            href="https://www.netflix.com/ua/"
+            target="_blank"
+            rel="noopener"
+            >
+            <img
+              src="images/netflix__logo.png"
+              alt="netflix logo"
+              class="top-client__logo">
+          </a>
+          <a
+            class="top-clients__link"
+            href="https://www.drawkit.io"
+            target="_blank"
+            rel="noopener"
+          >
+            <img
+              src="images/drawkit__logo.png"
+              alt="drawKit logo" class="top-client__logo">
+          </a>
+          <a
+            class="top-clients__link"
+            href="https://www.figma.com"
+            target="_blank"
+            rel="noopener"
+          >
+            <img
+              src="images/figma__logo.png"
+              alt="figma logo"
+              class="top-client__logo">
+          </a>
+          <a
+            class="top-clients__link"
+            href="https://www.cinemax.com"
+            target="_blank"
+            rel="noopener"
+          >
+            <img
+              src="images/cinemax__logo.png"
+              alt="cinemax logo"
+              class="top-client__logo">
+          </a>
+          <a
+            class="top-clients__link"
+            href="https://stripe.com"
+            target="_blank"
+            rel="noopener"
+          >
+            <img
+              src="images/stripe__logo.png"
+              alt="stripe logo"
+              class="top-client__logo">
+          </a>
+          <a
+            class="top-clients__link"
+            href="https://www.google.com"
+            target="_blank"
+            rel="noopener">
+            <img
+              src="images/google__logo.png"
+              alt="google logo"
+              class="top-client__logo">
+          </a>
+          <a
+            class="top-clients__link"
+            href="https://disney.co.uk"
+            target="_blank"
+            rel="noopener">
+            <img
+              src="images/disney_logo.png"
+              alt="disney logo"
+              class="top-client__logo">
+          </a>
+        </div>
+      </section>
+
+      <section class="help" id="help">
+        <div class="container">
+          <h2 class="help__title section-title">Whatever work you do, <br>we're able to help</h2>
+          <div class="help__content">
+            <div class="help__img-wrap">
+              <img
+                class="help__img"
+                src="images/help-bg.png"
+                alt="people">
+            </div>
+            <div class="help__cards">
+              <div class="help__card card">
+                <img
+                  src="images/help-icon-1.png"
+                  alt="icon"
+                  class="card__icon">
+                <div class="card__title subtitle">Design and Assets</div>
+                <div class="card__text">Make your brand stand out with pixel-perfect design crafted to perfection.</div>
+              </div>
+              <div class="help__card card">
+                <img
+                  src="images/help-icon-2.png"
+                  alt="icon"
+                  class="card__icon">
+                <div class="card__title subtitle">Easy Content</div>
+                <div class="card__text">Import your demos or build pages visually. Bonus: All images and illustrations included!</div>
+              </div>
+              <div class="help__card card">
+                <img
+                  src="images/help-icon-3.png"
+                  alt="icon"
+                  class="card__icon">
+                <div class="card__title subtitle">Fast and Reliable</div>
+                <div class="card__text">No heavy-weight plugins. No builders. No unneccesary file loading. Pure WordPress.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="simplicity">
+        <div class="container">
+          <div class="simplicity__content" id="simplicity">
+            <h2 class="simplicity__title section-title">Simplicity meets innovative design</h2>
+            <p class="simplicity__text">It's really easy to start using Digits. <br>Install the theme, choose a demo and start designing the future of your business!</p>
+            <a href="#launch" class="simplicity__btn btn">Buy Digits</a>
+            <img
+              class="simplicity__bottom-pic"
+              src="images/simplicity-pic.png"
+              alt="simplicity pic"
+            >
+          </div>
+
+        </div>
+      </section>
+
+      <section class="testimonials page__testimonials" id="testimonials">
+        <div class="container">
+          <div class="testimonials__content">
+            <h2 class="testimonials__title section-title">What others are saying</h2>
+            <div class="testimonials__cards">
+              <div class="testimonial">
+                <p class="testimonial__text">Completely beautiful website and amazing support! This is my second website and I love both of the sites so much and she has helped me so well when I needed it!</p>
+                <img
+                  src="images/testimonial-pic-1.png"
+                  alt="person"
+                  class="testimonial__pic">
+                <div class="testimonial__name subtitle">Happy User</div>
+                <div class="testimonial__company">tempy.club</div>
+              </div>
+              <div class="testimonial">
+                <p class="testimonial__text">Really easy to use and customize. Very easy to understand. Darinka helped me with my site! She answers very quickly, a good service! Thank you very much!</p>
+                <img
+                  src="images/testimonial-pic-2.png"
+                  alt="person"
+                  class="testimonial__pic">
+                <div class="testimonial__name subtitle">Happy User</div>
+                <div class="testimonial__company">tempy.club</div>
+              </div>
+              <div class="testimonial">
+                <p class="testimonial__text">Really pleasing to look at! Documentation (including installation instructions) are clear and that is coming from a relatively new WordPress user.</p>
+                <img
+                  src="images/testimonial-pic-1.png"
+                  alt="person"
+                  class="testimonial__pic">
+                <div class="testimonial__name subtitle">Happy User</div>
+                <div class="testimonial__company">tempy.club</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="launch" id="launch">
+        <div class="container">
+          <div class="launch__content">
+            <h2 class="launch__title section-title">Ready to launch <br>your next website?</h2>
+            <div class="launch__right">
+              <a href="mailto: digits@mail.com" class="launch__btn">
+                <img
+                  class="launch__icon"
+                  src="images/launch-btn-icon.svg"
+                  alt="icon">
+                <span>Get in touch now</span>
+              </a>
+              <div class="launch__option">Or, take a peek inside our <a href="#" class="launch__link"> &nbsp;design studio</a></div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <footer class="footer">
+        <div class="container">
+          <div class="footer__content">
+            <div class="footer__item footer__about">
+              <h3 class="footer__title subtitle">Digit</h3>
+              <p class="footer__about-text">Digits is a website template built to work seamlesly with the WordPress block editor to create beautifully designed pages in minutes.</p>
+              <div class="footer__icons">
+                <a
+                  class="footer__icon-link"
+                  href="https://www.facebook.com"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  <img src="images/facebook-icon.svg" alt="facebook icon">
+                </a>
+                <a
+                  class="footer__icon-link"
+                  href="https://www.instagram.com"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  <img src="images/instagram-icon.svg" alt="instagram icon">
+                </a>
+                <a
+                  class="footer__icon-link"
+                  href="https://twitter.com"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  <img src="images/twitter-icon.svg" alt="twitter icon">
+                </a>
+                <a
+                  class="footer__icon-link"
+                  href="https://dribbble.com"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  <img src="images/dribbble-icon.svg" alt="dribbble icon">
+                </a>
+                <a
+                  class="footer__icon-link"
+                  href="https://envato.com"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  <img src="images/envato-icon.svg" alt="envato icon">
+                </a>
+              </div>
+            </div>
+            <div class="footer__item footer__resources">
+              <h3 class="footer__title subtitle">Resources</h3>
+              <a href="#" class="footer__link footer__list-item">Download now</a>
+              <a href="#" class="footer__link footer__list-item">Documentation</a>
+            </div>
+            <div class="footer__item footer__pages">
+              <h3 class="footer__title subtitle">Pages</h3>
+              <ul class="footer__list">
+                <li class="footer__list-item">
+                  <a href="#home" class="footer__link">Home
+                  </a>
+                </li>
+                <li class="footer__list-item">
+                  <a href="#help" class="footer__link">About</a>
+                </li>
+                <li class="footer__list-item">
+                  <a href="#testimonials" class="footer__link">News</a>
+                </li>
+                <li class="footer__list-item">
+                  <a href="#home" class="footer__link">Pricing</a>
+                </li>
+                <li class="footer__list-item">
+                  <a href="mailto: digits@mail.com" class="footer__link">Contact</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__item footer__demos">
+              <h3 class="footer__title subtitle">Demos</h3>
+              <ul class="footer__list">
+                <li class="footer__list-item">
+                  <a href="#home" class="footer__link">Classic</a>
+                </li>
+                <li class="footer__list-item">
+                  <a href="#home" class="footer__link">Boxy</a>
+                </li>
+                <li class="footer__list-item">
+                  <a href="#home" class="footer__link">Gradient</a>
+                </li>
+                <li class="footer__list-item">
+                  <a href="#home" class="footer__link">Minimal</a>
+                </li>
+                <li class="footer__list-item">
+                  <a href="#home" class="footer__link">Night</a>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+          <div class="footer__bottom">
+            <span class="footer__copyright">Copyright © 2020 tempy.club</span>
+            <div class="footer__bottom-links">
+              <a href="#home" class="footer__bottom-link">Privacy Policy</a>
+              <a href="#home" class="footer__bottom-link">Terms of Use </a>
+              <a href="#home" class="footer__bottom-link">GDPR</a>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
   </body>
 </html>

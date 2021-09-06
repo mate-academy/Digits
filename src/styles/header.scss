@@ -1,0 +1,135 @@
+@import "utils";
+
+.header {
+  position: relative;
+  min-height: 720px;
+  font-family: $textFont;
+  color: #1e266d;
+  background: linear-gradient(
+    180deg,
+    rgba(242, 249, 255, 0.12) 0%,
+    #f2f9ff 100%
+  );
+
+  &__wrap {
+    position: relative;
+    min-height: 640px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 60px;
+
+    @media (max-width: 1200px) {
+      flex-direction: column;
+    }
+
+    @media (max-width: 560px) {
+      padding-top: 40px;
+      padding-bottom: 20px;
+    }
+  }
+
+  &__main-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    flex-shrink: 0;
+  }
+
+  &__title {
+    text-align: center;
+    font-family: $headersFont;
+    font-size: 56px;
+    line-height: 58px;
+    margin-bottom: 24px;
+
+    @media (max-width: 560px) {
+      font-size: 48px;
+    }
+
+    @media (max-width: 415px) {
+      font-size: 40px;
+      line-height: 46px;
+    }
+  }
+
+  &__subtitle {
+    text-align: center;
+    font-family: $textFont;
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+
+  &__buttons {
+    display: inline-flex;
+    justify-content: center;
+    margin-bottom: 35px;
+  }
+
+  @media (max-width: 430px) {
+    &__buttons {
+      flex-direction: column;
+      align-items: center;
+    }
+    &__buttons :last-child {
+      margin-left: 0;
+    }
+
+  }
+
+  &__buttons :last-child {
+    margin-left: 24px;
+  }
+
+  &__button {
+    @include btnStyle($colorWhite, $mainColor, 48px);
+    padding: 0 35px;
+  }
+
+  &__button:not(:last-child):before {
+    @include btnBefore($colorWhite);
+  }
+
+  &__button:hover:before {
+    height: 48px;
+  }
+
+  &__button--not-active {
+    background: $colorWhite;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    color: $textColor;
+  }
+
+  &__button--not-active:before {
+    @include btnBefore($hoverPink);
+  }
+
+  &__button--not-active:hover:before {
+    height: 48px;
+  }
+
+  @media (max-width: 430px) {
+    &__buttons {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &__buttons :last-child {
+      margin: 24px 0 0;
+    }
+
+  }
+
+  &__picture-wrap {
+    max-width: 640px;
+
+  }
+
+  &__picture {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+}

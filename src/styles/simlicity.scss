@@ -1,0 +1,60 @@
+@import "utils";
+
+.simplicity {
+  background-color: $simplicityColor;
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 130px;
+
+    @media (max-width: 768px) {
+      padding-top: 100px;
+    }
+    @media (max-width: 415px) {
+      padding-top: 40px;
+    }
+  }
+
+  &__title {
+    margin-bottom: 40px;
+    color: $headersTextColor;
+    text-align: center;
+  }
+
+  &__text {
+    text-align: center;
+    max-width: 400px;
+    font-size: 21px;
+    line-height: 150%;
+    font-family: $textFont;
+    color: $textColor;
+    margin-bottom: 40px;
+
+    @media (max-width: 415px) {
+      font-size: 18px;
+    }
+  }
+
+  &__btn {
+    @include btnStyle($colorWhite, $mainColor, 50px);
+    padding: 0 35px;
+    margin-bottom: 16px;
+  }
+
+  &__btn:before {
+    @include btnBefore($colorWhite);
+  }
+
+  &__btn:hover:before {
+    height: 48px;
+  }
+
+  &__bottom-pic {
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+}
