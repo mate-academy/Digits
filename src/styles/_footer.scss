@@ -1,0 +1,226 @@
+.footer {
+  padding-top: 128px;
+
+  &__top {
+    display: grid;
+    grid-template-columns: 1fr repeat(3, 220px);
+    grid-template-rows: 270px;
+  }
+
+  &__block {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__logo {
+    width: 67px;
+  }
+
+  &__text {
+    max-width: 290px;
+    margin-top: 31px;
+    font-size: 18px;
+    color: $color-text-light;
+  }
+
+  &__topic {
+    font-size: 22px;
+  }
+
+  &__link {
+    margin-top: $footer-main-margin;
+    font-size: 18px;
+    color: $color-text-light;
+  }
+
+  &__socials {
+    display: flex;
+    margin-top: $footer-main-margin;
+  }
+
+  &__icon {
+    margin-right: $footer-main-margin;
+    cursor: pointer;
+    transition: transform $transition-time;
+
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+
+  &__bottom {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 77px;
+    padding: 100px 0 53px;
+    border-top: 1px solid rgba(135, 146, 161, 0.3);
+    font-size: 18px;
+
+    > * {
+      margin-right: 20px;
+    }
+
+    > :first-child {
+      margin-right: auto;
+    }
+
+    > .link {
+      &-policy,
+      &-terms,
+      &-gdpr {
+        color: $color-text-light;
+        background-color: transparent;
+      }
+    }
+  }
+
+  @media screen and (max-width: 1024px) {
+    .footer {
+
+      &__top {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2 , 1fr);
+        justify-content: center;
+        gap: 40px 0;
+      }
+
+      &__block {
+        padding-left: 70px;
+      }
+
+      &__block:first-child,
+      &__block:nth-child(4) {
+        border-bottom: 1px solid rgba(135, 146, 161, 0.3);
+      }
+
+      &__block:first-child {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 2;
+      }
+
+      &__block:nth-child(2) {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 3;
+      }
+
+      &__block:nth-child(3) {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-end: 3;
+      }
+
+      &__block:nth-child(4) {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 2;
+      }
+
+      &__topic {
+        font-size: 20px;
+      }
+
+      &__link,
+      &__text {
+        font-size: 16px;
+      }
+
+      &__link,
+      &__socials {
+        margin-top: calc( #{$footer-main-margin} - 2px);
+      }
+
+      &__icon {
+        margin-right: calc( #{$footer-main-margin} - 2px);
+      }
+
+      &__bottom {
+        margin-top: 50px;
+        padding: 60px 20px 50px;
+
+        > * {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .footer {
+      &__top {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2 , 1fr);
+        justify-content: center;
+        gap: 30px 30px;
+      }
+
+      &__logo {
+        width: 47px;
+      }
+
+      &__block {
+        padding-left: 30px;
+        padding-bottom: 20px;
+      }
+
+      &__topic {
+        font-size: 16px;
+      }
+
+      &__link,
+      &__text {
+        font-size: 12px;
+      }
+
+      &__link,
+      &__socials {
+        flex-wrap: wrap;
+        margin-top: calc( #{$footer-main-margin} - 6px);
+      }
+
+      &__icon {
+        margin-top: 10px;
+        margin-right: calc( #{$footer-main-margin} - 6px);
+      }
+
+      &__bottom {
+        margin-top: 30px;
+        padding: 30px 10px 25px;
+        display: grid;
+        justify-content: center;
+        justify-items: center;
+        grid-template-areas: "policy terms"
+          "gdpr gdpr"
+          "copyright copyright";
+        gap: 20px 0;
+
+        > .copyright {
+          grid-area: copyright;
+        }
+        
+        > .link {
+          &-policy {
+            grid-area: policy;
+          }
+
+          &-terms {
+            grid-area: terms;
+          }
+
+          &-gdpr {
+            grid-area: gdpr;
+          }
+        }
+
+        > * {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}

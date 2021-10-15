@@ -1,0 +1,35 @@
+.logos {
+
+  &__top {
+    margin-top: 52px;
+    text-align: center;
+  }
+
+  &__text {
+    color: $color-text-hard;
+    opacity: 0.5;
+  }
+
+  &__bottom {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-items: center;
+    gap: 40px 40px;
+    margin-top: 50px;
+  }
+
+  &__image {
+    height: 33px;
+    object-fit: contain;
+    border: 1px solid transparent;
+    background-color: transparent;
+    border-radius: 10px;
+    transition: transform $transition-time, background-color $transition-time;
+
+    &:hover {
+      transform: scale(1.1);
+      background-color: $color-logo-hover;
+    }
+  }
+}
