@@ -1,0 +1,53 @@
+.page {
+  margin: 0;
+  padding: 0;
+  &__body {
+    margin: 0;
+    padding: 0;
+    transition: translateX(-100%) 0.3s;
+  }
+
+  &__menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0;
+    padding: 0;
+
+    transition: all 0.3s;
+
+    transform: translateX(-100%);
+
+    &:target {
+      transform: translateX(0);
+    }
+  }
+}
+
+.menu__content {
+  background-color: rgb(90, 84, 84);
+  height: 100vh;
+  padding-left: 20px;
+}
+
+.menu__link {
+  font-family: "Halyard", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 13px;
+  text-align: center;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+
+  color: #fff;
+  transition: all 0.3s;
+
+  margin-right: 48px;
+  text-decoration: none;
+}
+
+.menu__item {
+  padding-top: 10px;
+  list-style: none;
+}

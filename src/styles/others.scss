@@ -1,0 +1,273 @@
+.others {
+  display: flex;
+  margin: 0 auto;
+  @include Mobile {
+    width: 280px;
+  }
+
+  @include Tablet {
+    display: flex;
+    margin: 0;
+  }
+  &__title {
+    font-family: Halyard Display, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 60px;
+
+    text-align: center;
+
+    color: #1e266d;
+  }
+}
+
+.others__container {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 200px 0;
+
+  @include Mobile {
+    width: 285px;
+    padding: 40px 0;
+  }
+  @include Tablet {
+    box-sizing: border-box;
+    width: 1024px;
+    padding: 60px 20px;
+  }
+  @include Notebook {
+    padding: 90px 20px;
+  }
+}
+
+.others__cards {
+  display: flex;
+  margin: 0 auto;
+  @include Mobile {
+    margin: 0;
+    width: 270px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0;
+  }
+}
+
+.others__card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 372px;
+  height: 467px;
+
+  border: 1px solid rgba(69, 88, 128, 0.2);
+  border-radius: 4px;
+  margin: 0 14px;
+  @include Mobile {
+    width: 270px;
+    margin: 14px 0;
+  }
+  @include Tablet {
+    width: 290px;
+  }
+}
+
+.card__info {
+  width: 286px;
+  font-family: Halyard Text, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 180%;
+
+  /* or 32px */
+
+  color: #455880;
+  padding-top: 38px;
+  height: 211px;
+  text-align: center;
+  @include Mobile {
+    padding: 10px 20px;
+    width: 250px;
+  }
+  @include Tablet {
+    padding: 20px 0;
+    box-sizing: border-box;
+  }
+}
+
+.card__photo {
+  width: 64px;
+  height: 64px;
+  background-image: url(/images/others/image5.png);
+  margin-top: 39px;
+  @include Mobile {
+    margin-top: 60px;
+  }
+}
+
+.card__photo2 {
+  width: 64px;
+  height: 64px;
+  background-image: url(/images/others/image6.png);
+  margin-top: 39px;
+}
+
+.card__photo3 {
+  width: 64px;
+  height: 64px;
+  background-image: url(/images/others/image7.png);
+  margin-top: 39px;
+}
+
+.card__name {
+  font-family: Halyard Display, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 125%;
+
+  /* identical to box height, or 27px */
+  text-align: center;
+
+  color: #1e266d;
+  margin-top: 23px;
+}
+
+.card__job {
+  font-family: Halyard Text, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 180%;
+
+  /* or 32px */
+  text-align: center;
+
+  color: #455880;
+}
+
+.buy {
+  background: #3751ff;
+  height: 323px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  margin-top: 182px;
+  @include Mobile {
+    margin-top: 10px;
+  }
+  @include Tablet {
+    margin-top: 40px;
+  }
+}
+
+.buy__container {
+  display: flex;
+  margin: 0 auto;
+  overflow: hidden;
+
+  @include Mobile {
+    display: flex;
+    flex-direction: column;
+  }
+  @include Tablet {
+    margin: 0;
+    padding: 0 20px;
+  }
+}
+
+.buy__right_side {
+  padding-left: 300px;
+  @include Mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 24px 20px;
+  }
+}
+
+.buy__button_container {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  border-radius: 100px;
+  width: 242px;
+  height: 56px;
+  transition: all 0.3s;
+
+  &:hover {
+    transform: scale(1.02);
+    box-shadow: 5px 9px 18px #2060f6;
+  }
+}
+
+.buy__link {
+  text-decoration: none;
+}
+
+.buy__button_image {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 28px;
+}
+
+.buy__button_phrase {
+  margin-left: 15px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 110%;
+
+  /* or 20px */
+  text-align: center;
+
+  color: #455880;
+}
+
+.buy__phrase {
+  font-family: Halyard Display, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 60px;
+
+  /* or 125% */
+
+  color: #fff;
+  @include Mobile {
+    text-align: center;
+    font-size: 32px;
+    padding: 0 10px;
+  }
+}
+
+.buy__button_info {
+  margin-top: 19px;
+  font-family: Halyard Text, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 125%;
+
+  /* identical to box height, or 20px */
+  text-align: right;
+
+  color: #dfe0eb;
+  @include Mobile {
+    width: 270px;
+    text-align: center;
+  }
+}
+
+.buy__phrase_link {
+  color: yellow;
+  text-decoration: none;
+}

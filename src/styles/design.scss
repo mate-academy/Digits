@@ -1,0 +1,244 @@
+.design {
+  padding-top: 146px;
+  @include Mobile {
+    padding-top: 20px;
+  }
+  @include Tablet {
+    padding-top: 28px;
+  }
+}
+
+.desing__image_container {
+  content: "";
+  background-image: url(/images/design/browser_image.png);
+  background-size: cover;
+  width: 260px;
+  height: 200px;
+  @include Mobile {
+    width: 260px;
+    height: 200px;
+  }
+  @include Tablet {
+    width: 1024px;
+    height: 400px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0 auto;
+  }
+
+  @include Notebook {
+    width: 1280px;
+    height: 600px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0 auto;
+  }
+  @include TheDesign {
+    width: 1600px;
+    height: 800px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0 auto;
+  }
+  @include FullHD {
+    width: 1600px;
+    height: 800px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0 auto;
+  }
+  @include LargeScreens {
+    width: 1600px;
+    height: 800px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0 auto;
+  }
+}
+
+.design__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.design__title {
+  font-family: Halyard Display, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 56px;
+  line-height: 105%;
+  /* or 59px */
+
+  text-align: center;
+
+  color: #1e266d;
+  margin: 0;
+  @include Mobile {
+    width: 320px;
+  }
+}
+
+.design__phrase {
+  font-family: Halyard Text, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 150%;
+  /* identical to box height, or 27px */
+
+  text-align: center;
+
+  color: #455880;
+
+  padding-top: 27px;
+}
+
+.design__browser {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  position: relative;
+
+  &_person {
+    position: absolute;
+    width: 533px;
+    height: 533px;
+    left: 340px;
+    top: 15px;
+  }
+
+  &_upper_block {
+    position: absolute;
+    width: 374px;
+    height: 48px;
+    margin-top: 38px;
+    margin-left: 57px;
+  }
+
+  &_chat1 {
+    position: absolute;
+    width: 172px;
+    height: 73px;
+    margin-top: 157px;
+    margin-left: 83px;
+
+    background: #dfe0eb;
+  }
+
+  &_chat2 {
+    position: absolute;
+    width: 172px;
+    height: 73px;
+    margin-top: 274px;
+    margin-left: 213px;
+
+    background: #dfe0eb;
+  }
+
+  &_smiley {
+    position: absolute;
+    width: 399px;
+    height: 28px;
+    left: 57px;
+    top: 418px;
+
+    background: #dfe0eb;
+    border-radius: 8px;
+  }
+
+  &_portrait {
+    position: absolute;
+    width: 56px;
+    height: 60px;
+    left: -40px;
+    top: 121px;
+    background-color: black;
+  }
+
+  &_ellipse {
+    position: absolute;
+    width: 179px;
+    height: 179px;
+    left: -95px;
+    top: 261px;
+  }
+}
+
+.browser__top {
+  display: flex;
+  align-items: center;
+  width: 720px;
+  height: 32px;
+
+  background: #bdc2d5;
+  border-radius: 18px 18px 0 0;
+}
+
+.circles {
+  display: flex;
+  padding-left: 17px;
+}
+
+.browser__top-circle {
+  width: 8px;
+  height: 8px;
+
+  background: #fff;
+  border-radius: 5px;
+  margin-right: 6px;
+}
+
+.browser__body {
+  width: 719px;
+  height: 500px;
+  left: 457px;
+  top: 545px;
+
+  background: #fff;
+  box-shadow: 0 4px 4px rgba(135, 146, 161, 0.08);
+  border-radius: 18px;
+}
+
+.design__links {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-top: 29px;
+}
+
+.design__link {
+  font-family: Halyard Text, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 50px;
+  /* identical to box height, or 312% */
+
+  text-align: center;
+
+  color: #455880;
+
+  padding-left: 50px;
+  @include Tablet {
+    padding-left: 270px;
+  }
+  @include Notebook {
+    padding-left: 320px;
+  }
+  @include TheDesign {
+    padding-left: 320px;
+  }
+  @include FullHD {
+    padding-left: 320px;
+  }
+  @include LargeScreens {
+    padding-left: 320px;
+  }
+}

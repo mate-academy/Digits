@@ -1,0 +1,334 @@
+.footer {
+  display: flex;
+  @include Mobile {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  @include Tablet {
+    margin-top: 48px;
+    display: flex;
+    flex-direction: column;
+  }
+  @include Notebook {
+    display: flex;
+    flex-direction: column;
+  }
+
+  @include TheDesign {
+    display: flex;
+    flex-direction: column;
+  }
+  @include FullHD {
+    display: flex;
+    flex-direction: column;
+  }
+  @include LargeScreens {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.footer__copyright {
+  display: flex;
+  margin: 0 auto;
+  @include Mobile {
+    margin: 0;
+    display: block;
+    padding: 0 20px;
+  }
+
+  @include Tablet {
+    margin: 0 auto;
+    display: flex;
+  }
+
+  @include Notebook {
+    margin-left: 40px;
+  }
+}
+
+.footer__container {
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+
+  @include Mobile {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0 20px;
+  }
+  @include Tablet {
+    padding: 0 20px;
+  }
+  @include Notebook {
+    padding: 0 20px;
+    margin: 0 20px;
+    justify-content: space-between;
+  }
+}
+
+.footer__left_text {
+  box-sizing: border-box;
+  @include Mobile {
+    width: 260px;
+  }
+  @include Tablet {
+    padding-right: 30px;
+  }
+  @include Notebook {
+    padding-right: 45px;
+  }
+  @include TheDesign {
+    padding-right: 65px;
+  }
+}
+
+.footer__title {
+  display: flex;
+}
+
+.footer__info {
+  margin-top: 34px;
+  width: 290px;
+  font-family: Halyard Text, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 145%;
+
+  color: #455880;
+  @include Mobile {
+    width: 260px;
+  }
+}
+
+.footer__pages {
+  @include Mobile {
+    padding-top: 20px;
+  }
+}
+
+.footer__pages_title {
+  font-family: Halyard Display, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 125%;
+
+  color: #1e266d;
+  width: 212px;
+  height: 28px;
+}
+
+.nav__footer {
+  font-family: Halyard Text, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 225%;
+
+  color: #455880;
+  margin-top: 22px;
+}
+
+.nav__list_footer {
+  list-style: none;
+}
+
+.footer__resources_title {
+  font-family: Halyard Display, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 125%;
+
+  color: #1e266d;
+}
+
+.socials__container {
+  display: flex;
+}
+
+.socials__image {
+  width: 16px;
+  height: 16px;
+  padding-right: 26px;
+  background: no-repeat;
+  margin-top: 32px;
+}
+
+.facebook {
+  background-image: url(/images/footer/icon-facebook.png);
+  &:hover {
+    filter: invert(80%)
+      sepia(60%)
+      saturate(3207%)
+      hue-rotate(130deg)
+      brightness(95%)
+      contrast(80%);
+  }
+}
+
+.instagram {
+  background-image: url(/images/footer/icon-instagram.png);
+  &:hover {
+    filter: invert(80%)
+      sepia(60%)
+      saturate(3207%)
+      hue-rotate(130deg)
+      brightness(95%)
+      contrast(80%);
+  }
+}
+
+.twitter {
+  background-image: url(/images/footer/icon-twitter.png);
+  &:hover {
+    filter: invert(80%)
+      sepia(60%)
+      saturate(3207%)
+      hue-rotate(130deg)
+      brightness(95%)
+      contrast(80%);
+  }
+}
+
+.dribbble {
+  background-image: url(/images/footer/icon-dribbble.png);
+  &:hover {
+    filter: invert(80%)
+      sepia(60%)
+      saturate(3207%)
+      hue-rotate(130deg)
+      brightness(95%)
+      contrast(80%);
+  }
+}
+
+.envato {
+  background-image: url(/images/footer/icon-envato.png);
+  &:hover {
+    filter: invert(80%)
+      sepia(60%)
+      saturate(3207%)
+      hue-rotate(130deg)
+      brightness(95%)
+      contrast(80%);
+  }
+}
+
+.footer__resources_links {
+  width: 217px;
+  height: 161px;
+  @include Mobile {
+    margin: 0;
+    height: 80px;
+  }
+  &:last-child {
+    margin-top: 0;
+  }
+}
+
+.footer__resources_link {
+  font-family: Halyard Text, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 225%;
+
+  color: #455880;
+  margin-top: 28px;
+  @include Mobile {
+    margin-top: 10px;
+  }
+}
+
+.footer__resources_link2 {
+  font-family: Halyard Text, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 225%;
+
+  color: #455880;
+}
+
+.copyright__container {
+  @include Mobile {
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  @include Tablet {
+    padding: 0 20px;
+    margin: 0 auto;
+    display: flex;
+  }
+
+  @include Notebook {
+    flex-direction: row;
+    margin: 0 auto;
+    display: flex;
+  }
+  @include TheDesign {
+    flex-direction: row;
+    margin: 0 auto;
+    display: flex;
+  }
+  @include FullHD {
+    flex-direction: row;
+    margin: 0 auto;
+    display: flex;
+  }
+  @include LargeScreens {
+    flex-direction: row;
+    margin: 0 auto;
+    display: flex;
+  }
+}
+
+.copyright__title {
+  font-family: Halyard Text, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 27px;
+
+  color: rgba(69, 88, 128, 0.5);
+}
+
+.copyright__links {
+  display: flex;
+  font-family: Halyard Text, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 27px;
+
+  text-align: right;
+
+  color: #455880;
+  right: 0;
+  @include Mobile {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+  }
+  @include Tablet {
+    padding-right: 20px;
+  }
+
+  @include Notebook {
+    position: relative;
+  }
+}
+
+.copyright__link {
+  margin-left: 30px;
+  @include Mobile {
+    margin-left: 0;
+  }
+}

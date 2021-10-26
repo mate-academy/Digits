@@ -1,0 +1,182 @@
+.whatever {
+  @include Mobile {
+    display: flex;
+    margin: 0 auto;
+    width: 280px;
+  }
+  @include Tablet {
+    display: flex;
+    margin: 0 auto;
+  }
+}
+
+.whatever__container {
+  margin-top: 160px;
+  display: flex;
+  flex-direction: column;
+  @include Mobile {
+    width: 280px;
+    margin-top: 48px;
+    height: 1180px;
+  }
+  @include Tablet {
+    width: 1024px;
+    margin-top: 80px;
+  }
+}
+
+.whatever__title {
+  font-family: Halyard Display, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 60px;
+
+  text-align: center;
+
+  color: #1e266d;
+  @include Mobile {
+    font-size: 32px;
+    width: 280px;
+  }
+}
+
+.whatever__photos {
+  display: flex;
+}
+
+.whatever__block1 {
+  height: 1000px;
+  width: 800px;
+  @include Mobile {
+    width: 280px;
+    height: 300px;
+  }
+  @include Tablet {
+    height: 700px;
+    width: 600px;
+  }
+}
+
+.whatever__block2 {
+  height: 1000px;
+  width: 800px;
+  @include Mobile {
+    width: 280px;
+    height: 300px;
+  }
+  @include Tablet {
+    height: 700px;
+    width: 400px;
+  }
+  @include Notebook {
+    width: 480px;
+  }
+}
+
+.whatever__images {
+  position: relative;
+  margin: 0 auto;
+  background-image: url(/images/whatever/graphic.png);
+  height: 930px;
+  width: 580px;
+  transform: translate(0, -25%);
+  @include Mobile {
+    width: 280px;
+    background-size: 280px;
+    background-repeat: no-repeat;
+    margin-top: 50px;
+    height: 440px;
+    transform: translate(0, -55%);
+  }
+  @include Tablet {
+    margin: 0;
+  }
+}
+
+.whatever__image_2 {
+  position: absolute;
+  width: 182px;
+  height: 256px;
+  left: 420px;
+}
+
+.whatever__image_3 {
+  position: absolute;
+  width: 470px;
+  height: 313px;
+  left: 280px;
+  top: 380px;
+}
+
+.whatever__image_4 {
+  position: absolute;
+  width: 409px;
+  height: 612px;
+  left: 390px;
+  top: -60px;
+}
+
+.whatever__positioning {
+  display: flex;
+  content: "";
+  margin: 0 auto;
+  margin-top: 120px;
+  @include Mobile {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.card__icon {
+  width: 58px;
+  height: 58px;
+}
+
+.block2__card {
+  display: flex;
+  margin-bottom: 100px;
+  @include Mobile {
+    margin-bottom: 26px;
+  }
+  @include Tablet {
+    width: 300px;
+  }
+}
+
+.card__text {
+  margin-left: 47px;
+  @include Mobile {
+    margin-left: 20px;
+    width: 240px;
+  }
+}
+
+.card__title {
+  font-family: Halyard Display, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+
+  color: #1e266d;
+
+  width: 300px;
+  @include Mobile {
+    width: 200px;
+  }
+}
+
+.card__paragraph {
+  font-family: Halyard Text, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+
+  color: #455880;
+  width: 300px;
+  margin-top: 26px;
+  @include Mobile {
+    width: 200px;
+    margin-top: 8px;
+  }
+}

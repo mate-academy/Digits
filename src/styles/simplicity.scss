@@ -1,0 +1,326 @@
+.simplicity {
+  background: #fff9ea;
+  margin: 0 auto;
+  @include Mobile {
+    height: 740px;
+    width: 280px;
+    display: flex;
+    margin: 0 auto;
+  }
+}
+
+.simplicity__container {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @include Mobile {
+    width: 280px;
+    display: flex;
+    flex-direction: column;
+    height: 740px;
+  }
+  @include Tablet {
+    padding-top: 40px;
+    width: 1024px;
+  }
+}
+
+.simplicity__title {
+  font-family: Halyard Display, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 60px;
+
+  text-align: center;
+
+  color: #1e266d;
+}
+
+.simplicity__text {
+  font-family: Halyard Text, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 21px;
+  line-height: 150%;
+
+  text-align: center;
+
+  color: #455880;
+  margin-top: 40px;
+}
+
+.button__container {
+  margin: 0 auto;
+  width: 148px;
+  margin-top: 40px;
+
+  height: 50px;
+  background: #3751ff;
+  @include Mobile {
+    margin-top: 10px;
+  }
+}
+
+.button__link {
+  text-decoration: none;
+  color: #fff;
+}
+
+.simplicity__images {
+  display: flex;
+  margin-top: 37px;
+
+  @include Mobile {
+    height: 190px;
+  }
+  @include Tablet {
+    height: 540px;
+    padding: 0 20px;
+  }
+  @include Notebook {
+    height: 540px;
+    overflow: hidden;
+  }
+  @include TheDesign {
+    height: 510px;
+    overflow: hidden;
+    width: 1500px;
+  }
+  @include FullHD {
+    height: 510px;
+    overflow: hidden;
+  }
+  @include LargeScreens {
+    overflow: hidden;
+    height: 510px;
+  }
+}
+
+.images__examples {
+  height: 231px;
+  width: 311px;
+  filter: drop-shadow(0 4px 4px rgba(135, 146, 161, 0.08));
+  border-radius: 18px;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+
+  &:hover {
+    border-radius: 50%;
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+  @include Mobile {
+    height: 65px;
+    width: 90px;
+    border-radius: 10px;
+    margin-bottom: 5px;
+  }
+  @include TheDesign {
+    width: 311px;
+    height: 250px;
+  }
+}
+
+.images__column_first {
+  margin-top: 20px;
+}
+
+.images__column_second {
+  margin-top: 50px;
+  @include Tablet {
+    margin-top: 130px;
+    overflow: hidden;
+  }
+  @include Notebook {
+    margin-top: 150px;
+  }
+  @include TheDesign {
+    margin-top: 120px;
+  }
+}
+
+.images__column_third {
+  margin-top: 80px;
+  @include Notebook {
+    margin-top: 220px;
+  }
+  @include TheDesign {
+    margin-top: 190px;
+  }
+}
+
+.images__column_fourth {
+  @include Mobile {
+    display: none;
+  }
+  @include Tablet {
+    display: none;
+  }
+  @include Notebook {
+    margin-top: 160px;
+  }
+  @include TheDesign {
+    margin-top: 120px;
+  }
+  @include FullHD {
+    margin-top: 50px;
+  }
+  @include LargeScreens {
+    margin-top: 50px;
+  }
+}
+
+.images__column_fifth {
+  @include Mobile {
+    display: none;
+  }
+  @include Tablet {
+    display: none;
+  }
+  @include Notebook {
+    display: none;
+  }
+  @include TheDesign {
+    margin-top: 50px;
+  }
+  @include LargeScreens {
+    margin-top: 20px;
+  }
+}
+
+.image1 {
+  background: url(/images/simplicity/browser1.png);
+  background-size: cover;
+}
+
+.image2 {
+  background: url(/images/simplicity/browser2.png);
+  background-size: cover;
+}
+
+.image3 {
+  background: url(/images/simplicity/browser3.png);
+  @include Mobile {
+    max-height: 29px;
+  }
+  @include Tablet {
+    height: 50px;
+  }
+}
+
+.image4 {
+  background: url(/images/simplicity/browser4.png);
+  background-size: cover;
+}
+
+.image5 {
+  background: url(/images/simplicity/browser5.png);
+  background-size: cover;
+}
+
+.image7 {
+  background: url(/images/simplicity/browser7.png);
+  background-size: cover;
+}
+
+.image8 {
+  background: url(/images/simplicity/browser8.png);
+  background-size: cover;
+  @include Mobile {
+    max-height: 29px;
+  }
+}
+
+.image6 {
+  @include Mobile {
+    display: none;
+  }
+  @include Tablet {
+    display: none;
+  }
+  @include Notebook {
+    background: url(/images/simplicity/browser6.png);
+  }
+}
+
+.image9 {
+  @include Mobile {
+    display: none;
+  }
+  @include Tablet {
+    display: none;
+  }
+  @include Notebook {
+    background: url(/images/simplicity/browser9.png);
+    background-repeat: no-repeat;
+  }
+}
+
+.image10 {
+  @include Notebook {
+    background: url(/images/simplicity/browser10.png);
+  }
+
+  @include TheDesign {
+    background: url(/images/simplicity/browser10.png);
+  }
+  @include FullHD {
+    background: url(/images/simplicity/browser10.png);
+  }
+  @include LargeScreens {
+    background: url(/images/simplicity/browser10.png);
+  }
+}
+
+.image11 {
+  @include Notebook {
+    background: url(/images/simplicity/browser11.png);
+  }
+  @include TheDesign {
+    background: url(/images/simplicity/browser11.png);
+  }
+  @include FullHD {
+    background: url(/images/simplicity/browser11.png);
+  }
+  @include LargeScreens {
+    background: url(/images/simplicity/browser11.png);
+  }
+}
+
+.image13 {
+  @include Notebook {
+    background: url(/images/simplicity/browser11.png);
+  }
+  @include TheDesign {
+    background: url(/images/simplicity/browser5.png);
+  }
+  @include FullHD {
+    background: url(/images/simplicity/browser5.png);
+  }
+  @include LargeScreens {
+    background: url(/images/simplicity/browser5.png);
+  }
+}
+
+.image14 {
+  @include Notebook {
+    background: url(/images/simplicity/browser6.png);
+  }
+  @include TheDesign {
+    background: url(/images/simplicity/browser6.png);
+  }
+  @include FullHD {
+    background: url(/images/simplicity/browser6.png);
+  }
+  @include LargeScreens {
+    background: url(/images/simplicity/browser6.png);
+  }
+}
