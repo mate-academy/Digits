@@ -18,7 +18,7 @@
 
     text-align: center;
 
-    color: #1e266d;
+    color: $darkBlue;
   }
 }
 
@@ -26,25 +26,25 @@
   display: flex;
   flex-direction: column;
   margin: 0 auto;
-  padding: 200px 0;
-
+  padding-top: 200px;
+  justify-content: center;
   @include Mobile {
-    width: 285px;
-    padding: 40px 0;
+    width: 270px;
+    padding-top: 80px;
   }
   @include Tablet {
     box-sizing: border-box;
     width: 1024px;
-    padding: 60px 20px;
   }
-  @include Notebook {
-    padding: 90px 20px;
+  @include TheDesign {
+    width: 1600px;
   }
 }
 
 .others__cards {
   display: flex;
   margin: 0 auto;
+  padding-top: 56px;
   @include Mobile {
     margin: 0;
     width: 270px;
@@ -64,36 +64,45 @@
   border: 1px solid rgba(69, 88, 128, 0.2);
   border-radius: 4px;
   margin: 0 14px;
+  transition: all 0.5s;
+  &:hover {
+    transform: scale(1.05);
+  }
   @include Mobile {
     width: 270px;
     margin: 14px 0;
   }
   @include Tablet {
-    width: 290px;
+    width: 300px;
   }
 }
 
 .card__info {
-  width: 286px;
   font-family: Halyard Text, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
   line-height: 180%;
+  box-sizing: border-box;
 
   /* or 32px */
 
-  color: #455880;
-  padding-top: 38px;
-  height: 211px;
-  text-align: center;
+  color: $lightBlue;
+  padding: 38px 44px 0;
+  height: 250px;
   @include Mobile {
-    padding: 10px 20px;
+    padding: 30px 20px;
     width: 250px;
+    height: 250px;
   }
   @include Tablet {
-    padding: 20px 0;
-    box-sizing: border-box;
+    padding: 28px 26px 0;
+    height: 250px;
+  }
+  @include Notebook {
+    padding: 28px 26px 0;
+    width: 300px;
+    height: 248px;
   }
 }
 
@@ -131,7 +140,7 @@
   /* identical to box height, or 27px */
   text-align: center;
 
-  color: #1e266d;
+  color: $darkBlue;
   margin-top: 23px;
 }
 
@@ -145,7 +154,7 @@
   /* or 32px */
   text-align: center;
 
-  color: #455880;
+  color: $lightBlue;
 }
 
 .buy {
@@ -157,12 +166,25 @@
   justify-content: center;
   align-items: center;
   overflow: hidden;
-  margin-top: 182px;
+  margin-top: 150px;
   @include Mobile {
     margin-top: 10px;
   }
   @include Tablet {
-    margin-top: 40px;
+    width: 1024px;
+    margin-top: 80px;
+  }
+  @include Notebook {
+    width: 1280px;
+  }
+  @include TheDesign {
+    width: 1600px;
+  }
+  @include FullHD {
+    width: 1920px;
+  }
+  @include LargeScreens {
+    width: 2560px;
   }
 }
 
@@ -170,6 +192,7 @@
   display: flex;
   margin: 0 auto;
   overflow: hidden;
+  align-items: center;
 
   @include Mobile {
     display: flex;
@@ -177,12 +200,15 @@
   }
   @include Tablet {
     margin: 0;
-    padding: 0 20px;
   }
 }
 
 .buy__right_side {
-  padding-left: 300px;
+  padding-left: 480px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+
   @include Mobile {
     display: flex;
     flex-direction: column;
@@ -190,12 +216,18 @@
     justify-content: center;
     padding: 24px 20px;
   }
+  @include Notebook {
+    padding-left: 510px;
+  }
+  @include Tablet {
+    padding-left: 300px;
+  }
 }
 
 .buy__button_container {
   display: flex;
   align-items: center;
-  background: #fff;
+  background: $white;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
   border-radius: 100px;
   width: 242px;
@@ -209,7 +241,9 @@
 }
 
 .buy__link {
+  display: flex;
   text-decoration: none;
+  justify-content: right;
 }
 
 .buy__button_image {
@@ -229,7 +263,7 @@
   /* or 20px */
   text-align: center;
 
-  color: #455880;
+  color: $lightBlue;
 }
 
 .buy__phrase {
@@ -241,7 +275,7 @@
 
   /* or 125% */
 
-  color: #fff;
+  color: $white;
   @include Mobile {
     text-align: center;
     font-size: 32px;
@@ -256,8 +290,6 @@
   font-weight: normal;
   font-size: 16px;
   line-height: 125%;
-
-  /* identical to box height, or 20px */
   text-align: right;
 
   color: #dfe0eb;

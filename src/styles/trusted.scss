@@ -26,6 +26,10 @@
 
 .logos {
   padding-right: 72px;
+  transition: all 0.5s ease-in-out;
+  &:hover {
+    transform: scale(1.3);
+  }
   @include Mobile {
     padding-right: 0;
     padding-bottom: 25px;

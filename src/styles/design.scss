@@ -14,7 +14,9 @@
   background-size: cover;
   width: 260px;
   height: 200px;
+  margin: 0 auto;
   @include Mobile {
+    margin-top: 20px;
     width: 260px;
     height: 200px;
   }
@@ -24,7 +26,7 @@
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    margin: 0 auto;
+    margin: 20px auto;
   }
 
   @include Notebook {
@@ -33,7 +35,7 @@
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    margin: 0 auto;
+    margin: 40px auto;
   }
   @include TheDesign {
     width: 1600px;
@@ -41,7 +43,7 @@
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    margin: 0 auto;
+    margin: 68px auto;
   }
   @include FullHD {
     width: 1600px;
@@ -49,7 +51,7 @@
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    margin: 0 auto;
+    margin: 80px auto;
   }
   @include LargeScreens {
     width: 1600px;
@@ -57,14 +59,13 @@
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    margin: 0 auto;
+    margin: 100px auto;
   }
 }
 
 .design__container {
   display: flex;
   flex-direction: column;
-  align-items: center;
   margin: 0 auto;
 }
 
@@ -78,7 +79,7 @@
 
   text-align: center;
 
-  color: #1e266d;
+  color: $darkBlue;
   margin: 0;
   @include Mobile {
     width: 320px;
@@ -95,7 +96,7 @@
 
   text-align: center;
 
-  color: #455880;
+  color: $lightBlue;
 
   padding-top: 27px;
 }
@@ -190,7 +191,7 @@
   width: 8px;
   height: 8px;
 
-  background: #fff;
+  background: $white;
   border-radius: 5px;
   margin-right: 6px;
 }
@@ -201,7 +202,7 @@
   left: 457px;
   top: 545px;
 
-  background: #fff;
+  background: $white;
   box-shadow: 0 4px 4px rgba(135, 146, 161, 0.08);
   border-radius: 18px;
 }
@@ -210,7 +211,22 @@
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: space-between;
   padding-top: 29px;
+  margin: 0 auto;
+}
+
+.design__button {
+  width: 199px;
+  @include Mobile {
+    width: 120px;
+  }
+  @include Tablet {
+    width: 199px;
+  }
+  @include TheDesign {
+    width: 148px;
+  }
 }
 
 .design__link {
@@ -218,27 +234,27 @@
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
-  line-height: 50px;
+  width: 199px;
+  height: 40px;
   /* identical to box height, or 312% */
 
   text-align: center;
 
-  color: #455880;
+  color: $lightBlue;
 
-  padding-left: 50px;
-  @include Tablet {
-    padding-left: 270px;
+  background: $white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  border-radius: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @include Mobile {
+    width: 120px;
+    padding-left: 0;
+    font-size: 12px;
   }
-  @include Notebook {
-    padding-left: 320px;
-  }
-  @include TheDesign {
-    padding-left: 320px;
-  }
-  @include FullHD {
-    padding-left: 320px;
-  }
-  @include LargeScreens {
-    padding-left: 320px;
+  &:hover {
+    transform: scale(1.1);
+    box-shadow: 5px 9px 18px #2060f6;
   }
 }
