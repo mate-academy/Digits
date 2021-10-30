@@ -3,11 +3,457 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Title</title>
+    <title>Digits</title>
+    <link rel="shortcut icon" href="\images\favicon.ico">
     <link rel="stylesheet" href="./styles/main.scss">
   </head>
   <body>
-    <h1>Hello Mate Academy</h1>
+    <header class="header container" id="home">
+      <a href="">
+        <img
+          src="\images\logo.png"
+          alt="logo"
+          class="header__logo"
+        >
+      </a>
+
+      <nav class="nav top-bar__nav">
+        <input
+          class="nav__toggle"
+          id="toggle"
+          type="checkbox"
+        >
+        <label for="toggle" class="nav__btn">
+          <span class="nav__span">
+          </span>
+        </label>
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="" class="nav__link">
+              Homepages
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="#simplicity" class="nav__link">
+              Products
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="#company" class="nav__link">
+              Company
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="#launch" class="nav__link">
+              Pricing
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="#blog" class="nav__link">
+              Blog
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="header__contacts">
+        <div>
+          <a href="tel: +00 123456 789" class="contacts__number">
+            +00 123456 789
+          </a>
+        </div>
+        <a href="tel: +00 123456 789" class="contacts__button">Contact us</a>
+      </div>
+    </header>
+
+    <div class="intro__wrapper container">
+      <section class="intro">
+        <div class="intro__main">
+          <div class="intro__header-wrapper">
+            <h2 class="intro__header">Good design meets great user experience</h2>
+          </div>
+          <p class="intro__text">for everyone, from befinners to experts</p>
+          <div class="intro__links">
+            <a href="#launch" class="intro__link-buy">
+              Buy digits
+            </a>
+            <a href="#company" class="intro__link-see">
+             See the Features
+            </a>
+          </div>
+        </div>
+        <img
+          src="\images\Graphic.png"
+          alt="intro"
+          class="intro__img"
+        >
+      </section>
+    </div>
+
+    <div class="partnerse-wrapper container">
+      <section class="partnerse">
+        <h3 class="partnerse__header">
+          Trusted by forward-thinking
+          software teams around the world
+        </h3>
+        <div class="partnerse__items">
+          <a href="https://www.netflix.com/ua/">
+            <img
+              src="\images\logo-1.png"
+              alt="Netflix logo"
+              class="partnerse__item partnerse__items-netflix"
+            >
+          </a>
+          <a href="https://www.drawkit.io/">
+            <img
+              src="\images\logo-2.png"
+              alt="Drawkit logo"
+              class="partnerse__item partnerse__items-drawKit"
+            >
+          </a>
+          <a href="https://www.figma.com/">
+            <img
+              src="\images\logo-3.png"
+              alt="figma logo"
+              class="partnerse__item partnerse__items-figma"
+            >
+          </a>
+          <a href="https://www.cinemax.com/">
+            <img
+              src="\images\logo-4.png"
+              alt="cinemaX logo"
+              class="partnerse__item partnerse__items-cinemaX"
+            >
+          </a>
+          <a href="https://stripe.com/">
+            <img
+              src="\images\logo-5.png"
+              alt="stripe logo"
+              class="partnerse__item partnerse__items-stripe"
+            >
+          </a>
+          <a href="https://www.google.com/">
+            <img
+              src="\images\logo-6.png"
+              alt="google logo"
+              class="partnerse__item partnerse__items-google"
+            >
+          </a>
+          <a href="https://www.disney.com/">
+            <img
+              src="\images\logo-7.png"
+              alt="disney logo"
+              class="partnerse__item partnerse__items-disney"
+            >
+          </a>
+        </div>
+      </section>
+    </div>
+
+    <div class="services-wrapper container" id="company">
+      <section class="services">
+        <h2 class="services__header">
+          Whatever work you do,
+          we're able to help
+        </h2>
+        <div class="services__main">
+          <img
+            src="\images\Graphic4.png"
+            alt=""
+            class="services__image"
+          >
+          <div class="services__content">
+
+            <article class="services__article">
+              <img
+                src="\images\Icon.png"
+                alt=""
+                class="services__icon"
+              >
+              <div class="services__text">
+                <h2 class="services__artHeader">
+                  Design and Assets
+                </h2>
+                <p class="services__paragraph">
+                  Make your brand stand out with pixel-perfect
+                  design crafted to perfection.
+                </p>
+              </div>
+            </article>
+
+            <article class="services__article">
+              <img
+                src="\images\Icon2.png"
+                alt=""
+                class="services__icon"
+              >
+              <div class="services__text">
+                <h2 class="services__artHeader">
+                  Easy Content
+                </h2>
+                <p class="services__paragraph">
+                  Import your demos or build pages visually.
+                  Bonus: All images and illustrations included!
+                </p>
+              </div>
+            </article>
+
+            <article class="services__article">
+              <img
+                src="\images\icon3.png"
+                alt=""
+                class="services__icon"
+              >
+              <div class="services__text">
+                <h2 class="services__artHeader">
+                  Fast and Reliable
+                </h2>
+                <p class="services__paragraph">
+                  No heavy-weight plugins. No builders.
+                  No unneccesary file loading. Pure WordPress.
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <section class="examples container" id="simplicity">
+      <h2 class="examples__header">
+        Simplicity meets innovative design
+      </h2>
+      <p class="examples__paragraph">
+        It's really easy to start using Digits.
+        Install the theme, choose a demo and
+        start designing the future of your business!
+      </p>
+      <a href="" class="examples__link">
+        Buy Digits
+      </a>
+      <div class="examples__image-wrapper">
+        <img
+          src="\images\examples.png"
+          alt=""
+          class="examples__image"
+        >
+      </div>
+    </section>
+
+    <div class="reviews-wrapper container">
+      <section class="reviews" id="blog">
+        <h2 class="reviews__header">
+          What others are saying
+        </h2>
+        <div class="reviews__main">
+
+          <div class="reviews__card">
+            <p class="reviews__paragraph">
+              Completely beautiful website and
+              amazing support! This is my second
+              website from this author and I love
+              both of the sites so much and she
+              has helped me so well when I needed it!
+            </p>
+            <img
+              src="\images\face.png"
+              alt=""
+              class="reviews__image"
+            >
+            <p class="reviews__name">
+              Happy User
+            </p>
+            <p class="reviews__description">
+              tempy.club
+            </p>
+          </div>
+
+          <div class="reviews__card">
+            <p class="reviews__paragraph">
+              Really easy to use and customize. easy
+              to understand. Darinka helped me with
+              my site! She answers very quickly, a
+              good service! Thank you very much!
+            </p>
+            <img
+              src="\images\photo2.png"
+              alt=""
+              class="reviews__image"
+            >
+            <p class="reviews__name">
+              Happy User
+            </p>
+            <p class="reviews__description">
+              tempy.club
+            </p>
+          </div>
+
+          <div class="reviews__card">
+            <p class="reviews__paragraph">
+              Really pleasing to look at!
+              Documentation (including installation
+              instructions) are clear and that is coming
+              from a relatively new WordPress user.
+            </p>
+            <img
+              src="\images\face3.png"
+              alt=""
+              class="reviews__image"
+            >
+            <p class="reviews__name">
+              Happy User
+            </p>
+            <p class="reviews__description">
+              tempy.club
+            </p>
+          </div>
+
+        </div>
+      </section>
+    </div>
+
+    <section class="launch container" id="launch">
+      <p class="launch__header">
+        Ready to launch
+        your next website?
+      </p>
+      <div class="launch__main">
+        <a href="mailto: somemail@gmail.com" class="launch__link">
+          <img
+            src="\images\mail.png"
+            alt="mail"
+            class="launch__mail"
+          >
+            Get in touch now
+        </a>
+        <a class="launch__text" href="#">
+          Or, take a peek inside our design studio
+        </a>
+      </div>
+    </section>
+
+    <section class="outro container">
+      <div class="outro__digits outro__block">
+        <img
+          src="\images\logoOutro.png"
+          alt="footer image"
+          class="outro__header-img"
+        >
+        <p class="outro__text">
+          Digits is a website template built to work
+          seamlesly with the WordPress block
+          editor to create beautifully
+          designed pages in minutes.
+        </p>
+      </div>
+
+      <div class="outro__pages outro__block">
+        <h2 class="outro__header">
+          Pages
+        </h2>
+        <a href="#home" class="outro__link outro__text">
+          Home
+        </a>
+        <a href="" class="outro__link outro__text">
+          About
+        </a>
+        <a href="" class="outro__link outro__text">
+          News
+        </a>
+        <a href="" class="outro__link outro__text">
+          Pricing
+        </a>
+        <a href="" class="outro__link outro__text">
+          Contact
+        </a>
+      </div>
+
+      <div class="outro__demos outro__block">
+        <h2 class="outro__header">
+          Demos
+        </h2>
+
+        <a href="" class="outro__link outro__text">
+          Classic
+        </a>
+        <a href="" class="outro__link outro__text">
+          Boxy
+        </a>
+        <a href="" class="outro__link outro__text">
+          gradient
+        </a>
+        <a href="" class="outro__link outro__text">
+          Minimal
+        </a>
+        <a href="" class="outro__link outro__text">
+          Night
+        </a>
+      </div>
+
+      <div class="outro__resources outro__block">
+        <h2 class="outro__header">
+          Resources
+        </h2>
+        <div class="outro__icons">
+          <a href="#">
+            <img
+              src="\images\icon-facebook.png"
+              alt="facebook ocin"
+              class="outro__icon"
+            >
+          </a>
+          <a href="#">
+            <img
+              src="\images\icon-instagram.png"
+              alt="instgaram icon"
+              class="outro__icon"
+            >
+          </a>
+          <a href="#">
+            <img
+              src="\images\icon-twitter.png"
+              alt="twittr logo"
+              class="outro__icon"
+            >
+          </a>
+          <a href="#">
+            <img
+              src="\images\icon-dribbble.png"
+              alt="drible icon"
+              class="outro__icon"
+            >
+          </a>
+          <a href="#">
+            <img
+              src="\images\icon-envato.png"
+              alt="envato icon"
+              class="outro__icon"
+            >
+          </a>
+        </div>
+        <a href="" class="outro__link outro__text">
+          Download now
+        </a>
+        <a href="" class="outro__link outro__text">
+          Documentation
+        </a>
+      </div>
+
+
+    </section>
+
+    <footer class="footer container">
+      <a href="#" class="footer__copy">
+        Copyright © 2020 tempy.club
+      </a>
+      <div class="footer__links">
+        <a href="" class="footer__link">Privacy Policy</a>
+        <a href="" class="footer__link">Term of Use</a>
+        <a href="" class="footer__link">GDPR</a>
+      </div>
+    </footer>
+
+
     <script type="text/javascript" src="scripts/main.js"></script>
   </body>
 </html>
