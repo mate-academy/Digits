@@ -7,6 +7,12 @@
     display: flex;
     margin: 0 auto;
   }
+  @include SmallPhone {
+    height: 740px;
+    width: 280px;
+    display: flex;
+    margin: 0 auto;
+  }
 }
 
 .simplicity__container {
@@ -19,6 +25,13 @@
     display: flex;
     flex-direction: column;
     height: 740px;
+  }
+  @include SmallPhone {
+    width: 280px;
+    display: flex;
+    flex-direction: column;
+    height: 740px;
+    margin-top: 60px;
   }
   @include Tablet {
     padding-top: 40px;
@@ -79,6 +92,9 @@
   @include Mobile {
     height: 190px;
   }
+  @include SmallPhone {
+    height: 190px;
+  }
   @include Tablet {
     height: 540px;
     padding: 0 20px;
@@ -131,6 +147,10 @@
     border-radius: 10px;
     margin-bottom: 5px;
   }
+  @include SmallPhone {
+    height: 65px;
+    width: 90px;
+  }
   @include TheDesign {
     width: 311px;
     height: 250px;
@@ -156,6 +176,9 @@
   @include Mobile {
     margin-top: 50px;
   }
+  @include SmallPhone {
+    margin-top: 40px;
+  }
   @include Tablet {
     margin-top: 130px;
     overflow: hidden;
@@ -173,6 +196,9 @@
   @include Mobile {
     margin-top: 80px;
   }
+  @include SmallPhone {
+    margin-top: 90px;
+  }
   @include Notebook {
     margin-top: 220px;
   }
@@ -184,6 +210,9 @@
 .images__column_fourth {
   @include Mobile {
     display: none;
+  }
+  @include SmallPhone {
+    margin-top: 40px;
   }
   @include Tablet {
     display: none;
@@ -205,6 +234,9 @@
 .images__column_fifth {
   @include Mobile {
     display: none;
+  }
+  @include SmallPhone {
+    margin-top: 30px;
   }
   @include Tablet {
     display: none;
@@ -309,6 +341,13 @@
 }
 
 .image10 {
+  @include SmallPhone {
+    background: url(/images/simplicity/browser10.png);
+    background-repeat: no-repeat;
+    object-fit: cover;
+    background-size: 100%;
+  }
+
   @include Notebook {
     background: url(/images/simplicity/browser10.png);
   }
@@ -328,6 +367,10 @@
 }
 
 .image11 {
+  @include SmallPhone {
+    background: url(/images/simplicity/browser8.png);
+    background-size: 100%;
+  }
   @include Notebook {
     background: url(/images/simplicity/browser8.png);
   }
@@ -346,6 +389,12 @@
 }
 
 .image13 {
+  @include SmallPhone {
+    background: url(/images/simplicity/browser11.png);
+    background-repeat: no-repeat;
+    object-fit: cover;
+    background-size: 100%;
+  }
   @include Notebook {
     background: url(/images/simplicity/browser11.png);
   }
@@ -364,6 +413,10 @@
 }
 
 .image14 {
+  @include SmallPhone {
+    background: url(/images/simplicity/browser6.png);
+    background-size: 100%;
+  }
   @include Notebook {
     background: url(/images/simplicity/browser6.png);
   }

@@ -4,6 +4,9 @@
   @include Mobile {
     width: 280px;
   }
+  @include SmallPhone {
+    margin: 0 auto;
+  }
 
   @include Tablet {
     display: flex;
@@ -32,6 +35,13 @@
     width: 270px;
     padding-top: 80px;
   }
+  @include SmallPhone {
+    width: 100%;
+    padding-top: 130px;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+  }
   @include Tablet {
     box-sizing: border-box;
     width: 1024px;
@@ -52,6 +62,15 @@
     flex-direction: column;
     padding: 20px 0;
   }
+  @include SmallPhone {
+    margin: 0;
+    width: 390px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .others__card {
@@ -71,6 +90,9 @@
   @include Mobile {
     width: 270px;
     margin: 14px 0;
+  }
+  @include SmallPhone {
+    margin: 20px 0;
   }
   @include Tablet {
     width: 300px;
@@ -170,6 +192,10 @@
   @include Mobile {
     margin-top: 10px;
   }
+  @include SmallPhone {
+    margin-top: 20px;
+    width: 640px;
+  }
   @include Tablet {
     width: 1024px;
     margin-top: 80px;
@@ -198,6 +224,10 @@
     display: flex;
     flex-direction: column;
   }
+  @include SmallPhone {
+    display: flex;
+    flex-direction: column;
+  }
   @include Tablet {
     margin: 0;
   }
@@ -214,6 +244,12 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding: 24px 20px;
+  }
+  @include SmallPhone {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding: 24px 20px;
   }
   @include Notebook {

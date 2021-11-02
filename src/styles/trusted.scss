@@ -11,10 +11,17 @@
   margin: 0 auto;
   align-items: center;
   margin-top: 48px;
+  justify-content: center;
   @include Mobile {
     display: flex;
     flex-direction: column;
     width: 220px;
+    margin: 48px auto;
+  }
+  @include SmallPhone {
+    display: flex;
+    width: 220px;
+    flex-direction: column;
     margin: 48px auto;
   }
   @include Tablet {
@@ -34,13 +41,21 @@
     padding-right: 0;
     padding-bottom: 25px;
   }
+  @include SmallPhone {
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 25px;
+    padding-right: 0;
+  }
+  @include Tablet {
+    padding-bottom: 20px;
+  }
 }
 
 .trusted__container {
   display: flex;
   flex-direction: column;
-  margin: 0 auto;
-  margin-top: 68px;
+  margin: 68px auto 0;
   @include Mobile {
     padding: 0 20px;
   }
@@ -65,4 +80,10 @@
   @include Mobile {
     width: 220px;
   }
+}
+
+.trusted__links {
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
 }

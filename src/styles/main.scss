@@ -15,10 +15,56 @@
 
 body {
   background: $c-gray;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
+
   @include Mobile {
     width: 320px;
+  }
+  @include SmallPhone {
+    width: 640px;
+  }
+  @include Tablet {
+    width: 1024px;
+  }
+  @include Notebook {
+    width: 1280px;
+  }
+  @include TheDesign {
+    width: 1600px;
+  }
+  @include FullHD {
+    width: 1920px;
+  }
+  @include LargeScreens {
+    width: 2560px;
+  }
+}
+
+.main {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  @include Mobile {
+    width: 320px;
+  }
+  @include SmallPhone {
+    width: 640px;
+  }
+  @include Tablet {
+    width: 1024px;
+  }
+  @include Notebook {
+    width: 1280px;
+  }
+  @include TheDesign {
+    width: 1600px;
+  }
+  @include FullHD {
+    width: 1920px;
+  }
+  @include LargeScreens {
+    width: 2560px;
   }
 }
 
@@ -31,6 +77,7 @@ ul {
 
 * {
   box-sizing: border-box;
+  scroll-behavior: smooth;
   margin: 0;
   padding: 0;
 }

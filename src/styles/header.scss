@@ -11,6 +11,45 @@
   }
 }
 
+.menu-btn {
+  cursor: pointer;
+  position: relative;
+  display: none;
+  margin: auto;
+  height: 15px;
+  width: 20px;
+  z-index: 0;
+  padding: 10px;
+  border-radius: 10px;
+  box-sizing: content-box;
+  @include Mobile {
+    display: block;
+  }
+  @include SmallPhone {
+    display: block;
+  }
+  @include Tablet {
+    display: block;
+  }
+}
+
+.menu-btn .menu {
+  display: block;
+  width: 20px;
+  height: 2px;
+  border-radius: 2px;
+  background: #111;
+}
+
+.menu-btn .menu:nth-child(2) {
+  margin-top: 4px;
+  opacity: 1;
+}
+
+.menu-btn .menu:nth-child(3) {
+  margin-top: 4px;
+}
+
 .header__phone {
   font-family: Halyard Text, sans-serif;
   font-style: normal;
@@ -30,6 +69,9 @@
   @include Mobile {
     display: none;
   }
+  @include SmallPhone {
+    display: none;
+  }
   @include Tablet {
     display: none;
   }
@@ -42,6 +84,9 @@
   padding-left: 202px;
   @include Mobile {
     padding-left: 20px;
+  }
+  @include SmallPhone {
+    padding-left: 10px;
   }
   @include Tablet {
     justify-content: right;
@@ -70,6 +115,9 @@
   text-decoration: none;
 
   transition: all 0.3s;
+  @include SmallPhone {
+    margin-left: 0;
+  }
   &:hover {
     transform: scale(1.1);
     box-shadow: 1px 3px 5px #2060f6;
@@ -100,6 +148,9 @@
   gap: 30px;
   list-style: none;
   @include Mobile {
+    display: none;
+  }
+  @include SmallPhone {
     display: none;
   }
   @include Tablet {
@@ -179,19 +230,17 @@
     display: none;
   }
 
+  @include SmallPhone {
+    display: block;
+  }
+
   @include Mobile {
     display: block;
   }
   @include Tablet {
     display: block;
   }
-
-  &--menu {
-    background-image: url(/images/menu.svg);
-    background-color: $darkBlue;
+  .menu--top {
+    margin-top: 10px;
   }
-}
-
-.menu--top {
-  margin-top: 10px;
 }
