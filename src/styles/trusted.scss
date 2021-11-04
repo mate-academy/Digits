@@ -1,6 +1,7 @@
 .trusted {
   display: flex;
   margin: 0 auto;
+  background: $white;
   @include Mobile {
     width: 280px;
   }
@@ -55,7 +56,7 @@
 .trusted__container {
   display: flex;
   flex-direction: column;
-  margin: 68px auto 0;
+  margin: 90px auto 0;
   @include Mobile {
     padding: 0 20px;
   }
@@ -63,6 +64,19 @@
     width: 1024px;
     display: flex;
     flex-wrap: wrap;
+    margin: 150px auto 0;
+  }
+  @include Notebook {
+    margin: 200px auto 0;
+  }
+  @include TheDesign {
+    margin: 200px auto 0;
+  }
+  @include FullHD {
+    margin: 200px auto 0;
+  }
+  @include LargeScreens {
+    margin: 200px auto 0;
   }
 }
 

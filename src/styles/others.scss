@@ -279,7 +279,13 @@
 .buy__link {
   display: flex;
   text-decoration: none;
-  justify-content: right;
+  padding-left: 20px;
+  @include Mobile {
+    padding-left: 0;
+  }
+  @include SmallPhone {
+    padding-left: 30px;
+  }
 }
 
 .buy__button_image {

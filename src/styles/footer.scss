@@ -216,7 +216,9 @@
 }
 
 .facebook {
-  background-image: url(/images/footer/icon-facebook.png);
+  background-image: url(/images/footer/icon-facebook.svg);
+  width: 16px;
+  height: 16px;
   &:hover {
     filter: invert(80%) sepia(60%) saturate(3207%) hue-rotate(130deg)
       brightness(95%) contrast(80%);
@@ -224,7 +226,7 @@
 }
 
 .instagram {
-  background-image: url(/images/footer/icon-instagram.png);
+  background-image: url(/images/footer/icon-instagram.svg);
   &:hover {
     filter: invert(80%) sepia(60%) saturate(3207%) hue-rotate(130deg)
       brightness(95%) contrast(80%);
@@ -232,7 +234,7 @@
 }
 
 .twitter {
-  background-image: url(/images/footer/icon-twitter.png);
+  background-image: url(/images/footer/icon-twitter.svg);
   &:hover {
     filter: invert(80%) sepia(60%) saturate(3207%) hue-rotate(130deg)
       brightness(95%) contrast(80%);
@@ -240,7 +242,7 @@
 }
 
 .dribbble {
-  background-image: url(/images/footer/icon-dribbble.png);
+  background-image: url(/images/footer/icon-dribbble.svg);
   &:hover {
     filter: invert(80%) sepia(60%) saturate(3207%) hue-rotate(130deg)
       brightness(95%) contrast(80%);
@@ -248,7 +250,7 @@
 }
 
 .envato {
-  background-image: url(/images/footer/icon-envato.png);
+  background-image: url(/images/footer/icon-envato.svg);
   &:hover {
     filter: invert(80%) sepia(60%) saturate(3207%) hue-rotate(130deg)
       brightness(95%) contrast(80%);

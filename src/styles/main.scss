@@ -17,6 +17,7 @@ body {
   background: $c-gray;
   margin: 0 auto;
   padding: 0;
+  background-color: $white;
 
   @include Mobile {
     width: 320px;
