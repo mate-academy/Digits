@@ -1,13 +1,432 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="page">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Title</title>
+    <title>Digits landing page</title>
     <link rel="stylesheet" href="./styles/main.scss">
   </head>
-  <body>
-    <h1>Hello Mate Academy</h1>
+
+  <body class="body">
+    <header class="header">
+      <div class="header__container">
+        <div class="header__image">digits</div>
+        <div class="header__image_dots">:</div>
+        <a
+          href="#menu"
+          class="menu-btn"
+          for="menutoggler"
+        >
+          <div class="menu"></div>
+          <div class="menu"></div>
+          <div class="menu"></div>
+        </a>
+        <nav class="page__menu menu" id="menu">
+          <div class="menu__container">
+            <div class="menu__top">
+              <div class="menu__content">
+                <a href="#" class="icon icon--cross">
+                  <img
+                    src="images/cross.svg"
+                    class="menu--top"
+                    alt="menu icon"
+                  >
+                </a>
+                <ul class="menu__list">
+                  <li class="menu__item">
+                    <a href="#trusted" class="menu__link">Homepages</a>
+                  </li>
+                  <li class="menu__item">
+                    <a href="#whatever" class="menu__link">Products</a>
+                  </li>
+                  <li class="menu__item">
+                    <a href="#simplicity" class="menu__link">Company</a>
+                  </li>
+                  <li class="menu__item">
+                    <a href="#others" class="menu__link">Pricing</a>
+                  </li>
+                  <li class="menu__item">
+                    <a href="#" class="menu__link">Blog</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </nav>
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="list__item">
+              <a href="#trusted" class="header__link"> Homepages </a>
+            </li>
+
+            <li class="list__item">
+              <a href="#whatever" class="header__link"> Products </a>
+            </li>
+
+            <li class="list__item">
+              <a href="#simplicity" class="header__link menu__link--arrow"> Company </a>
+            </li>
+
+            <li class="list__item">
+              <a href="#others" class="header__link"> Pricing </a>
+            </li>
+
+            <li class="list__item">
+              <a href="#" class="header__link"> Blog </a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header__contact-us">
+          <a href="tel:+00 123 456 789" class="header__phone">+00 123 456 789</a>
+          <a href="#" class="contact-us__button button"> Contact Us </a>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <section class="design">
+        <div class="design__container">
+          <h1 class="design__title">
+            Good design meets
+            <br>
+            great user experience
+          </h1>
+          <div class="design__phrase">
+            For everyone, from beginers to expert
+          </div>
+          <div class="design__links">
+            <a href="#" class="design__button button"> Buy Digits </a>
+            <a href="#" class="design__link link button"> See the Features </a>
+          </div>
+          <div class="desing__image_container"></div>
+        </div>
+      </section>
+      <section class="trusted" id="trusted">
+        <div class="trusted__container">
+          <div class="trusted__title">
+            Trusted by forward-thinking software teams around the world
+          </div>
+          <div class="trusted__logos">
+            <a href="https://www.netflix.com" class="trusted__links">
+              <img
+                src="/images/trusted/logo-1.svg"
+                alt="netflix logo"
+                class="logos"
+              >
+            </a>
+            <a href="https://www.drawkit.com" class="trusted__links">
+              <img
+                src="/images/trusted/logo-2.svg"
+                alt="draw kit logo"
+                class="logos"
+              >
+            </a>
+            <a href="https://www.figma.com" class="trusted__links">
+              <img
+                src="/images/trusted/logo-3.svg"
+                alt="figma logo"
+                class="logos"
+              >
+            </a>
+            <a href="https://www.cinemax.com" class="trusted__links">
+              <img
+                src="/images/trusted/logo-4.jpg"
+                alt="cinemax"
+                class="logos"
+              >
+            </a>
+            <a href="https://www.stripe.com" class="trusted__links">
+              <img
+                src="/images/trusted/logo-5.svg"
+                alt="stripe logo"
+                class="logos"
+              >
+            </a>
+            <a href="https://www.google.com" class="trusted__links">
+              <img
+                src="/images/trusted/logo-6.svg"
+                alt="google logo"
+                class="logos"
+              >
+            </a>
+            <a href="https://www.disney.com" class="trusted__links">
+              <img
+                src="/images/trusted/logo-7.svg"
+                alt="disney logo"
+                class="logos"
+              >
+            </a>
+          </div>
+        </div>
+      </section>
+      <section class="whatever" id="whatever">
+        <div class="whatever__container">
+          <div class="whatever__title">
+            Whatever work you do,
+            <br>
+            we're able to help
+          </div>
+          <div class="whatever__positioning">
+            <div class="whatever__block1">
+              <div class="whatever__images"></div>
+            </div>
+            <div class="whatever__block2">
+              <div class="block2__container">
+                <div class="block2__cards">
+                  <div class="block2__card">
+                    <img
+                      src="/images/whatever/Icon1.png"
+                      alt="card icon 1"
+                      class="card__icon"
+                    >
+                    <div class="card__text">
+                      <div class="card__title">Design and Assets</div>
+                      <div class="card__paragraph">
+                        Make your brand stand out with pixel-perfect design
+                        crafted to perfection.
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="block2__card">
+                    <img
+                      src="/images/whatever/Icon2.png"
+                      alt="card icon 1"
+                      class="card__icon"
+                    >
+                    <div class="card__text">
+                      <div class="card__title">Easy Content</div>
+                      <div class="card__paragraph">
+                        Import your demos or build pages visually. Bonus: All
+                        images and illustrations included!
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="block2__card">
+                    <img
+                      src="/images/whatever/Icon3.png"
+                      alt="card icon 1"
+                      class="card__icon"
+                    >
+                    <div class="card__text">
+                      <div class="card__title">Fast and Reliable</div>
+                      <div class="card__paragraph">
+                        No heavy-weight plugins. No builders. No unneccesary
+                        file loading. Pure WordPress.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="simplicity" id="simplicity">
+        <div class="simplicity__container">
+          <div class="simplicity__info">
+            <div class="simplicity__title">
+              Simplicity meets innovative design
+            </div>
+            <div class="simplicity__text">
+              It's really easy to start using Digits.<br>
+              Install the theme, choose a demo and<br>
+              start designing the future of your business!
+            </div>
+            <div class="button__container button">
+              <a href="#" class="button__link"> Buy Digits </a>
+            </div>
+          </div>
+          <div class="simplicity__images">
+            <div class="images__column_first">
+              <div class="images__examples image1"></div>
+              <div class="images__examples image2"></div>
+              <div class="images__examples image3"></div>
+            </div>
+            <div class="images__column_second">
+              <div class="images__examples image4"></div>
+              <div class="images__examples image5"></div>
+              <div class="images__examples image6"></div>
+            </div>
+            <div class="images__column_third">
+              <div class="images__examples image7"></div>
+              <div class="images__examples image8"></div>
+              <div class="images__examples image9"></div>
+            </div>
+            <div class="images__column_fourth">
+              <div class="images__examples image10"></div>
+              <div class="images__examples image11"></div>
+              <div class="images__examples image12"></div>
+            </div>
+            <div class="images__column_fifth">
+              <div class="images__examples image13"></div>
+              <div class="images__examples image14"></div>
+              <div class="images__examples image15"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="others" id="others">
+        <div class="others__container">
+          <div class="others__title">What others are saying</div>
+          <div class="others__cards">
+            <div class="others__card">
+              <div class="card__info">
+                Completely beautiful website and amazing support! This is my
+                second website from this author and I love both of the sites so
+                much and she has helped me so well when I needed it!
+              </div>
+              <div class="card__photo"></div>
+              <div class="card__name">Happy User</div>
+              <div class="card__job">tempy.club</div>
+            </div>
+
+            <div class="others__card">
+              <div class="card__info">
+                Really easy to use and customize. easy to understand. Darinka
+                helped me with my site! She answers very quickly, a good
+                service! Thank you very much!
+              </div>
+              <div class="card__photo2"></div>
+              <div class="card__name">Happy User</div>
+              <div class="card__job">tempy.club</div>
+            </div>
+
+            <div class="others__card">
+              <div class="card__info">
+                Really pleasing to look at! Documentation (including
+                installation instructions) are clear and that is coming from a
+                relatively new WordPress user.
+              </div>
+              <div class="card__photo3"></div>
+              <div class="card__name">Happy User</div>
+              <div class="card__job">tempy.club</div>
+            </div>
+          </div>
+          <section class="buy">
+            <div class="buy__container">
+              <div class="buy__phrase">
+                Ready to launch
+                <br>
+                your next website?
+              </div>
+              <div class="buy__right_side">
+                <a href="#" class="buy__link">
+                  <div class="buy__button_container">
+                    <div class="buy__button_image">
+                      <img
+                        src="/images/others/letter.png"
+                        alt="letter"
+                        class="letter__image"
+                      >
+                      <div class="buy__button_phrase">Get in touch now</div>
+                    </div>
+                  </div>
+                </a>
+
+                <div class="buy__button_info">
+                  Or, take a peek inside our
+                  <a href="#" class="buy__phrase_link">design studio</a>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </section>
+      <footer class="footer">
+        <div class="footer__container">
+          <div class="footer__left_text">
+            <div class="footer__title">
+              <div class="header__image">digits</div>
+              <div class="header__image_dots">:</div>
+            </div>
+            <div class="footer__info">
+              Digits is a website template built to work seamlesly with the
+              WordPress block editor to create beautifully designed pages in
+              minutes.
+            </div>
+          </div>
+          <div class="footer__pages">
+            <div class="footer__pages_title">Pages</div>
+            <nav class="nav__footer">
+              <ul class="nav__list_footer">
+                <li class="list__item">
+                  <a href="#trusted" class="header__link"> Home </a>
+                </li>
+                <li class="list__item">
+                  <a href="#whatever" class="header__link"> About </a>
+                </li>
+                <li class="list__item">
+                  <a href="#simplicity" class="header__link"> News </a>
+                </li>
+                <li class="list__item">
+                  <a href="#others" class="header__link"> Pricing </a>
+                </li>
+                <li class="list__item">
+                  <a href="#" class="header__link"> Contact </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="footer__pages footer__demos">
+            <div class="footer__pages_title">Demos</div>
+            <nav class="nav__footer">
+              <ul class="nav__list_footer">
+                <li class="list__item">
+                  <a href="#" class="header__link"> Classic </a>
+                </li>
+
+                <li class="list__item">
+                  <a href="#" class="header__link"> Boxy </a>
+                </li>
+
+                <li class="list__item">
+                  <a href="#" class="header__link"> Gradient </a>
+                </li>
+
+                <li class="list__item">
+                  <a href="#" class="header__link"> Minimal </a>
+                </li>
+
+                <li class="list__item">
+                  <a href="#" class="header__link"> Night </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="footer__resources">
+            <div class="footer__resources_title">Resources</div>
+            <div class="footer__resources_socials">
+              <div class="socials__container">
+                <a href="https://www.facebook.com" class="facebook socials__image"></a>
+                <a href="https://www.instagram.com" class="instagram socials__image"></a>
+                <a href="https://www.twitter.com" class="twitter socials__image"></a>
+                <a href="https://www.dribbble.com" class="dribbble socials__image"></a>
+                <a href="https://www.envato.com" class="envato socials__image"></a>
+              </div>
+            </div>
+            <div class="footer__resources_links">
+              <div class="footer__resources_link">Download now</div>
+              <div class="footer__resources_link2">Documentation</div>
+            </div>
+          </div>
+        </div>
+        <div class="footer__copyright">
+          <div class="copyright__title">
+            <h4 class="copyright__title">Copyright © 2020 tempy.club</h4>
+          </div>
+          <div class="copyright__links">
+            <div class="copyright__link_privacy copyright__link">
+              Privacy Policy
+            </div>
+            <div class="copyright__link_terms copyright__link">
+              Terms of Use
+            </div>
+            <div class="copyright__link_gdrp copyright__link">GDRP</div>
+          </div>
+        </div>
+      </footer>
+    </main>
     <script type="text/javascript" src="scripts/main.js"></script>
   </body>
 </html>

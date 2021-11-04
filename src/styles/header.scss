@@ -1,0 +1,246 @@
+.header__container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 21px;
+
+  @include Tablet {
+    margin: 0 auto;
+  }
+}
+
+.menu-btn {
+  cursor: pointer;
+  position: relative;
+  display: none;
+  margin: auto;
+  height: 15px;
+  width: 20px;
+  z-index: 0;
+  padding: 10px;
+  border-radius: 10px;
+  box-sizing: content-box;
+  @include Mobile {
+    display: block;
+  }
+  @include SmallPhone {
+    display: block;
+  }
+  @include Tablet {
+    display: block;
+  }
+}
+
+.menu-btn .menu {
+  display: block;
+  width: 20px;
+  height: 2px;
+  border-radius: 2px;
+  background: #111;
+}
+
+.menu-btn .menu:nth-child(2) {
+  margin-top: 4px;
+  opacity: 1;
+}
+
+.menu-btn .menu:nth-child(3) {
+  margin-top: 4px;
+}
+
+.header__phone {
+  font-family: Halyard Text, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+
+  text-align: right;
+
+  color: $darkBlue;
+
+  text-decoration: none;
+  transition: all 0.5s;
+  border-radius: 10px;
+  &:hover {
+    transform: scale(1.1);
+  }
+  @include Mobile {
+    display: none;
+  }
+  @include SmallPhone {
+    display: none;
+  }
+  @include Tablet {
+    display: none;
+  }
+}
+
+.header__contact-us {
+  display: flex;
+  align-items: center;
+  line-height: 18px;
+  padding-left: 202px;
+  @include Mobile {
+    padding-left: 20px;
+  }
+  @include SmallPhone {
+    padding-left: 10px;
+  }
+  @include Tablet {
+    justify-content: right;
+    padding: 0;
+  }
+}
+
+.button {
+  width: 113px;
+  height: 40px;
+  background: #3751ff;
+  border-radius: 25px;
+  border: #3751ff;
+
+  font-family: Halyard Text, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 40px;
+
+  text-align: center;
+
+  color: $white;
+
+  margin-left: 34px;
+  text-decoration: none;
+
+  transition: all 0.3s;
+  @include SmallPhone {
+    margin-left: 0;
+  }
+  &:hover {
+    transform: scale(1.1);
+    box-shadow: 1px 3px 5px #2060f6;
+  }
+
+  @include Mobile {
+    margin-left: 10px;
+  }
+  @include Tablet {
+    margin-left: 10px;
+  }
+}
+
+.contact-us__button {
+  @include Tablet {
+    margin-left: 80px;
+  }
+}
+
+.nav {
+  @include Mobile {
+    padding-left: 0;
+  }
+}
+
+.nav__list {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+  @include Mobile {
+    display: none;
+  }
+  @include SmallPhone {
+    display: none;
+  }
+  @include Tablet {
+    display: none;
+  }
+}
+
+.list__item {
+  transition: all 0.5s;
+  border-radius: 8px;
+  &:hover {
+    transform: scale(1.15);
+  }
+}
+
+.header__image {
+  font-family: Halyard Display, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30.96px;
+  line-height: 100%;
+
+  color: $darkBlue;
+}
+
+.header__image_dots {
+  color: #ff2e6a;
+  font-size: 30px;
+  line-height: 100%;
+  @include Mobile {
+    margin-right: 30px;
+  }
+  @include Notebook {
+    margin-right: 180px;
+  }
+  @include Tablet {
+    margin-right: 50px;
+  }
+  @include TheDesign {
+    margin-right: 200px;
+  }
+  @include FullHD {
+    margin-right: 90px;
+  }
+  @include LargeScreens {
+    margin-right: 125px;
+  }
+}
+
+.header__link {
+  font-family: Halyard Text, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+
+  color: $darkBlue;
+}
+
+.menu__link--arrow::after {
+  content: url(/images/arrow.svg);
+}
+
+.header__link,
+.link {
+  text-decoration: none;
+}
+
+.icon {
+  display: none;
+
+  width: 25px;
+  height: 25px;
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  @include TheDesign {
+    display: none;
+  }
+
+  @include SmallPhone {
+    display: block;
+  }
+
+  @include Mobile {
+    display: block;
+  }
+  @include Tablet {
+    display: block;
+  }
+  .menu--top {
+    margin-top: 10px;
+  }
+}

@@ -1,0 +1,376 @@
+.footer {
+  display: flex;
+  @include Mobile {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  @include SmallPhone {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  @include Tablet {
+    margin-top: 48px;
+    display: flex;
+    flex-direction: column;
+  }
+  @include Notebook {
+    display: flex;
+    flex-direction: column;
+  }
+
+  @include TheDesign {
+    display: flex;
+    flex-direction: column;
+  }
+  @include FullHD {
+    display: flex;
+    flex-direction: column;
+  }
+  @include LargeScreens {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.footer__copyright {
+  display: flex;
+  margin: 0 auto;
+  @include Mobile {
+    margin: 0;
+    display: block;
+    padding: 0 20px;
+  }
+  @include SmallPhone {
+    margin: 0;
+    display: block;
+    padding: 30px 80px;
+  }
+
+  @include Tablet {
+    margin: 0;
+    justify-content: space-between;
+    padding: 0 20px;
+  }
+
+  @include Notebook {
+    margin: 0;
+    padding: 0 40px;
+    justify-content: space-between;
+  }
+
+  @include TheDesign {
+    margin: 0;
+    padding: 0 220px;
+    justify-content: space-between;
+  }
+
+  @include FullHD {
+    margin: 0;
+    padding: 0 400px;
+    justify-content: space-between;
+  }
+
+  @include LargeScreens {
+    margin: 0;
+    padding: 0 720px;
+    justify-content: space-between;
+  }
+}
+
+.footer__container {
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+  padding-top: 126px;
+
+  @include Mobile {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0 20px;
+  }
+  @include SmallPhone {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    padding-top: 60px;
+    height: 940px;
+  }
+  @include Tablet {
+    padding: 0 20px;
+  }
+  @include Notebook {
+    padding: 120px 20px;
+    justify-content: space-between;
+  }
+  @include TheDesign {
+    margin: 0 auto;
+  }
+}
+
+.footer__left_text {
+  box-sizing: border-box;
+  padding-right: 184px;
+  @include Mobile {
+    width: 260px;
+  }
+  @include Tablet {
+    padding-right: 30px;
+  }
+  @include Notebook {
+    padding-right: 240px;
+  }
+  @include TheDesign {
+    padding-right: 205px;
+  }
+}
+
+.footer__title {
+  display: flex;
+}
+
+.footer__info {
+  margin-top: 34px;
+  width: 290px;
+  font-family: Halyard Text, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 145%;
+
+  color: $lightBlue;
+  @include Mobile {
+    width: 260px;
+  }
+}
+
+.footer__pages {
+  @include Mobile {
+    padding-top: 20px;
+  }
+  @include SmallPhone {
+    padding-top: 24px;
+  }
+}
+
+.footer__pages_title {
+  font-family: Halyard Display, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 125%;
+
+  color: $darkBlue;
+  width: 212px;
+  height: 28px;
+}
+
+.nav__footer {
+  font-family: Halyard Text, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 225%;
+
+  color: $lightBlue;
+  margin-top: 22px;
+}
+
+.nav__list_footer {
+  list-style: none;
+}
+
+.footer__resources {
+  @include Mobile {
+    padding-top: 30px;
+  }
+}
+
+.footer__resources_title {
+  font-family: Halyard Display, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 125%;
+
+  color: $darkBlue;
+}
+
+.socials__container {
+  display: flex;
+}
+
+.socials__image {
+  width: 16px;
+  height: 16px;
+  padding-right: 26px;
+  background: no-repeat;
+  margin-top: 32px;
+  cursor: pointer;
+  transition: all 0.5s;
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
+.facebook {
+  background-image: url(/images/footer/icon-facebook.svg);
+  width: 16px;
+  height: 16px;
+  &:hover {
+    filter: invert(80%) sepia(60%) saturate(3207%) hue-rotate(130deg)
+      brightness(95%) contrast(80%);
+  }
+}
+
+.instagram {
+  background-image: url(/images/footer/icon-instagram.svg);
+  &:hover {
+    filter: invert(80%) sepia(60%) saturate(3207%) hue-rotate(130deg)
+      brightness(95%) contrast(80%);
+  }
+}
+
+.twitter {
+  background-image: url(/images/footer/icon-twitter.svg);
+  &:hover {
+    filter: invert(80%) sepia(60%) saturate(3207%) hue-rotate(130deg)
+      brightness(95%) contrast(80%);
+  }
+}
+
+.dribbble {
+  background-image: url(/images/footer/icon-dribbble.svg);
+  &:hover {
+    filter: invert(80%) sepia(60%) saturate(3207%) hue-rotate(130deg)
+      brightness(95%) contrast(80%);
+  }
+}
+
+.envato {
+  background-image: url(/images/footer/icon-envato.svg);
+  &:hover {
+    filter: invert(80%) sepia(60%) saturate(3207%) hue-rotate(130deg)
+      brightness(95%) contrast(80%);
+  }
+}
+
+.footer__resources_links {
+  width: 217px;
+  height: 161px;
+  @include Mobile {
+    margin: 0;
+    height: 80px;
+  }
+  &:last-child {
+    margin-top: 0;
+  }
+}
+
+.footer__resources_link {
+  font-family: Halyard Text, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 225%;
+
+  color: $lightBlue;
+  margin-top: 28px;
+  @include Mobile {
+    margin-top: 10px;
+  }
+}
+
+.footer__resources_link2 {
+  font-family: Halyard Text, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 225%;
+
+  color: $lightBlue;
+}
+
+.copyright__container {
+  @include Mobile {
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  @include Tablet {
+    padding: 0 20px;
+    margin: 0 auto;
+    display: flex;
+  }
+
+  @include Notebook {
+    flex-direction: row;
+    margin: 0 auto;
+    display: flex;
+  }
+  @include TheDesign {
+    flex-direction: row;
+    margin: 0 auto;
+    display: flex;
+  }
+  @include FullHD {
+    flex-direction: row;
+    margin: 0 auto;
+    display: flex;
+  }
+  @include LargeScreens {
+    flex-direction: row;
+    margin: 0 auto;
+    display: flex;
+  }
+}
+
+.copyright__title {
+  font-family: Halyard Text, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 27px;
+
+  color: rgba(69, 88, 128, 0.5);
+}
+
+.copyright__links {
+  display: flex;
+  font-family: Halyard Text, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 27px;
+
+  text-align: right;
+
+  color: $lightBlue;
+  right: 0;
+  @include Mobile {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+  }
+  @include Tablet {
+    padding-right: 20px;
+  }
+
+  @include Notebook {
+    position: relative;
+  }
+}
+
+.copyright__link {
+  margin-left: 30px;
+  @include Mobile {
+    margin-left: 0;
+  }
+  @include SmallPhone {
+    margin-left: 0;
+    padding-right: 20px;
+  }
+}

@@ -1,0 +1,103 @@
+.trusted {
+  display: flex;
+  margin: 0 auto;
+  background: $white;
+  @include Mobile {
+    width: 280px;
+  }
+}
+
+.trusted__logos {
+  display: flex;
+  margin: 0 auto;
+  align-items: center;
+  margin-top: 48px;
+  justify-content: center;
+  @include Mobile {
+    display: flex;
+    flex-direction: column;
+    width: 220px;
+    margin: 48px auto;
+  }
+  @include SmallPhone {
+    display: flex;
+    width: 220px;
+    flex-direction: column;
+    margin: 48px auto;
+  }
+  @include Tablet {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+.logos {
+  padding-right: 72px;
+  transition: all 0.5s ease-in-out;
+  &:hover {
+    transform: scale(1.3);
+  }
+  @include Mobile {
+    padding-right: 0;
+    padding-bottom: 25px;
+  }
+  @include SmallPhone {
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 25px;
+    padding-right: 0;
+  }
+  @include Tablet {
+    padding-bottom: 20px;
+  }
+}
+
+.trusted__container {
+  display: flex;
+  flex-direction: column;
+  margin: 90px auto 0;
+  @include Mobile {
+    padding: 0 20px;
+  }
+  @include Tablet {
+    width: 1024px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 150px auto 0;
+  }
+  @include Notebook {
+    margin: 200px auto 0;
+  }
+  @include TheDesign {
+    margin: 200px auto 0;
+  }
+  @include FullHD {
+    margin: 200px auto 0;
+  }
+  @include LargeScreens {
+    margin: 200px auto 0;
+  }
+}
+
+.trusted__title {
+  font-family: Halyard Text, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 27px;
+  /* identical to box height, or 169% */
+
+  text-align: center;
+
+  color: rgba(69, 88, 128, 0.5);
+  @include Mobile {
+    width: 220px;
+  }
+}
+
+.trusted__links {
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}

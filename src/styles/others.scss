@@ -1,0 +1,347 @@
+.others {
+  display: flex;
+  margin: 0 auto;
+  @include Mobile {
+    width: 280px;
+  }
+  @include SmallPhone {
+    margin: 0 auto;
+  }
+
+  @include Tablet {
+    display: flex;
+    margin: 0;
+  }
+  &__title {
+    font-family: Halyard Display, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 60px;
+
+    text-align: center;
+
+    color: $darkBlue;
+  }
+}
+
+.others__container {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding-top: 200px;
+  justify-content: center;
+  @include Mobile {
+    width: 270px;
+    padding-top: 80px;
+  }
+  @include SmallPhone {
+    width: 100%;
+    padding-top: 130px;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+  }
+  @include Tablet {
+    box-sizing: border-box;
+    width: 1024px;
+  }
+  @include TheDesign {
+    width: 1600px;
+  }
+}
+
+.others__cards {
+  display: flex;
+  margin: 0 auto;
+  padding-top: 56px;
+  @include Mobile {
+    margin: 0;
+    width: 270px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0;
+  }
+  @include SmallPhone {
+    margin: 0;
+    width: 390px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.others__card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 372px;
+  height: 467px;
+
+  border: 1px solid rgba(69, 88, 128, 0.2);
+  border-radius: 4px;
+  margin: 0 14px;
+  transition: all 0.5s;
+  &:hover {
+    transform: scale(1.05);
+  }
+  @include Mobile {
+    width: 270px;
+    margin: 14px 0;
+  }
+  @include SmallPhone {
+    margin: 20px 0;
+  }
+  @include Tablet {
+    width: 300px;
+  }
+}
+
+.card__info {
+  font-family: Halyard Text, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 180%;
+  box-sizing: border-box;
+
+  /* or 32px */
+
+  color: $lightBlue;
+  padding: 38px 44px 0;
+  height: 250px;
+  @include Mobile {
+    padding: 30px 20px;
+    width: 250px;
+    height: 250px;
+  }
+  @include Tablet {
+    padding: 28px 26px 0;
+    height: 250px;
+  }
+  @include Notebook {
+    padding: 28px 26px 0;
+    width: 300px;
+    height: 248px;
+  }
+}
+
+.card__photo {
+  width: 64px;
+  height: 64px;
+  background-image: url(/images/others/image5.png);
+  margin-top: 39px;
+  @include Mobile {
+    margin-top: 60px;
+  }
+}
+
+.card__photo2 {
+  width: 64px;
+  height: 64px;
+  background-image: url(/images/others/image6.png);
+  margin-top: 39px;
+}
+
+.card__photo3 {
+  width: 64px;
+  height: 64px;
+  background-image: url(/images/others/image7.png);
+  margin-top: 39px;
+}
+
+.card__name {
+  font-family: Halyard Display, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 125%;
+
+  /* identical to box height, or 27px */
+  text-align: center;
+
+  color: $darkBlue;
+  margin-top: 23px;
+}
+
+.card__job {
+  font-family: Halyard Text, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 180%;
+
+  /* or 32px */
+  text-align: center;
+
+  color: $lightBlue;
+}
+
+.buy {
+  background: #3751ff;
+  height: 323px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  margin-top: 150px;
+  @include Mobile {
+    margin-top: 10px;
+  }
+  @include SmallPhone {
+    margin-top: 20px;
+    width: 640px;
+  }
+  @include Tablet {
+    width: 1024px;
+    margin-top: 80px;
+  }
+  @include Notebook {
+    width: 1280px;
+  }
+  @include TheDesign {
+    width: 1600px;
+  }
+  @include FullHD {
+    width: 1920px;
+  }
+  @include LargeScreens {
+    width: 2560px;
+  }
+}
+
+.buy__container {
+  display: flex;
+  margin: 0 auto;
+  overflow: hidden;
+  align-items: center;
+
+  @include Mobile {
+    display: flex;
+    flex-direction: column;
+  }
+  @include SmallPhone {
+    display: flex;
+    flex-direction: column;
+  }
+  @include Tablet {
+    margin: 0;
+  }
+}
+
+.buy__right_side {
+  padding-left: 480px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+
+  @include Mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 24px 20px;
+  }
+  @include SmallPhone {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 24px 20px;
+  }
+  @include Notebook {
+    padding-left: 510px;
+  }
+  @include Tablet {
+    padding-left: 300px;
+  }
+}
+
+.buy__button_container {
+  display: flex;
+  align-items: center;
+  background: $white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  border-radius: 100px;
+  width: 242px;
+  height: 56px;
+  transition: all 0.3s;
+
+  &:hover {
+    transform: scale(1.02);
+    box-shadow: 5px 9px 18px #2060f6;
+  }
+}
+
+.buy__link {
+  display: flex;
+  text-decoration: none;
+  padding-left: 20px;
+  @include Mobile {
+    padding-left: 0;
+  }
+  @include SmallPhone {
+    padding-left: 30px;
+  }
+}
+
+.buy__button_image {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 28px;
+}
+
+.buy__button_phrase {
+  margin-left: 15px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 110%;
+
+  /* or 20px */
+  text-align: center;
+
+  color: $lightBlue;
+}
+
+.buy__phrase {
+  font-family: Halyard Display, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 60px;
+
+  /* or 125% */
+
+  color: $white;
+  @include Mobile {
+    text-align: center;
+    font-size: 32px;
+    padding: 0 10px;
+  }
+}
+
+.buy__button_info {
+  margin-top: 19px;
+  font-family: Halyard Text, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 125%;
+  text-align: right;
+
+  color: #dfe0eb;
+  @include Mobile {
+    width: 270px;
+    text-align: center;
+  }
+}
+
+.buy__phrase_link {
+  color: yellow;
+  text-decoration: none;
+}
