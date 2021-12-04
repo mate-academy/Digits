@@ -1,0 +1,10 @@
+.title {
+  @include font(48, 500);
+  color: $title-color;
+  text-align: center;
+  line-height: 125%;
+
+  @include on-phone() {
+    font-size: 40px;
+  }
+}

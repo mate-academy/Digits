@@ -1,0 +1,50 @@
+.footer {
+  padding: 50px 0 95px;
+
+  @include on-phone() {
+    padding: 40px 0 55px;
+  }
+
+  &__content {
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @include on-phone() {
+      flex-direction: column;
+    }
+  }
+
+  &__copy {
+    opacity: 0.5;
+
+    @include on-phone() {
+      margin: 0 0 20px;
+    }
+  }
+
+  &__terms {
+    &-list {
+      list-style: none;
+      display: flex;
+      align-items: center;
+
+      &-item:not(:last-child) {
+        margin: 0 25px 0 0;
+      }
+    }
+
+    &-link {
+      text-decoration: none;
+      color: inherit;
+      opacity: 0.5;
+      transition: all 0.4s linear;
+
+      &:hover {
+        opacity: 1;
+        color: $title-color;
+      }
+    }
+  }
+}

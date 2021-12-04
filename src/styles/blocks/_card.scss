@@ -1,0 +1,40 @@
+.card {
+  width: 372px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 38px 43px 32px;
+  border: 1px solid #{$page-color}33;
+  border-radius: 4px;
+
+  @include on-tablet() {
+    width: 500px;
+  }
+
+  @include on-phone() {
+    width: 90%;
+  }
+
+  @include hover(box-shadow, #{0 0 6px rgba(0, 0, 0, 0.4)});
+
+  &__text {
+    margin: 0 0 39px;
+    flex-grow: 1;
+  }
+
+  &__user-photo {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    border: 2px solid transparent;
+    margin: 0 0 23px;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: inherit;
+    line-height: 180%;
+
+    @include hover(color, $button-color);
+  }
+}

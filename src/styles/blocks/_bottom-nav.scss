@@ -1,0 +1,49 @@
+.bottom-nav {
+  padding: 120px 0 0;
+
+  @include on-tablet() {
+    padding: 90px 0 0;
+  }
+
+  @include on-phone() {
+    padding: 60px 0 0;
+  }
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 0 95px;
+    border-bottom: 1px solid #8792a114;
+
+    @include on-tablet() {
+      flex-wrap: wrap;
+      padding: 0 0 75px;
+    }
+
+    @include on-phone() {
+      padding: 0 0 50px;
+    }
+  }
+
+  &__info {
+    max-width: 310px;
+
+    @include on-tablet() {
+      max-width: none;
+      flex: 1 0 45%;
+      margin: 0 20px 30px 0;
+    }
+
+    @include on-phone() {
+      flex: 1 0 100%;
+      margin: 0 0 35px;
+    }
+  }
+
+  &__logo {
+    width: 61px;
+    height: 24px;
+    display: inline-block;
+    margin: 0 0 31px;
+  }
+}

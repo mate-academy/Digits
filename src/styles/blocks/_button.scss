@@ -1,0 +1,47 @@
+.button {
+  display: inline-block;
+  padding: 17px 18px;
+  border-radius: 100px;
+  background-color: $button-color;
+  text-decoration: none;
+  @include font(16, 400);
+  color: #fff;
+  line-height: 100%;
+
+  &--size_small {
+    padding: 6px 16px;
+  }
+
+  @include hover(background-color, $title-color);
+
+  &--bg_white {
+    color: $title-color;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    transition: all 0.4s;
+
+    &:hover {
+      box-shadow: none;
+      color: #fff;
+      background-color: $title-color;
+    }
+  }
+
+  @include on-tablet() {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  @include on-phone() {
+    width: 90%;
+  }
+
+  &--burger {
+    font-size: 30px;
+    color: $page-color;
+    width: max-content;
+  }
+
+}

@@ -1,0 +1,126 @@
+.design-mits {
+  &__top {
+    padding: 144px 0 483px;
+    background: linear-gradient(180deg, #f2f9ff1f 0%, #f2f9ff 100%);
+    position: relative;
+
+    @include on-tablet() {
+      padding: 120px 0 375px;
+    }
+
+    @include on-phone() {
+      padding: 100px 0;
+    }
+  }
+
+  &__content {
+    @include content();
+  }
+
+  &__title {
+    font-size: 56px;
+    line-height: 105%;
+    margin: 0 0 27px;
+
+    @include on-phone() {
+      font-size: 48px;
+    }
+  }
+
+  &__text {
+    line-height: 150%;
+    margin: 0 0 29px;
+
+    &--bottom {
+      font-size: 16px;
+      line-height: 169%;
+      opacity: 0.5;
+      margin-bottom: 49px;
+    }
+
+    @include on-phone() {
+      text-align: center;
+    }
+  }
+
+  &__buttons {
+    display: flex;
+    align-items: center;
+
+    @include on-tablet() {
+      width: 100%;
+      flex-direction: column;
+    }
+  }
+
+  &__button {
+    @include on-tablet() {
+      margin: 0 0 25px;
+    }
+
+    @include on-phone() {
+      width: 100%;
+    }
+  }
+
+  &__button:not(:last-child) {
+    margin: 0 22.5px 0 0;
+
+    @include on-tablet() {
+      margin: 0 0 30px;
+    }
+  }
+
+  &__image {
+    width: 940px;
+    height: 576px;
+    position: absolute;
+    bottom: -118px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    background-image: url(../images/desing-mits/Graphic.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    @include on-tablet() {
+      bottom: -70px;
+      width: 750px;
+      height: 460px;
+    }
+
+    @include on-phone() {
+      display: none;
+    }
+  }
+
+  &__bottom {
+    padding: 186px 0 159px;
+
+    @include on-phone() {
+      padding: 20px 0 90px;
+    }
+  }
+
+  &__lables {
+    width: 100%;
+    margin: 0 -5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @include on-tablet() {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+
+  &__lable {
+    margin: 0 5px;
+
+    @include on-tablet {
+      margin: 0 5px 20px;
+    }
+  }
+}

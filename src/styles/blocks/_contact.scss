@@ -1,0 +1,46 @@
+.contact {
+  display: flex;
+  align-items: center;
+  list-style: none;
+
+  &__button {
+    width: max-content;
+  }
+
+  &__link {
+    @include font(16, 400);
+    color: $title-color;
+    text-decoration: none;
+    margin: 0 34px 0 0;
+    display: inline-block;
+
+    &--burger {
+      font-size: 30px;
+      text-transform: uppercase;
+      color: $page-color;
+      margin-bottom: 25px;
+
+      @include hover(color, $title-color);
+    }
+
+    @include hover(color, $button-color);
+
+    @include on-notebook() {
+      margin: 0 25px 0 0;
+    }
+
+    @include on-tablet() {
+      margin: 0 0 15px;
+    }
+  }
+
+  @include on-tablet() {
+    display: none;
+  }
+
+  &--burger {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
