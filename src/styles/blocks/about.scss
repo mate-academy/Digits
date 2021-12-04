@@ -1,0 +1,349 @@
+.about {
+margin: 0 0 24px;
+
+@include onTablet {
+  margin: 0 0 74px;
+}
+
+  &__title {
+    margin: 0 auto 86px;
+    
+    font-family: 'Halyard Display';
+    font-style: normal;
+    font-weight: 500;
+    
+    text-align: center;
+    
+    color: #1E266D;
+    
+    font-size: 30px;
+    line-height: 36px;
+
+    @include onTablet-1024 {
+      margin: 0 auto 126px;
+      width: 440px;
+      font-size: 48px;
+      line-height: 60px;
+    }
+  }
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    height: 678px;
+
+
+    &--pictures {
+      display: none;
+
+      @include onTablet {
+        display: flex;
+        position: relative;
+        height: 678px;
+        width: 568px;
+      }
+    }
+
+    &--items {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      width: 100%;
+
+
+      @include onTablet-1024 {
+        width: 400px;
+      }
+    }
+    
+    &--item {
+      position: relative;
+      display: flex;
+
+      @include onTablet-1024 {
+        flex-direction: row;
+      }
+      gap: 26px;
+
+      @include onTablet-1024 {
+        gap: 32px;
+      }
+
+      flex-grow: 1;
+      justify-content: space-between;
+      height: 404px;
+
+      &::after {
+        position: absolute;
+        content: '';
+        
+        width: 100%;
+        left: 0;
+
+        @include onTablet-1024 {
+          left: 0;
+          width: 100%;
+        }
+
+        bottom: 46px;
+        height: 1px;
+        background-color: rgba(69, 88, 128, 0.2);
+      }
+      
+      &--logo {
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 58px;
+        width: 58px;
+        border-radius: 4px;
+        background-repeat: no-repeat;
+        background-position: center;
+
+        @include onTablet {
+          position: relative;
+          height: 58px;
+          width: 58px;
+          border-radius: 4px;
+          background-repeat: no-repeat;
+          background-position: center;
+        }
+        
+        
+        &--1 {
+          background-color: #B5F2E3;
+          background-image: url(../images/about/figma-icon.png);
+        }
+
+        &--2 {
+          background-color: #FACFCA;
+          background-image: url(../images/about/content-icon.png);
+        }
+
+        &--3 {
+          background-color: #F8AEC3;
+          background-image: url(../images/about/bolt-icon.png);
+        }
+      }
+      
+      &--text {
+        &--group {
+          display: flex;
+          flex-direction: column;
+          gap: 32px;
+        }
+        
+        &--title {
+          margin: 0 0 28px;
+          
+          @include onTablet {
+            margin: 0;
+          }
+          
+          font-family: 'Halyard Display';
+          font-style: normal;
+          font-weight: 500;
+          font-size: 22px;
+          line-height: 125%;
+          
+          color: #1E266D;
+        }
+        
+        &--description {
+          margin: 0;
+
+            width: 268px;
+            
+            font-family: 'Halyard Text';
+            font-style: normal;
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 27px;
+            
+            color: #455880;
+          }
+        }
+    }
+  }
+
+  &__shapes {
+    position: relative;
+    width: 570px;
+
+    &--rectangle {
+      position: absolute;
+      top: 146px;
+      left: 126px;
+
+      @include onTablet-1024 {
+        top: 220px;
+        left: 506px;
+      }
+  
+      height: 64px;
+      width: 64px;
+      border-radius: 4px;
+      background-color: rgba(181, 242, 227, 1);
+    }
+
+    &--circle {
+      position: absolute;
+      top: 284px;
+      left: -48px;
+
+      @include onTablet-1024 {
+        top: 398px;
+        left: 0;
+      }
+  
+      height: 102px;
+      width: 102px;
+      border-radius: 50%;
+      background-color: rgba(250, 207, 202, 1);
+    }
+
+    &--triangle {
+      position: absolute;
+      bottom: 20px;
+      left: 126px;
+
+  @include onTablet-1024 {
+    left: unset;
+    right: 100px;
+    bottom: 0;
+  }
+  
+      height: 70px;
+      width: 70px;
+      background-image: url(../images/about/triangle.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+  }
+
+  &__pictures {
+    
+    &--block {
+      border-radius: 4px;
+      position: absolute;
+
+      &--1 {
+        top: 0;
+        left: 0;
+        
+        height: 180px;
+        width: 154px;
+
+        @include onTablet-1024 {
+          top: 0;
+          left: 216px;
+    
+          height: 358px;
+          width: 332px;
+        }
+  
+      background-color: #999FE3;
+      }
+
+      &--2 {
+        top: 226px;
+        left: 0;
+
+        height: 180px;
+        width: 154px;
+
+        @include onTablet-1024 {
+          left: 32px;
+          top: 260px;
+          
+          height: 308px;
+          width: 266px;
+        }
+
+        background-color: #fed892;
+      }
+
+      &--3 {
+        top: 452px;
+        left: 0;
+
+        height: 180px;
+        width: 154px;
+
+        @include onTablet-1024 {
+          height: 200px;
+          width: 200px;
+
+          left: unset;
+          right: 132px;
+          bottom: 32px;
+        }
+
+        background-color: #F47B9E;
+      }
+    }
+
+    &--person {
+      position: absolute;
+      background-repeat: no-repeat;
+      background-size: contain;
+
+      @include onTablet-1024 {
+        background-size: unset;
+      }
+
+      &--1 {
+        background-image: url(../images/about/image4.png);
+        background-position: bottom;
+        bottom: 0;
+        left: -16px;
+
+        height: 280px;
+        width: 200px;
+
+        @include onTablet-1024 {
+          bottom: 0;
+          left: -18px;
+  
+          height: 612px;
+          width: 408px;
+        }
+      }
+      
+      &--2 {
+        background-image: url(../images/about/image3.png);
+        bottom: 0;
+
+        height: 216px;
+        width: 360px;
+
+        @include onTablet-1024 {
+          left: 0;
+          
+          height: 100%;
+          width: 100%;
+        }
+      }
+
+      &--3 {
+        background-image: url(../images/about/image2.png);
+        background-position: bottom;
+        transform: scaleX(-1);
+
+
+        bottom: 0;
+        height: 220px;
+        width: 100%;
+
+        @include onTablet-1024 {
+
+          background-position: right;
+          height: 256px;
+          width: 100%;
+          transform: scaleX(1);
+        }
+      }
+    }
+  }
+}

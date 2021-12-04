@@ -1,0 +1,100 @@
+.nav-page {
+  position: absolute;
+  transition: transform .7s;
+
+  transform: translateX(-100%);
+  
+  &:target {
+    transform: translateX(0);
+  }
+
+  z-index: 1;
+  top: 0; 
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100vh;
+  background-color: #fff;
+  
+  &__top-content {
+    margin: 0 0 32px;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    height: 60px;
+    width: 100%;
+  }
+
+  &__logo {
+    text-decoration: none;
+    font-family: 'Halyard Display';
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 100%;
+
+    color: $colorBlue;
+
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
+
+    &::after {
+      content: ":";
+      font-family: serif;
+      color: #FF2E6A;
+    }
+  }
+
+  &__cross {
+    height: 18px;
+    width: 18px;
+    background-image: url(../images/nav/menu-cross.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &__list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.3s;
+  }
+
+  &__item {
+    margin: 0 0 16px;
+  }
+
+  &__link {
+    display: block;
+    position: relative;
+    text-decoration: none;
+    width: max-content;
+
+    font-family: 'Halyard Display';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 125%;
+
+    color: $colorBlue;
+
+    &::after {
+      position: absolute;
+      top: calc(100% + 4px);
+      content: "";
+      display: block;
+      height: 1px;
+      width: 100%;
+      background-color: $colorBlue;
+
+      transform: scaleX(0);
+      transform-origin: right bottom;
+      transition: transform .3s cubic-bezier(0.165, 0.84, 0.44, 1);
+    }
+
+    &:hover::after {
+      transform: scaleX(1);
+      transform-origin: left bottom;
+    }
+  }
+}

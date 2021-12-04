@@ -1,0 +1,230 @@
+.footer {
+  &__content {
+    margin: 0 0 120px;
+
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+
+    @include onTablet-1024 {
+      flex-direction: row;
+    }
+
+    &--left-block {
+      display: flex;
+      margin: 0 0 56px;
+    }
+
+    &--right-block {
+      display: flex;
+      justify-content: space-between;
+
+      flex-direction: column;
+      align-items: center;
+
+      @include onTablet {
+        flex-direction: row;
+        align-items: start;
+      }
+      
+      @include onTablet-1024 {
+        width: 50%;
+      }
+
+       @include onDesktop {
+        justify-content: space-around;
+        width: 100%;
+      }
+    }
+  }
+
+  &__description {
+    display: flex;
+    flex-direction: column;
+    width: 280px;
+
+    text-align: center;
+
+    @include onTablet {
+      text-align: left;
+    }
+
+    @include onDesktop {
+      width: 472px;
+    }
+  }
+
+  &__logo {
+    margin: 0 0 32px;
+
+    text-decoration: none;
+    font-family: 'Halyard Display';
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 100%;
+
+    color: $colorBlue;
+
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
+
+    &::after {
+      content: ":";
+      font-family: serif;
+      color: #FF2E6A;
+    }
+  }
+
+  &__text {
+    font-family: 'Halyard Text';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 26px;
+
+    color: #455880;
+
+    @include onTablet {
+      font-size: 18px;
+    }
+
+    @include onDesktop {
+      width: 290px;
+    }
+  }
+  
+  &__block {
+    margin-bottom: 16px;
+    &:last-child {
+      margin-bottom: 0;
+
+      @include onTablet {
+        margin-bottom: 0;
+      }
+    }
+
+    &--title {
+      margin: 0 0 32px;
+      font-family: 'Halyard Display';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 22px;
+      line-height: 125%;
+      
+      color: #1E266D;
+      
+      text-align: center;
+      
+      @include onTablet {
+        text-align: left;
+      }
+    }
+    
+    &--list {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+
+      @include onTablet {
+        text-align: left;
+      }
+    }
+
+    &--item {
+      margin: 0 0 14px;
+    }
+
+    &--link {
+      position: relative;
+      text-decoration: none;
+
+      font-family: 'Halyard Display';
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 26px;
+  
+      color: #455880;
+
+      transition: color .3s;
+      
+      &:hover {
+        color: $colorButton;
+      }
+
+      &::after {
+        position: absolute;
+        top: calc(100% + 4px);
+        content: "";
+        display: block;
+        height: 1px;
+        width: 100%;
+        background-color: $colorBlue;
+
+        transform: scaleX(0);
+        transform-origin: right bottom;
+        transition: transform .3s cubic-bezier(0.165, 0.84, 0.44, 1);
+      }
+
+      &:hover::after {
+        transform: scaleX(1);
+        transform-origin: left bottom;
+      }
+    }
+
+    &--social {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      height: 24px;
+      margin-bottom: 16px;
+    }
+  }
+
+  &__bottom {
+    margin: 0 0 108px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    @include onTablet {
+      flex-direction: row;
+    }
+
+    &--copyright {
+      font-family: 'Halyard Display';
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 27px;
+      
+      color: rgba(69, 88, 128, 0.5);
+    }
+
+    &--legal {
+      display: flex;
+      gap: 20px;
+
+      font-family: 'Halyard Display';
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 27px;
+
+      text-align: right;
+
+      color: #455880;
+
+      &--link {
+        text-decoration: none;
+        color: #455880;
+        transition: color .3s;
+
+        &:hover {
+          color: $colorButton;
+        }
+      }
+    }
+  }
+}

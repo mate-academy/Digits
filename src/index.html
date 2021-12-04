@@ -1,13 +1,643 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
+<html lang="en" class="page">
+  <head class="page__head">
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=r1.0">
     <title>Title</title>
     <link rel="stylesheet" href="./styles/main.scss">
   </head>
-  <body>
-    <h1>Hello Mate Academy</h1>
+  <body class="page__body">
+    <header class="header">
+      <div class="container">
+        <div class="top-menu">
+          <div class="top-menu__buttons">
+            <a href="/" class="top-menu__logo">digits</a>
+            <a href="#nav-page" class="top-menu__nav-opener"></a>
+          </div>
+          <nav class="top-menu__content">
+            <ul class="top-menu__list">
+              <li class="top-menu__item">
+                <a href="/" class="top-menu__link">
+                  Homepages
+                </a>
+              </li>
+              <li class="top-menu__item">
+                <a href="#portfolio" class="top-menu__link">
+                  Products
+                </a>
+              </li>
+              <li class="top-menu__item">
+                <a href="#about" class="top-menu__link top-menu__link--is-active">
+                  Company
+                </a>
+              </li>
+              <li class="top-menu__item">
+                <a href="#cta" class="top-menu__link">
+                  Pricing
+                </a>
+              </li>
+              <li class="top-menu__item">
+                <a href="#testimonials" class="top-menu__link">
+                  Blog
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <div class="top-menu__contacts">
+            <a href="tel: +00123456789" class="top-menu__phone-number">
+              +00 123 456 789
+            </a>
+            <a href="#cta" class="button">Contact us</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <nav class="nav-page" id="nav-page">
+      <div class="container">
+        <div class="nav-page__top-content">
+          <a href="/" class="nav-page__logo">digits</a>
+          <a href="#" class="nav-page__cross"></a>
+        </div>
+        <ul class="nav-page__list">
+          <li class="nav-page__item">
+            <a href="/" class="nav-page__link">
+              Homepages
+            </a>
+          </li>
+          <li class="nav-page__item">
+            <a href="#portfolio" class="nav-page__link">
+              Products
+            </a>
+          </li>
+          <li class="nav-page__item">
+            <a href="#about" class="nav-page__link">
+              Company
+            </a>
+          </li>
+          <li class="nav-page__item">
+            <a href="#cta" class="nav-page__link">
+              Pricing
+            </a>
+          </li>
+          <li class="nav-page__item">
+            <a href="#testimonials" class="nav-page__link">
+              Blog
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <main class="page__main">
+
+      <div class="page__section design">
+        <div class="design__content">
+          <div class="design__content--left-block">
+            <h2 class="design__title">
+              Good design meets
+              <br>
+              great user experience
+            </h2>
+            <p class="design__description">
+              For everyone, from beginners to experts
+            </p>
+            <div class="design__buttons">
+              <a
+                href="#cta"
+                class="
+                  design__button
+                  design__button--buy
+                ">
+                <span>
+                  Buy digits
+                </span>
+              </a>
+              <a 
+                href="#portfolio"
+                class="
+                design__button
+                design__button--features
+              ">
+                <span>
+                  See the features
+                </span>
+              </a>
+            </div>
+          </div>
+
+          <div class="design__content--right-block">
+            <div class="design__graphic-container">
+              <div class="graphic">
+                <div class="graphic__triangle"></div>
+                <div class="graphic__circle--small"></div>
+                <div class="graphic__avatar"></div>
+                <div class="graphic__rectangle"></div>
+                <div class="graphic__circle--big"></div>
+                <div class="graphic__browser">
+                  <div class="graphic__browser--bar">
+                    <div class="graphic__browser--bar--circle"></div>
+                    <div class="graphic__browser--bar--circle"></div>
+                    <div class="graphic__browser--bar--circle"></div>
+                  </div>
+                  <div class="graphic__browser--body">
+                    <div class="graphic__browser--content">
+                      <div class="graphic__browser--chat">
+                        <div class="graphic__browser--chat--header">
+                          <div class="graphic__browser--chat--circle-big"></div>
+                          <div class="graphic__browser--chat--header--text">
+                            <div class="graphic__browser--chat--title"></div>
+                            <div class="graphic__browser--chat--subtitle"></div>
+                          </div>
+                        </div>
+                        <div class="graphic__browser--chat--chat-block--group">
+                          <div
+                            class="
+                            graphic__browser--chat--chat-block--content
+                            graphic__browser--chat--chat-block--content--left
+                            ">
+                            <div
+                              class="
+                              graphic__browser--chat--chat-bubble
+                              graphic__browser--chat--chat-bubble--left
+                              ">
+                              <div
+                                class="
+                                  graphic__browser--chat--chat-bubble--title
+                                  graphic__browser--chat--chat-bubble--title--left
+                                ">
+                              </div>
+                              <div
+                                class="
+                                  graphic__browser--chat--chat-bubble--subtitle
+                                  graphic__browser--chat--chat-bubble--subtitle--left
+                                ">
+                              </div>
+                            </div>
+                            <div
+                              class="
+                                graphic__browser--chat--chat-circle--small
+                                graphic__browser--chat--chat-circle--small--left
+                              ">
+                            </div>
+                          </div>
+                          <div
+                            class="
+                              graphic__browser--chat--chat-block--content
+                              graphic__browser--chat--chat-block--content--right
+                            ">
+                            <div
+                              class="
+                                graphic__browser--chat--chat-bubble
+                                graphic__browser--chat--chat-bubble--right
+                              ">
+                              <div
+                                class="
+                                  graphic__browser--chat--chat-bubble--title
+                                  graphic__browser--chat--chat-bubble--title--right
+                                ">
+                                </div>
+                                <div
+                                  class="
+                                    graphic__browser--chat--chat-bubble--subtitle
+                                    graphic__browser--chat--chat-bubble--subtitle--right
+                                  ">
+                                </div>
+                            </div>
+                            <div
+                              class="
+                                graphic__browser--chat--chat-circle--small
+                                graphic__browser--chat--chat-circle--small--right
+                              ">
+                            </div>
+                          </div>
+                        </div>
+                        <div class="graphic__browser--chat--chat-input--group">
+                          <div class="graphic__browser--chat--chat-input--group--smile-pic">
+                          </div>
+                          <div class="graphic__browser--chat--chat-input--group--cursor-pic">
+                          </div>
+                          <div class="graphic__browser--chat--chat-input--group--send-pic">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="graphic__browser--person"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="page__section trusted">
+        <div class="container">
+          <p class="trusted__title">
+            Trusted by forward-thinking software teams around the world
+          </p>
+          <div class="trusted__logos-container">
+            <a href="https://www.netflix.com/ua-en/" target="_blank" class="trusted__logo trusted__logo--netflix"></a>
+            <a href="https://drawkit.com/" target="_blank" class="trusted__logo trusted__logo--drawkit"></a>
+            <a href="https://www.figma.com/" target="_blank" class="trusted__logo trusted__logo--figma"></a>
+            <a href="https://www.cinemax.com/" target="_blank" class="trusted__logo trusted__logo--cinemax"></a>
+            <a href="https://stripe.com/" target="_blank" class="trusted__logo trusted__logo--stripe"></a>
+            <a href="https://www.google.com/" target="_blank" class="trusted__logo trusted__logo--google"></a>
+            <a href="https://www.disney.com/" target="_blank" class="trusted__logo trusted__logo--disney"></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="page__section about" id="about">
+        <div class="container">
+          <h2 class="about__title">
+            Whatever work you do,
+            we're able to help
+          </h2>
+          <div class="about__content">
+            <div class="about__content--pictures">
+                <div class="about__shapes--rectangle"></div>
+                <div class="about__shapes--circle"></div>
+                <div class="about__shapes--triangle"></div>
+                <div class="about__pictures--block about__pictures--block--1">
+                  <div class="about__pictures--person about__pictures--person--1"></div>
+                </div>
+                <div class="about__pictures--block about__pictures--block--2">
+                  <div class="about__pictures--person about__pictures--person--2"></div>
+                </div>
+                <div class="about__pictures--block about__pictures--block--3">
+                  <div class="about__pictures--person about__pictures--person--3"></div>
+                </div>
+            </div>
+            <div class="about__content--items">
+              <div class="about__content--item">
+                <div class="about__content--item--logo about__content--item--logo--1"></div>
+                <div class="about__content--item--text--group">
+                  <h2 class="about__content--item--text--title">
+                    Design and Assets
+                  </h2>
+                  <p class="about__content--item--text--description">
+                    Make your brand stand out with pixel-perfect design crafted to perfection.
+                  </p>
+                </div>
+              </div>
+              <div class="about__content--item">
+                <div class="about__content--item--logo about__content--item--logo--2"></div>
+                <div class="about__content--item--text--group">
+                  <h2 class="about__content--item--text--title">
+                    Easy Content
+                  </h2>
+                  <p class="about__content--item--text--description">
+                    Import your demos or build pages visually. Bonus: All images and illustrations included!
+                  </p>
+                </div>
+              </div>
+              <div class="about__content--item">
+                <div class="about__content--item--logo about__content--item--logo--3"></div>
+                <div class="about__content--item--text--group">
+                  <h2 class="about__content--item--text--title">
+                    Fast and Reliable
+                  </h2>
+                  <p class="about__content--item--text--description">
+                    No heavy-weight plugins. No builders. No unneccesary file loading. Pure WordPress.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="page__section portfolio" id="portfolio">
+        <div class="portfolio__content--left-block">
+          <h2 class="portfolio__title">
+            Simplicity meets innovative design
+          </h2>
+          <p class="portfolio__subtitle">
+            It's really easy to start using Digits.
+            <br>
+            Install the theme, choose a demo and
+            <br>
+            start designing the future of your business!
+          </p>
+          <a href="" class="portfolio__button button">
+            Buy Digits
+          </a>
+        </div>
+        <div class="portfolio__content--right-block">
+          <div class="portfolio__content">
+            <div class="portfolio__content--item portfolio__content--item--1">
+              <img
+                src="images/portfolio/browser-1-1.png"
+                alt=""
+                class="
+                  portfolio__content--image
+                  portfolio__content--image--1-1
+                "
+              >
+              <img
+                src="images/portfolio/browser-1-2.png"
+                alt=""
+                class="
+                  portfolio__content--image
+                  portfolio__content--image--1-2
+                "
+              >
+              <img
+                src="images/portfolio/browser-1-3.png"
+                alt=""
+                class="
+                  portfolio__content--image
+                "
+              >
+            </div>
+            <div class="portfolio__content--item portfolio__content--item--2">
+              <img
+                src="images/portfolio/browser-2-1.png"
+                alt=""
+                class="
+                  portfolio__content--image
+                "
+              >
+              <img
+                src="images/portfolio/browser-2-2.png"
+                alt=""
+                class="
+                  portfolio__content--image
+                "
+              >
+            </div>
+            <div class="portfolio__content--item portfolio__content--item--3">
+              <img
+                src="images/portfolio/browser-3-1.png"
+                alt=""
+                class="
+                  portfolio__content--image
+                "
+              >
+              <img
+                src="images/portfolio/browser-3-2.png"
+                alt=""
+                class="
+                  portfolio__content--image
+                "
+              >
+            </div>
+            <div class="portfolio__content--item portfolio__content--item--4">
+              <img
+                src="images/portfolio/browser-4-1.png"
+                alt=""
+                class="
+                  portfolio__content--image
+                "
+              >
+              <img
+                src="images/portfolio/browser-4-2.png"
+                alt=""
+                class="
+                  portfolio__content--image
+                "
+              >
+            </div>
+            <div class="portfolio__content--item portfolio__content--item--5">
+              <img
+                src="images/portfolio/browser-5-1.png"
+                alt=""
+                class="
+                  portfolio__content--image
+                "
+              >
+              <img
+                src="images/portfolio/browser-5-2.png"
+                alt=""
+                class="
+                  portfolio__content--image
+                "
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="page__section testimonials" id="testimonials">
+        <div class="container">
+            <h2 class="testimonials__title">
+              What others are saying?
+            </h2>
+
+            <div class="testimonials__content">
+              <div class="testimonial">
+                <p class="testimonial__text">
+                  Completely beautiful website and amazing support! This is my second website from this author and I love both of the sites so much and she has helped me so well when I needed it!
+                </p>
+                <div class="testimonial__photo-container">
+                  <img
+                    src="./images/testimonials/Boris_business2-1.jpg"
+                    alt="Happy client 1"
+                    class="testimonial__photo boris"
+                  >
+                </div>
+
+                <h3 class="testimonial__name">
+                  Boris NazirOFF
+                </h3>
+                <p class="testimonial__company-name">
+                  NazirOFF & Style
+                </p>
+              </div>
+
+              <div class="testimonial">
+                <p class="testimonial__text">
+                  Really easy to use and customize. easy to understand. Eugene helped me with my site! He answers very quickly, a good service! Thank you very much!
+                </p>
+                <div class="testimonial__photo-container">
+                  <img
+                    src="./images/testimonials/alessandra.jpg"
+                    alt="Happy client 1"
+                    class="testimonial__photo alessandra"
+                  >
+                </div>
+
+                <h3 class="testimonial__name">
+                  Alessandra Nitti
+                </h3>
+                <p class="testimonial__company-name">
+                  Cocai Italiano
+                </p>
+              </div>
+
+              <div class="testimonial">
+                <p class="testimonial__text">
+                  Really pleasing to look at! Documentation (including installation instructions) are clear and that is coming from a relatively new WordPress user.
+                </p>
+                <div class="testimonial__photo-container">
+                  <img
+                    src="./images/testimonials/alex.jpg"
+                    alt="Happy client 1"
+                    class="testimonial__photo alex"
+                  >
+                </div>
+
+                <h3 class="testimonial__name">
+                  Alex Kolesnichenko
+                </h3>
+                <p class="testimonial__company-name">
+                  Grey Cat Studio
+                </p>
+              </div>
+            </div>
+        </div>
+      </div>
+
+      <div class="page__section cta" id="cta">
+        <div class="container">
+          <div class="cta__content">
+            <h2 class="cta__title">
+              Ready to launch
+              <br>
+              your next website?
+            </h2>
+            <div class="cta__get-in-touch">
+              <a href="" class="cta__get-in-touch--button">
+                <div class="cta__get-in-touch--button--icon">
+                </div>
+                Get in touch now
+              </a>
+              <p class="cta__get-in-touch--description">
+                Or take a peek inside our
+                <a href="" class="cta__get-in-touch--description--link">
+                  design studio
+                </a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__content">
+          <div class="footer__content--left-block">
+            <div class="footer__description">
+              <a href="" class="footer__logo">digits</a>
+              <p class="footer__text">
+                Digits is a website template built to work seamlesly with the WordPress block editor to create beautifully designed pages in minutes.
+              </p>
+            </div>
+          </div>
+          <div class="footer__content--right-block">
+            <div class="footer__block">
+              <div class="footer__block--title">
+                Pages
+              </div>
+              <ul class="footer__block--list">
+                <li class="footer__block--item">
+                  <a href="" class="footer__block--link">
+                    Home
+                  </a>
+                </li>
+                <li class="footer__block--item">
+                  <a href="" class="footer__block--link">
+                    About
+                  </a>
+                </li>
+                <li class="footer__block--item">
+                  <a href="" class="footer__block--link">
+                    News
+                  </a>
+                </li>
+                <li class="footer__block--item">
+                  <a href="" class="footer__block--link">
+                    Pricing
+                  </a>
+                </li>
+                <li class="footer__block--item">
+                  <a href="" class="footer__block--link">
+                    Contact
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__block">
+              <div class="footer__block--title">
+                Demos
+              </div>
+              <ul class="footer__block--list">
+                <li class="footer__block--item">
+                  <a href="" class="footer__block--link">
+                    Classic
+                  </a>
+                </li>
+                <li class="footer__block--item">
+                  <a href="" class="footer__block--link">
+                    Boxy
+                  </a>
+                </li>
+                <li class="footer__block--item">
+                  <a href="" class="footer__block--link">
+                    Gradient
+                  </a>
+                </li>
+                <li class="footer__block--item">
+                  <a href="" class="footer__block--link">
+                    Minimal
+                  </a>
+                </li>
+                <li class="footer__block--item">
+                  <a href="" class="footer__block--link">
+                    Night
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__block">
+              <div class="footer__block--title">
+                Resources
+              </div>
+              <ul class="footer__block--list">
+                <li class="footer__block--item">
+                  <div class="footer__block--social">
+                    <a href="" class="social social__fb"></a>
+                    <a href="" class="social social__ig"></a>
+                    <a href="" class="social social__tw"></a>
+                    <a href="" class="social social__dr"></a>
+                    <a href="" class="social social__ev"></a>
+                  </div>
+                </li>
+                <li class="footer__block--item">
+                  <a href="" class="footer__block--link">
+                    Download now
+                  </a>
+                </li>
+                <li class="footer__block--item">
+                  <a href="" class="footer__block--link">
+                    Documentation
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <div class="footer__bottom--copyright">
+            Copyright © 2020 tempy.club
+          </div>
+          <div class="footer__bottom--legal">
+            <a href="" class="footer__bottom--legal--link">
+              Privacy Policy
+            </a>
+            <a href="" class="footer__bottom--legal--link">
+              Terms of use
+            </a>
+            <a href="" class="footer__bottom--legal--link">
+              GDPR
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
     <script type="text/javascript" src="scripts/main.js"></script>
   </body>
 </html>
