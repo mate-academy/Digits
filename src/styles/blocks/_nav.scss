@@ -43,11 +43,11 @@
 
     &--transform_rotate {
       &:nth-child(1) {
-        transform: rotate(45deg) translateX(3.4px);
+        transform: rotate(45deg) translateX(4px);
       }
 
       &:nth-child(2) {
-        transform: rotate(-45deg) translateX(3.4px);
+        transform: rotate(-45deg) translateX(4px);
       }
     }
   }
@@ -132,6 +132,13 @@
     justify-content: space-between;
     transform: translateY(-150%);
     transition: transform 0.4s linear;
+
+    @include on-phone() {
+      @media (orientation: landscape) {
+        position: absolute;
+        height: max-content;
+      }
+    }
 
     &:target {
       transform: translateY(0);
