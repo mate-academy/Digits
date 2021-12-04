@@ -1,0 +1,47 @@
+.simplicity {
+  padding: 139px 0 576px;
+  background-color: #fff9ea;
+  position: relative;
+  overflow: hidden;
+
+  @include on-notebook() {
+    padding: 90px 0 350px;
+  }
+
+  @include on-tablet() {
+    padding: 90px 0 300px;
+  }
+
+  @include on-phone() {
+    padding: 70px 0 330px;
+  }
+
+  &__content {
+    @include content;
+  }
+
+  &__title {
+    line-height: 125%;
+    margin: 0 0 40px;
+  }
+
+  &__text {
+    font-size: 21px;
+    line-height: 150%;
+    text-align: center;
+    margin: 0 0 40px;
+  }
+
+  &__image {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 100%;
+    max-width: 2300px;
+    transform: translateX(-50%);
+
+    @include on-phone() {
+      width: 150%;
+    }
+  }
+}

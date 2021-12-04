@@ -1,0 +1,102 @@
+.whatever {
+  padding: 0 0 150px;
+
+  &__image {
+    @include on-tablet() {
+      width: 70%;
+    }
+
+    @include on-tablet() {
+      width: 90%;
+    }
+  }
+
+  &__img {
+    width: 100%;
+    object-fit: contain;
+  }
+
+  @include on-tablet() {
+    padding: 0 0 80px;
+  }
+
+  @include on-phone() {
+    padding: 0 0 60px;
+  }
+
+  &__title {
+    margin: 0 0 86px;
+    line-height: 125%;
+
+    @include on-tablet() {
+      margin: 0 0 50px;
+    }
+
+    @include on-phone() {
+      margin: 0 0 40px;
+    }
+  }
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @include on-tablet() {
+      flex-direction: column;
+    }
+  }
+
+  &__info {
+    width: 100%;
+    max-width: 405px;
+
+    @include on-tablet() {
+      max-width: 600px;
+    }
+
+    &-item {
+      display: flex;
+      padding: 40px 40px 40px 0;
+
+      &:not(:last-child) {
+        border-bottom: 1px solid #{$page-color}33;
+      }
+
+      @include on-tablet() {
+        padding: 40px 0;
+      }
+
+      @include on-phone() {
+        padding: 30px 0;
+      }
+    }
+
+    &-icon {
+      width: 52px;
+      height: 52px;
+
+      margin: 0 47px 0 0;
+
+      @include on-notebook() {
+        margin: 0 30px 0 0;
+      }
+    }
+
+    &-title {
+      font-size: 22px;
+      line-height: 125%;
+      text-align: left;
+      margin: 0 0 30px;
+
+      @include on-notebook() {
+        margin: 0 0 20px;
+      }
+    }
+
+    &-text {
+      font-size: 18px;
+      line-height: 150%;
+    }
+  }
+}

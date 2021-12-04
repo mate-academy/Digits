@@ -1,0 +1,87 @@
+.ready {
+  padding: 88px 0 115px;
+  background-color: $button-color;
+
+  @include on-tablet() {
+    padding: 70px 0 90px;
+  }
+
+  @include on-phone() {
+    padding: 50px 0 60px;
+  }
+
+  &__content {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @include on-phone() {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  &__title {
+    color: #fff;
+    text-align: left;
+
+    @include on-phone() {
+      text-align: center;
+      margin: 0 0 40px;
+    }
+  }
+
+  &__order-block {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    @include on-phone() {
+      width: 100%;
+      align-items: center;
+    }
+  }
+
+  &__order-btn {
+    width: 245px;
+    line-height: 110%;
+    color: inherit;
+    padding: 18px 50px 18px 35px;
+    position: relative;
+    margin: 0 0 19px;
+
+    @include on-phone() {
+      width: 70%;
+    }
+
+    &::before {
+      content: "";
+      width: 26px;
+      height: 15px;
+      display: inline-block;
+
+      background-image: url(../images/ready/mail.svg);
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
+
+      position: relative;
+      top: 2px;
+      left: -10px;
+    }
+  }
+
+  &__order-text {
+    font-size: 16px;
+    color: #fff;
+    line-height: 125%;
+  }
+
+  &__order-link {
+    color: #fed385;
+    text-decoration: none;
+
+    @include hover(color, $title-color);
+  }
+}
