@@ -1,0 +1,221 @@
+.footer {
+  width: 100%;
+  height: 660px;
+
+  @include Tablet {
+    height: max-content;
+  }
+
+  @include Notebook {
+    height: max-content;
+  }
+
+  @include LargeScreens {
+    width: 65%;
+  }
+
+  &__container {
+    margin: 124px 212px 107px 204px;
+    display: flex;
+
+    @include Mobile {
+      margin: 0 auto;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    @include Tablet {
+      margin: 100px 20px;
+    }
+
+    @include Notebook {
+      margin: 100px 80px;
+    }
+
+    @include FullHD {
+      justify-content: center;
+      width: 70%;
+    }
+
+    &__paragraph {
+      height: 211px;
+      width: 310px;
+      font-family: Halyard Text, sans-serif;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 150%;
+      text-align: left;
+      color: #455880;
+      margin-right: 184px;
+
+      @include Mobile {
+        margin-right: 0;
+        text-align: center;
+      }
+
+      @include Tablet {
+        margin-right: 110px;
+      }
+
+      &__logo {
+        margin-bottom: 34px;
+
+        @include Mobile {
+          margin: 20px auto;
+        }
+
+        @include Tablet {
+          margin-bottom: 20px;
+        }
+      }
+    }
+
+    &__pages {
+      margin-right: 30px;
+
+      @include Mobile {
+        margin: 0 auto;
+      }
+
+      @include Tablet {
+        margin-right: 0;
+      }
+    }
+
+    &__nav {
+      width: 211px;
+      height: 197px;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+
+      @include Mobile {
+        width: max-content;
+      }
+
+      &__item {
+        text-align: left;
+
+        @include Mobile {
+          text-align: center;
+        }
+
+      }
+
+      &__link {
+        font-family: Halyard Text, sans-serif;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 41px;
+        color: #455880;
+        text-decoration: none;
+
+      }
+    }
+
+    &__title {
+      font-family: Halyard Display, sans-serif;
+      font-size: 22px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 28px;
+      text-align: left;
+      margin-bottom: 22px;
+      color: #1e266d;
+    }
+
+    &__demos {
+      margin-right: 49px;
+
+      @include Mobile {
+        margin: 0 auto;
+        margin-top: 22px;
+      }
+
+      @include Tablet {
+        margin-right: 0;
+      }
+    }
+
+    &__resources {
+
+      @include Mobile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      &__title {
+        margin-bottom: 32px;
+
+        @include Mobile {
+          margin: 32px auto;
+        }
+      }
+
+      &__images {
+        width: max-content;
+        margin-bottom: 26px;
+
+        &__item {
+          margin-right: 25px;
+          cursor: pointer;
+
+          &:last-child {
+            margin-right: 0;
+          }
+        }
+      }
+    }
+  }
+
+  &__bottom {
+    margin-bottom: 107px;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 15%;
+    margin-left: 14%;
+
+    @include Mobile {
+      display: flex;
+      flex-direction: column;
+      margin: 0 auto;
+      align-items: center;
+    }
+
+    @include Tablet {
+      margin: 0 40px 100px;
+    }
+
+    @include Notebook {
+      margin: 0 80px 100px;
+    }
+
+    &__copyright {
+      color: #45588080;
+      opacity: 0.5;
+    }
+
+    &__policy {
+      display: flex;
+
+      &__item {
+        color: #455880;
+        margin-right: 40px;
+        cursor: pointer;
+
+        @include Mobile {
+          font-size: 14px;
+          line-height: 200%;
+          margin-bottom: 20px;
+        }
+
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+}
