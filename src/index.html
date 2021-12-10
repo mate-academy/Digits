@@ -4,7 +4,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Title</title>
+    <title>Digits</title>
     <link rel="stylesheet" href="./styles/main.scss">
   </head>
 
@@ -18,12 +18,12 @@
           </a>
           <input class="hidden"
             type="checkbox"
-            id="menutoggler">
-          <div class="menu-btn">
+            id="menutoggle">
+          <label class="menu-btn" for="menutoggle">
             <div class="menu"></div>
             <div class="menu"></div>
             <div class="menu"></div>
-          </div>
+          </label>
           <ul class="nav__list">
             <li class="nav__item">
               <a href="#" class="link nav__link">Homepages</a>
@@ -42,7 +42,9 @@
             </li>
           </ul>
           <div class="header__contact">
-            <a href="+00 123 456 789" class="link">+00 123 456 789</a>
+            <label for="contact" class="contact__label">
+              <a href="tel:00-123-456-789" class="link">+00 123456789</a>
+            </label>
             <button class="button button__contact">
               <a href="#contact">Contact Us</a>
             </button>
@@ -53,10 +55,287 @@
     </header>
 
     <main>
+      <div class="section section-1">
+        <div class="section-1__gradient"></div>
 
+
+        <div class="section-1__title">
+          Good design meets <br> great user experience
+        </div>
+
+        <div class="section-1__sub-title">
+          For everyone, from beginners to experts
+        </div>
+
+        <div class="section-1__buttons">
+          <button class="section-1__buttons__button-blue">Buy Digits</button>
+          <button class="section-1__buttons__button-white">See the Features</button>
+        </div>
+
+        <img src="./images/mainPicture.svg"
+          alt="Some-picture"
+          class="section-1__picture">
+
+        <div class="section-1__sub-title section-1__sub-title__half-transparent">
+          Trusted by forward-thinking software teams around the world
+        </div>
+        <div class="section-1__images">
+          <img src="/images/section-1__images/logo-1.png" alt="Netflix"
+            class="section-1__images__image">
+          <img src="/images/section-1__images/logo-2.png" alt="Drawkit"
+            class="section-1__images__image">
+          <img src="/images/section-1__images/logo-3.png" alt="Figma"
+            class="section-1__images__image">
+          <img src="/images/section-1__images/logo-4.png" alt="Cinemax"
+            class="section-1__images__image">
+          <img src="/images/section-1__images/logo-5.png" alt="Stripe"
+            class="section-1__images__image">
+          <img src="/images/section-1__images/logo-6.png" alt="Google"
+            class="section-1__images__image">
+          <img src="/images/section-1__images/logo-7.png" alt="Disney"
+            class="section-1__images__image">
+        </div>
+      </div>
+
+      <div class="section section-about">
+        <div class="section-about__title">
+          Whatever work you do,
+          <br>
+          we're able to help
+        </div>
+        <img src="/images/graphic-for-about-section.svg" alt="Employees"
+          class="section-about__image-block">
+        <div class="section-about__text-block">
+          <div class="section-about__text-block__group">
+            <div class="section-about__text-block__group__decor">
+              <img src="/images/icon-1-about.svg" alt="Decoration">
+            </div>
+            <div class="section-about__text-block__group__text-container">
+              <h1 class="section-about__text-block__group__text-container__title">Design and Assets</h1>
+              <p class="section-about__text-block__group__text-container__paragraph">Make your brand stand out with
+                pixel‑perfect design crafted to perfection.
+              </p>
+            </div>
+          </div>
+          <div class="section-about__text-block__group">
+            <div class="section-about__text-block__group__decor">
+              <img src="/images/icon-2-about.svg" alt="Decoration">
+            </div>
+            <div class="section-about__text-block__group__text-container">
+              <h1 class="section-about__text-block__group__text-container__title">Easy Content</h1>
+              <p class="section-about__text-block__group__text-container__paragraph">Import your demos or build pages
+                visually. Bonus: All images and illustrations included!
+              </p>
+            </div>
+          </div>
+
+          <div class="section-about__text-block__group">
+            <div class="section-about__text-block__group__decor">
+              <img src="/images/icon-3-about.svg" alt="Decoration">
+            </div>
+            <div class="section-about__text-block__group__text-container">
+              <h1 class="section-about__text-block__group__text-container__title">Fast and Reliable</h1>
+              <p class="section-about__text-block__group__text-container__paragraph">No heavy-weight plugins. No
+                builders. No unneccesary file loading. Pure WordPress.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <div class="section section-portfolio">
+        <h1 class="section-portfolio__title">Simplicity meets innovative design</h1>
+        <p class="section-portfolio__paragraph">It's really easy to start using Digits. <br>
+          Install the theme, choose a demo and <br>
+          start designing the future of your business!
+        </p>
+        <button class="section-portfolio__button">Buy Digits</button>
+      </div>
+
+      <div class="section section-testimonials">
+        <h1 class="section-testimonials__title">What others are saying</h1>
+        <div class="section-testimonials__review-container">
+          <div class="section-testimonials__review-container__card">
+            <div class="section-testimonials__review-container__card__container">
+
+              <div class="section-testimonials__review-container__card__container__text">Completely beautiful website
+                and amazing support! This is my second website from this author and I love both of the sites so much
+                and
+                she has helped me so well when I needed it!
+              </div>
+
+            </div>
+            <div class="section-testimonials__review-container__card__photo">
+              <img src="/images/card-photo-testimonials-1.svg" alt="Client-1">
+            </div>
+            <h1 class="section-testimonials__review-container__card__title">Happy user</h1>
+            <p class="section-testimonials__review-container__card__text">tempy.club</p>
+          </div>
+          <div class="section-testimonials__review-container__card">
+            <div class="section-testimonials__review-container__card__container">
+
+              <div class="section-testimonials__review-container__card__container__text">Really easy to use and
+                customize. easy to understand. Darinka helped me with my site! She answers very quickly, a good
+                service!
+                Thank you very much!
+              </div>
+
+            </div>
+            <div class="section-testimonials__review-container__card__photo">
+              <img src="/images/card-photo-testimonials-2.svg" alt="Client-2">
+            </div>
+            <h1 class="section-testimonials__review-container__card__title">Happy user</h1>
+            <p class="section-testimonials__review-container__card__text">tempy.club</p>
+          </div>
+          <div class="section-testimonials__review-container__card">
+            <div class="section-testimonials__review-container__card__container">
+
+              <div class="section-testimonials__review-container__card__container__text">Really pleasing to look at!
+                Documentation (including installation instructions) are clear and that is coming from a relatively new
+                WordPress user.
+              </div>
+
+            </div>
+            <div class="section-testimonials__review-container__card__photo">
+              <img src="/images/card-photo-testimonials-3.svg" alt="Client-3">
+            </div>
+            <h1 class="section-testimonials__review-container__card__title">Happy user</h1>
+            <p class="section-testimonials__review-container__card__text">tempy.club</p>
+          </div>
+        </div>
+      </div>
+      <div class="section-cta section">
+        <div class="section-cta__container">
+          <div class="section-cta__container__left-container">
+            Ready to launch <br> your next website?
+          </div>
+          <div class="section-cta__container__right-container">
+            <button class="section-cta__container__right-container__button">
+              <a href="mailto:y.kucheruk@ukr.net" class="section-cta__container__right-container__button__text"> Get
+                in touch now
+              </a>
+
+            </button>
+            <div class="section-cta__container__right-container__text-container">
+              <div class="section-cta__container__right-container__text-container__text">Or, take a peek inside our
+              </div>
+              <div
+                class="section-cta__container__right-container__text-container__text section-cta__container__right-container__text-container__text-yellow">
+                &nbsp; design studio
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
 
-    <footer>
+    <footer class="section footer">
+      <div class="footer__container">
+
+
+        <div class="footer__container__paragraph">
+          <a href="#">
+            <img src="images/logo.svg" class="footer__container__paragraph__logo"
+              alt="Logo-image">
+          </a>
+
+          <p>Digits is a website template built to work seamlesly with the WordPress block editor to create beautifully
+            designed pages in minutes.
+          </p>
+        </div>
+
+        <div class="footer__container__pages">
+          <h2 class="footer__container__title"> Pages</h2>
+
+          <ul class="footer__container__nav">
+
+            <li class="footer__container__nav__item">
+              <a href="#" class="footer__container__nav__link">Home</a>
+            </li>
+
+            <li class="footer__container__nav__item">
+              <a href="#buy" class="footer__container__nav__link">About</a>
+            </li>
+
+            <li class="footer__container__nav__item">
+              <a href="#help" class="footer__container__nav__link">News</a>
+            </li>
+
+            <li class="footer__container__nav__item">
+              <a href="#contact" class="footer__container__nav__link">Pricing</a>
+            </li>
+
+            <li class="footer__container__nav__item">
+              <a href="#talk" class="footer__container__nav__link">Contact</a>
+            </li>
+
+          </ul>
+        </div>
+        <div class="footer__container__demos">
+          <h2 class="footer__container__title"> Demos</h2>
+
+          <ul class="footer__container__nav">
+
+            <li class="footer__container__nav__item">
+              <a href="#" class="footer__container__nav__link">Classic</a>
+            </li>
+
+            <li class="footer__container__nav__item">
+              <a href="#" class="footer__container__nav__link">Boxy</a>
+            </li>
+
+            <li class="footer__container__nav__item">
+              <a href="#" class="footer__container__nav__link">Gradient</a>
+            </li>
+
+            <li class="footer__container__nav__item">
+              <a href="#" class="footer__container__nav__link">Minimal</a>
+            </li>
+
+            <li class="footer__container__nav__item">
+              <a href="#" class="footer__container__nav__link">Night</a>
+            </li>
+
+          </ul>
+        </div>
+        <div class="footer__container__resources">
+          <h2 class="footer__container__title footer__container__resources__title"> Resources</h2>
+          <div class="footer__container__resources__images">
+            <img src="/images/footer/fb.svg" class="footer__container__resources__images__item"
+              alt="Facebook">
+            <img src="/images/footer/instagram.svg" class="footer__container__resources__images__item"
+              alt="Instagram">
+            <img src="/images/footer/twitter.svg" class="footer__container__resources__images__item"
+              alt="Twitter">
+            <img src="/images/footer/group.svg" class="footer__container__resources__images__item"
+              alt="Ball">
+            <img src="/images/footer/envato.svg" class="footer__container__resources__images__item"
+              alt="Envato">
+          </div>
+          <ul class="footer__container__nav">
+
+            <li class="footer__container__nav__item">
+              <a href="#" class="footer__container__nav__link">Download now
+              </a>
+            </li>
+
+            <li class="footer__container__nav__item">
+              <a href="#" class="footer__container__nav__link">Documentation</a>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <div class="footer__bottom__copyright"> Copyright © 2020 tempy.club</div>
+        <div class="footer__bottom__policy">
+          <div class="footer__bottom__policy__item">Privacy Policy</div>
+          <div class="footer__bottom__policy__item">Terms of Use</div>
+          <div class="footer__bottom__policy__item">GDPR</div>
+        </div>
+      </div>
 
     </footer>
 
