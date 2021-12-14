@@ -43,7 +43,7 @@
     z-index: -1;
 
     @include Mobile {
-      height: 768px;
+      height: 12.8%;
     }
   }
 
@@ -97,6 +97,7 @@
     @include Mobile {
       flex-direction: column;
       width: 70%;
+      max-width: 250px;
     }
 
     &__button-blue {
@@ -139,8 +140,8 @@
     object-fit: fill;
 
     @include Mobile {
-      height: 176px;
-      width: 293px;
+      height: 100%;
+      width: 100%;
     }
   }
 }

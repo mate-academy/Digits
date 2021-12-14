@@ -6,6 +6,7 @@
 
   @include Mobile {
     height: max-content;
+    padding: 40px 0;
   }
 
   @include Notebook {
