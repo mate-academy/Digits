@@ -1,0 +1,71 @@
+.section-portfolio {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 1001px;
+  background-color: #fff9ea;
+  align-items: center;
+  background-image: url(/images/portfolio__mask-group.svg);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: 100%;
+
+  @include Mobile {
+    height: max-content;
+  }
+
+  @include Tablet {
+    height: max-content;
+  }
+
+  &__title {
+    font-family: Halyard Display, sans-serif;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 125%;
+    text-align: center;
+    color: #1e266d;
+    margin-top: 139px;
+
+    @include Mobile {
+      margin-top: 0;
+      padding-top: 20px;
+      font-size: 40px;
+
+    }
+  }
+
+  &__paragraph {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    font-family: Halyard Text, sans-serif;
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+    text-align: center;
+    color: #455880;
+  }
+
+  &__button {
+    width: 148px;
+    height: 50px;
+    color: #fff;
+    background-color: #3751ff;
+    border-radius: 100px;
+    border: transparent;
+
+    @include Mobile {
+      width: 70%;
+      font-size: 16px;
+      margin-bottom: 50%;
+      max-width: 250px;
+    }
+
+    @include Tablet {
+      margin-bottom: 350px;
+    }
+  }
+
+}

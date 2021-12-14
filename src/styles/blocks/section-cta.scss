@@ -1,0 +1,133 @@
+.section-cta {
+  background-color: #3751ff;
+  height: 323px;
+  width: 100%;
+  justify-content: center;
+
+  @include Mobile {
+    height: max-content;
+    padding: 40px 0;
+  }
+
+  @include Notebook {
+    width: 100%;
+  }
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 15%;
+    margin-left: 14%;
+    height: 100%;
+
+    @include Mobile {
+      flex-direction: column;
+      margin: 0 auto;
+    }
+
+    @include Tablet {
+      margin: 0 70px;
+    }
+
+    @include Notebook {
+      margin: 0 70px;
+    }
+
+    @include FullHD {
+      width: 70%;
+    }
+
+    @include LargeScreens {
+      margin-right: 26%;
+      margin-left: 25%;
+    }
+
+    &__right-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-end;
+
+      @include Mobile {
+        align-items: center;
+      }
+
+      &__button {
+        font-family: Halyard Display, sans-serif;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 20px;
+        text-align: center;
+        color: #455880;
+        background-color: #fff;
+        width: 246px;
+        height: 56px;
+        border-radius: 100px;
+        border: transparent;
+        align-items: flex-end;
+        cursor: pointer;
+
+        &:before {
+          content: url(/images/Group_mail-to.svg);
+          margin-right: 12px;
+        }
+
+        &__text {
+          text-decoration: none;
+          font-family: Halyard Display, sans-serif;
+          font-size: 18px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 20px;
+          text-align: center;
+          color: #455880;
+        }
+      }
+
+      &__text-container {
+        display: flex;
+        color: #fff;
+        margin-top: 19px;
+        font-family: Halyard Text, sans-serif;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 125%;
+        text-align: right;
+
+        @include Mobile {
+          font-size: 15px;
+        }
+
+        &__text-yellow {
+          color: #fed385;
+
+          @include Mobile {
+            text-align: start;
+            margin-bottom: 10px;
+          }
+        }
+      }
+
+    }
+
+    &__left-container {
+      font-family: Halyard Display, sans-serif;
+      font-size: 48px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 125%;
+      text-align: left;
+      color: #fff;
+      margin-top: 88px;
+
+      @include Mobile {
+        font-size: 40px;
+        text-align: center;
+        margin-top: 0;
+        margin-bottom: 30px;
+      }
+    }
+  }
+}
