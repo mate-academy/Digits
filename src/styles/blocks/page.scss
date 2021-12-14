@@ -1,0 +1,77 @@
+.page {
+  scroll-behavior: smooth;
+
+  &__body {
+    background-color: $bodyBackground;
+  }
+
+  &__menu {
+    position: fixed;
+    top: 5px;
+    left: 0;
+    right: 0;
+    bottom: 65%;
+    transform: translateX(-100%);
+    transition: transform 0.3s;
+
+    &:target {
+      transform: translateX(0);
+    }
+  }
+
+  &__hero {
+    padding-top: 73px;
+
+    @include laptopScreen {
+      padding-top: 146px;
+    }
+  }
+
+  &__logos {
+    padding-top: 80px;
+
+    @include tabletScreen {
+      padding-top: 120px;
+    }
+
+    @include laptopScreen {
+      padding-top: 186px;
+    }
+  }
+
+  &__about {
+    padding-top: 80px;
+
+    @include tabletScreen {
+      padding-top: 120px;
+    }
+
+    @include laptopScreen {
+      padding-top: 162px;
+    }
+  }
+
+  &__portfolio {
+    padding-top: 70px;
+
+    @include laptopScreen {
+      padding-top: 139px;
+    }
+  }
+
+  &__testimonials {
+    padding: 115px 0 90px;
+
+    @include laptopScreen {
+      padding: 232px 0 150px;
+    }
+  }
+
+  &__cta {
+    padding: 88px 0 115px;
+  }
+
+  &__footer {
+    padding: 124px 0 107px;
+  }
+}

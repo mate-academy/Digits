@@ -1,0 +1,24 @@
+.icon {
+  &--menu {
+    transform: translateY(-10%);
+
+    @include laptopScreen {
+      display: none;
+    }
+
+    @include desktopScreen {
+      display: none;
+    }
+  }
+
+  &--cross {
+    transform: translateY(-10%);
+    @include laptopScreen {
+      display: none;
+    }
+
+    @include desktopScreen {
+      display: none;
+    }
+  }
+}

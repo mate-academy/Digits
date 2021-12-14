@@ -1,0 +1,10 @@
+.header {
+  &__content {
+    padding: 20px 0;
+  }
+
+  &__subcontent {
+    display: flex;
+    align-items: center;
+  }
+}

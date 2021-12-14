@@ -1,0 +1,81 @@
+.testimonials {
+  &__title {
+    margin-bottom: 56px;
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    @include tabletScreen {
+      gap: 30px;
+    }
+
+    @include laptopScreen {
+      flex-direction: row;
+      gap: 32px;
+    }
+  }
+
+  &__card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 38px 25px 32px;
+
+    @include tabletScreen {
+      padding: 38px 34px 32px;
+    }
+
+    @include laptopScreen {
+      padding: 38px 34px 32px;
+    }
+
+    @include desktopScreen {
+      padding: 38px 44px 32px;
+    }
+
+    border: 1px solid rgba(69, 88, 128, 0.2);
+    border-radius: 4px;
+
+    &:hover {
+      box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+      transition: box-shadow 0.3s ease-in-out;
+    }
+  }
+
+  &__about {
+    @include tabletScreen {
+      height: 70px;
+    }
+
+    @include laptopScreen {
+      height: 211px;
+    }
+
+    font-size: 18px;
+    line-height: 32px;
+    margin-bottom: 39px;
+  }
+
+  &__photo {
+    height: 64px;
+    width: 64px;
+
+    margin-bottom: 23px;
+  }
+
+  &__name {
+    font-size: 22px;
+    line-height: 27px;
+  }
+
+  &__link {
+    font-size: 18px;
+    line-height: 32px;
+
+    text-decoration: none;
+  }
+}

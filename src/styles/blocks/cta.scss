@@ -1,0 +1,39 @@
+.cta {
+  background-color: $buttonColor;
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @include laptopScreen {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+
+  &__title {
+    color: #fff;
+  }
+
+  &__contact {
+    padding-top: 27px;
+  }
+
+  &__text {
+    font-size: 16px;
+    line-height: 20px;
+
+    color: #dfe0eb;
+  }
+
+  &__link {
+    color: #fed385;
+    text-decoration: none;
+
+    &:hover {
+      color: $textColor;
+      background-color: #fed385;
+    }
+  }
+}

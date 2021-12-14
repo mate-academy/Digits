@@ -1,0 +1,37 @@
+.logos {
+  &__text {
+    font-size: 16px;
+    line-height: 27px;
+    text-align: center;
+    opacity: 0.5;
+
+    margin-bottom: 49px;
+  }
+
+  &__teams {
+    display: grid;
+    grid-template-columns: max-content max-content max-content;
+    justify-content: center;
+    gap: 20px 15px;
+
+    @include tabletScreen {
+      gap: 30px 30px;
+    }
+
+    @include laptopScreen {
+      gap: 50px 50px;
+    }
+
+    @include desktopScreen {
+      display: flex;
+      gap: 72px;
+    }
+  }
+
+  &__team {
+    &:hover {
+      transition: 0.3s;
+      transform: scale(1.1);
+    }
+  }
+}

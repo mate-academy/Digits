@@ -1,0 +1,62 @@
+.button {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: #fff;
+  text-decoration: none;
+  border-radius: 100px;
+  border: 1px solid $buttonColor;
+  background-color: $buttonColor;
+
+  &:hover {
+    transition: 0.3s;
+    transform: scale(1.1);
+  }
+
+  &__call {
+    height: 40px;
+    width: 113px;
+
+    @include desktopScreen {
+      &::before {
+        content: "+00 123 456 789";
+        position: absolute;
+        left: -156px;
+        display: block;
+        width: max-content;
+        padding-right: 20px;
+        color: $hColor;
+      }
+    }
+  }
+
+  &__hero {
+    height: 50px;
+    width: 148px;
+
+    &--feature {
+      width: 200px;
+      background-color: #fff;
+      color: $textColor;
+      border: 1px solid transparent;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    }
+  }
+
+  &__cta {
+    height: 56px;
+    background-color: #fff;
+    color: $textColor;
+
+    font-size: 18px;
+    line-height: 20px;
+
+    margin-bottom: 19px;
+  }
+
+  &__cta-img {
+    margin-right: 15px;
+  }
+}

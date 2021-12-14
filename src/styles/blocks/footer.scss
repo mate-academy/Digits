@@ -1,0 +1,104 @@
+.footer {
+  &__content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+
+    @include laptopScreen {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    padding-bottom: 68px;
+  }
+
+  &__col {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__logo {
+    height: 26px;
+    width: 70px;
+
+    margin-bottom: 34px;
+  }
+
+  &__text {
+    font-size: 18px;
+    line-height: 26px;
+
+    max-width: 310px;
+  }
+
+  &__title {
+    font-size: 22px;
+    line-height: 27px;
+    margin-bottom: 22px;
+  }
+
+  &__list {
+    list-style: none;
+  }
+
+  &__link {
+    font-size: 18px;
+    line-height: 40px;
+
+    text-decoration: none;
+
+    &:hover {
+      color: $hoverColor;
+    }
+  }
+
+  &__icon {
+    &:hover {
+      transition: 0.3s;
+      transform: scale(1.1);
+      filter: invert(39%) sepia(62%) saturate(6129%) hue-rotate(326deg)
+        brightness(101%) contrast(101%);
+    }
+  }
+
+  &__soc {
+    display: flex;
+    gap: 25px;
+  }
+
+  &__policy {
+    display: flex;
+    gap: 30px;
+
+    @include laptopScreen {
+      justify-content: space-between;
+    }
+
+    padding-top: 53px;
+    border-top: 1px solid rgba(135, 146, 161, 0.08);
+  }
+
+  &__copyright {
+    font-size: 14px;
+    line-height: 27px;
+
+    color: rgba(69, 88, 128, 0.5);
+  }
+
+  &__policy-list {
+    display: flex;
+    gap: 28px;
+
+    list-style: none;
+  }
+
+  &__policy-link {
+    font-size: 14px;
+    line-height: 27px;
+
+    text-decoration: none;
+
+    &:hover {
+      color: $hoverColor;
+    }
+  }
+}

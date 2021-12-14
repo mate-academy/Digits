@@ -1,4 +1,26 @@
-%h1 {
-  font-family: "Roboto", sans-serif;
+%h1, %h2, %h3 {
+  font-family: "Halyard Display", sans-serif;
+  color: $hColor;
+  font-weight: bold;
+}
+
+%h2 {
+  font-size: 48px;
+  line-height: 60px;
+  
+  text-align: center;
+
+  @include desktopScreen {
+    font-size: 48px;
+    line-height: 60px;
+  }
+  
+
+  
+}
+
+%p, %button, %a {
+  font-family: "Halyard Text", sans-serif;
   font-weight: 400;
+  color: $textColor;
 }
