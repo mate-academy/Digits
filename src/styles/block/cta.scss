@@ -1,0 +1,49 @@
+.cta {
+  background: $colorBlue;
+
+  &__block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px;
+    align-items: center;
+    padding: 60px 0 88px;
+
+    @include onDesktop800px {
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 88px 0 113px;
+    }
+
+    &-title {
+      @extend %h1;
+      font-size: 38px;
+      line-height: 40px;
+      color: $colorWhite;
+      text-align: center;
+
+      @include onDesktop800px {
+        font-size: 48px;
+        line-height: 60px;
+        text-align: start;
+      }
+    }
+    
+    &__link {
+      padding-top: 19px;
+      @extend %text;
+      font-size: 16px;
+      line-height: 20px;
+      text-align: center;
+
+      @include onDesktop640px {
+        display: flex;
+        gap: 4px;
+      }
+
+      &-text {
+        color: $colorGreyCta;
+      }
+    }
+  }
+}

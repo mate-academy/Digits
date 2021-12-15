@@ -1,0 +1,26 @@
+.portfolio {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: $colorYellow;
+
+  &__title {
+    @extend %h1;
+    font-size: 48px;
+    line-height: 60px;
+    text-align: center;
+    padding: 132px 0 42px;
+  }
+
+  &__content {
+    @extend %text;
+    font-size: 21px;
+    text-align: center;
+    line-height: 31px;
+    padding-bottom: 40px;
+  }
+
+  &__img {
+    padding-top: 32px;
+  }
+}

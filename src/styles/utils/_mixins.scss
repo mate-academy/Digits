@@ -4,3 +4,51 @@
     #{$_property}: $_toValue;
   }
 }
+
+@mixin onDesktop1024px {
+  @media (min-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin onDesktop800px {
+  @media (min-width: 800px) {
+    @content;
+  }
+}
+
+@mixin onDesktop640px {
+  @media (min-width: 640px) {
+    @content;
+  }
+}
+
+@mixin onDesktop1600px {
+  @media (min-width: 1600px) {
+    @content;
+  }
+}
+
+@mixin onDesktop358px {
+  @media (min-width: 358px) {
+    @content;
+  }
+}
+
+@mixin onDesktop400px {
+  @media (min-width: 400px) {
+    @content;
+  }
+}
+
+@mixin onDesktop450px {
+  @media (min-width: 450px) {
+    @content;
+  }
+}
+
+@mixin onDesktop500px {
+  @media (min-width: 500px) {
+    @content;
+  }
+}

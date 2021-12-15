@@ -1,0 +1,52 @@
+.hero {
+  background: $colorBlueSky;
+  align-items: center;
+  position: relative;
+
+  &__section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  &__title {
+    padding-top: 70px;
+    @extend %h1;
+    text-align: center;
+    font-size: 40px;
+
+    @include onDesktop1024px {
+      padding-top: 144px;
+      font-size: 56px;
+    }
+  }
+
+  &__description {
+    @extend %text;
+    font-size: 18px;
+    text-align: center;
+    padding-top: 17px;
+
+    @include onDesktop1024px {
+      padding-top: 27px;
+    }
+  }
+
+  &__buttons {
+    display: flex;
+    justify-content: center;
+    padding: 29px 0 32px;
+  }
+
+  &__graphic {
+    margin-bottom: -40px;
+
+    @include onDesktop1024px {
+      margin-bottom: -150px;
+    }
+
+    &-img {
+      width: 100%;
+    }
+  }
+}

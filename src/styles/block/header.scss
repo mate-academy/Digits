@@ -1,0 +1,43 @@
+.header {
+  background-color: $colorWhite;
+  position: relative;
+
+  &__block {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 18px;
+
+    @include onDesktop1024px {
+      padding-top: 28px;
+    }
+  }
+
+  &__wrap-nav {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    text-align: center;
+    align-items: center;
+
+    @include onDesktop1024px {
+      gap: 0;
+    }
+  }
+
+  &__contact {
+    display: flex;
+    justify-content: flex-end;
+    gap: 30px;
+
+    &-tel {
+      @extend %text;
+      font-size: 16px;
+      align-self: center;
+      color: $colorText;
+
+      @include onDesktop640px {
+        display: block;
+      }
+    }
+  }
+}

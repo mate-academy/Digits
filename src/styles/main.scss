@@ -1,7 +1,22 @@
 @import "utils";
 @import "fonts";
 @import "typography";
+@import "./utils/vars";
+@import "./utils/extends";
+@import "./utils/mixins";
 
-body {
-  background: $c-gray;
-}
+@import "./block/reset";
+@import "./block/header";
+@import "./block/icon";
+@import "./block/logo";
+@import "./block/nav";
+@import "./block/page";
+@import "./block/container.scss";
+@import "./block/button";
+@import "./block/dropdown";
+@import "./block/hero";
+@import "./block/company";
+@import "./block/portfolio";
+@import "./block/blog";
+@import "./block/cta";
+@import "./block/footer";

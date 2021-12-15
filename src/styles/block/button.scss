@@ -1,0 +1,53 @@
+.button {
+  background: $colorBlue;
+  border-radius: 100px;
+  @extend %text;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $colorWhite;
+
+  @include hover(box-shadow, 0 0 8px $colorBlue);
+
+  &__header {
+    width: 90px;
+
+    @include onDesktop640px {
+      width: 113px;
+    }
+  }
+
+  &__buy {
+    width: 148px;
+    height: 50px;
+    align-self: center;
+  }
+
+  &__features {
+    background: $colorWhite;
+    color: $colorText;
+    width: 200px;
+    height: 50px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    margin-left: 22px;
+  }
+
+  &__cta {
+    width: 242px;
+    display: flex;
+    gap: 20px;
+    @extend %h1;
+    color: $colorGreyBtn;
+    font-size: 18px;
+    line-height: 20px;
+
+    @include hover(background, $colorYellow);
+  }
+
+  &__link {
+    color: $colorLink;
+
+    @include hover(transform, scale(1.1));
+  }
+}
