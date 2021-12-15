@@ -1,0 +1,118 @@
+.footer {
+  padding: 80px 0 50px;
+
+  @include onDesktop800px {
+    padding: 125px 0 80px;
+  }
+
+  &-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @include onDesktop1024px {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+
+  &__logo {
+    display: block;
+    width: 310px;
+
+    &-img {
+      width: 70px;
+      height: 26px;
+      padding-bottom: 34px;
+    }
+
+    &-description {
+      @extend %text;
+      font-size: 18px;
+      line-height: 26px;
+      color: $colorGreyBtn;
+      height: 211px;
+    }
+  }
+
+  &__navs {
+    display: flex;
+    width: 310px;
+    justify-content: space-between;
+  }
+
+  &__nav {
+    padding-bottom: 70px;
+
+    &-title {
+      @extend %h1;
+      font-size: 22px;
+      line-height: 27px;
+      color: $colorText;
+      padding-bottom: 25px;
+    }
+
+    &-list {
+      @extend %text;
+      font-size: 18px;
+      line-height: 40px;
+
+      @include hover(transform, scale(1.1));
+
+      &-link {
+        cursor: pointer;
+        color: $colorText;
+      }
+    }
+
+    &-bottom {
+      display: flex;
+      gap: 30px;
+    }
+  }
+
+  &__resources {
+
+    &-icons {
+      display: flex;
+      gap: 29px;
+      padding-bottom: 25px;
+
+      &-icon {
+        cursor: pointer;
+        pointer-events: fill;
+        @include hover(transform, scale(1.3));
+      }
+    }
+  }
+
+  &__border {
+    width: 100%;
+    border: 1px solid rgba(135, 146, 161, 0.08);
+  }
+
+  &__bottom {
+    padding-top: 53px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 10px;
+
+    @include onDesktop640px {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    &-copyright {
+      @extend %h1;
+      color: $colorGrey;
+      font-size: 14px;
+      line-height: 26px;
+    }
+
+    &-link {
+      font-size: 14px;
+    }
+  }
+}

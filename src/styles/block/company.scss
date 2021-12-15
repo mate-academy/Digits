@@ -1,0 +1,126 @@
+.company {
+  background: $colorWhite;
+
+  &__subtitle {
+    @extend %text;
+    color: $colorGrey;
+    font-size: 16px;
+    padding-top: 100px;
+    text-align: center;
+
+    @include onDesktop1024px {
+      padding-top: 186px;
+    }
+  }
+
+  &__block-logos {
+    padding-top: 48px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+
+    &-logo {
+
+      @include hover(transform, scale(1.1));
+    }
+  }
+
+  &__title {
+    @extend %h1;
+    font-size: 48px;
+    line-height: 60px;
+    padding-top: 100px;
+    text-align: center;
+
+    @include onDesktop1024px {
+      padding-top: 162px;
+    }
+  }
+
+  &__block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 100px;
+
+    @include onDesktop1024px {
+      flex-direction: row;
+      gap: 175px;
+      margin-top: 80px;
+      padding-bottom: 150px;
+    }
+
+    &-img {
+      width: 300px;
+      align-self: center;
+
+      @include onDesktop1024px {
+        width: 400px;
+        margin-top: -300px;
+      }
+
+      @include onDesktop1600px {
+        width: 611px;
+        margin-top: -190px;
+      }
+    }
+  }
+
+  &__cards {
+    align-self: center;
+  }
+
+  &__card {
+    display: flex;
+    text-align: start;
+    gap: 47px;
+    width: 270px;
+
+    @include onDesktop1024px {
+      width: 405px;
+    }
+    
+
+    &:not(:first-child)::before {
+      content: "";
+      position: absolute;
+      width: 270px;
+      border: 1px solid rgba(69, 88, 128, 0.2);
+      background: $colorGrey;
+      display: block;
+      
+      @include onDesktop1024px {
+        width: 405px;
+      }
+    }
+
+    &-icon {
+      width: 58px;
+      height: 58px;
+      padding-top: 41px;
+      
+      @include hover (transform, scale(1.1));
+    }
+
+    &-description {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+
+      &-subtitle {
+        @extend %h1;
+        font-size: 22px;
+        line-height: 27px;
+        padding: 41px 0 35px;
+      }
+
+      &-content {
+        @extend %text;
+        font-size: 18px;
+        line-height: 27px;
+        padding-bottom: 35px;
+      }
+    }
+  }
+}

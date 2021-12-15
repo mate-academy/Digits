@@ -1,0 +1,17 @@
+.icon {
+  cursor: pointer;
+  align-self: center;
+
+  &--menu {
+
+    @include onDesktop1024px {
+      display: none;
+    }
+  }
+
+  &__img-cross {
+    width: 18px;
+    height: 18px;
+    padding-left: 30px;
+  }
+}

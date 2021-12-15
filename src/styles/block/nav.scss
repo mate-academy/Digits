@@ -1,0 +1,26 @@
+.nav {
+  @include onDesktop1024px {
+    display: block;
+    padding-left: 85px;
+  }
+
+  &__wrap {
+    display: flex;
+    list-style: none;
+    
+  }
+  
+  &__list {
+    padding-right: 25px;
+
+    @include hover(transform, scale(1.1));
+
+    &-link {
+      text-decoration: none;
+      @extend %text;
+      font-size: 16px;
+      color: $colorText;
+      @include hover (border-color, $colorBlue);
+    }
+  }
+}
