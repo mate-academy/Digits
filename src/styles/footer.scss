@@ -1,0 +1,131 @@
+.footer {
+  &__contain {
+    display: flex;
+    flex-direction: column;
+  }
+  &__contain-column {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 78px;
+    margin-bottom: 53px;
+    border-bottom: 1px solid rgba(135, 146, 161, 0.08);
+    @media (max-width: 1200px) {
+      flex-direction: column;
+      align-items: center;
+      gap: 30px;
+    }
+  }
+  &__contain-down {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 108px;
+    @media (max-width: 640px) {
+      flex-direction: column;
+      align-items: center;
+      gap: 40px;
+    }
+  }
+  &__nav-list {
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;
+    line-height: 225%;
+    width: 212px;
+    @media (max-width: 850px) {
+      width: 150px;
+    }
+    @media (max-width: 580px) {
+      width: 100px;
+    }
+  }
+  &__nav-link {
+    display: block;
+    text-decoration: none;
+  }
+}
+
+.block {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  &__title {
+    font-size: 22px;
+    line-height: 125%;
+    color: #1e266d;
+    margin-bottom: 22px;
+  }
+  &__link {
+    display: flex;
+    justify-content: flex-start;
+    gap: 26px;
+    margin-bottom: 26px;
+   
+  }
+}
+
+.block__1 {
+  max-width: 310px;
+  margin-right: 186px;
+  @media (max-width: 1200px) {
+    max-width: 600px;
+    margin: 0 0 60px;
+  }
+  &-logo {
+    display: block;
+    height: 26px;
+    margin-bottom: 34px;
+  }
+  &-text {
+    font-size: 18px;
+    line-height: 145%;
+  }
+}
+
+.block-2 {
+  margin-right: 15px;
+}
+
+.block-3 {
+  margin-right: 50px;
+  @media (max-width: 750px) {
+    margin-right: 70px;
+  }
+  @media (max-width: 500px) {
+    margin-right: 0;
+  }
+}
+
+.contain-left {
+  font-size: 14px;
+  line-height: 27px;
+  color: rgba(69, 88, 128, 0.5);
+}
+
+.contain-right {
+  display: flex;
+  gap: 30px;
+}
+
+.contain__text {
+  display: block;
+  font-size: 14px;
+  line-height: 27px;
+}
+
+.desktop {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  @media (max-width: 500px) {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+  @media (max-width: 1200px) {
+    max-width: 800px;
+  }
+}
+
+.mobi {
+  display: flex;
+}

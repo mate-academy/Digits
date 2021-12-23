@@ -2,12 +2,358 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>Digits Demo</title>
     <link rel="stylesheet" href="./styles/main.scss">
   </head>
   <body>
-    <h1>Hello Mate Academy</h1>
-    <script type="text/javascript" src="scripts/main.js"></script>
+    <header class="header">
+      <div class="container">
+        <div class="header__containt">
+          <div class="header__containt-left">
+            <a href="#" class="header__logo">
+              <img src="./images/logo.svg"
+                alt="logo" class="header__logo-img">
+            </a>
+
+            <div class="header__burger">
+              <span></span>
+            </div>
+
+            <nav class="header__nav">
+              <ul class="header__nav-list text">
+                <li class="header__nav-item">
+                  <a href="#design" class="header__nav-link text">Homepages</a>
+                </li>
+                <li class="header__nav-item">
+                  <a href="#portfolio" class="header__nav-link text">Products</a>
+                </li>
+                <li class="header__nav-item">
+                  <a href="#brands" class="header__nav-link text">Company</a>
+                </li>
+                <li class="header__nav-item">
+                  <a href="#help" class="header__nav-link text">Pricing</a>
+                </li>
+                <li class="header__nav-item">
+                  <a href="#testimonials" class="header__nav-link text">Blog</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+
+          <button class="header__button button">
+            <a href="tel:+00 123 456 789">Contact Us</a>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="design" id="design">
+        <div class="container">
+          <div class="design__block">
+            <h1 class="design__title title">
+              Good design meets<br>
+              great user experience
+            </h1>
+            <p class="design__subtitle text">
+              For everyone, from beginners to experts
+            </p>
+            <div class="design__block-button">
+              <button class="design__button-buy button">
+                <a href="#">Buy Digits</a>
+              </button>
+              <button class="design__button-see button">
+                <a class="text" href="#">See the Features</a>
+              </button>
+            </div>
+            <div class="design__imgs">
+              <img class="card"
+                src="./images/Graphic.svg" alt="Graphic"
+              >
+            </div>
+          </div>
+
+        </div>
+      </section>
+      <section class="brands" id="brands">
+        <div class="container">
+          <p class="text brands__text">Trusted by forward-thinking software teams around the world</p>
+
+          <div class="brands__logo">
+            <img src="./images/logo-1.svg" alt="Netflix">
+            <img src="./images/logo-2.svg" alt="Drawkit">
+            <img src="./images/logo-3.svg" alt="Figma">
+            <img src="./images/logo-4.svg" alt="Cinemax">
+            <img src="./images/logo-5.svg" alt="Stripe">
+            <img src="./images/logo-6.svg" alt="Google">
+            <img src="./images/logo-7.svg" alt="Disney">
+          </div>
+        </div>
+      </section>
+
+      <section class="help" id="help">
+        <div class="container">
+          <div class="help__block">
+            <h2 class="help__title title">
+              Whatever work you do,
+              <br>
+              we're able to help
+            </h2>
+            <div class="help__row">
+
+              <div class="help__experts">
+                <img class="help__experts-img"
+                  src="./images/exspert/Graphic.jpg"
+                  alt="grafic">
+              </div>
+
+              <div class="help__columns">
+                <div class="item-help">
+                  <div class="item-help__icon">
+                    <img class="icon" src="./images/exspert/iconfinder_icons_main_1564511 1.svg"
+                      alt="icon1">
+                  </div>
+                  <div class="item-help__block">
+                    <div class="item-help__title title">
+                      Design and Assets
+                    </div>
+                    <div class="item-help__text text">
+                      Make your brand stand out with pixel-perfect design crafted to perfection.
+                    </div>
+                  </div>
+                </div>
+
+                <div class="item-help">
+                  <div class="item-help__icon item-help__icon--second">
+                    <img class="icon" src="./images/exspert/Vector (2).svg"
+                      alt="icon2">
+                  </div>
+
+                  <div class="item-help__block">
+                    <div class="item-help__title title">
+                      Easy Content
+                    </div>
+                    <div class="item-help__text text">
+                      Import your demos or build pages visually. Bonus: All images and illustrations included!
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="item-help">
+                  <div class="item-help__icon item-help__icon--third">
+                    <img class="icon" src="./images/exspert/Vector (3).svg"
+                      alt="icon3">
+                  </div>
+                  <div class="item-help__block">
+                    <div class="item-help__title title">
+                      Fast and Reliable
+                    </div>
+                    <div class="item-help__text text">
+                      No heavy-weight plugins. No builders. No unneccesary file loading. Pure WordPress.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="portfolio" id="portfolio">
+
+        <div class="container">
+
+          <div class="portfolio__block">
+            <h1 class="portfolio__title title">Simplicity meets innovative design</h1>
+            <p class="portfolio__subtitle text">It's really easy to start using Digits.
+              <br>
+              Install the theme, choose a demo and
+              <br>
+              start designing the future of your business!
+            </p>
+            <div class="portfolio__block-button">
+              <button class="design__button-buy button">
+                <a href="#">Buy Digits</a>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio__grafic">
+          <img class="portfolio__grafic-imgs" src="./images/grafic/Graphic (1).svg"
+            alt="Graphic"
+          >
+        </div>
+      </section>
+
+      <section class="testimonials" id="testimonials">
+        <div class="container">
+          <h1 class="testimonials__title title">What others are saying</h1>
+          <div class="testimonials__block-row">
+            <div class="testimonials__block">
+
+              <p class="block__column-text text">
+                Completely beautiful website and amazing support! This is my second website from this author and I love both of the sites so much and she has helped me so well when I needed it!
+              </p>
+              <img class="block__column-img"
+                src="./images/testimonial/image 5.svg" alt="img">
+              <h2 class="block__column-nik title">Happy User</h2>
+              <h3 class="block__column-club text">tempy.club</h3>
+
+            </div>
+
+            <div class="testimonials__block">
+
+              <p class="block__column-text text">
+                Really easy to use and customize. easy to understand. Darinka helped me with my site! She answers very quickly, a good service! Thank you very much!
+              </p>
+              <img class="block__column-img"
+                src="./images/testimonial/image 6.svg" alt="img">
+              <h2 class="block__column-nik title">Happy User</h2>
+              <h3 class="block__column-club text">tempy.club</h3>
+
+            </div>
+
+            <div class="testimonials__block">
+              <p class="block__column-text text">
+                Really pleasing to look at! Documentation (including installation instructions) are clear and that is coming from a relatively new WordPress user.
+              </p>
+              <img class="block__column-img"
+                src="./images/testimonial/image 7.svg" alt="img">
+              <h2 class="block__column-nik title">Happy User</h2>
+              <h3 class="block__column-club text">tempy.club</h3>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="CTA" id="CTA">
+        <div class="container">
+          <div class="CTA__block">
+            <h1 class="CTA__block-title title">
+              Ready to launch
+              <br>
+              your next website?
+            </h1>
+            <div class="CTA__block-right">
+              <button class="block__button">
+                <img class="block__button-img" src="./images/iconfinder_Contat_Us_15-Send_Mail_4211845 1.svg"
+                  alt="message">
+                <a href="#" class="block__button-get text">Get in touch now</a>
+              </button>
+              <p class="CTA__block-text">Or, take a peek inside our design studio</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__contain">
+          <div class="footer__contain-column">
+            <div class="block block__1">
+              <a href="#">
+                <img src="./images/logo.svg"
+                  alt="logo" class="block__1-logo">
+              </a>
+              <p class="block__1-text text">
+                Digits is a website template built to work seamlesly with the WordPress block editor to create beautifully designed pages in minutes.
+              </p>
+            </div>
+            <div class="desktop">
+              <div class="mobi">
+                <div class="block block-2">
+                  <h3 class="block__title title">Pages</h3>
+                  <ul class="footer__nav-list text">
+                    <li class="footer__nav-item">
+                      <a href="#design" class="footer__nav-link text">Home</a>
+                    </li>
+                    <li class="footer__nav-item">
+                      <a href="#design" class="footer__nav-link text">About</a>
+                    </li>
+                    <li class="footer__nav-item">
+                      <a href="#" class="footer__nav-link text">News</a>
+                    </li>
+                    <li class="footer__nav-item">
+                      <a href="#" class="footer__nav-link text">Pricing</a>
+                    </li>
+                    <li class="footer__nav-item">
+                      <a href="#" class="footer__nav-link text">Contact</a>
+                    </li>
+                  </ul>
+
+                </div>
+                <div class="block block-3">
+                  <h3 class="block__title title">Demos</h3>
+                  <ul class="footer__nav-list text">
+                    <li class="footer__nav-item">
+                      <a href="#" class="footer__nav-link text">Classic</a>
+                    </li>
+                    <li class="footer__nav-item">
+                      <a href="#" class="footer__nav-link text">Boxy</a>
+                    </li>
+                    <li class="footer__nav-item">
+                      <a href="#" class="footer__nav-link text">Gradient</a>
+                    </li>
+                    <li class="footer__nav-item">
+                      <a href="#" class="footer__nav-link text">Minimal</a>
+                    </li>
+                    <li class="footer__nav-item">
+                      <a href="#" class="footer__nav-link text">Night</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="block block-4">
+                <h3 class="block__title title">Resources</h3>
+                <div class="block__link text">
+                  <a href="https://ru.wikipedia.org">
+                    <img class="text-img"
+                      src="./images/footer/Envato.svg" alt="instagram">
+                  </a>
+                  <a href="https://www.facebook.com/">
+                    <img class="text-img"
+                      src="./images/footer/Vector (5).svg" alt="facebook">
+                  </a>
+                  <a href="https://www.instagram.com">
+                    <img class="text-img"
+                      src="./images/footer/Vector (6).svg" alt="">
+                  </a>
+                  <a href="https://www.google.com">
+                    <img class="text-img"
+                      src="./images/footer/Vector (7).svg" alt="">
+                  </a>
+                  <a href="https://ru.link textedin.com">
+                    <img class="text-img"
+                      src="./images/footer/Group.svg" alt="">
+                  </a>
+                </div>
+                <ul class="footer__nav-list text">
+                  <li class="footer__nav-item">
+                    <a href="#" class="footer__nav-link text"></a>
+                  </li>
+                  <li class="footer__nav-item">
+                    <a href="#" class="footer__nav-link text">Download now</a>
+                  </li>
+                  <li class="footer__nav-item">
+                    <a href="#" class="footer__nav-link text">Documentation</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="footer__contain-down">
+            <p class="contain-left text">Copyright © 2020 tempy.club</p>
+            <div class="contain-right">
+              <p class="contain__text text">Privacy Policy</p>
+              <p class="contain__text text">Terms of Use</p>
+              <p class="contain__text text">GDPR</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
   </body>
 </html>
