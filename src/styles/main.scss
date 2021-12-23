@@ -1,7 +1,58 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:regular,700,800);
 @import "utils";
 @import "fonts";
 @import "typography";
+@import "reset";
+@import "header";
+@import "design";
+@import "brands";
+@import "help";
+@import "portfolio";
+@import "testimonials";
+@import "CTA";
+@import "footer";
 
 body {
-  background: $c-gray;
+  max-width: 100%;
+  scroll-behavior: smooth;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1180px;
+  padding: 0 20px;
+  box-sizing: content-box;
+}
+
+.button {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  border: 0;
+  padding: 0;
+  border-radius: 100px;
+  text-decoration: none;
+  cursor: pointer;
+  font-family: "Halyard Text Regular", sans-serif;
+  font-size: 16px;
+  &:hover {
+    transform: scale(1.07);
+  }
+}
+
+.title {
+  font-family: "Halyard Display Medium", sans-serif;
+  font-weight: 500;
+}
+
+.text {
+  font-family: "Halyard Text Regular", sans-serif;
+  color: #455880;
+  &-img {
+    display: block;
+    width: 14px;
+    height: 14px;
+  }
 }

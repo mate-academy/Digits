@@ -1,6 +1,20 @@
 @font-face {
-  font-family: "Roboto";
-  src: url("../fonts/Roboto-Regular-webfont.woff") format("woff");
+  font-family: "Halyard Text Regular";
+  src: url("../fonts/Halyard-Text-Regular.eot");
+  src: local("O"),
+    url("../fonts/Halyard-Text-Regular.woff") format("woff"),
+    url("../fonts/Halyard-Text-Regular.ttf") format("truetype"),
+    url("../fonts/Halyard-Text-Regular.svg") format("svg");
   font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Halyard Display Medium";
+  src: url("../fonts/Halyard-Display-Medium.eot");
+  src: local("O"),
+    url("../fonts/Halyard-Display-Medium.woff") format("woff"),
+    url("../fonts/Halyard-Display-Medium.ttf") format("truetype"),
+    url("../fonts/Halyard-Display-Medium.svg") format("svg");
+  font-weight: 500;
   font-style: normal;
 }

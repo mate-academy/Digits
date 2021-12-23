@@ -1,0 +1,19 @@
+.brands {
+  margin-bottom: 162px;
+  &__text {
+    font-size: 16px;
+    line-height: 27px;
+    color: rgba(69, 88, 128, 0.5);
+    margin: 0 0 51px;
+    text-align: center;
+  }
+  &__logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @media (max-width: 890px) {
+      flex-direction: column;
+      gap: 40px;
+    }
+  }
+}
