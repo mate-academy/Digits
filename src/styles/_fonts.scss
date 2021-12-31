@@ -1,6 +1,29 @@
 @font-face {
-  font-family: "Roboto";
-  src: url("../fonts/Roboto-Regular-webfont.woff") format("woff");
+  font-family: "Halyard Display";
+  src: url("../fonts/HalyardDisplay-Medium.woff2") format("woff2"),
+    url("../fonts/HalyardDisplay-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Halyard Text";
+  src: url("../fonts/HalyardText-Regular.woff2") format("woff2"),
+    url("../fonts/HalyardText-Regular.woff") format("woff");
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "icons-font";
+  src: url("../fonts/icons-font.eot?jm7dph");
+  src: url("../fonts/icons-font.eot?jm7dph#iefix") format("embedded-opentype"),
+    url("../fonts/icons-font.ttf?jm7dph") format("truetype"),
+    url("../fonts/icons-font.woff?jm7dph") format("woff"),
+    url("../fonts/icons-font.svg?jm7dph#icons-font") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
 }

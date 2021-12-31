@@ -1,1 +1,14 @@
-$c-gray: #eee;
+// $minWidth: 320px;
+$maxWidth: 1600;
+$maxWidthContainer: 1210;
+$md1: $maxWidthContainer + px;
+$md2: 991.98;
+$md3: 767.98;
+$md4: 479.98;
+
+$mainFont: "Halyard Text", sans-serif;
+$secondaryFont: "Halyard Display", sans-serif;
+$fontSize: 18px;
+$mainBlue: #3751ff;
+$textColorMain: #455880;
+$textColorSecond:#1e266d;
