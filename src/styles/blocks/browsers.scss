@@ -1,0 +1,76 @@
+.browsers {
+  width: 100%;
+  max-height: 714px;
+
+  position: absolute;
+  left: 0;
+  bottom: 0;
+
+  &__items {
+    position: relative;
+
+    &--item {
+      max-width: 540px;
+      width: 21%;
+      line-height: 100%;
+      filter: drop-shadow(0 4px 4px rgba(135, 146, 161, 0.08))
+        drop-shadow(0 14px 25px rgba(135, 146, 161, 0.06));
+    }
+
+    &--item-11 {
+      position: absolute;
+      transform: translateY(-196%);
+    }
+
+    &--item-12 {
+      position: absolute;
+      transform: translateY(-106%);
+
+    }
+
+    &--item-13 {
+      position: absolute;
+      transform: translateY(-100%);
+    }
+
+    &--item-21 {
+      position: absolute;
+      transform: translate(93%, -156%);
+    }
+
+    &--item-22 {
+      position: absolute;
+      transform: translate(93%, -100%);
+    }
+
+    &--item-31 {
+      position: absolute;
+      transform: translate(188%, -136%);
+    }
+
+    &--item-32 {
+      position: absolute;
+      transform: translate(188%, -100%);
+    }
+
+    &--item-41 {
+      position: absolute;
+      transform: translate(283%, -116%);
+    }
+
+    &--item-42 {
+      position: absolute;
+      transform: translate(283%, -100%);
+    }
+
+    &--item-51 {
+      position: absolute;
+      transform: translate(376%, -164%);
+    }
+
+    &--item-52 {
+      position: absolute;
+      transform: translate(376%, -100%);
+    }
+  }
+}

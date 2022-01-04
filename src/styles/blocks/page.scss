@@ -1,0 +1,16 @@
+.page {
+  margin: 0;
+  background: $c-white;
+
+  font-family: "Halyard Text", Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+
+  &__section {
+    margin: 0;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+}

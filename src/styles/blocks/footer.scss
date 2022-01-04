@@ -1,0 +1,231 @@
+.footer {
+  &__content {
+    margin: 124px auto 107px;
+    padding: 0 10px;
+    max-width: 1180px;
+
+    @include onTablet {
+      padding: 0;
+    }
+  }
+
+  &__container {
+    margin: 0 0 53px;
+    padding-bottom: 77px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    row-gap: 66px;
+
+    border-bottom: 1px solid rgba(135, 146, 161, 0.08);
+
+    @include menuTop {
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: start;
+    }
+
+    @include onDesign {
+      justify-content: space-between;
+    }
+
+    &--down {
+      margin: 0 0 107px;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      @include menuTop {
+        flex-direction: row-reverse;
+        justify-content: space-around;
+      }
+
+      @include onDesign {
+        justify-content: space-between;
+      }
+
+      &-copyright {
+        margin: 0 auto;
+        width: max-content;
+        font-size: 14px;
+        line-height: 27px;
+        color: rgba(69, 88, 128, 0.5);
+
+        @include menuTop {
+          margin: 0;
+        }
+      }
+    }
+  }
+
+  &__digits {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+
+    @include onTablet {
+      height: 252px;
+    }
+
+    &--logo {
+      margin: 0 0 34px;
+    }
+
+    &--paragraph {
+      margin: 0;
+      max-width: 310px;
+      line-height: 145%;
+
+      @include paragraph;
+
+      @include minTitleSize {
+        width: 310px;
+      }
+    }
+  }
+
+  &__title {
+    margin: 0 0 22px;
+    @include title3;
+
+    &--resources {
+      margin: 0 0 34px;
+    }
+  }
+
+  &__pages-demos {
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+    width: 310px;
+
+    @include onTablet {
+      justify-content: space-around;
+    }
+  }
+
+  &__networks {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    max-width: 310px;
+
+    @include onTablet {
+      width: 180px;
+    }
+
+    @include onLaptop {
+      width: 210px;
+    }
+  }
+
+  &__resources {
+    margin: 0 0 22px;
+
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 26px;
+    width: 180px;
+
+    &--link {
+      line-height: 100%;
+      text-decoration: none;
+    }
+
+    &--facebook {
+      width: 14px;
+      height: 14px;
+    }
+
+    &--instagram {
+      width: 14px;
+      height: 14px;
+    }
+
+    &--twitter {
+      width: 16px;
+      height: 13px;
+    }
+
+    &--ball {
+      &-items {
+        position: absolute;
+        left: 126px;
+        top: 3px;
+      }
+
+      &-item {
+        position: relative;
+      }
+
+      &-circle {
+        position: absolute;
+        width: 16px;
+        height: 16px;
+        left: 0;
+        top: 0;
+      }
+
+      &-left {
+        &-top {
+          position: absolute;
+          width: 6px;
+          height: 5px;
+          left: 2px;
+          top: 3px;
+        }
+
+        &-middle {
+          position: absolute;
+          width: 7px;
+          height: 5px;
+          left: 2px;
+          top: 7px;
+        }
+
+        &-down {
+          position: absolute;
+          width: 6.5px;
+          height: 5.5px;
+          left: 3.7px;
+          top: 8.3px;
+        }
+      }
+
+      &-right {
+        &-top {
+          position: absolute;
+          width: 5.6px;
+          height: 4.1px;
+          left: 5.7px;
+          top: 3px;
+        }
+
+        &-middle {
+          position: absolute;
+          width: 5.7px;
+          height: 3.7px;
+          left: 7.7px;
+          top: 5.2px;
+        }
+
+        &-down {
+          position: absolute;
+          width: 5px;
+          height: 5px;
+          left: 8.4px;
+          top: 7.9px;
+        }
+      }
+    }
+
+    &--envato {
+      width: 14px;
+      height: 16px;
+    }
+  }
+}

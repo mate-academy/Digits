@@ -1,0 +1,38 @@
+.menu {
+  margin: 0 auto;
+
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3%;
+  padding: 0 8%;
+  line-height: 80px;
+  list-style: none;
+  white-space: nowrap;
+
+  max-width: 521px;
+
+  @include menuTop {
+    display: flex;
+  }
+
+  @include onTablet {
+    padding: 0 82px;
+    gap: 40px;
+
+    &__link {
+      color: $c-title;
+    }
+  }
+
+  &-mobile {
+    margin: 0;
+    padding: 20px 0;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    list-style: none;
+    white-space: nowrap;
+  }
+}

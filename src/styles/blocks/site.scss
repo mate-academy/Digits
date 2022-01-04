@@ -1,0 +1,232 @@
+.site {
+  position: relative;
+  margin: -415px auto 0;
+
+  max-width: 720px;
+  width: 85%;
+  height: 533px;
+  background-color: $c-white;
+  box-shadow: 0 4px 4px rgba(135, 146, 161, 0.08),
+    0 14px 25px rgba(135, 146, 161, 0.06);
+  border-radius: 18px;
+
+  @include onTablet {
+    width: 720px;
+  }
+
+  &__top {
+    margin-bottom: 38px;
+
+    &--field {
+      width: 100%;
+      height: 32px;
+      background-color: $c-sitegray;
+      border-radius: 18px 18px 0 0;
+    }
+
+    &--points {
+      margin: -20px 0 0 16px;
+      display: flex;
+      gap: 6px;
+    }
+
+    &--point {
+      width: 8px;
+      height: 8px;
+      background-color: $c-white;
+      border-radius: 50%;
+    }
+  }
+
+  &__blocks {
+    margin: 0 263px 57px 7.6%;
+    max-width: 400px;
+    min-width: 165px;
+
+    &--top {
+      margin-bottom: 71px;
+      display: flex;
+      gap: 9%;
+      align-items: center;
+      line-height: 100%;
+
+      &-ellipse {
+        width: 48px;
+        height: 48px;
+      }
+
+      &-2 {
+        width: 72.5%;
+        min-width: 100px;
+      }
+
+      &-row1 {
+        margin-bottom: 15px;
+        width: 100%;
+        height: 12px;
+        background-color: $c-sitegray;
+      }
+
+      &-row2 {
+        width: 69%;
+        height: 6px;
+        background-color: $c-sitegray;
+      }
+    }
+
+    &--middle {
+      margin: 0 0 16px 6.5%;
+      display: flex;
+      flex-direction: column;
+      width: 43%;
+      min-width: 90px;
+
+      &::after {
+        content: "";
+        margin-left: 20px;
+        width: 0;
+        height: 0;
+        border-top: 0 solid transparent;
+        border-bottom: 8.5px solid transparent;
+        border-left: 19px solid $c-sitegray;
+      }
+
+      &-content {
+        display: flex;
+        height: 65px;
+        background-color: $c-sitegray;
+        border-radius: 8px;
+      }
+
+      &-row {
+        margin: 19px 28px 0;
+        width: 67%;
+      }
+
+      &-row1 {
+        margin-bottom: 6px;
+        width: 100%;
+        height: 6px;
+        background-color: $c-white;
+      }
+
+      &-row2 {
+        width: 74%;
+        height: 6px;
+        background-color: $c-white;
+      }
+    }
+
+    &--ellipse {
+      line-height: 100%;
+
+      &-left {
+        margin-bottom: 4px;
+      }
+
+      &-right {
+        margin-bottom: 31px;
+        text-align: right;
+      }
+    }
+
+    &--ellipse1 {
+      width: 24px;
+      height: 24px;
+    }
+
+    &--down {
+      position: relative;
+      margin: 0 25px 16px 39%;
+      display: flex;
+      flex-direction: column;
+      width: 54.5%;
+      min-width: 95px;
+
+      &::after {
+        content: "";
+        position: absolute;
+        right: 20px;
+        bottom: -8.5px;
+        width: 0;
+        height: 0;
+        border-top: 0 solid transparent;
+        border-bottom: 8.5px solid transparent;
+        border-right: 19px solid $c-sitegray;
+      }
+
+      &-content {
+        display: flex;
+        height: 65px;
+        background-color: $c-sitegray;
+        border-radius: 8px;
+      }
+
+      &-row {
+        margin: 22px 31px 0;
+        width: 71%;
+      }
+
+      &-row1 {
+        margin-bottom: 6px;
+        width: 100%;
+        height: 6px;
+        background-color: $c-white;
+      }
+
+      &-row2 {
+        width: 35%;
+        height: 6px;
+        background-color: $c-white;
+      }
+    }
+
+    &--search {
+      position: relative;
+      display: flex;
+      align-items: center;
+      width: 100%;
+      height: 28px;
+      background-color: $c-sitegray;
+      border-radius: 8px;
+
+      &::before {
+        content: "";
+        position: absolute;
+        right: 9px;
+        top: 8.5px;
+        width: 0;
+        height: 0;
+        border-top: 4.5px solid transparent;
+        border-bottom: 0 solid transparent;
+        border-left: 14px solid $c-white;
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        right: 9px;
+        bottom: 8.5px;
+        width: 0;
+        height: 0;
+        border-top: 0 solid transparent;
+        border-bottom: 4.5px solid transparent;
+        border-left: 14px solid $c-white;
+      }
+
+      &-imoticon {
+        margin-left: 9px;
+        display: inline-block;
+        width: 17px;
+        height: 17px;
+      }
+
+      &-column {
+        margin-left: 9px;
+        width: 3px;
+        height: 17px;
+        background-color: $c-white;
+      }
+    }
+  }
+}

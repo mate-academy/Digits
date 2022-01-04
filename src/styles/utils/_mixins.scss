@@ -4,3 +4,82 @@
     #{$_property}: $_toValue;
   }
 }
+
+@mixin minTitleSize {
+  @media (min-width: 335px) {
+    @content;
+  }
+}
+
+@mixin onMobile {
+  @media (min-width: 482px) {
+    @content;
+  }
+}
+
+@mixin titleSize {
+  @media (min-width: 570px) {
+    @content;
+  }
+}
+
+@mixin menuTop {
+  @media (min-width: 773px) {
+    @content;
+  }
+}
+
+@mixin onTablet {
+  @media (min-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin onLaptop {
+  @media (min-width: 1180px) {
+    @content;
+  }
+}
+
+@mixin onDesign {
+  @media (min-width: 1600px) {
+    @content;
+  }
+}
+
+@mixin title1 {
+  font-family: "Halyard Display", Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 109%;
+  color: $c-title;
+}
+
+@mixin title1Mobile {
+  font-family: "Halyard Display", Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 122.5%;
+  color: $c-title;
+}
+
+@mixin title1Tablet {
+  font-family: "Halyard Display", Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  font-size: 56px;
+  line-height: 105%;
+  color: $c-title;
+}
+
+@mixin title3 {
+  font-family: "Halyard Display", Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 125%;
+  color: $c-title;
+}
+
+@mixin paragraph {
+  font-size: 18px;
+  color: $c-paragraph;
+}
