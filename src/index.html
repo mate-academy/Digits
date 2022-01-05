@@ -1,13 +1,711 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="page">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Title</title>
+    <title>Digits</title>
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="./images/icons/favicon/favicon.svg"
+    >
+    <link
+      rel="icon"
+      type="image/png"
+      href="./images/icons/favicon/favicon.png"
+    >
     <link rel="stylesheet" href="./styles/main.scss">
   </head>
-  <body>
-    <h1>Hello Mate Academy</h1>
+  <body id="page-body" class="page__body">
+    <header class="page__header header">
+      <div class="header__wrapper">
+        <div class="header__container _container">
+          <div class="header__body">
+            <a href="#page-body" class="header__logo ibg">
+              <img
+                class="img"
+                src="./images/logo-header.svg"
+                alt="logo"
+              >
+            </a>
+            <div class="header__menu menu">
+              <nav class="menu__body">
+                <ul class="menu__list">
+                  <li class="menu__item">
+                    <a
+                      data-goto=".page__body"
+                      href="#"
+                      class="menu__link"
+                    >
+                      Homepages
+                    </a>
+                  </li>
+                  <li class="menu__item">
+                    <a
+                      data-goto=".products"
+                      href="#"
+                      class="menu__link"
+                    >
+                      Products
+                    </a>
+                  </li>
+                  <li class="menu__item">
+                    <a
+                      data-goto=".company"
+                      href="#"
+                      class="menu__link"
+                    >
+                      Company
+                    </a>
+                    <button type="button" class="menu__arrow _icon-arrow"></button>
+                    <div class="menu__wrap">
+                      <ul class="menu__sub-list">
+                        <li class="menu__sub-item">
+                          <a target="blank" href="#page-body" class="menu__sub-link">
+                            Сompany #1
+                          </a>
+                        </li>
+                        <li class="menu__sub-item">
+                          <a target="blank" href="#page-body" class="menu__sub-link">
+                            Сompany #2
+                          </a>
+                        </li>
+                        <li class="menu__sub-item">
+                          <a target="blank" href="#page-body" class="menu__sub-link">
+                            Сompany #3
+                          </a>
+                        </li>
+                        <li class="menu__sub-item">
+                          <a target="blank" href="#page-body" class="menu__sub-link">
+                            Сompany #4
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="menu__item">
+                    <a
+                      data-goto=".products"
+                      href="#"
+                      class="menu__link"
+                    >
+                      Pricing
+                    </a>
+                  </li>
+                  <li class="menu__item">
+                    <a
+                      data-goto=".blog"
+                      href="#"
+                      class="menu__link"
+                    >
+                      Blog
+                    </a>
+                  </li>
+                </ul>
+                <div class="menu__contacts contacts">
+                  <a href="tel:+00123456789" class="contacts__phone">
+                    +0012-34-56-789
+                  </a>
+                  <a
+                    href="#contacts"
+                    class="contacts__button button button--small"
+                    target="blank"
+                  >
+                    Contact Us
+                  </a>
+                </div>
+              </nav>
+            </div>
+            <buttton class="icon-menu" type="buttton">
+              <span></span>
+              <span></span>
+              <span></span>
+            </buttton>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="section__home home">
+        <div class="home__container _container">
+          <div class="home__body">
+            <h2 class="home__title title-section">
+              Good design meets
+              great user experience
+            </h2>
+            <p class="home__text">For everyone, from beginners to experts</p>
+            <div class="home__buttons">
+              <a
+                href="#page-body"
+                class="home__button button"
+                target="blank"
+              >
+                Buy Digits
+              </a>
+              <a
+                href="#page-body"
+                class="home__button button button--white"
+                target="blank"
+              >
+                See the Features
+              </a>
+            </div>
+          </div>
+          <div class="home__image ibg">
+            <img
+              class="ibg__img"
+              src="./images/good_design/1.png"
+              alt="Graphic image social network"
+            >
+          </div>
+        </div>
+      </section>
+      <section class="section__company company">
+        <div class="company__container _container">
+          <p class="company__text">
+            Trusted by forward-thinking software teams around the world
+          </p>
+          <div class="company__list">
+            <a
+              target="blabnk"
+              href="https://www.netflix.com/"
+              class="company__link"
+            >
+              <img
+                class="img"
+                src="./images/brands/1.png"
+                alt="Netflix"
+              >
+            </a>
+            <a
+              target="blabnk"
+              href="https://drawkit.com/"
+              class="company__link"
+            >
+              <img
+                class="img"
+                src="./images/brands/2.png"
+                alt="DrawKit"
+              >
+            </a>
+            <a
+              target="blabnk"
+              href="https://www.figma.com/"
+              class="company__link"
+            >
+              <img
+                class="img"
+                src="./images/brands/3.png"
+                alt="Figma"
+              >
+            </a>
+            <a
+              target="blabnk"
+              href="https://www.cinemax.com/"
+              class="company__link"
+            >
+              <img
+                class="img"
+                src="./images/brands/4.png"
+                alt="Cinemax"
+              >
+            </a>
+            <a
+              target="blabnk"
+              href="https://www.stripe.com/"
+              class="company__link"
+            >
+              <img
+                class="img"
+                src="./images/brands/5.png"
+                alt="Stripe"
+              >
+            </a>
+            <a
+              target="blabnk"
+              href="https://www.gogle.com/"
+              class="company__link"
+            >
+              <img
+                class="img"
+                src="./images/brands/6.png"
+                alt="Gogle"
+              >
+            </a>
+            <a
+              target="blabnk"
+              href="https://www.disney.com/"
+              class="company__link"
+            >
+              <img
+                class="img"
+                src="./images/brands/7.png"
+                alt="Disney"
+              >
+            </a>
+          </div>
+        </div>
+      </section>
+      <section class="section__benefits benefits">
+        <div class="benefits__container _container">
+          <h2 class="benefits__title title-section">
+            Whatever work you do,
+            we're able to help
+          </h2>
+          <div class="benefits__body">
+            <div class="benefits__photos">
+              <div class="benefits__rectangle benefits__rectangle--1">
+                <div class="benefits__image benefits__image--1 ibg">
+                  <img
+                    class="ibg__img"
+                    src="./images/about/girl1.png"
+                    alt="employee photo"
+                  >
+                </div>
+              </div>
+              <div class="benefits__rectangle benefits__rectangle--2">
+                <div class="benefits__image benefits__image--2 ibg">
+                  <img
+                    class="ibg__img"
+                    src="./images/about/costume1.png"
+                    alt="employee photo"
+                  >
+                </div>
+              </div>
+              <div class="benefits__rectangle benefits__rectangle--3">
+                <div class="benefits__image benefits__image--3 ibg">
+                  <img
+                    class="ibg__img"
+                    src="./images/about/beard1.png"
+                    alt="employee photo"
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="benefits__column">
+              <div class="benefits__item item-benefits">
+                <a
+                  target="blank"
+                  href="#page-body"
+                  class="item-benefits__icon ibg"
+                >
+                  <img
+                    src="./images/about/1.svg"
+                    alt="icon"
+                    class="ibg__img"
+                  >
+                </a>
+                <div class="item-benefits__content">
+                  <a
+                    href="#page-body"
+                    target="blank"
+                    class="item-benefits__title"
+                  >
+                    Design and Assets
+                  </a>
+                  <a
+                    href="#page-body"
+                    target="blank"
+                    class="item-benefits__text"
+                  >
+                    Make your brand stand out with pixel-perfect design crafted to perfection.
+                  </a>
+                </div>
+              </div>
+              <div class="benefits__item item-benefits">
+                <a
+                  target="blank"
+                  href="#page-body"
+                  class="item-benefits__icon ibg"
+                >
+                  <img
+                    src="./images/about/2.svg"
+                    alt="icon"
+                    class="ibg__img"
+                  >
+                </a>
+                <div class="item-benefits__content">
+                  <a
+                    href="#page-body"
+                    target="blank"
+                    class="item-benefits__title"
+                  >
+                    Easy Content
+                  </a>
+                  <a
+                    href="#page-body"
+                    target="blank"
+                    class="item-benefits__text"
+                  >
+                    Import your demos or build pages visually. Bonus: All images and illustrations included!
+                  </a>
+                </div>
+              </div>
+              <div class="benefits__item item-benefits">
+                <a
+                  target="blank"
+                  href="#page-body"
+                  class="item-benefits__icon ibg"
+                >
+                  <img
+                    src="./images/about/3.svg"
+                    alt="icon"
+                    class="ibg__img"
+                  >
+                </a>
+                <div class="item-benefits__content">
+                  <a
+                    href="#page-body"
+                    target="blank"
+                    class="item-benefits__title"
+                  >
+                    Fast and Reliable
+                  </a>
+                  <a
+                    href="#page-body"
+                    target="blank"
+                    class="item-benefits__text">
+                    No heavy-weight plugins. No builders. No unneccesary file loading. Pure WordPress.
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="products" class="section__products products">
+        <div class="products__container _container">
+          <div class="products__body">
+            <h2 class="products__title title-section">
+              Simplicity meets innovative design
+            </h2>
+            <p class="products__text">
+              It's really easy to start using Digits.
+              Install the theme, choose a demo and
+              start designing the future of your business!
+            </p>
+            <a
+              href="#page-body"
+              target="blank"
+              class="products__button button"
+            >
+              Buy Digits
+            </a>
+          </div>
+        </div>
+        <div class="products__image ibg">
+          <img
+            src="./images/portfolio/design-templates.png"
+            alt="Design templates"
+            class="ibg__img"
+          >
+        </div>
+      </section>
+      <section class="section__blog blog">
+        <div class="blog__container _container">
+          <h2 class="blog__title title-section">What others are saying</h2>
+          <div class="blog__body">
+            <div class="blog__cards">
+              <div class="blog__card card">
+                <div class="card__body">
+                  <p class="card__text">
+                    Completely beautiful website and amazing support! This is my second website from this author and I
+                    love both of the sites so much and she has helped me so well when I needed it!
+                  </p>
+                  <a
+                    href="#page-body"
+                    target="blank"
+                    class="card__user-photo"
+                  >
+                    <img src="./images/testimonials/1.jpg" alt="User photo">
+                  </a>
+                  <a
+                    href="#page-body"
+                    target="blank"
+                    class="card__user-name"
+                  >
+                    Happy User
+                  </a>
+                  <a
+                    href="#page-body"
+                    target="blank"
+                    class="card__user-from"
+                  >
+                    tempy.club
+                  </a>
+                </div>
+              </div>
+              <div class="blog__card card">
+                <div class="card__body">
+                  <p class="card__text">
+                    Really easy to use and customize. easy to understand. Darinka helped me with my site! She answers
+                    very quickly, a good service! Thank you very much!
+                  </p>
+                  <a
+                    href="#page-body"
+                    target="blank"
+                    class="card__user-photo"
+                  >
+                    <img src="./images/testimonials/2.jpg" alt="User photo">
+                  </a>
+                  <a
+                    href="#page-body"
+                    target="blank"
+                    class="card__user-name"
+                  >
+                    Happy User
+                  </a>
+                  <a
+                    href="#page-body"
+                    target="blank"
+                    class="card__user-from"
+                  >
+                    tempy.club
+                  </a>
+                </div>
+              </div>
+              <div class="blog__card card">
+                <div class="card__body">
+                  <p class="card__text">
+                    Really pleasing to look at! Documentation (including installationinstructions) are clear and that is
+                    coming from a relatively newWordPress user.
+                  </p>
+                  <a
+                    href="#page-body"
+                    target="blank"
+                    class="card__user-photo"
+                  >
+                    <img src="./images/testimonials/3.jpg" alt="User photo">
+                  </a>
+                  <a
+                    href="#page-body"
+                    target="blank"
+                    class="card__user-name"
+                  >
+                    Happy User
+                  </a>
+                  <a
+                    href="#page-body"
+                    target="blank"
+                    class="card__user-from"
+                  >
+                    tempy.club
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="contact-us" class="section__contact-us contact-us">
+        <div class="contact-us__container _container">
+          <div class="contact-us__body">
+            <h2 class="contact-us__title title-section title-section--white">
+              Ready to launch <br> your next website?
+            </h2>
+            <div class="contact-us__content">
+              <a
+                target="blank"
+                href="mailto:email@email.com"
+                class="contact-us__button button button--big button--white _icon-send"
+              >
+                Get in touch now
+              </a>
+              <p class="contact-us__text">Or, take a peek inside our design studio</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="page__footer footer">
+      <div class="footer__container _container">
+        <div class="footer__body">
+          <div class="footer__main main-footer">
+            <div class="main-footer__about-us">
+              <a
+                target="blank"
+                href="#page-body"
+                class="main-footer__logo"
+              >
+                <img src="./images/logo-footer.svg" alt="Logo">
+              </a>
+              <p class="main-footer__text">
+                Digits is a website template built to work seamlesly with the WordPress block editor to create
+                beautifully designed pages in minutes.
+              </p>
+            </div>
+            <nav class="main-footer__menu menu-footer">
+              <div class="menu-footer__column menu-footer__column--pages">
+                <button type="button" class="menu-footer__title title-footer">
+                  Pages
+                </button>
+                <ul class="menu-footer__list">
+                  <li class="menu-footer__item">
+                    <a href="#page-body" class="menu-footer__link">
+                      Home
+                    </a>
+                  </li>
+                  <li class="menu-footer__item">
+                    <a href="#page-body" class="menu-footer__link">
+                      About
+                    </a>
+                  </li>
+                  <li class="menu-footer__item">
+                    <a
+                      target="blank"
+                      href="#page-body"
+                      class="menu-footer__link"
+                    >
+                      News
+                    </a>
+                  </li>
+                  <li class="menu-footer__item">
+                    <a href="#products" class="menu-footer__link">
+                      Pricing
+                    </a>
+                  </li>
+                  <li class="menu-footer__item">
+                    <a href="#contact-us" class="menu-footer__link">
+                      Contact
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="menu-footer__column menu-footer__column--demos">
+                <button type="button" class="menu-footer__title title-footer">
+                  Demos
+                </button>
+                <ul class="menu-footer__list">
+                  <li class="menu-footer__item">
+                    <a
+                      target="blank"
+                      href="#page-body"
+                      class="menu-footer__link"
+                    >
+                      Classic
+                    </a>
+                  </li>
+                  <li class="menu-footer__item">
+                    <a
+                      target="blank"
+                      href="#page-body"
+                      class="menu-footer__link"
+                    >
+                      Boxy
+                    </a>
+                  </li>
+                  <li class="menu-footer__item">
+                    <a
+                      target="blank"
+                      href="#page-body"
+                      class="menu-footer__link"
+                    >
+                      Gradient
+                    </a>
+                  </li>
+                  <li class="menu-footer__item">
+                    <a
+                      target="blank"
+                      href="#page-body"
+                      class="menu-footer__link"
+                    >
+                      Minimal
+                    </a>
+                  </li>
+                  <li class="menu-footer__item">
+                    <a
+                      target="blank"
+                      href="#page-body"
+                      class="menu-footer__link"
+                    >
+                      Night
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="menu-footer__column menu-footer__column--resources">
+                <button type="button" class="menu-footer__title title-footer">
+                  Resources
+                </button>
+                <ul class="menu-footer__list">
+                  <div class="menu-footer__soc soc-footer">
+                    <a
+                      href="https://www.facebook.com/"
+                      class="icon _icon-facebook"
+                      target="blank"
+                   ></a>
+                    <a
+                      href="https://www.instagram.com/"
+                      class="icon _icon-instagram"
+                      target="blank"
+                   ></a>
+                    <a
+                      href="https://www.twitter.com/"
+                      class="icon _icon-twitter"
+                      target="blank"
+                   ></a>
+                    <a
+                      href="https://www.dribbble.com/"
+                      class="icon _icon-dribbble"
+                      target="blank"
+                   ></a>
+                    <a
+                      href="https://www.envato.com/"
+                      class="icon _icon-envato"
+                      target="blank"
+                   ></a>
+                  </div>
+                  <li class="menu-footer__item">
+                    <a
+                      target="blank"
+                      href="#page-body"
+                      class="menu-footer__link"
+                    >
+                      Download now
+                    </a>
+                  </li>
+                  <li class="menu-footer__item">
+                    <a
+                      target="blank"
+                      href="#page-body"
+                      class="menu-footer__link link-doc"
+                    >
+                      Documentation
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+          <div class="footer__bottom bottom-footer">
+            <div class="bottom-footer__copy">Copyright © 2020 tempy.club</div>
+            <div class="bottom-footer__info">
+              <a
+                target="blank"
+                href="#page-body"
+                class="bottom-footer__link"
+              >
+                Privacy Policy
+              </a>
+              <a
+                target="blank"
+                href="#page-body"
+                class="bottom-footer__link"
+              >
+                Terms of Use
+              </a>
+              <a
+                target="blank"
+                href="#page-body"
+                class="bottom-footer__link"
+              >
+                GDPR
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
     <script type="text/javascript" src="scripts/main.js"></script>
   </body>
 </html>
