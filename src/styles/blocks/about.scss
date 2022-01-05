@@ -18,10 +18,11 @@ margin: 0 0 24px;
     
     font-size: 30px;
     line-height: 36px;
+    width: 320px;
 
     @include onTablet-1024 {
       margin: 0 auto 126px;
-      width: 440px;
+      width: 500px;
       font-size: 48px;
       line-height: 60px;
     }

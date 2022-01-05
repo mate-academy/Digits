@@ -156,7 +156,7 @@
   &__phone-number {
     display: none;
 
-    @include onNotebook {
+    @include onTablet {
       display: flex;
       align-self: center;
       text-decoration: none;

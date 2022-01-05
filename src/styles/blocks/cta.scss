@@ -37,8 +37,9 @@
 
   &__get-in-touch {
     display: flex;
+    align-items: flex-end;
     flex-direction: column;
-    gap: 20px;
+    gap: 18px;
 
     &--button {
       display: flex;
@@ -81,7 +82,7 @@
     }
 
     &--description {
-      font-family: 'Halyard Display';
+      font-family: 'Halyard Text';
       font-style: normal;
       font-weight: normal;
       font-size: 16px;
@@ -96,7 +97,5 @@
         color: yellow;
       }
     }
-
-
   }
 }

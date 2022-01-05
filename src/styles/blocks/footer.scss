@@ -132,14 +132,21 @@
     }
 
     &--item {
+      display: flex;
       margin: 0 0 14px;
+      justify-content: center;
+
+      @include onTablet {
+        justify-content: start;
+      }
+      // border: 1px solid red;
     }
 
     &--link {
       position: relative;
       text-decoration: none;
 
-      font-family: 'Halyard Display';
+      font-family: 'Halyard Text';
       font-style: normal;
       font-weight: normal;
       font-size: 18px;
@@ -173,12 +180,11 @@
       }
     }
 
-    &--social {
+    &--icon {
       display: flex;
       align-items: center;
       gap: 24px;
       height: 24px;
-      margin-bottom: 16px;
     }
   }
 
@@ -193,7 +199,7 @@
     }
 
     &--copyright {
-      font-family: 'Halyard Display';
+      font-family: 'Halyard Text';
       font-style: normal;
       font-weight: normal;
       font-size: 14px;
@@ -206,7 +212,7 @@
       display: flex;
       gap: 20px;
 
-      font-family: 'Halyard Display';
+      font-family: 'Halyard Text';
       font-style: normal;
       font-weight: normal;
       font-size: 14px;
