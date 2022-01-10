@@ -1,0 +1,30 @@
+.icon {
+  display: block;
+  height: 16px;
+  width: 16px;
+  transition: transform .3s;
+
+  &:hover {
+    transform: scale(1.25);
+  }
+
+  &__fb {
+    background-image: url(../images/social/icon-facebook.png);
+  }
+
+  &__ig {
+    background-image: url(../images/social/icon-instagram.png);
+  }
+
+  &__tw {
+    background-image: url(../images/social/icon-twitter.png);
+  }
+
+  &__dr {
+    background-image: url(../images/social/icon-dribbble.png);
+  }
+
+  &__ev {
+    background-image: url(../images/social/envato.png);
+  }
+}

@@ -1,0 +1,232 @@
+.portfolio {
+  position: relative;
+  
+  display: flex;
+  flex-direction: column;
+
+  padding: 86px 0 0;
+  height: 650px;
+  
+  @include onTablet {
+    padding: 36px 0 0;
+    height: 324px;
+  }
+  
+  @include onTablet-1024 {
+    padding: 46px 0 0;
+    height: 344px;
+  }
+
+  @include onNotebook {
+    flex-direction: column;
+    justify-content: center;
+    height: 740px;
+    width: 100%;
+  }
+
+  @include onDesktop {
+    flex-direction: column;
+    height: 860px;
+    padding: 140px 0 0;
+  }
+
+  background-color: #FFF9EA;
+  overflow: hidden;
+
+
+  &__title {
+    margin: 0 auto 40px;
+    width: 50%;
+    
+    font-family: 'Halyard Display';
+    font-size: 36px;
+    line-height: 150%;
+
+    font-weight: 500;
+    text-align: center;
+    
+    color: #1E266D;
+    text-shadow: 0px 4px 4px #00000040;
+    
+    @include onTablet {
+      margin: 0 0 26px;
+      font-size: 36px;
+      text-align: left;
+      width: 300px;
+    }
+    
+    @include onNotebook {
+      margin: 0 auto 40px;
+      font-size: 48px;
+      line-height: 60px;
+      text-align: center;
+      width: unset;
+    }
+  }
+  
+  &__subtitle {
+    margin: 0 auto 36px;
+    
+    font-family: 'Halyard Text';
+    font-weight: normal;
+
+    font-size: 16px;
+    line-height: 125%;
+    
+    text-align: center;
+    
+    color: #455880;
+    
+    @include onTablet {
+      margin: 0 0 40px;
+      width: 300px;
+      font-size: 36px;
+      text-align: left;
+      font-size: 16px;
+      line-height: 150%;
+    }
+    
+    @include onTablet-1024 {
+      margin: 0 0 40px;
+      width: unset;
+      font-size: 21px;
+    }
+    
+    @include onNotebook {
+      font-size: 22px;
+      line-height: 150%;
+      text-align: center;
+      margin: 0 auto 40px;
+    }
+  }
+
+  &__button {
+    position: relative;
+    margin: 0 auto 36px;
+
+    @include onTablet {
+      position: absolute;
+      left: 0px;
+      bottom: -72px;
+      margin: 0 0 36px;
+      width: 160px;
+    }
+
+    @include onNotebook {
+      position: relative;
+      bottom: unset;
+    }
+  }
+
+  &__content {
+    display: flex;
+    gap: 20px;
+
+    @include onTablet {
+      height: 360px;
+    }
+
+      @include onDesktop {
+      margin: 0 auto;
+      height: 544px;
+      width: 1600px;
+    }
+
+    justify-content: space-between;
+
+    &--left-block {
+      position: relative;
+
+      @include onTablet {
+        display: flex;
+        position: absolute;
+        flex-direction: column;
+        justify-content: start;
+        align-items: flex-start;
+        width:60%;
+        left: 80px;
+      }
+
+      @include onNotebook {
+        margin: 0 auto; 
+        position: relative;
+        width: unset;
+        height: unset;
+        left: unset;
+      }
+    }
+
+    &--right-block {
+      position: relative;
+
+      @include onTablet {
+        position: absolute;
+        width: 40%;
+        right: 0;
+      }
+
+      @include onNotebook {
+        position: relative;
+        width: unset;
+      }
+    }
+
+    &--item {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+
+      &--1 {
+        transform: translateY(0);
+      }
+
+      &--2 {
+        display: none;
+        transform: translateY(10%);
+
+        @include onNotebook {
+          display: flex;
+          transform: translateY(20%);
+        }
+      }
+
+      &--3 {
+        transform: translateY(5%);
+
+        @include onTablet {
+          display: flex;
+          transform: translateY(18%);
+        }
+
+        @include onNotebook {
+          transform: translateY(33%);
+        }
+      }
+
+      &--4 {
+        display: none;
+        transform: translateY(44%);
+
+        @include onNotebook {
+          display: flex;
+        }
+      }
+
+      &--5 {
+        display: none;
+        transform: translateY(17%);
+
+        @include onNotebook {
+          display: flex;
+        }
+      }
+    }
+
+    &--image {
+      border-radius: 18px;
+      margin: 0 0 20px;
+      width: 100%;
+    }
+  }
+}

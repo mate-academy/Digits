@@ -1,0 +1,101 @@
+.cta {
+  padding: 48px 0 24px;
+
+  background-color: #3751FF;
+  
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    @include onTablet-1024 {
+      flex-direction: row;
+      height: 324px;
+      justify-content: space-between;
+    }
+
+  }
+
+  &__title {
+    margin: 0 0 24px;
+
+    font-family: 'Halyard Display';
+    font-style: normal;
+    text-align: center;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 125%;
+    
+    @include onTablet-1024 {
+      text-align: left;
+      font-size: 48px;
+      line-height: 60px;
+  }
+
+    color: #FFFFFF;
+  }
+
+  &__get-in-touch {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    gap: 18px;
+
+    &--button {
+      display: flex;
+      width: 244px;
+      height: 56px;
+      background-color: #fff;
+      border-radius: 100px;
+
+      justify-content: center;
+      align-items: center;
+      gap: 14px;
+
+      text-decoration: none;
+      font-family: 'Halyard Display';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 110%;
+
+      text-align: center;
+
+      color: #455880;
+
+      &--icon {
+        height: 28px;
+        width: 28px;
+        display: block;
+
+        background-image: url(../images/cta/send-mail.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        transition: all .3s;
+
+        &:hover {
+          background-image: url(../images/cta/fwd-mail.png);
+          transform: translateX(12px);
+        }
+      }
+    }
+
+    &--description {
+      font-family: 'Halyard Text';
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 125%;
+
+      text-align: right;
+
+      color: #DFE0EB;
+
+      &--link {
+        text-decoration: none;
+        color: yellow;
+      }
+    }
+  }
+}

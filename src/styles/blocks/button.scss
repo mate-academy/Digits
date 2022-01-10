@@ -1,0 +1,40 @@
+.button {
+  box-sizing: border-box;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  text-align: center;
+  height: 36px;
+  border: 1px solid transparent;
+  transition: all .3s;
+
+  &:hover {
+    color: $colorButton;
+    background-color: #fff;
+    border-color: $colorButton;
+  }
+
+  @include onTablet {
+    height: 40px;
+  }
+
+  @include onNotebook {
+    height: 50px;
+  }
+
+  width: 112px;
+  background-color: #3751FF;
+  border-radius: 100px;
+
+  font-family: 'Halyard Display';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 40px;
+
+  text-align: center;
+
+  color: #fff;
+}

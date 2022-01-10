@@ -1,0 +1,296 @@
+.design {
+  margin-bottom: 86px;
+
+  @include onTablet-1024 {
+    background-image: url(../images/design/background.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+  }
+
+  @include onTablet-1024 {
+    margin-bottom: 104px;
+  }
+
+  @include onNotebook {
+    margin: 0 auto 204px;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+
+    margin: 0 auto 48px;
+    position: relative;
+    padding-top: 74px;
+    height: 468px;
+    
+    background-image: url(../images/design/background.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+
+    @include onTablet-1024 {
+      max-width: 1024px;
+      height: 440px;
+      flex-direction: row;
+    }
+
+    @include onNotebook {
+      margin: 0 auto 58px;
+      flex-direction: column;
+      align-items: center;
+      height: 722px;
+      width: 100%;
+      padding-top: 144px;
+    }
+    
+    
+    &--left-block {
+      @include onTablet-1024{
+        margin-left: 70px;
+        width: 50%;
+        left: 0px;
+      }
+
+      @include onNotebook {
+        width: unset;
+        margin-left: unset;
+
+      }
+    }
+
+    &--right-block {
+      @include onTablet-1024{
+        position: relative;
+        width: 50%;
+        right: 0;
+      }
+
+      @include onNotebook {
+        width: 100%;
+        right: unset;
+      }
+    }
+  }
+
+  &__graphic-container {
+    position: absolute;
+
+    left: 50%;
+    transform: translateX(-50%);
+
+    @include onTablet-1024 {
+      width: 100%;
+      left: 30%;
+      transform: unset;
+    }
+
+    @include onNotebook {
+      margin: 0 auto;
+      left: unset;
+      display: flex;
+      position: relative;
+      justify-content: center;
+    }
+  }
+
+  &__title {
+    margin: 0 0 20px;
+
+    font-family: 'Halyard Display';
+    font-style: normal;
+    font-weight: 500;
+    
+    font-size: 24px;
+    line-height: 120%;
+
+
+    @include onTablet-1024 {
+      text-align: left;
+      font-size: 50px;
+    }
+
+    @include onNotebook {
+      margin: 0 0 28px;
+      text-align: center;
+      font-size: 56px;
+      line-height: 105%;
+    }
+
+    text-align: center;
+    color: $colorBlue;
+  }
+
+  &__description {
+    margin: 0 auto 28px;
+
+    width: 160px;
+
+    font-family: 'Halyard Text';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+
+
+    text-align: center;
+    color: #455880;
+    
+    @include onTablet-1024 {
+      margin: 0 0 28px;
+      text-align: left;
+      width: 50%;
+      font-size: 24px;
+    }
+
+    @include onNotebook {
+      margin: 0 auto 28px;
+      text-align: center;
+      width: 100%;
+      font-size: 18px;
+      line-height: 150%;
+    }
+  }
+
+  &__buttons {
+    margin: 0 0 28px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    gap: 16px;
+
+    @include onTablet-1024 {
+      align-items: start;
+    }
+
+    @include onNotebook {
+      flex-direction: row;
+      gap: 28px;
+    }
+  }
+
+  &__button {
+
+    display: flex;
+    height: 36px;
+    text-decoration: none;
+    border-radius: 50px;
+
+    font-family: 'Halyard Display';
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 100%;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      
+      @include onTablet-1024 {
+        height: 50px;
+        font-size: 16px;
+      }
+
+      @include onNotebook {
+        height: 50px;
+        font-size: 16px;
+      }
+
+    &--buy {
+      position: relative;
+      overflow: hidden;
+      box-sizing: border-box;
+      background-color: $colorButton;
+      color: #fff;
+      text-align: center;
+      border: 2px solid transparent;
+
+      width: 108px;
+
+      transition: all .3s;
+
+      &:hover {
+        color: $colorButton;
+      }
+
+      &::before {
+        position: absolute;
+        content: "";
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        width: 0;
+        border-radius: 50px;
+        background-color: #fff;
+        transform-origin: left;
+
+        transition: all .3s;
+      }
+
+      &:hover::before {
+        display: flex;
+        width: 100%;
+        color: $colorButton;
+      }
+
+      @include onNotebook {
+        width: 148px;
+      }
+    }
+
+    & span {
+      position: absolute;
+      z-index: 1;
+    }
+
+    &--features {
+      position: relative;
+      box-sizing: border-box;
+      background-color: #fff;
+      color: #455880;
+
+      box-shadow: 0px 4px 4px 0px #00000040;
+      width: 148px;
+
+      overflow: hidden;
+
+      
+      &::before {
+        position: absolute;
+        content: "";
+        border-radius: 50px;
+        background-color: $colorButton;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        width: 0;
+
+        transition: all .3s;
+      }
+
+      &:hover {
+        color: #fff;
+      }
+
+      &:hover::before {
+        width: 100%;
+      }
+
+      & span {
+        position: absolute;
+        z-index: 1;
+      }
+
+      @include onNotebook {
+        width: 200px;
+      }
+    }
+  }
+}

@@ -1,0 +1,563 @@
+.graphic {
+  position: relative;
+
+  width: 320px;
+  height: 248px;
+
+  @include onTablet-1024 {
+    transform: scale(1.4) translate(-12%, 60%);;
+  }
+
+  @include onNotebook {
+    transform: unset;
+    height: 568px;
+    width: 920px;
+
+  }
+
+  &__triangle {
+    position: absolute;
+    background-image: url(../images/design/triangle.png);
+    height: 32px;
+    width: 32px;
+
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+
+    @include onNotebook {
+      height: 70px;
+      width: 70px;
+    }
+  }
+
+  &__avatar {
+    position: absolute;
+    z-index: 2;
+    
+    background-image: url(../images/design/avatar.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    
+    height: 32px;
+    width: 32px;
+
+    top: 76px;
+    left: 10px;
+    
+    @include onNotebook {
+      height: 64px;
+      width: 64px;
+      top: 156px;
+      left: 80px;
+    }
+  }
+
+  &__circle--big {
+    position: absolute;
+    border-radius: 50%;
+    background-color: #FACFCA;
+
+    left: 2px;
+    top: 174px;
+    height: 40px;
+    width: 40px;
+
+    @include onNotebook {
+      top: 300px;
+      left: 12px;
+      height: 180px;
+      width: 180px;
+    }
+  }
+
+  &__circle--small {
+    position: absolute;
+
+    border-radius: 50%;
+    background-color: #FED385;
+    top: 32px;
+    right: 0;
+    height: 16px;
+    width: 16px;
+
+    @include onNotebook {
+      top: 82px;
+      right: 0;
+  
+      height: 32px;
+      width: 32px;
+    }
+  }
+
+  &__rectangle {
+    position: absolute;
+
+    background-color: #B5F2E3;
+    border-radius: 4px;
+
+    right: 8px;
+    bottom: 120px;
+    height: 30px;
+    width: 30px;
+
+    @include onNotebook {
+      top: 228px;
+      right: 60px;
+
+      height: 64px;
+      width: 64px;
+    }
+  }
+
+  &__browser {
+    position: relative;
+    z-index: 1;
+    // border: 1px solid blueviolet;
+    border-radius: 18px;
+
+    top: 14px;
+    height: 236px;
+    width: 280px;
+    left: 50%;
+    transform: translateX(-50%);
+    
+
+
+    @include onNotebook {
+      height: 532px;
+      width: 720px;
+      top: 34px;
+    }
+
+    box-shadow: 0px 14px 25px 0px rgba(135, 146, 161, 0.06);
+    box-shadow: 0px 4px 4px 0px rgba(135, 146, 161, 0.08);
+    
+
+    &--bar {
+      display: flex;
+      gap: 6px;
+      
+      align-items: center;
+      
+      border-top-left-radius: 18px;
+      border-top-right-radius: 18px;
+
+      height: 24px;
+
+      @include onNotebook {
+        height: 32px;
+      }
+
+      padding-left: 18px;
+      background-color: #BDC2D4;
+
+      &--circle {
+        height: 8px;
+        width: 8px;
+        border-radius: 50px;
+        background-color: #fff;
+      }
+    }
+
+    &--body {
+      // display: none;
+      background-color: #fff;
+      height: 210px;
+      // border: 1px solid darkgoldenrod;
+      
+      @include onNotebook {
+        height: calc(532px - 32px);
+      }
+
+      border-bottom-left-radius: 18px;
+      border-bottom-right-radius: 18px;
+    }
+    
+    &--content {
+      position: relative;
+      
+      width: 100%;
+      height: 100%;
+    }
+    
+    &--chat {
+      position: absolute;
+      height: 180px;
+      width: 166px;
+      top: 14px;
+      left: 20px;
+
+      @include onNotebook {
+        width: 400px;
+        height: 408px;
+        left: 58px;
+        top: 48px;
+      }
+
+      &--header {
+        margin: 0 0 26px;
+        display: flex;
+        
+        gap: 12px;
+        
+        @include onNotebook {
+          gap: 36px;
+          margin: 0 0 74px;
+        }
+      }
+      
+      &--header--text {
+        display: flex;
+        align-items: start;
+
+        justify-content: center;
+        flex-direction: column;
+
+        gap: 4px;
+
+        @include onNotebook {
+          gap: 16px;
+        }
+      }
+
+      &--circle-big {
+        border-radius: 50%;
+        background-color: #FED892;
+
+        height: 24px;
+        width: 24px;
+
+        @include onNotebook {
+          height: 48px;
+          width: 48px;
+        }
+      }
+
+      &--title {
+        display: block;
+
+        height: 6px;
+        width: 116px;
+
+        @include onNotebook {
+          height: 12px;
+          width: 290px;
+        }
+
+        background-color: #DFE0EB;
+      }
+
+      &--subtitle {
+
+        width: 98px;
+        height: 4px;
+
+        @include onNotebook {
+          height: 6px;
+          width: 200px;
+        }
+        background-color: #DFE0EB;
+      }
+
+      &--chat-block--group {
+        margin: 0 0 12px;
+        position: relative;
+        
+        height: 96px;
+        
+        @include onNotebook {
+          margin: 0 0 30px;
+          height: 226px;
+        }
+      }
+
+      &--chat-block--content {
+        position: absolute;
+        height: 46px;
+        width: 100%;
+        
+        @include onNotebook {
+          height: 112px;
+        }
+        
+        &--left {
+          top: 0;
+          left: 0;
+        }
+        
+        &--right {
+          right: 0;
+          bottom: 0;
+        }
+      }
+
+      &--chat-bubble {
+        display: flex;
+        position: absolute;
+        height: 24px;
+        border-radius: 2px;
+
+        @include onNotebook {
+          height: 64px;
+        }
+
+        &--left {
+          left: 14px;
+          width: 74px;
+          border-radius: 2px;
+
+          @include onNotebook {
+            left: 24px;
+            width: 172px;
+            border-radius: 8px;
+          }
+
+          background-color: #DFE0EB;
+
+          &::after {
+            display: block;
+            content: '';
+            position: relative;
+            top: 100%;
+            left: 10%;
+  
+            width: 0;
+            height: 0;
+
+            border-top: 6px solid #DFE0EB;
+            border-right: 12px solid transparent;
+
+            @include onNotebook {
+             border-top: 10px solid #DFE0EB;
+             border-right: 20px solid transparent;
+            }
+
+            transform: skewX(-30deg);
+          }
+        }
+
+        &--right {
+          width: 104px;
+          right: 14px;
+
+          @include onNotebook {
+            right: 26px;
+            width: 218px;
+            border-radius: 8px;
+          }
+
+          background-color: #DFE0EB;
+          
+          &::after {
+            display: block;
+            content: '';
+            position: relative;
+            top: 100%;
+            left: 80%;
+  
+            width: 0;
+            height: 0;
+            border-top: 6px solid #DFE0EB;
+            border-left: 12px solid transparent;
+            transform: skewX(30deg);
+
+            @include onNotebook {
+              border-top: 10px solid #DFE0EB;
+              border-left: 20px solid transparent;
+            }
+          }
+        }
+
+        &--title {
+          position: absolute;
+
+          height: 4px;
+
+          @include onNotebook {
+            height: 6px;
+          }
+
+          background-color: #fff;
+          
+          &--left {
+            top: 6px;
+            left: 8px;
+            width: 50px;
+
+            @include onNotebook {
+              top: 18px;
+              left: 28px;
+              width: 114px;
+            }
+          }
+          
+          &--right {
+            top: 6px;
+            width: 86px;
+            right: 8px;
+
+            @include onNotebook {
+              top: 22px;
+              right: 32px;
+              width: 156px;
+            }
+          }
+        }
+
+        &--subtitle {
+          position: absolute;
+          background-color: #fff;
+
+          height: 4px;
+
+          @include onNotebook {
+            height: 6px;
+          }
+
+          &--left {
+            top: 14px;
+            left: 8px;
+            width: 30px;
+
+            @include onNotebook {
+              top: 28px;
+              left: 28px;
+              width: 74px;
+            }
+          }
+
+          &--right {
+            top: 14px;
+            right: 8px;
+            width: 54px;
+
+            @include onNotebook {
+              top: 32px;
+              right: 32px;
+              width: 54px;
+            }
+          }
+        }
+      }
+
+      &--chat-circle--small {
+        position: absolute;
+        height: 14px;
+        width: 14px;
+
+        @include onNotebook {
+          height: 24px;
+          width: 24px;
+        }
+        background-color: #FACFCA;
+        border-radius: 50%;
+        
+        &--left {
+          bottom: 0;
+          left: 0;
+        }
+
+        &--right {
+          bottom: 0;
+          right: 0;
+        }
+      }
+
+      &--chat-input--group {
+        position: relative;
+        display: flex;
+        align-items: center;
+        height: 18px;
+        border-radius: 4px;
+
+        width: 100%;
+        background-color: #DFE0EB;
+        
+        @include onNotebook {
+          height: 28px;
+          border-radius: 8px;
+        }
+
+
+        &--smile-pic {
+          position: absolute;
+          left: 6px;
+          background-image: url(../images/design/smiley.png);
+          
+          background-repeat: no-repeat;
+          background-size: contain;
+          background-position: center;
+          
+          height: 12px;
+          width: 12px;
+          
+          @include onNotebook {
+            height: 20px;
+            width: 20px;
+            left: 8px;
+          }
+        }
+
+        &--cursor-pic {
+          position: absolute;
+
+          left: 24px;
+          height: 14px;
+          width: 2px;
+
+          @include onNotebook {
+            left: 36px;
+            height: 16px;
+            width: 2px;
+          }
+          background-color: #fff;
+        }
+
+        &--send-pic {
+          position: absolute;
+
+          right: 8px;
+          height: 10px;
+          width: 12px;
+
+
+          background-image: url(../images/design/send.png);
+          background-repeat: no-repeat;
+          background-size: contain;
+          background-position: center;
+          
+          @include onNotebook {
+            right: 10px;
+            height: 12px;
+            width: 14px;
+          }
+        }
+      }
+    }
+
+
+    &--person {
+      display: block;
+      position: absolute;
+      z-index: 2;
+      background-image: url(../images/design/person.png);
+      
+      background-size: contain;
+      background-repeat: no-repeat;
+
+      height: 200px;
+      width: 96px;
+      right: -10px;
+      bottom: 0;
+
+      @include onNotebook {
+        height: 450px;
+        width: 208px;
+        right: -14px;
+        bottom: 0;
+      }
+    }
+  }
+}

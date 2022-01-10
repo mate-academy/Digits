@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+
+  scroll-behavior: smooth;
+}
+
+.page {
+  &__body {
+    font-family: 'Halyard';
+    background-color: #FFFFFF;
+  }
+
+  &__section {
+    margin: 0 0 74px;
+
+
+    @include onDesktop {
+      margin: 0 0 148px;
+    }
+  }
+}
