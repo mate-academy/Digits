@@ -21,7 +21,11 @@
     gap: 40px;
 
     &__link {
+      padding-bottom: 5px;
       color: $c-title;
+      border-bottom: 2px solid transparent;
+
+      @include hover(border-color, $c-title);
     }
   }
 
@@ -34,5 +38,15 @@
     gap: 20px;
     list-style: none;
     white-space: nowrap;
+
+    &__link {
+      padding-bottom: 5px;
+      border-bottom: 2px solid transparent;
+      text-transform: uppercase;
+
+      @include title3;
+
+      @include hover(border-color, $c-title);
+    }
   }
 }

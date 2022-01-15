@@ -27,9 +27,9 @@
 
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    gap: 1px;
+    gap: 5%;
     
     @include onMobile {
       margin: 0 auto 121px;

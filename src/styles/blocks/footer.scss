@@ -136,6 +136,14 @@
       text-decoration: none;
     }
 
+    &--image {
+      transition: transform 0.3s linear;
+
+      &:hover {
+        transform: scale(1.5);
+      }
+    }
+
     &--facebook {
       width: 14px;
       height: 14px;
