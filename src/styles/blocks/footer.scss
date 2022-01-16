@@ -159,76 +159,9 @@
       height: 13px;
     }
 
-    &--ball {
-      &-items {
-        position: absolute;
-        left: 126px;
-        top: 3px;
-      }
-
-      &-item {
-        position: relative;
-      }
-
-      &-circle {
-        position: absolute;
-        width: 16px;
-        height: 16px;
-        left: 0;
-        top: 0;
-      }
-
-      &-left {
-        &-top {
-          position: absolute;
-          width: 6px;
-          height: 5px;
-          left: 2px;
-          top: 3px;
-        }
-
-        &-middle {
-          position: absolute;
-          width: 7px;
-          height: 5px;
-          left: 2px;
-          top: 7px;
-        }
-
-        &-down {
-          position: absolute;
-          width: 6.5px;
-          height: 5.5px;
-          left: 3.7px;
-          top: 8.3px;
-        }
-      }
-
-      &-right {
-        &-top {
-          position: absolute;
-          width: 5.6px;
-          height: 4.1px;
-          left: 5.7px;
-          top: 3px;
-        }
-
-        &-middle {
-          position: absolute;
-          width: 5.7px;
-          height: 3.7px;
-          left: 7.7px;
-          top: 5.2px;
-        }
-
-        &-down {
-          position: absolute;
-          width: 5px;
-          height: 5px;
-          left: 8.4px;
-          top: 7.9px;
-        }
-      }
+    &--dribbble {
+      width: 16px;
+      height: 16px;
     }
 
     &--envato {

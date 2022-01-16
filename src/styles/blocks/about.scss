@@ -27,9 +27,9 @@
 
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
-    gap: 5%;
+    gap: 6%;
     
     @include onMobile {
       margin: 0 auto 121px;
@@ -37,6 +37,10 @@
 
     @include menuTop {
       margin-bottom: 162px;
+    }
+
+    @include onLaptop {
+      flex-wrap: nowrap;
     }
 
     &--netflix {
