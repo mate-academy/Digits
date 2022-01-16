@@ -1,0 +1,65 @@
+.design {
+  margin: 0 auto;
+
+  position: relative;
+  background-color: #fff9ea;
+  height: 100%;
+
+  &__content {
+    margin: 0 auto;
+    padding: 139px 0 38%;
+  }
+
+  &__title {
+    margin: 0 auto 40px;
+
+    text-align: center;
+
+    @include title1;
+
+    @include titleSize {
+      line-height: 163%;
+    }
+
+    @include onTablet {
+      max-width: 700px;
+
+      @include title1Mobile;
+    }
+  }
+
+  &__paragraph {
+    margin: 0 auto 40px;
+
+    text-align: center;
+    max-width: 307px;
+    font-size: 21px;
+    line-height: 150%;
+    color: $c-paragraph;
+
+    br {
+      display: none;
+    }
+
+    @include onMobile {
+      max-width: 405px;
+
+      br {
+        display: block;
+      }
+    }
+  }
+
+  &__button {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &--blue {
+      width: 148px;
+      height: 50px;
+      line-height: 100%;
+    }
+  }
+}

@@ -1,0 +1,143 @@
+.person {
+  margin: -60.8% 0 0 73%;
+  // margin: -441px 0 0 525px;
+
+  max-width: 129px;
+  width: 18%;
+  max-height: 447px;
+  // height: 447px;
+
+  &__item {
+    position: relative;
+
+    &--hair {
+      position: absolute;
+      max-width: 172px;
+      width: 133%;
+      max-height: 92px;
+      transform: translateX(19.8%);
+      // transform: translateX(34px);
+      z-index: 6;
+    }
+
+    &--face {
+      position: absolute;
+      max-width: 46px;
+      width: 35.6%;
+      max-height: 81px;
+      transform: translate(82.6% ,11.11%);
+      // transform: translate(38px,9px);
+      z-index: 4;
+    }
+
+    &--ear {
+      position: absolute;
+      max-width: 13px;
+      width: 10%;
+      max-height: 13px;
+      transform: translate(600%,377%);
+      // transform: translate(78px,49px);
+      z-index: 5;
+    }
+
+    &--neck {
+      position: absolute;
+      max-width: 23px;
+      width: 17.8%;
+      max-height: 40px;
+      transform: translate(247.8%, 167.5%);
+      // transform: translate(57px, 67px);
+      z-index: 3;
+    }
+
+    &--body {
+      position: absolute;
+      max-width: 123px;
+      width: 95.3%;
+      max-height: 207px;
+      transform: translate(7.3%, 45.4%);
+      // transform: translate(9px, 94px);
+      z-index: 2;
+    }
+
+    &--shoulder-left {
+      position: absolute;
+      max-width: 66px;
+      width: 51.2%;
+      max-height: 77px;
+      transform: translate(125.8%, 132.5%);
+      // transform: translate(83px, 102px);
+      z-index: 3;
+    }
+
+    &--hand-left {
+      position: absolute;
+      max-width: 111px;
+      width: 86%;
+      max-height: 95px;
+      transform: translate(47.7%, 162%);
+      // transform: translate(53px, 154px);
+      z-index: 4;
+    }
+
+    &--brush {
+      position: absolute;
+      max-width: 33px;
+      width: 25.6%;
+      max-height: 33px;
+      transform: translate(106.1%, 560%);
+      // transform: translate(35px, 161px);
+      z-index: 5;
+    }
+
+    &--book {
+      position: absolute;
+      max-width: 36px;
+      width: 27.9%;
+      max-height: 52px;
+      transform: translate(52.8%, 267.3%);
+      // transform: translate(19px, 139px);
+      z-index: 4;
+    }
+
+    &--shoulder-right {
+      position: absolute;
+      max-width: 60px;
+      width: 46.5%;
+      max-height: 77px;
+      transform: translateY(139%);
+      // transform: translateY(107px);
+      z-index: 1;
+    }
+
+    &--hand-right {
+      position: absolute;
+      max-width: 18px;
+      width: 14%;
+      max-height: 148px;
+      transform: translateY(111.5%);
+      // transform: translateY(169px);
+      z-index: 1;
+    }
+
+    &--leg-right {
+      position: absolute;
+      max-width: 67px;
+      width: 51.8%;
+      max-height: 155px;
+      transform: translate(22%, 188.8%);
+      // transform: translate(14px, 290px);
+      z-index: 2;
+    }
+
+    &--leg-left {
+      position: absolute;
+      max-width: 101px;
+      width: 77.8%;
+      max-height: 154px;
+      transform: translate(27.7%, 187.5%);
+      // transform: translate(28px, 290px);
+      z-index: 3;
+    }
+  }
+}

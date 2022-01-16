@@ -1,0 +1,330 @@
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 22%;
+
+  @include onTablet {
+    flex-direction: row;
+  }
+
+  &__images {
+    margin: 0 auto 20px;
+
+    width: 280px;
+    height: 675px;
+
+    @include titleSize {
+      margin: 0 auto 90px;
+      max-width: 590px;
+    }
+
+    @include menuTop {
+      margin: 0 0 20px 116px ;
+    }
+
+    @include onTablet {
+      margin: 0 auto;
+    }
+ 
+    &--1 {
+      margin: 0 auto;
+
+      position: relative;
+      display: inline-block;
+
+      @include onLaptop {
+        margin: 0 0 0 207px;
+      }
+
+      &-rectangle {
+        display: inline-block;
+        width: 214px;
+        height: 231px;
+        background-color: #999fe3;
+        border-radius: 4px;
+
+        @include titleSize {
+          width: 266px;
+          height: 287px;
+        }
+
+        @include onLaptop {
+          width: 329px;
+          height: 355px;
+        }
+      }
+
+      &-women {
+        position: absolute;
+        left: -20px;
+        bottom: -42px;
+        width: 266px;
+        height: 495px;
+        overflow: hidden;
+
+        @include titleSize {
+          bottom: 6px;
+          width: 330px;
+        }
+
+        @include onLaptop {
+          width: 409px;
+          height: 612px;
+        }
+      }
+
+      &-rectangle-green {
+        position: absolute;
+        right: -16px;
+        bottom: 56px;
+        width: 52px;
+        height: 52px;
+        z-index: -1;
+
+        @include onLaptop {
+          right: -20px;
+          bottom: 69px;
+          width: 64px;
+          height: 64px;
+        }
+      }
+    }
+
+    &--2 {
+      margin: 0 0 0 5px;
+      position: relative;
+      display: inline-block;
+
+      @include onLaptop {
+        margin: -103px 0 0 21px;
+      }
+
+      &-rectangle {
+        display: inline-block;
+        width: 170px;
+        height: 197px;
+        background-color: #fed892;
+        border-radius: 4px;
+
+        @include titleSize {
+          width: 226px;
+          height: 262px;
+        }
+
+        @include onLaptop {
+          width: 266px;
+          height: 308px;
+        }
+      }
+
+      &-menafro {
+        position: absolute;
+        left: -5px;
+        bottom: 6px;
+        width: 300px;
+        height: 200px;
+
+        @include titleSize {
+          width: 400px;
+          height: 266px;
+        }
+
+        @include onLaptop {
+          width: 470px;
+          height: 313px;
+        }
+      }
+
+      &-ellipse1 {
+        position: absolute;
+        left: -24px;
+        bottom: 43px;
+        width: 65px;
+        height: 65px;
+        z-index: -1;
+
+        @include titleSize {
+          left: -32px;
+          bottom: 57px;
+          width: 87px;
+          height: 87px;
+        }
+
+        @include onLaptop {
+          left: -38px;
+          bottom: 67px;
+          width: 102px;
+          height: 102px;
+        }
+      }
+    }
+
+    &--3 {
+      margin: 0 0 0 70px;
+      position: relative;
+      display: inline-block;
+
+      @include titleSize {
+        margin: -123px 0 0 180px;
+      }
+
+      @include onLaptop {
+        margin: -130px 0 0 227px;
+      }
+
+      &-rectangle {
+        display: inline-block;
+        width: 162px;
+        height: 162px;
+        background-color: #f47b9e;
+        border-radius: 4px;
+
+        @include titleSize {
+          width: 170px;
+          height: 170px;
+        }
+
+        @include onLaptop {
+          width: 200px;
+          height: 200px;
+        }
+      }
+
+      &-men {
+        position: absolute;
+        left: 17px;
+        bottom: 6px;
+        width: 147px;
+        height: 207px;
+        border-radius: 0 0 4px;
+
+        @include titleSize {
+          width: 155px;
+          height: 218px;
+        }
+
+        @include onLaptop {
+          width: 182px;
+          height: 256px;
+        }
+      }
+
+      &-triangle {
+        position: absolute;
+        right: -28px;
+        bottom: -24px;
+        width: 56px;
+        height: 57px;
+        transform: rotate(180deg);
+        z-index: -1;
+
+        @include onLaptop {
+          right: -35px;
+          bottom: -30px;
+          width: 69px;
+          height: 71px;
+        }
+      }
+    }
+  }
+
+  &__servises {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
+    width: 290px;
+
+    @include titleSize {
+      width: 405px;
+    }
+
+    &--item {
+      width: 100%;
+      height: max-content;
+      border-bottom: 1px solid rgba(69, 88, 128, 0.2);
+
+      &:last-child {
+        border-bottom: transparent;
+      }
+
+      &-head {
+        position: relative;
+        display: flex;
+      }
+
+      &-back {
+        width: 58px;
+        height: 58px;
+      }
+
+      &-front {
+        &-1 {
+          position: absolute;
+          width: 29px;
+          height: 40px;
+          left: 17px;
+          top: 13px;
+        }
+
+        &-2 {
+          position: absolute;
+          width: 10px;
+          height: 12.5px;
+          left: 16.5px;
+          top: 17.5px;
+
+          &-down {
+            left: 31.5px;
+            top: 30px;
+          }
+        }
+
+        &-3 {
+          position: absolute;
+          width: 25px;
+          height: 27px;
+          left: 17px;
+          top: 17px;
+        }
+
+        &-4 {
+          position: absolute;
+          width: 10px;
+          height: 7.5px;
+          left: 31.5px;
+          top: 17.5px;
+
+          &-down {
+            left: 16.5px;
+            top: 35px;
+          }
+        }
+      }
+
+      &-title {
+        margin: 0 0 0 14px;
+
+        @include title3;
+
+        @include titleSize {
+          margin: 0 0 0 47px;
+        }
+      }
+
+      &-paragraph {
+        margin: 0 0 40px 72px;
+        max-width: 275px;
+        line-height: 27px;
+
+        @include paragraph;
+
+        @include titleSize {
+          margin: 0 0 40px 105px;
+          width: 275px;
+        }
+      }
+    }
+  }
+}

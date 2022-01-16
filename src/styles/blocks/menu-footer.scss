@@ -1,0 +1,35 @@
+.menu-footer {
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  white-space: nowrap;
+
+  &--down {
+    margin: 0 auto;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 310px;
+
+    @include minTitleSize {
+      width: 310px;
+    }
+
+    @include menuTop {
+      margin: 0;
+    }
+  }
+
+  &__link {
+    @include paragraph;
+    line-height: 225%;
+
+    &--down {
+      font-size: 14px;
+      line-height: 27px;
+      color: $c-paragraph;
+    }
+  }
+}
