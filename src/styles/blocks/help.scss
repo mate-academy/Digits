@@ -1,0 +1,151 @@
+.help {
+  display: flex;
+  flex-direction: column;
+
+  &__title {
+    font-family: "Halyard Display", sans-serif;
+    font-size: 48px;
+    line-height: 60px;
+    text-align: center;
+    color: #1e266d;
+    margin-top: 164px;
+    align-self: center;
+
+    @include miniTablet {
+      font-size: 32px;
+      line-height: 50px;
+      min-width: 300px;
+    }
+  }
+
+  &__people {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @include miniTablet {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      box-sizing: border-box;
+      align-self: center;
+    }
+
+    &--photos {
+      display: inline-block;
+      width: 611px;
+      height: 900px;
+      background-image: url(../images/Graphic2.png);
+      background-repeat: no-repeat;
+      margin-right: 168px;
+      margin-bottom: 150px;
+      background-size: contain;
+
+      @include miniTablet {
+        width: 300px;
+        height: 400px;
+        margin-right: 0;
+        margin-bottom: 50px;
+        background-size: contain;
+      }
+
+      @include Tablet {
+        margin-right: 50px;
+        width: 500px;
+      }
+    }
+
+    &--description {
+      display: flex;
+      flex-direction: column;
+      margin-top: 126px;
+      min-width: 405px;
+
+      @include miniTablet {
+        min-width: 280px;
+        margin: 50px 20px;
+      }
+
+      &-resume {
+        display: flex;
+        border-bottom: 1px solid rgba(69, 88, 128, 0.2);
+
+        &:nth-child(3) {
+          border-bottom: none;
+          margin-top: 45px;
+        }
+
+        &:nth-child(2) {
+          margin-top: 45px;
+        }
+
+        &::after {
+          content: "";
+          display: block;
+          border-bottom: 1px solid rgba(69, 88, 128, 0.2);
+        }
+
+        &--icon {
+          width: 58px;
+          height: 58px;
+          margin-right: 47px;
+          display: block;
+          background-size: contain;
+          background-repeat: no-repeat;
+
+          &-1 {
+            background-image: url(../images/icon1.png);
+          }
+
+          &-2 {
+            background-image: url(../images/icon2.png);
+          }
+
+          &-3 {
+            background-image: url(../images/icon3.png);
+          }
+
+          @include miniTablet {
+            margin-right: 10px;
+            width: 48px;
+            height: 48px;
+          }
+          
+          @include Tablet {
+            margin-right: 47px;
+            width: 58px;
+            height: 58px;
+          }
+        }
+
+        &--text {
+          display: flex;
+          flex-direction: column;
+          width: 230px;
+          height: 180px;
+
+          @include miniTablet {
+            min-width: 180px;
+          }
+
+          &-1 {
+            font-family: "Halyard Display", sans-serif;
+            font-size: 22px;
+            line-height: 125%;
+            color: #1e266d;
+            height: 58px;
+            text-decoration: none;
+          }
+
+          &-2 {
+            font-style: normal;
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 27px;
+            color: #455880;
+          }
+        }
+      }
+    }
+  }
+}

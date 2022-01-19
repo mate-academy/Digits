@@ -1,0 +1,170 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  // width: 90%;
+  margin: 0 20px;
+
+  &__top {
+    display: flex;
+    // min-width: 90%;
+    margin: 0 20px;
+    // max-width: 1180px;
+    justify-content: space-between;
+    margin-top: 70px;
+    padding-bottom: 105px;
+    border-bottom: 2px solid rgba(135, 146, 161, 0.08);
+
+    @include miniTablet {
+      flex-direction: column;
+      width: 280px;
+      margin: 40px 20px 20px;
+      padding-bottom: 0;
+    }
+    
+    @include Tablet {
+      flex-direction: column;
+      width: 280px;
+      margin: 40px 20px 20px;
+      padding-bottom: 0;
+    }
+
+    &--digits {
+      display: flex;
+      flex-direction: column;
+      max-width: 310px;
+      margin-right: 184px;
+
+      @include miniTablet {
+        margin-bottom: 30px;
+        width: 310px;
+      }
+
+      @include Tablet {
+        margin-bottom: 30px;
+        width: 310px;
+      }
+
+      &-title {
+        background-image: url(../images/logo.png);
+        background-repeat: no-repeat;
+        width: 70px;
+        height: 26px;
+        margin-bottom: 34px;
+      }
+
+      &-text {
+        font-size: 18px;
+        line-height: 140%;
+        color: #455880;
+        text-decoration: none;
+      }
+    }
+
+    &--pages {
+      width: 200px;
+      margin-right: 30px;
+
+      @include miniTablet {
+        margin-bottom: 50px;
+      }
+
+      &-title {
+        font-family: "Halyard Display", sans-serif;
+        font-size: 22px;
+        line-height: 125%;
+        color: #1e266d;
+        margin-bottom: 23px;
+      }
+
+      &-link {
+        line-height: 225%;
+        text-decoration: none;
+        font-size: 18px;
+        color: #455880;
+        display: block;
+      }
+
+      &-network {
+        display: flex;
+
+        &--1 {
+          background-image: url(../images/icon/icon-facebook.png);
+          display: block;
+          width: 16px;
+          height: 16px;
+          background-repeat: no-repeat;
+          margin: 10px 25px 20px 0;
+        }
+
+        &--2 {
+          background-image: url(../images/icon/icon-instagram.png);
+          width: 16px;
+          background-repeat: no-repeat;
+          margin: 10px 25px 20px 0;
+        }
+
+        &--3 {
+          background-image: url(../images/icon/icon-twitter.png);
+          width: 16px;
+          background-repeat: no-repeat;
+          margin: 10px 25px 20px 0;
+        }
+
+        &--4 {
+          background-image: url(../images/icon/icon-dribbble.png);
+          width: 16px;
+          background-repeat: no-repeat;
+          margin: 10px 25px 20px 0;
+        }
+
+        &--5 {
+          background-image: url(../images/icon/icon-envato.png);
+          width: 16px;
+          background-repeat: no-repeat;
+          margin: 10px 0;
+        }
+      }
+    }
+  }
+
+  &__bottom {
+    margin: 53px 0 107px;
+    display: flex;
+    justify-content: space-between;
+
+    @include miniTablet {
+      flex-direction: column-reverse;
+      justify-content: center;
+      align-items: center;
+    }
+
+    @include Tablet {
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    &--left {
+      font-size: 14px;
+      line-height: 27px;
+      color: rgba(69, 88, 128, 0.5);
+      margin-right: 100px;
+
+      @include miniTablet {
+        margin-right: 0;
+      }
+    }
+
+    &--right {
+      display: flex;
+
+      &-link {
+        text-decoration: none;
+        font-size: 14px;
+        line-height: 27px;
+        text-align: right;
+        color: #455880;
+        margin-left: 25px;
+      }
+    }
+  }
+}
