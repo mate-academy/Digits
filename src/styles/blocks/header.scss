@@ -1,0 +1,118 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  min-width: 90%;
+  max-width: 1180px;
+  height: 80px;
+
+  @include miniTablet {
+    min-width: 90%;
+  }
+
+  &__space {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__digits {
+    background-image: url(../images/logo.svg);
+    background-repeat: no-repeat;
+    width: 85px;
+    height: 32px;
+    background-size: contain;
+    margin-right: 40px;
+    margin-top: 5px;
+
+    @include miniTablet {
+      margin-right: 10px;
+    }
+  }
+
+  &__menu {
+    display: flex;
+    margin-left: 0;
+
+    @include miniTablet {
+      display: none;
+    }
+
+    @include Tablet {
+      display: none;
+    }
+
+    &--item {
+      margin-right: 40px;
+      color: #1e266d;
+      text-decoration: none;
+      font-size: 16px;
+      line-height: 80px;
+
+      @include Tablet {
+        line-height: 30px;
+      }
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      &-company {
+        display: flex;
+        align-items: center;
+      }
+    }
+
+    &--button {
+      display: inline-block;
+      background-image: url(../images/arrow-down.png);
+      background-repeat: no-repeat;
+      width: 9px;
+      height: 11px;
+      background-color: #fff;
+      border: none;
+      margin-left: 8px;
+    }
+  }
+
+  &__contacts {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    @include miniTablet {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    &--tel {
+      width: 164px;
+      display: flex;
+      justify-content: right;
+      text-decoration: none;
+      color: #1e266d;
+
+      @include miniTablet {
+        width: 130px;
+      }
+    }
+
+    &--button {
+      background: #3751ff;
+      border-radius: 100px;
+      height: 40px;
+      width: 113px;
+      color: #fff;
+      line-height: 40px;
+      text-align: center;
+      margin-left: 34px;
+      text-decoration: none;
+
+      @include miniTablet {
+        margin-left: 5px;
+      }
+    }
+  }
+}

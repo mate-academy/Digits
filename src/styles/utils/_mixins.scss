@@ -4,3 +4,21 @@
     #{$_property}: $_toValue;
   }
 }
+
+@mixin miniTablet {
+  @media (max-width: 640px) {
+    @content;
+  }
+}
+
+@mixin Tablet {
+  @media (min-width:641px) and (max-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin design {
+  @media (min-width:1025px) {
+    @content;
+  }
+}
