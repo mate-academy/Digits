@@ -1,0 +1,54 @@
+.menu {
+  background-color: #fff;
+
+  @include laptopScreen {
+    display: none;
+  }
+
+  @include desktopScreen {
+    display: none;
+  }
+
+  @include laptopScreen {
+    display: none;
+  }
+
+  @include desktopScreen {
+    display: none;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding: 20px 0;
+  }
+
+  &__subcontent {
+    display: flex;
+    align-items: center;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    list-style: none;
+  }
+
+  &__link {
+    color: $hColor;
+    font-size: 16px;
+    text-decoration: none;
+
+    &:hover {
+      transition: 0.3s;
+      color: #ff2e6a;
+    }
+  }
+
+  &__arrow-down {
+    cursor: pointer;
+    padding-left: 7px;
+  }
+}

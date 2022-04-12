@@ -1,0 +1,46 @@
+.hero {
+  background: $heroBackground;
+  height: 800px;
+
+  @include tabletScreen {
+    height: 878px;
+  }
+
+  &__title {
+    font-size: 56px;
+    line-height: 59px;
+
+    text-align: center;
+    margin-bottom: 27px;
+  }
+
+  &__text {
+    font-size: 18px;
+    line-height: 27px;
+
+    text-align: center;
+    margin-bottom: 29px;
+  }
+
+  &__btn-container {
+    display: flex;
+    justify-content: center;
+    gap: 23px;
+
+    margin-bottom: 60px;
+    @include laptopScreen {
+      margin-bottom: 32px;
+    }
+  }
+
+  &__img {
+    display: block;
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+
+    @include laptopScreen {
+      max-width: 977px;
+    }
+  }
+}
