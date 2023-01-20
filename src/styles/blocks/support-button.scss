@@ -1,0 +1,31 @@
+.support-button {
+  display: flex;
+  align-items: center;
+  background: $white;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05);
+  border-radius: 100px;
+  height: 56px;
+  padding: 0 35px;
+
+  &__img {
+    margin-right: 20px;
+  }
+
+  &__text {
+    font-family: "Halyard Display", sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 110%;
+    color: $light-blue;
+
+    @media (max-width: $notebook) {
+      font-size: 14px;
+    }
+  }
+
+  @media (max-width: $tablet) {
+    width: 200px;
+    height: 42px;
+    padding: 0 25px;
+  }
+}

@@ -1,0 +1,109 @@
+.footer {
+  padding: 122px 204px 106px;
+  background-color: $white;
+  font-family: "Halyard Text", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 145%;
+  color: $light-blue;
+
+  &__main {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 50px;
+    padding-bottom: 76px;
+    border-bottom: 1px solid rgba(135, 146, 161, 0.08);
+  }
+
+  &__description {
+    max-width: 310px;
+
+    @media (max-width: $tablet) {
+      display: none;
+    }
+  }
+
+  &__logo {
+    width: 70px;
+    height: 26px;
+    margin-bottom: 34px;
+  }
+
+  &__list-title {
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 125%;
+    color: $font-blue;
+    margin-bottom: 22px;
+  }
+
+  &__list {
+    max-width: 212px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__list-item {
+    padding: 10px 0;
+
+    &--flex {
+      display: flex;
+      gap: 26px;
+      margin-bottom: 10px;
+    }
+  }
+
+  a {
+    color: $light-blue;
+    text-decoration: none;
+  }
+
+  &__bottom {
+    display: flex;
+    justify-content: space-between;
+    margin: 54px 0 40px;
+
+    @media (max-width: $tablet) {
+      margin: 34px 0 20px;
+      align-items: center;
+      flex-direction: column-reverse;
+      gap: 30px;
+    }
+  }
+
+  &__copyright {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 27px;
+    color: rgba(69, 88, 128, 0.5);
+
+    @media (max-width: $tablet) {
+      text-align: center;
+    }
+  }
+
+  &__privacy {
+    display: flex;
+
+    @media (max-width: $tablet) {
+      align-items: center;
+      flex-direction: column;
+      gap: 30px;
+    }
+  }
+
+  &__link {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 27px;
+    text-align: right;
+    color: #455880;
+    margin-left: 30px;
+  }
+
+  @media (max-width: $notebook) {
+    padding: 52px 44px 32px;
+  }
+}

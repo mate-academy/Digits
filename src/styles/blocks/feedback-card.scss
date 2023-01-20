@@ -1,0 +1,61 @@
+.feedback-card {
+  display: flex;
+  flex-direction: column;
+  font-family: "Halyard Text", sans-serif;
+  width: 372px;
+  height: 466px;
+  border: 1px solid rgba(69, 88, 128, 0.2);
+  border-radius: 4px;
+  padding: 38px 42px 32px;
+  background-color: $white;
+
+  &__feedback {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 180%;
+    color: $light-blue;
+
+    @media (max-width: $notebook) {
+      font-size: 14px;
+    }
+
+    @media (max-width: $tablet) {
+      font-size: 12px;
+    }
+  }
+
+  &__avatar {
+    display: block;
+    margin: auto;
+    width: 64px;
+    height: 64px;
+    margin-bottom: 22px;
+
+    @media (max-width: $notebook) {
+      width: 45px;
+      height: 45px;
+      margin-bottom: 12px;
+    }
+  }
+
+  &__name {
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 125%;
+    text-align: center;
+    color: $font-blue;
+  }
+
+  &__site {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 180%;
+    text-align: center;
+    color: $light-blue;
+  }
+
+  @media (max-width: $notebook) {
+    width: 280px;
+    height: 320px;
+  }
+}

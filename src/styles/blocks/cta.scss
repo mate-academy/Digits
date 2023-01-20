@@ -1,0 +1,67 @@
+.cta {
+  display: flex;
+  justify-content: space-between;
+  height: fit-content;
+  background-color: $blue-bg;
+  padding: 88px 205px 115px;
+
+  &__title {
+    @include title;
+    color: $white;
+    width: 400px;
+    text-align: start;
+
+    @media (max-width: $notebook) {
+      text-align: center;
+    }
+
+    @media (max-width: $mobile) {
+      width: fit-content;
+      margin: auto;
+    }
+  }
+
+  &__button {
+    margin: 26px 0 20px;
+
+    @media (max-width: $notebook) {
+      margin: 0 0 20px;
+    }
+  }
+
+  &__text {
+    font-family: "Halyard Text", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 125%;
+    text-align: right;
+    color: #dfe0eb;
+  }
+
+  &__link {
+    color: #fed385;
+    text-decoration: none;
+  }
+
+  &__support {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    @media (max-width: $notebook) {
+      align-items: center;
+    }
+  }
+
+  @media (max-width: $notebook) {
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 80px;
+  }
+
+  @media (max-width: $tablet) {
+    padding: 50px 10px;
+    flex-direction: column;
+    justify-content: center;
+  }
+}

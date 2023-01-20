@@ -1,0 +1,55 @@
+.about {
+  background-color: $white;
+  padding: 186px 0 190px;
+
+  &__content {
+    max-width: 1180px;
+    margin: auto;
+  }
+
+  &__text {
+    font-family: 'Halyard Text', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 27px;
+    text-align: center;
+    color: $grey-text;
+    margin: 0 0 48px;
+
+    @media (max-width: $notebook) {
+      padding: 0 10px;
+    }
+  }
+
+  &__title {
+    @include title;
+    max-width: 500px;
+    margin: 162px auto 122px;
+  }
+
+  &__benefits {
+    display: flex;
+    justify-content: space-between;
+
+    @media (max-width: $notebook) {
+      padding: 0 10px;
+    }
+
+    @media (max-width: $tablet) {
+      justify-content: center;
+    }
+  }
+
+  &__image {
+    margin-top: -250px;
+
+    @media (max-width: $notebook) {
+      margin-top: -200px;
+    }
+
+    @media (max-width: $tablet) {
+      display: none;
+    }
+  }
+}

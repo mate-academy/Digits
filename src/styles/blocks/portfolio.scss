@@ -1,0 +1,35 @@
+.portfolio {
+  padding-top: 138px;
+  background-color: $light-orange;
+
+  &__content {
+    max-width: 1180px;
+    margin: auto;
+  }
+
+  &__title {
+    @include title;
+  }
+
+  &__text {
+    font-family: 'Halyard Text', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 150%;
+    color: $light-blue;
+    text-align: center;
+    margin: 0 auto 40px;
+  }
+
+  &__button {
+    width: max-content;
+    margin: 0 auto 36px;
+  }
+
+  &__img {
+    width: 100%;
+    object-fit: cover;
+    object-position: bottom;
+  }
+}

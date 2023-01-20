@@ -1,0 +1,10 @@
+.companies {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px 72px;
+
+  @media (max-width: 728px) {
+    gap: 20px 42px;
+  }
+}

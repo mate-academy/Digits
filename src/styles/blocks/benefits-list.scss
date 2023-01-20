@@ -1,0 +1,68 @@
+.benefits-list {
+  width: 415px;
+  padding: 0;
+
+  &__item {
+    display: flex;
+    list-style: none;
+    gap: 46px;
+    padding: 45px 0;
+    border-bottom: 1px solid rgba(69, 88, 128, 0.2);
+
+    &:first-child {
+      padding-top: 0;
+    }
+
+    &:last-child {
+      border-bottom: none;
+    }
+
+    @media (max-width: 728px) {
+      gap: 36px;
+      padding: 35px 0;
+    }
+  }
+
+  &__text-holder {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__text {
+    float: right;
+    margin: 0;
+
+    &--primary {
+      color: $font-blue;
+      font-family: 'Halyard Display', sans-serif;
+      font-weight: 500;
+      font-size: 22px;
+      line-height: 125%;
+      margin-bottom: 28px;
+
+      @media (max-width: 728px) {
+        font-size: 20px;
+        margin-bottom: 20px;
+      }
+    }
+
+    &--secondary {
+      color: $light-blue;
+      font-family: 'Halyard Text', sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 27px;
+
+      @media (max-width: 728px) {
+        font-size: 16px;
+      }
+    }
+  }
+
+  &__img {
+    width: 58px;
+    height: 58px;
+    float: left;
+  }
+}

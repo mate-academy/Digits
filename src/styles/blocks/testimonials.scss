@@ -1,0 +1,26 @@
+.testimonials {
+  padding: 232px 210px 150px;
+  background-color: $white;
+
+  &__title {
+    @include title;
+    margin-bottom: 56px;
+  }
+
+  &__cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 28px;
+    width: fit-content;
+    margin: auto;
+  }
+
+  @media (max-width: $large) {
+    padding: 100px 10px 80px;
+  }
+
+  @media (max-width: $tablet) {
+    padding: 90px 10px 60px;
+  }
+}
